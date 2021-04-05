@@ -3,7 +3,7 @@ Imports System.Net.NetworkInformation
 
 Public Class frmAdmission
     Private Sub lnkclose_Click(sender As Object, e As EventArgs)
-        Me.Dispose()
+        Me.Close()
     End Sub
 
     Private Sub btnaddnew_Click(sender As Object, e As EventArgs) Handles btnaddnew.Click
@@ -24,7 +24,7 @@ Public Class frmAdmission
             End With
         Catch ex As Exception
         Finally
-            f.Dispose()
+            f.Close()
         End Try
 
 

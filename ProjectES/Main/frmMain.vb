@@ -133,7 +133,7 @@ Public Class frmMain
                 Exit Sub
             End If
         Next
-        closeallforms()
+        'closeallforms()
         With frmManagement
             .Width = mainpanel.Width
             .Height = mainpanel.Height
@@ -169,7 +169,7 @@ Public Class frmMain
                 Exit Sub
             End If
         Next
-        closeallforms()
+        'closeallforms()
         With frmAdmission
             .Width = mainpanel.Width
             .Height = mainpanel.Height
