@@ -115,14 +115,14 @@ Public Class frmMain
 
     Sub CloseForms()
         For i As Integer = My.Application.OpenForms.Count - 1 To 0 Step -1
-            If My.Application.OpenForms(i) IsNot Me Then My.Application.OpenForms(i).Dispose()
+            If My.Application.OpenForms(i) IsNot Me Then My.Application.OpenForms(i).Hide()
         Next
     End Sub
 
     Public Sub closeallforms()
         For i As Integer = My.Application.OpenForms.Count - 1 To 0 Step -1
             If My.Application.OpenForms(i) IsNot Me Then
-                My.Application.OpenForms(i).Dispose()
+                My.Application.OpenForms(i).Hide()
             End If
         Next
     End Sub
@@ -133,7 +133,7 @@ Public Class frmMain
                 Exit Sub
             End If
         Next
-        'closeallforms()
+        closeallforms()
         With frmManagement
             .Width = mainpanel.Width
             .Height = mainpanel.Height
@@ -157,6 +157,7 @@ Public Class frmMain
 
     Private Sub btnLogout_Click(sender As Object, e As EventArgs) Handles btnLogout.Click
         If MsgBox("Do you want to sign out?", vbQuestion + vbYesNo) = vbYes Then
+            frmlogin.Show()
             Me.Close()
         End If
     End Sub
@@ -169,7 +170,7 @@ Public Class frmMain
                 Exit Sub
             End If
         Next
-        'closeallforms()
+        closeallforms()
         With frmAdmission
             .Width = mainpanel.Width
             .Height = mainpanel.Height

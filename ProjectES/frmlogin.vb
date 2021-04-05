@@ -100,7 +100,7 @@ Public Class frmlogin
                     .ExecuteNonQuery()
                 End With
                 frmMain.Show()
-                'Me.Close()
+                Me.Hide()
             Else
                 MsgBox("Username or password is invalid", vbExclamation)
                 Exit Sub

@@ -44,10 +44,13 @@ Partial Class frmMain
         Me.lbltotalstudents = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Panel5 = New System.Windows.Forms.Panel()
-        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.lblusername = New System.Windows.Forms.Label()
+        Me.lbldatelog = New System.Windows.Forms.Label()
+        Me.lbldate = New System.Windows.Forms.Label()
+        Me.lbltime = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.btnLogout = New Guna.UI2.WinForms.Guna2Button()
         Me.btnDataEntry = New Guna.UI2.WinForms.Guna2Button()
         Me.btnManagement = New Guna.UI2.WinForms.Guna2Button()
@@ -58,13 +61,6 @@ Partial Class frmMain
         Me.btnDashboard = New Guna.UI2.WinForms.Guna2Button()
         Me.picUser = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.lbltime = New System.Windows.Forms.Label()
-        Me.lbldate = New System.Windows.Forms.Label()
-        Me.lbldatelog = New System.Windows.Forms.Label()
-        Me.lblusername = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.Panel4.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -75,10 +71,6 @@ Partial Class frmMain
         Me.enrolledpanel.SuspendLayout()
         Me.studentpanel.SuspendLayout()
         Me.Panel5.SuspendLayout()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picUser, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -181,7 +173,6 @@ Partial Class frmMain
         Me.sectionpanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(184, Byte), Integer), CType(CType(44, Byte), Integer))
         Me.sectionpanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.sectionpanel.Controls.Add(Me.lbltotalsection)
-        Me.sectionpanel.Controls.Add(Me.PictureBox5)
         Me.sectionpanel.Controls.Add(Me.Label5)
         Me.sectionpanel.Location = New System.Drawing.Point(481, 268)
         Me.sectionpanel.Name = "sectionpanel"
@@ -191,23 +182,24 @@ Partial Class frmMain
         'lbltotalsection
         '
         Me.lbltotalsection.AutoSize = True
-        Me.lbltotalsection.Font = New System.Drawing.Font("Calibri", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbltotalsection.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lbltotalsection.Font = New System.Drawing.Font("Arial Narrow", 26.25!, System.Drawing.FontStyle.Bold)
         Me.lbltotalsection.ForeColor = System.Drawing.Color.White
-        Me.lbltotalsection.Location = New System.Drawing.Point(3, 0)
+        Me.lbltotalsection.Location = New System.Drawing.Point(0, 0)
         Me.lbltotalsection.Name = "lbltotalsection"
-        Me.lbltotalsection.Size = New System.Drawing.Size(0, 36)
+        Me.lbltotalsection.Size = New System.Drawing.Size(0, 42)
         Me.lbltotalsection.TabIndex = 4
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Calibri", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Font = New System.Drawing.Font("Arial Narrow", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(97, 152)
+        Me.Label5.Location = New System.Drawing.Point(75, 152)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(129, 26)
+        Me.Label5.Size = New System.Drawing.Size(161, 25)
         Me.Label5.TabIndex = 1
-        Me.Label5.Text = "Total Sections"
+        Me.Label5.Text = "TOTAL SECTIONS"
         '
         'academicpanel
         '
@@ -215,7 +207,6 @@ Partial Class frmMain
         Me.academicpanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(107, Byte), Integer), CType(CType(107, Byte), Integer))
         Me.academicpanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.academicpanel.Controls.Add(Me.lblacademicyear)
-        Me.academicpanel.Controls.Add(Me.PictureBox4)
         Me.academicpanel.Controls.Add(Me.Label4)
         Me.academicpanel.Location = New System.Drawing.Point(103, 268)
         Me.academicpanel.Name = "academicpanel"
@@ -225,23 +216,24 @@ Partial Class frmMain
         'lblacademicyear
         '
         Me.lblacademicyear.AutoSize = True
-        Me.lblacademicyear.Font = New System.Drawing.Font("Calibri", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblacademicyear.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lblacademicyear.Font = New System.Drawing.Font("Arial Narrow", 26.25!, System.Drawing.FontStyle.Bold)
         Me.lblacademicyear.ForeColor = System.Drawing.Color.White
-        Me.lblacademicyear.Location = New System.Drawing.Point(3, 0)
+        Me.lblacademicyear.Location = New System.Drawing.Point(0, 0)
         Me.lblacademicyear.Name = "lblacademicyear"
-        Me.lblacademicyear.Size = New System.Drawing.Size(0, 36)
+        Me.lblacademicyear.Size = New System.Drawing.Size(0, 42)
         Me.lblacademicyear.TabIndex = 3
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Calibri", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Font = New System.Drawing.Font("Arial Narrow", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(92, 152)
+        Me.Label4.Location = New System.Drawing.Point(75, 152)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(135, 26)
+        Me.Label4.Size = New System.Drawing.Size(154, 25)
         Me.Label4.TabIndex = 1
-        Me.Label4.Text = "Academic Year"
+        Me.Label4.Text = "ACADEMIC YEAR"
         '
         'enrolledpanel
         '
@@ -249,7 +241,6 @@ Partial Class frmMain
         Me.enrolledpanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(153, Byte), Integer), CType(CType(113, Byte), Integer))
         Me.enrolledpanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.enrolledpanel.Controls.Add(Me.lbltotalenrolled)
-        Me.enrolledpanel.Controls.Add(Me.PictureBox3)
         Me.enrolledpanel.Controls.Add(Me.Label3)
         Me.enrolledpanel.Location = New System.Drawing.Point(481, 33)
         Me.enrolledpanel.Name = "enrolledpanel"
@@ -259,23 +250,24 @@ Partial Class frmMain
         'lbltotalenrolled
         '
         Me.lbltotalenrolled.AutoSize = True
-        Me.lbltotalenrolled.Font = New System.Drawing.Font("Calibri", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbltotalenrolled.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lbltotalenrolled.Font = New System.Drawing.Font("Arial Narrow", 26.25!, System.Drawing.FontStyle.Bold)
         Me.lbltotalenrolled.ForeColor = System.Drawing.Color.White
-        Me.lbltotalenrolled.Location = New System.Drawing.Point(3, 0)
+        Me.lbltotalenrolled.Location = New System.Drawing.Point(0, 0)
         Me.lbltotalenrolled.Name = "lbltotalenrolled"
-        Me.lbltotalenrolled.Size = New System.Drawing.Size(0, 36)
+        Me.lbltotalenrolled.Size = New System.Drawing.Size(0, 42)
         Me.lbltotalenrolled.TabIndex = 4
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Calibri", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Font = New System.Drawing.Font("Arial Narrow", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(97, 152)
+        Me.Label3.Location = New System.Drawing.Point(75, 152)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(128, 26)
+        Me.Label3.Size = New System.Drawing.Size(168, 25)
         Me.Label3.TabIndex = 1
-        Me.Label3.Text = "Total Enrolled"
+        Me.Label3.Text = "TOTAL ENROLLED"
         '
         'studentpanel
         '
@@ -283,7 +275,6 @@ Partial Class frmMain
         Me.studentpanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(153, Byte), Integer))
         Me.studentpanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.studentpanel.Controls.Add(Me.lbltotalstudents)
-        Me.studentpanel.Controls.Add(Me.PictureBox2)
         Me.studentpanel.Controls.Add(Me.Label2)
         Me.studentpanel.Location = New System.Drawing.Point(103, 33)
         Me.studentpanel.Name = "studentpanel"
@@ -293,23 +284,24 @@ Partial Class frmMain
         'lbltotalstudents
         '
         Me.lbltotalstudents.AutoSize = True
-        Me.lbltotalstudents.Font = New System.Drawing.Font("Calibri", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbltotalstudents.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lbltotalstudents.Font = New System.Drawing.Font("Arial Narrow", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbltotalstudents.ForeColor = System.Drawing.Color.White
-        Me.lbltotalstudents.Location = New System.Drawing.Point(5, -2)
+        Me.lbltotalstudents.Location = New System.Drawing.Point(0, 0)
         Me.lbltotalstudents.Name = "lbltotalstudents"
-        Me.lbltotalstudents.Size = New System.Drawing.Size(0, 36)
+        Me.lbltotalstudents.Size = New System.Drawing.Size(0, 42)
         Me.lbltotalstudents.TabIndex = 5
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Calibri", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Font = New System.Drawing.Font("Arial Narrow", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(90, 152)
+        Me.Label2.Location = New System.Drawing.Point(75, 152)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(133, 26)
+        Me.Label2.Size = New System.Drawing.Size(166, 25)
         Me.Label2.TabIndex = 0
-        Me.Label2.Text = "Total Students"
+        Me.Label2.Text = "TOTAL STUDENTS"
         '
         'Panel5
         '
@@ -325,41 +317,65 @@ Partial Class frmMain
         Me.Panel5.Size = New System.Drawing.Size(873, 28)
         Me.Panel5.TabIndex = 3
         '
-        'PictureBox5
+        'lblusername
         '
-        Me.PictureBox5.Location = New System.Drawing.Point(118, 65)
-        Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(64, 64)
-        Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
-        Me.PictureBox5.TabIndex = 2
-        Me.PictureBox5.TabStop = False
+        Me.lblusername.AutoSize = True
+        Me.lblusername.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblusername.ForeColor = System.Drawing.Color.Black
+        Me.lblusername.Location = New System.Drawing.Point(59, 0)
+        Me.lblusername.Name = "lblusername"
+        Me.lblusername.Size = New System.Drawing.Size(0, 20)
+        Me.lblusername.TabIndex = 27
         '
-        'PictureBox4
+        'lbldatelog
         '
-        Me.PictureBox4.Location = New System.Drawing.Point(122, 65)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(64, 64)
-        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
-        Me.PictureBox4.TabIndex = 2
-        Me.PictureBox4.TabStop = False
+        Me.lbldatelog.AutoSize = True
+        Me.lbldatelog.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbldatelog.ForeColor = System.Drawing.Color.Black
+        Me.lbldatelog.Location = New System.Drawing.Point(387, 2)
+        Me.lbldatelog.Name = "lbldatelog"
+        Me.lbldatelog.Size = New System.Drawing.Size(0, 20)
+        Me.lbldatelog.TabIndex = 26
         '
-        'PictureBox3
+        'lbldate
         '
-        Me.PictureBox3.Location = New System.Drawing.Point(122, 65)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(64, 64)
-        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
-        Me.PictureBox3.TabIndex = 2
-        Me.PictureBox3.TabStop = False
+        Me.lbldate.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lbldate.AutoSize = True
+        Me.lbldate.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbldate.ForeColor = System.Drawing.Color.Silver
+        Me.lbldate.Location = New System.Drawing.Point(728, 1)
+        Me.lbldate.Name = "lbldate"
+        Me.lbldate.Size = New System.Drawing.Size(0, 25)
+        Me.lbldate.TabIndex = 25
         '
-        'PictureBox2
+        'lbltime
         '
-        Me.PictureBox2.Location = New System.Drawing.Point(118, 68)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(64, 64)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
-        Me.PictureBox2.TabIndex = 1
-        Me.PictureBox2.TabStop = False
+        Me.lbltime.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lbltime.AutoSize = True
+        Me.lbltime.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbltime.ForeColor = System.Drawing.Color.Silver
+        Me.lbltime.Location = New System.Drawing.Point(824, 5)
+        Me.lbltime.Name = "lbltime"
+        Me.lbltime.Size = New System.Drawing.Size(0, 25)
+        Me.lbltime.TabIndex = 24
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(6, 2)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(47, 20)
+        Me.Label7.TabIndex = 0
+        Me.Label7.Text = "USER:"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(260, 3)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(121, 20)
+        Me.Label6.TabIndex = 0
+        Me.Label6.Text = "DATE LOGGED IN:"
         '
         'btnLogout
         '
@@ -549,66 +565,6 @@ Partial Class frmMain
         Me.PictureBox1.TabIndex = 1
         Me.PictureBox1.TabStop = False
         '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(260, 5)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(121, 20)
-        Me.Label6.TabIndex = 0
-        Me.Label6.Text = "DATE LOGGED IN:"
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(6, 2)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(47, 20)
-        Me.Label7.TabIndex = 0
-        Me.Label7.Text = "USER:"
-        '
-        'lbltime
-        '
-        Me.lbltime.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lbltime.AutoSize = True
-        Me.lbltime.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbltime.ForeColor = System.Drawing.Color.Silver
-        Me.lbltime.Location = New System.Drawing.Point(824, 5)
-        Me.lbltime.Name = "lbltime"
-        Me.lbltime.Size = New System.Drawing.Size(0, 25)
-        Me.lbltime.TabIndex = 24
-        '
-        'lbldate
-        '
-        Me.lbldate.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lbldate.AutoSize = True
-        Me.lbldate.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbldate.ForeColor = System.Drawing.Color.Silver
-        Me.lbldate.Location = New System.Drawing.Point(728, 1)
-        Me.lbldate.Name = "lbldate"
-        Me.lbldate.Size = New System.Drawing.Size(0, 25)
-        Me.lbldate.TabIndex = 25
-        '
-        'lbldatelog
-        '
-        Me.lbldatelog.AutoSize = True
-        Me.lbldatelog.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbldatelog.ForeColor = System.Drawing.Color.Silver
-        Me.lbldatelog.Location = New System.Drawing.Point(387, 8)
-        Me.lbldatelog.Name = "lbldatelog"
-        Me.lbldatelog.Size = New System.Drawing.Size(0, 20)
-        Me.lbldatelog.TabIndex = 26
-        '
-        'lblusername
-        '
-        Me.lblusername.AutoSize = True
-        Me.lblusername.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblusername.ForeColor = System.Drawing.Color.Silver
-        Me.lblusername.Location = New System.Drawing.Point(59, 2)
-        Me.lblusername.Name = "lblusername"
-        Me.lblusername.Size = New System.Drawing.Size(0, 20)
-        Me.lblusername.TabIndex = 27
-        '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
@@ -639,10 +595,6 @@ Partial Class frmMain
         Me.studentpanel.PerformLayout()
         Me.Panel5.ResumeLayout(False)
         Me.Panel5.PerformLayout()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picUser, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
@@ -669,19 +621,15 @@ Partial Class frmMain
     Friend WithEvents mainpanel As Panel
     Friend WithEvents studentpanel As Panel
     Friend WithEvents lbltotalstudents As Label
-    Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents Label2 As Label
     Friend WithEvents sectionpanel As Panel
     Friend WithEvents lbltotalsection As Label
-    Friend WithEvents PictureBox5 As PictureBox
     Friend WithEvents Label5 As Label
     Friend WithEvents academicpanel As Panel
     Friend WithEvents lblacademicyear As Label
-    Friend WithEvents PictureBox4 As PictureBox
     Friend WithEvents Label4 As Label
     Friend WithEvents enrolledpanel As Panel
     Friend WithEvents lbltotalenrolled As Label
-    Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents Label3 As Label
     Friend WithEvents Panel5 As Panel
     Friend WithEvents lblusername As Label
