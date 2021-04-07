@@ -171,12 +171,36 @@ Public Class frmMain
             End If
         Next
         closeallforms()
+        Me.Show()
         With frmAdmission
             .Width = mainpanel.Width
             .Height = mainpanel.Height
             .TopLevel = False
             mainpanel.Controls.Add(frmAdmission)
             .BringToFront()
+            .Show()
+        End With
+    End Sub
+
+    Private Sub btnEnrollment_Click(sender As Object, e As EventArgs) Handles btnEnrollment.Click
+        lblacademicyear.Select()
+
+        For Each f As Form In My.Application.OpenForms
+            If f.Name = "frmenrollment" Then
+                Exit Sub
+            End If
+        Next
+        closeallforms()
+        Me.Show()
+        With frmenrollment
+            .Width = mainpanel.Width
+            .Height = mainpanel.Height
+            .TopLevel = False
+            mainpanel.Controls.Add(frmenrollment)
+            .BringToFront()
+            .loadstatus()
+            .autosearch()
+            .getay()
             .Show()
         End With
     End Sub

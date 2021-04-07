@@ -11,9 +11,10 @@
     <AssemblyName>ProjectES</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -116,6 +117,12 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Connection.vb" />
+    <Compile Include="Enrollment\frmenrollment.Designer.vb">
+      <DependentUpon>frmenrollment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Enrollment\frmenrollment.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmlogin.Designer.vb">
       <DependentUpon>frmlogin.vb</DependentUpon>
     </Compile>
@@ -188,6 +195,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Admission\frmAdmission.resx">
       <DependentUpon>frmAdmission.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Enrollment\frmenrollment.resx">
+      <DependentUpon>frmenrollment.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmlogin.resx">
       <DependentUpon>frmlogin.vb</DependentUpon>
