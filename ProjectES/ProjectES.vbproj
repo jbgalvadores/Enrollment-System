@@ -135,6 +135,12 @@
     <Compile Include="frmlogin.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmrecord.Designer.vb">
+      <DependentUpon>frmrecord.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmrecord.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Main\frmMain.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -210,6 +216,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmlogin.resx">
       <DependentUpon>frmlogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmrecord.resx">
+      <DependentUpon>frmrecord.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main\frmMain.resx">
       <DependentUpon>frmMain.vb</DependentUpon>
@@ -323,6 +332,8 @@
     <None Include="Resources\search.png" />
     <None Include="Resources\clear.png" />
     <None Include="Resources\PCHS_Logo1.png" />
+    <None Include="Resources\hideblack1.png" />
+    <None Include="Resources\management51.png" />
     <Content Include="SqlServerTypes\Loader.cs" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">

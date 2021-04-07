@@ -25,20 +25,11 @@ Partial Class frmMain
         Me.components = New System.ComponentModel.Container()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel4 = New System.Windows.Forms.Panel()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.btnLogout = New Guna.UI2.WinForms.Guna2Button()
-        Me.btnDataEntry = New Guna.UI2.WinForms.Guna2Button()
-        Me.btnManagement = New Guna.UI2.WinForms.Guna2Button()
-        Me.btnRecords = New Guna.UI2.WinForms.Guna2Button()
-        Me.btnEnrollment = New Guna.UI2.WinForms.Guna2Button()
-        Me.btnAdmission = New Guna.UI2.WinForms.Guna2Button()
-        Me.btnDashboard = New Guna.UI2.WinForms.Guna2Button()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.lbldesignation = New System.Windows.Forms.Label()
         Me.lblfullname = New System.Windows.Forms.Label()
-        Me.picUser = New System.Windows.Forms.PictureBox()
         Me.mainpanel = New System.Windows.Forms.Panel()
         Me.sectionpanel = New System.Windows.Forms.Panel()
         Me.lbltotalsection = New System.Windows.Forms.Label()
@@ -60,18 +51,27 @@ Partial Class frmMain
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.btnManagement = New Guna.UI2.WinForms.Guna2Button()
+        Me.btnRecords = New Guna.UI2.WinForms.Guna2Button()
+        Me.btnEnrollment = New Guna.UI2.WinForms.Guna2Button()
+        Me.btnAdmission = New Guna.UI2.WinForms.Guna2Button()
+        Me.btnDashboard = New Guna.UI2.WinForms.Guna2Button()
+        Me.picUser = New System.Windows.Forms.PictureBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.btnLogout = New Guna.UI2.WinForms.Guna2Button()
+        Me.btnDataEntry = New Guna.UI2.WinForms.Guna2Button()
         Me.Panel1.SuspendLayout()
         Me.Panel4.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
         Me.Panel3.SuspendLayout()
-        CType(Me.picUser, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.mainpanel.SuspendLayout()
         Me.sectionpanel.SuspendLayout()
         Me.academicpanel.SuspendLayout()
         Me.enrolledpanel.SuspendLayout()
         Me.studentpanel.SuspendLayout()
         Me.Panel5.SuspendLayout()
+        CType(Me.picUser, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
@@ -93,16 +93,6 @@ Partial Class frmMain
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(146, 123)
         Me.Panel4.TabIndex = 1
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = Global.ProjectES.My.Resources.Resources.PCHS_Logo
-        Me.PictureBox1.Location = New System.Drawing.Point(0, 1)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(146, 122)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox1.TabIndex = 1
-        Me.PictureBox1.TabStop = False
         '
         'Label1
         '
@@ -131,153 +121,6 @@ Partial Class frmMain
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(182, 523)
         Me.Panel2.TabIndex = 1
-        '
-        'btnLogout
-        '
-        Me.btnLogout.Animated = True
-        Me.btnLogout.CheckedState.Parent = Me.btnLogout
-        Me.btnLogout.CustomImages.Parent = Me.btnLogout
-        Me.btnLogout.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.btnLogout.FillColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(59, Byte), Integer), CType(CType(72, Byte), Integer))
-        Me.btnLogout.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnLogout.ForeColor = System.Drawing.Color.White
-        Me.btnLogout.HoverState.Parent = Me.btnLogout
-        Me.btnLogout.Image = Global.ProjectES.My.Resources.Resources.back
-        Me.btnLogout.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.btnLogout.Location = New System.Drawing.Point(0, 485)
-        Me.btnLogout.Name = "btnLogout"
-        Me.btnLogout.ShadowDecoration.Parent = Me.btnLogout
-        Me.btnLogout.Size = New System.Drawing.Size(182, 38)
-        Me.btnLogout.TabIndex = 8
-        Me.btnLogout.Text = "LOGOUT"
-        Me.btnLogout.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.btnLogout.TextOffset = New System.Drawing.Point(20, 0)
-        '
-        'btnDataEntry
-        '
-        Me.btnDataEntry.Animated = True
-        Me.btnDataEntry.CheckedState.Parent = Me.btnDataEntry
-        Me.btnDataEntry.CustomImages.Parent = Me.btnDataEntry
-        Me.btnDataEntry.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btnDataEntry.FillColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(59, Byte), Integer), CType(CType(72, Byte), Integer))
-        Me.btnDataEntry.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.btnDataEntry.ForeColor = System.Drawing.Color.White
-        Me.btnDataEntry.HoverState.Parent = Me.btnDataEntry
-        Me.btnDataEntry.Image = Global.ProjectES.My.Resources.Resources.enrollment
-        Me.btnDataEntry.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.btnDataEntry.Location = New System.Drawing.Point(0, 367)
-        Me.btnDataEntry.Name = "btnDataEntry"
-        Me.btnDataEntry.ShadowDecoration.Parent = Me.btnDataEntry
-        Me.btnDataEntry.Size = New System.Drawing.Size(182, 38)
-        Me.btnDataEntry.TabIndex = 7
-        Me.btnDataEntry.Text = "REQUIREMENTS"
-        Me.btnDataEntry.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.btnDataEntry.TextOffset = New System.Drawing.Point(20, 0)
-        '
-        'btnManagement
-        '
-        Me.btnManagement.Animated = True
-        Me.btnManagement.CheckedState.Parent = Me.btnManagement
-        Me.btnManagement.CustomImages.Parent = Me.btnManagement
-        Me.btnManagement.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btnManagement.FillColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(59, Byte), Integer), CType(CType(72, Byte), Integer))
-        Me.btnManagement.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnManagement.ForeColor = System.Drawing.Color.White
-        Me.btnManagement.HoverState.Parent = Me.btnManagement
-        Me.btnManagement.Image = Global.ProjectES.My.Resources.Resources.reservation_icon
-        Me.btnManagement.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.btnManagement.Location = New System.Drawing.Point(0, 329)
-        Me.btnManagement.Name = "btnManagement"
-        Me.btnManagement.ShadowDecoration.Parent = Me.btnManagement
-        Me.btnManagement.Size = New System.Drawing.Size(182, 38)
-        Me.btnManagement.TabIndex = 6
-        Me.btnManagement.Text = "MANAGEMENT"
-        Me.btnManagement.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.btnManagement.TextOffset = New System.Drawing.Point(20, 0)
-        '
-        'btnRecords
-        '
-        Me.btnRecords.Animated = True
-        Me.btnRecords.CheckedState.Parent = Me.btnRecords
-        Me.btnRecords.CustomImages.Parent = Me.btnRecords
-        Me.btnRecords.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btnRecords.FillColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(59, Byte), Integer), CType(CType(72, Byte), Integer))
-        Me.btnRecords.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnRecords.ForeColor = System.Drawing.Color.White
-        Me.btnRecords.HoverState.Parent = Me.btnRecords
-        Me.btnRecords.Image = Global.ProjectES.My.Resources.Resources.archive
-        Me.btnRecords.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.btnRecords.Location = New System.Drawing.Point(0, 291)
-        Me.btnRecords.Name = "btnRecords"
-        Me.btnRecords.ShadowDecoration.Parent = Me.btnRecords
-        Me.btnRecords.Size = New System.Drawing.Size(182, 38)
-        Me.btnRecords.TabIndex = 5
-        Me.btnRecords.Text = "RECORDS"
-        Me.btnRecords.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.btnRecords.TextOffset = New System.Drawing.Point(20, 0)
-        '
-        'btnEnrollment
-        '
-        Me.btnEnrollment.Animated = True
-        Me.btnEnrollment.CheckedState.Parent = Me.btnEnrollment
-        Me.btnEnrollment.CustomImages.Parent = Me.btnEnrollment
-        Me.btnEnrollment.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btnEnrollment.FillColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(59, Byte), Integer), CType(CType(72, Byte), Integer))
-        Me.btnEnrollment.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnEnrollment.ForeColor = System.Drawing.Color.White
-        Me.btnEnrollment.HoverState.Parent = Me.btnEnrollment
-        Me.btnEnrollment.Image = Global.ProjectES.My.Resources.Resources.business
-        Me.btnEnrollment.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.btnEnrollment.Location = New System.Drawing.Point(0, 253)
-        Me.btnEnrollment.Name = "btnEnrollment"
-        Me.btnEnrollment.ShadowDecoration.Parent = Me.btnEnrollment
-        Me.btnEnrollment.Size = New System.Drawing.Size(182, 38)
-        Me.btnEnrollment.TabIndex = 4
-        Me.btnEnrollment.Text = "ENROLLMENT"
-        Me.btnEnrollment.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.btnEnrollment.TextOffset = New System.Drawing.Point(20, 0)
-        '
-        'btnAdmission
-        '
-        Me.btnAdmission.Animated = True
-        Me.btnAdmission.CheckedState.Parent = Me.btnAdmission
-        Me.btnAdmission.CustomImages.Parent = Me.btnAdmission
-        Me.btnAdmission.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btnAdmission.FillColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(59, Byte), Integer), CType(CType(72, Byte), Integer))
-        Me.btnAdmission.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAdmission.ForeColor = System.Drawing.Color.White
-        Me.btnAdmission.HoverState.Parent = Me.btnAdmission
-        Me.btnAdmission.Image = Global.ProjectES.My.Resources.Resources.admission1
-        Me.btnAdmission.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.btnAdmission.Location = New System.Drawing.Point(0, 215)
-        Me.btnAdmission.Name = "btnAdmission"
-        Me.btnAdmission.ShadowDecoration.Parent = Me.btnAdmission
-        Me.btnAdmission.Size = New System.Drawing.Size(182, 38)
-        Me.btnAdmission.TabIndex = 3
-        Me.btnAdmission.Text = "ADMISSION"
-        Me.btnAdmission.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.btnAdmission.TextOffset = New System.Drawing.Point(20, 0)
-        '
-        'btnDashboard
-        '
-        Me.btnDashboard.Animated = True
-        Me.btnDashboard.CheckedState.Parent = Me.btnDashboard
-        Me.btnDashboard.CustomImages.Parent = Me.btnDashboard
-        Me.btnDashboard.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btnDashboard.FillColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(59, Byte), Integer), CType(CType(72, Byte), Integer))
-        Me.btnDashboard.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnDashboard.ForeColor = System.Drawing.Color.White
-        Me.btnDashboard.HoverState.Parent = Me.btnDashboard
-        Me.btnDashboard.Image = Global.ProjectES.My.Resources.Resources.check_icon
-        Me.btnDashboard.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.btnDashboard.Location = New System.Drawing.Point(0, 177)
-        Me.btnDashboard.Name = "btnDashboard"
-        Me.btnDashboard.ShadowDecoration.Parent = Me.btnDashboard
-        Me.btnDashboard.Size = New System.Drawing.Size(182, 38)
-        Me.btnDashboard.TabIndex = 1
-        Me.btnDashboard.Text = "DASHBOARD"
-        Me.btnDashboard.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.btnDashboard.TextOffset = New System.Drawing.Point(20, 0)
         '
         'Panel3
         '
@@ -309,16 +152,6 @@ Partial Class frmMain
         Me.lblfullname.Size = New System.Drawing.Size(169, 24)
         Me.lblfullname.TabIndex = 1
         Me.lblfullname.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'picUser
-        '
-        Me.picUser.Image = Global.ProjectES.My.Resources.Resources.teacher
-        Me.picUser.Location = New System.Drawing.Point(44, 22)
-        Me.picUser.Name = "picUser"
-        Me.picUser.Size = New System.Drawing.Size(90, 85)
-        Me.picUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.picUser.TabIndex = 0
-        Me.picUser.TabStop = False
         '
         'mainpanel
         '
@@ -544,6 +377,173 @@ Partial Class frmMain
         Me.Label6.TabIndex = 0
         Me.Label6.Text = "DATE LOGGED IN:"
         '
+        'btnManagement
+        '
+        Me.btnManagement.Animated = True
+        Me.btnManagement.CheckedState.Parent = Me.btnManagement
+        Me.btnManagement.CustomImages.Parent = Me.btnManagement
+        Me.btnManagement.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnManagement.FillColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(59, Byte), Integer), CType(CType(72, Byte), Integer))
+        Me.btnManagement.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnManagement.ForeColor = System.Drawing.Color.White
+        Me.btnManagement.HoverState.Parent = Me.btnManagement
+        Me.btnManagement.Image = Global.ProjectES.My.Resources.Resources.reservation_icon
+        Me.btnManagement.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.btnManagement.Location = New System.Drawing.Point(0, 329)
+        Me.btnManagement.Name = "btnManagement"
+        Me.btnManagement.ShadowDecoration.Parent = Me.btnManagement
+        Me.btnManagement.Size = New System.Drawing.Size(182, 38)
+        Me.btnManagement.TabIndex = 6
+        Me.btnManagement.Text = "MANAGEMENT"
+        Me.btnManagement.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.btnManagement.TextOffset = New System.Drawing.Point(20, 0)
+        '
+        'btnRecords
+        '
+        Me.btnRecords.Animated = True
+        Me.btnRecords.CheckedState.Parent = Me.btnRecords
+        Me.btnRecords.CustomImages.Parent = Me.btnRecords
+        Me.btnRecords.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnRecords.FillColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(59, Byte), Integer), CType(CType(72, Byte), Integer))
+        Me.btnRecords.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnRecords.ForeColor = System.Drawing.Color.White
+        Me.btnRecords.HoverState.Parent = Me.btnRecords
+        Me.btnRecords.Image = Global.ProjectES.My.Resources.Resources.archive
+        Me.btnRecords.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.btnRecords.Location = New System.Drawing.Point(0, 291)
+        Me.btnRecords.Name = "btnRecords"
+        Me.btnRecords.ShadowDecoration.Parent = Me.btnRecords
+        Me.btnRecords.Size = New System.Drawing.Size(182, 38)
+        Me.btnRecords.TabIndex = 5
+        Me.btnRecords.Text = "RECORDS"
+        Me.btnRecords.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.btnRecords.TextOffset = New System.Drawing.Point(20, 0)
+        '
+        'btnEnrollment
+        '
+        Me.btnEnrollment.Animated = True
+        Me.btnEnrollment.CheckedState.Parent = Me.btnEnrollment
+        Me.btnEnrollment.CustomImages.Parent = Me.btnEnrollment
+        Me.btnEnrollment.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnEnrollment.FillColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(59, Byte), Integer), CType(CType(72, Byte), Integer))
+        Me.btnEnrollment.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnEnrollment.ForeColor = System.Drawing.Color.White
+        Me.btnEnrollment.HoverState.Parent = Me.btnEnrollment
+        Me.btnEnrollment.Image = Global.ProjectES.My.Resources.Resources.business
+        Me.btnEnrollment.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.btnEnrollment.Location = New System.Drawing.Point(0, 253)
+        Me.btnEnrollment.Name = "btnEnrollment"
+        Me.btnEnrollment.ShadowDecoration.Parent = Me.btnEnrollment
+        Me.btnEnrollment.Size = New System.Drawing.Size(182, 38)
+        Me.btnEnrollment.TabIndex = 4
+        Me.btnEnrollment.Text = "ENROLLMENT"
+        Me.btnEnrollment.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.btnEnrollment.TextOffset = New System.Drawing.Point(20, 0)
+        '
+        'btnAdmission
+        '
+        Me.btnAdmission.Animated = True
+        Me.btnAdmission.CheckedState.Parent = Me.btnAdmission
+        Me.btnAdmission.CustomImages.Parent = Me.btnAdmission
+        Me.btnAdmission.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnAdmission.FillColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(59, Byte), Integer), CType(CType(72, Byte), Integer))
+        Me.btnAdmission.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAdmission.ForeColor = System.Drawing.Color.White
+        Me.btnAdmission.HoverState.Parent = Me.btnAdmission
+        Me.btnAdmission.Image = Global.ProjectES.My.Resources.Resources.admission1
+        Me.btnAdmission.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.btnAdmission.Location = New System.Drawing.Point(0, 215)
+        Me.btnAdmission.Name = "btnAdmission"
+        Me.btnAdmission.ShadowDecoration.Parent = Me.btnAdmission
+        Me.btnAdmission.Size = New System.Drawing.Size(182, 38)
+        Me.btnAdmission.TabIndex = 3
+        Me.btnAdmission.Text = "ADMISSION"
+        Me.btnAdmission.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.btnAdmission.TextOffset = New System.Drawing.Point(20, 0)
+        '
+        'btnDashboard
+        '
+        Me.btnDashboard.Animated = True
+        Me.btnDashboard.CheckedState.Parent = Me.btnDashboard
+        Me.btnDashboard.CustomImages.Parent = Me.btnDashboard
+        Me.btnDashboard.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnDashboard.FillColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(59, Byte), Integer), CType(CType(72, Byte), Integer))
+        Me.btnDashboard.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnDashboard.ForeColor = System.Drawing.Color.White
+        Me.btnDashboard.HoverState.Parent = Me.btnDashboard
+        Me.btnDashboard.Image = Global.ProjectES.My.Resources.Resources.check_icon
+        Me.btnDashboard.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.btnDashboard.Location = New System.Drawing.Point(0, 177)
+        Me.btnDashboard.Name = "btnDashboard"
+        Me.btnDashboard.ShadowDecoration.Parent = Me.btnDashboard
+        Me.btnDashboard.Size = New System.Drawing.Size(182, 38)
+        Me.btnDashboard.TabIndex = 1
+        Me.btnDashboard.Text = "DASHBOARD"
+        Me.btnDashboard.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.btnDashboard.TextOffset = New System.Drawing.Point(20, 0)
+        '
+        'picUser
+        '
+        Me.picUser.Image = Global.ProjectES.My.Resources.Resources.teacher
+        Me.picUser.Location = New System.Drawing.Point(44, 22)
+        Me.picUser.Name = "picUser"
+        Me.picUser.Size = New System.Drawing.Size(90, 85)
+        Me.picUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.picUser.TabIndex = 0
+        Me.picUser.TabStop = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.ProjectES.My.Resources.Resources.PCHS_Logo
+        Me.PictureBox1.Location = New System.Drawing.Point(0, 1)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(146, 122)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 1
+        Me.PictureBox1.TabStop = False
+        '
+        'btnLogout
+        '
+        Me.btnLogout.Animated = True
+        Me.btnLogout.CheckedState.Parent = Me.btnLogout
+        Me.btnLogout.CustomImages.Parent = Me.btnLogout
+        Me.btnLogout.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.btnLogout.FillColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(59, Byte), Integer), CType(CType(72, Byte), Integer))
+        Me.btnLogout.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnLogout.ForeColor = System.Drawing.Color.White
+        Me.btnLogout.HoverState.Parent = Me.btnLogout
+        Me.btnLogout.Image = Global.ProjectES.My.Resources.Resources.back
+        Me.btnLogout.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.btnLogout.Location = New System.Drawing.Point(0, 485)
+        Me.btnLogout.Name = "btnLogout"
+        Me.btnLogout.ShadowDecoration.Parent = Me.btnLogout
+        Me.btnLogout.Size = New System.Drawing.Size(182, 38)
+        Me.btnLogout.TabIndex = 8
+        Me.btnLogout.Text = "LOGOUT"
+        Me.btnLogout.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.btnLogout.TextOffset = New System.Drawing.Point(20, 0)
+        '
+        'btnDataEntry
+        '
+        Me.btnDataEntry.Animated = True
+        Me.btnDataEntry.CheckedState.Parent = Me.btnDataEntry
+        Me.btnDataEntry.CustomImages.Parent = Me.btnDataEntry
+        Me.btnDataEntry.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnDataEntry.FillColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(59, Byte), Integer), CType(CType(72, Byte), Integer))
+        Me.btnDataEntry.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.btnDataEntry.ForeColor = System.Drawing.Color.White
+        Me.btnDataEntry.HoverState.Parent = Me.btnDataEntry
+        Me.btnDataEntry.Image = Global.ProjectES.My.Resources.Resources.management5
+        Me.btnDataEntry.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.btnDataEntry.Location = New System.Drawing.Point(0, 367)
+        Me.btnDataEntry.Name = "btnDataEntry"
+        Me.btnDataEntry.ShadowDecoration.Parent = Me.btnDataEntry
+        Me.btnDataEntry.Size = New System.Drawing.Size(182, 38)
+        Me.btnDataEntry.TabIndex = 7
+        Me.btnDataEntry.Text = "SETTINGS"
+        Me.btnDataEntry.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.btnDataEntry.TextOffset = New System.Drawing.Point(20, 0)
+        '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
@@ -561,10 +561,8 @@ Partial Class frmMain
         Me.Text = "Form1"
         Me.Panel1.ResumeLayout(False)
         Me.Panel4.ResumeLayout(False)
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
         Me.Panel3.ResumeLayout(False)
-        CType(Me.picUser, System.ComponentModel.ISupportInitialize).EndInit()
         Me.mainpanel.ResumeLayout(False)
         Me.sectionpanel.ResumeLayout(False)
         Me.sectionpanel.PerformLayout()
@@ -576,6 +574,8 @@ Partial Class frmMain
         Me.studentpanel.PerformLayout()
         Me.Panel5.ResumeLayout(False)
         Me.Panel5.PerformLayout()
+        CType(Me.picUser, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -593,8 +593,6 @@ Partial Class frmMain
     Friend WithEvents btnEnrollment As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents btnAdmission As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents btnRecords As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents btnLogout As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents btnDataEntry As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents mainpanel As Panel
     Friend WithEvents studentpanel As Panel
     Friend WithEvents lbltotalstudents As Label
@@ -617,4 +615,6 @@ Partial Class frmMain
     Friend WithEvents Label6 As Label
     Friend WithEvents Timer1 As Timer
     Friend WithEvents btnManagement As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents btnLogout As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents btnDataEntry As Guna.UI2.WinForms.Guna2Button
 End Class

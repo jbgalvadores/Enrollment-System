@@ -94,13 +94,29 @@ Public Class frmenrollment
         e.Handled = True
     End Sub
 
-    Private Sub datagridview1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles datagridview1.CellContentClick
 
+    Private Sub btnaddnew_Click(sender As Object, e As EventArgs) Handles btnaddnew.Click
+        lblenrollment.Select()
+        Dim f As New Form
+        Try
+            With f
+                .WindowState = FormWindowState.Maximized
+                .StartPosition = FormStartPosition.Manual
+                .BackColor = Color.Black
+                .Opacity = 0.5
+                .ShowInTaskbar = False
+                .FormBorderStyle = FormBorderStyle.None
+                .Show()
+                frmenrolling.Owner = f
+                frmenrolling.ShowDialog()
+            End With
+        Catch ex As Exception
+        Finally
+            f.Dispose()
+        End Try
     End Sub
 
-    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
-
+    Private Sub linkAdmClose_Click(sender As Object, e As EventArgs) Handles linkAdmClose.Click
+        Me.Close()
     End Sub
-
-
 End Class

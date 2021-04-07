@@ -69,8 +69,8 @@ Public Class frmManagement
 
 
     Private Sub btnaddnew_Click(sender As Object, e As EventArgs)
-        'lblmanagement.Select()
-        'frmAddSection.ShowDialog()
+        lblmanagement.Select()
+        frmAddSection.ShowDialog()
     End Sub
 
     Public Sub loadsection()
@@ -582,13 +582,7 @@ Public Class frmManagement
         e.Handled = True
     End Sub
 
-    Private Sub cbostrand_SelectedIndexChanged(sender As Object, e As EventArgs)
 
-    End Sub
-
-    Private Sub cbogradelevel_SelectedIndexChanged(sender As Object, e As EventArgs)
-
-    End Sub
     Public Sub room_adviser_id_adviser_name()
         opencon()
         Try

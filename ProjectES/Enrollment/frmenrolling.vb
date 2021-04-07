@@ -297,5 +297,7 @@ Public Class frmenrolling
         End If
     End Sub
 
-
+    Private Sub linkAdmClose_Click(sender As Object, e As EventArgs) Handles linkAdmClose.Click
+        Me.Close()
+    End Sub
 End Class
