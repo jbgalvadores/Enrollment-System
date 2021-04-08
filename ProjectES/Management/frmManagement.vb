@@ -781,4 +781,8 @@ Public Class frmManagement
     Private Sub btnaddsection_Click(sender As Object, e As EventArgs) Handles btnaddsection.Click
 
     End Sub
+
+    Private Sub linkAdmClose_Click(sender As Object, e As EventArgs) Handles linkAdmClose.Click
+        Me.Dispose()
+    End Sub
 End Class
