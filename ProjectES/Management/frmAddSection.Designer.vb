@@ -24,9 +24,6 @@ Partial Class frmAddSection
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.lbladdsection = New System.Windows.Forms.Label()
-        Me.btnclose = New Guna.UI2.WinForms.Guna2Button()
-        Me.btnupdate = New Guna.UI2.WinForms.Guna2Button()
-        Me.btnsave = New Guna.UI2.WinForms.Guna2Button()
         Me.cboroom = New System.Windows.Forms.ComboBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.cboteacher = New System.Windows.Forms.ComboBox()
@@ -39,6 +36,9 @@ Partial Class frmAddSection
         Me.txtsection = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.lblgrade = New System.Windows.Forms.Label()
+        Me.btnsave = New MetroFramework.Controls.MetroButton()
+        Me.btnupdate = New MetroFramework.Controls.MetroButton()
+        Me.btnclose = New MetroFramework.Controls.MetroButton()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -63,64 +63,6 @@ Partial Class frmAddSection
         Me.lbladdsection.Size = New System.Drawing.Size(83, 16)
         Me.lbladdsection.TabIndex = 0
         Me.lbladdsection.Text = "ADD SECTION"
-        '
-        'btnclose
-        '
-        Me.btnclose.Animated = True
-        Me.btnclose.CheckedState.Parent = Me.btnclose
-        Me.btnclose.CustomImages.Parent = Me.btnclose
-        Me.btnclose.FillColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.btnclose.Font = New System.Drawing.Font("Segoe UI Semibold", 8.25!, System.Drawing.FontStyle.Bold)
-        Me.btnclose.ForeColor = System.Drawing.Color.White
-        Me.btnclose.HoverState.Parent = Me.btnclose
-        Me.btnclose.Image = Global.ProjectES.My.Resources.Resources.delete3
-        Me.btnclose.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.btnclose.Location = New System.Drawing.Point(294, 270)
-        Me.btnclose.Name = "btnclose"
-        Me.btnclose.ShadowDecoration.Parent = Me.btnclose
-        Me.btnclose.Size = New System.Drawing.Size(90, 31)
-        Me.btnclose.TabIndex = 45
-        Me.btnclose.Text = "CLOSE"
-        Me.btnclose.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        '
-        'btnupdate
-        '
-        Me.btnupdate.Animated = True
-        Me.btnupdate.CheckedState.Parent = Me.btnupdate
-        Me.btnupdate.CustomImages.Parent = Me.btnupdate
-        Me.btnupdate.Enabled = False
-        Me.btnupdate.FillColor = System.Drawing.Color.FromArgb(CType(CType(72, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(176, Byte), Integer))
-        Me.btnupdate.Font = New System.Drawing.Font("Segoe UI Semibold", 8.25!, System.Drawing.FontStyle.Bold)
-        Me.btnupdate.ForeColor = System.Drawing.Color.White
-        Me.btnupdate.HoverState.Parent = Me.btnupdate
-        Me.btnupdate.Image = Global.ProjectES.My.Resources.Resources.update
-        Me.btnupdate.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.btnupdate.Location = New System.Drawing.Point(199, 270)
-        Me.btnupdate.Name = "btnupdate"
-        Me.btnupdate.ShadowDecoration.Parent = Me.btnupdate
-        Me.btnupdate.Size = New System.Drawing.Size(90, 31)
-        Me.btnupdate.TabIndex = 44
-        Me.btnupdate.Text = "UPDATE"
-        Me.btnupdate.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        '
-        'btnsave
-        '
-        Me.btnsave.Animated = True
-        Me.btnsave.CheckedState.Parent = Me.btnsave
-        Me.btnsave.CustomImages.Parent = Me.btnsave
-        Me.btnsave.FillColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(59, Byte), Integer), CType(CType(72, Byte), Integer))
-        Me.btnsave.Font = New System.Drawing.Font("Segoe UI Semibold", 8.25!, System.Drawing.FontStyle.Bold)
-        Me.btnsave.ForeColor = System.Drawing.Color.White
-        Me.btnsave.HoverState.Parent = Me.btnsave
-        Me.btnsave.Image = Global.ProjectES.My.Resources.Resources._16
-        Me.btnsave.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.btnsave.Location = New System.Drawing.Point(104, 270)
-        Me.btnsave.Name = "btnsave"
-        Me.btnsave.ShadowDecoration.Parent = Me.btnsave
-        Me.btnsave.Size = New System.Drawing.Size(90, 31)
-        Me.btnsave.TabIndex = 43
-        Me.btnsave.Text = "SAVE"
-        Me.btnsave.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         '
         'cboroom
         '
@@ -260,21 +202,48 @@ Partial Class frmAddSection
         Me.lblgrade.TabIndex = 49
         Me.lblgrade.Text = "Grade Level"
         '
+        'btnsave
+        '
+        Me.btnsave.Location = New System.Drawing.Point(129, 262)
+        Me.btnsave.Name = "btnsave"
+        Me.btnsave.Size = New System.Drawing.Size(75, 23)
+        Me.btnsave.TabIndex = 61
+        Me.btnsave.Text = "SAVE"
+        Me.btnsave.UseSelectable = True
+        '
+        'btnupdate
+        '
+        Me.btnupdate.Location = New System.Drawing.Point(210, 262)
+        Me.btnupdate.Name = "btnupdate"
+        Me.btnupdate.Size = New System.Drawing.Size(75, 23)
+        Me.btnupdate.TabIndex = 61
+        Me.btnupdate.Text = "UPDATE"
+        Me.btnupdate.UseSelectable = True
+        '
+        'btnclose
+        '
+        Me.btnclose.Location = New System.Drawing.Point(291, 262)
+        Me.btnclose.Name = "btnclose"
+        Me.btnclose.Size = New System.Drawing.Size(75, 23)
+        Me.btnclose.TabIndex = 61
+        Me.btnclose.Text = "CLOSE"
+        Me.btnclose.UseSelectable = True
+        '
         'frmAddSection
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(494, 333)
+        Me.ClientSize = New System.Drawing.Size(494, 313)
+        Me.Controls.Add(Me.btnclose)
+        Me.Controls.Add(Me.btnupdate)
+        Me.Controls.Add(Me.btnsave)
         Me.Controls.Add(Me.cboroom)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.cboteacher)
-        Me.Controls.Add(Me.btnclose)
         Me.Controls.Add(Me.lblteacher)
-        Me.Controls.Add(Me.btnupdate)
         Me.Controls.Add(Me.txtteacherid)
-        Me.Controls.Add(Me.btnsave)
         Me.Controls.Add(Me.lblteacherid)
         Me.Controls.Add(Me.lblgrade)
         Me.Controls.Add(Me.cbostrand)
@@ -295,9 +264,6 @@ Partial Class frmAddSection
 
     Friend WithEvents Panel1 As Panel
     Friend WithEvents lbladdsection As Label
-    Friend WithEvents btnclose As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents btnupdate As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents btnsave As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents cboroom As ComboBox
     Friend WithEvents Label1 As Label
     Friend WithEvents cboteacher As ComboBox
@@ -310,4 +276,7 @@ Partial Class frmAddSection
     Friend WithEvents txtsection As TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents lblgrade As Label
+    Friend WithEvents btnsave As MetroFramework.Controls.MetroButton
+    Friend WithEvents btnupdate As MetroFramework.Controls.MetroButton
+    Friend WithEvents btnclose As MetroFramework.Controls.MetroButton
 End Class

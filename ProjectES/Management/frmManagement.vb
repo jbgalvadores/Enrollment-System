@@ -207,7 +207,7 @@ Public Class frmManagement
 
 
 
-    Private Sub btnaddstrand_Click(sender As Object, e As EventArgs)
+    Private Sub btnaddstrand_Click(sender As Object, e As EventArgs) Handles btnaddstrand.Click
         Dim f As New Form
         Try
             With f
@@ -350,7 +350,7 @@ Public Class frmManagement
         End If
     End Sub
 
-    Private Sub btnaddroom_Click(sender As Object, e As EventArgs)
+    Private Sub btnaddroom_Click(sender As Object, e As EventArgs) Handles btnaddroom.Click
 
     End Sub
 
@@ -429,7 +429,7 @@ Public Class frmManagement
         e.Handled = True
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs)
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         'lblmanagement.Select()
         cbofiltergrade.Text = ""
         cbofilterstrand.Items.Clear()
@@ -503,7 +503,7 @@ Public Class frmManagement
         dr.Close()
     End Sub
 
-    Private Sub btnaddteacher_Click(sender As Object, e As EventArgs)
+    Private Sub btnaddteacher_Click(sender As Object, e As EventArgs) Handles btnaddteacher.Click
         lblmanagement.Select()
         Dim f As New Form
         Try
@@ -773,10 +773,12 @@ Public Class frmManagement
 
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs)
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         lblmanagement.Select()
         frmSubject.ShowDialog()
     End Sub
 
+    Private Sub btnaddsection_Click(sender As Object, e As EventArgs) Handles btnaddsection.Click
 
+    End Sub
 End Class

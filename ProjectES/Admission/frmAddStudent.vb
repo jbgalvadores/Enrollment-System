@@ -211,7 +211,7 @@ Public Class frmAddStudent
         dr.Close()
     End Sub
 
-    Private Sub btnclose_Click(sender As Object, e As EventArgs) Handles btnclose.Click
+    Private Sub btnclose_Click(sender As Object, e As EventArgs) Handles btnclose.Click, lnkclose.Click
         Me.Close()
     End Sub
 
@@ -219,4 +219,6 @@ Public Class frmAddStudent
         lbladmission.Select()
         clear()
     End Sub
+
+
 End Class

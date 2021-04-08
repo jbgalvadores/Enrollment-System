@@ -23,7 +23,6 @@ Partial Class frmAddStudent
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.lnkclose = New Guna.UI2.WinForms.Guna2Button()
         Me.lbladmission = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.cbotype = New System.Windows.Forms.ComboBox()
@@ -111,9 +110,10 @@ Partial Class frmAddStudent
         Me.Label37 = New System.Windows.Forms.Label()
         Me.txtpsattended = New System.Windows.Forms.TextBox()
         Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.btnclose = New Guna.UI2.WinForms.Guna2Button()
-        Me.btnclear = New Guna.UI2.WinForms.Guna2Button()
-        Me.btnsave = New Guna.UI2.WinForms.Guna2Button()
+        Me.btnclose = New MetroFramework.Controls.MetroButton()
+        Me.btnclear = New MetroFramework.Controls.MetroButton()
+        Me.btnsave = New MetroFramework.Controls.MetroButton()
+        Me.lnkclose = New MetroFramework.Controls.MetroButton()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.TabControl1.SuspendLayout()
@@ -137,26 +137,6 @@ Partial Class frmAddStudent
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(955, 37)
         Me.Panel1.TabIndex = 7
-        '
-        'lnkclose
-        '
-        Me.lnkclose.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lnkclose.CheckedState.Parent = Me.lnkclose
-        Me.lnkclose.CustomImages.Parent = Me.lnkclose
-        Me.lnkclose.FillColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.lnkclose.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.lnkclose.ForeColor = System.Drawing.Color.White
-        Me.lnkclose.HoverState.Parent = Me.lnkclose
-        Me.lnkclose.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.lnkclose.ImageSize = New System.Drawing.Size(30, 30)
-        Me.lnkclose.Location = New System.Drawing.Point(862, 7)
-        Me.lnkclose.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
-        Me.lnkclose.Name = "lnkclose"
-        Me.lnkclose.ShadowDecoration.Parent = Me.lnkclose
-        Me.lnkclose.Size = New System.Drawing.Size(81, 25)
-        Me.lnkclose.TabIndex = 6
-        Me.lnkclose.Text = "CLOSE"
-        Me.lnkclose.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         '
         'lbladmission
         '
@@ -1118,61 +1098,39 @@ Partial Class frmAddStudent
         '
         'btnclose
         '
-        Me.btnclose.Animated = True
-        Me.btnclose.CheckedState.Parent = Me.btnclose
-        Me.btnclose.CustomImages.Parent = Me.btnclose
-        Me.btnclose.FillColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.btnclose.Font = New System.Drawing.Font("Segoe UI Semibold", 8.25!, System.Drawing.FontStyle.Bold)
-        Me.btnclose.ForeColor = System.Drawing.Color.White
-        Me.btnclose.HoverState.Parent = Me.btnclose
-        Me.btnclose.Image = Global.ProjectES.My.Resources.Resources.delete3
-        Me.btnclose.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.btnclose.Location = New System.Drawing.Point(853, 3)
+        Me.btnclose.Location = New System.Drawing.Point(868, 9)
         Me.btnclose.Name = "btnclose"
-        Me.btnclose.ShadowDecoration.Parent = Me.btnclose
-        Me.btnclose.Size = New System.Drawing.Size(90, 31)
-        Me.btnclose.TabIndex = 72
+        Me.btnclose.Size = New System.Drawing.Size(75, 23)
+        Me.btnclose.TabIndex = 62
         Me.btnclose.Text = "CLOSE"
-        Me.btnclose.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.btnclose.UseSelectable = True
         '
         'btnclear
         '
-        Me.btnclear.Animated = True
-        Me.btnclear.CheckedState.Parent = Me.btnclear
-        Me.btnclear.CustomImages.Parent = Me.btnclear
-        Me.btnclear.Enabled = False
-        Me.btnclear.FillColor = System.Drawing.Color.FromArgb(CType(CType(72, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(176, Byte), Integer))
-        Me.btnclear.Font = New System.Drawing.Font("Segoe UI Semibold", 8.25!, System.Drawing.FontStyle.Bold)
-        Me.btnclear.ForeColor = System.Drawing.Color.White
-        Me.btnclear.HoverState.Parent = Me.btnclear
-        Me.btnclear.Image = Global.ProjectES.My.Resources.Resources.clear
-        Me.btnclear.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.btnclear.Location = New System.Drawing.Point(128, 5)
+        Me.btnclear.Location = New System.Drawing.Point(97, 9)
         Me.btnclear.Name = "btnclear"
-        Me.btnclear.ShadowDecoration.Parent = Me.btnclear
-        Me.btnclear.Size = New System.Drawing.Size(90, 31)
-        Me.btnclear.TabIndex = 71
-        Me.btnclear.Text = "CLEAR"
-        Me.btnclear.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.btnclear.Size = New System.Drawing.Size(75, 23)
+        Me.btnclear.TabIndex = 63
+        Me.btnclear.Text = "UPDATE"
+        Me.btnclear.UseSelectable = True
         '
         'btnsave
         '
-        Me.btnsave.Animated = True
-        Me.btnsave.CheckedState.Parent = Me.btnsave
-        Me.btnsave.CustomImages.Parent = Me.btnsave
-        Me.btnsave.FillColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(59, Byte), Integer), CType(CType(72, Byte), Integer))
-        Me.btnsave.Font = New System.Drawing.Font("Segoe UI Semibold", 8.25!, System.Drawing.FontStyle.Bold)
-        Me.btnsave.ForeColor = System.Drawing.Color.White
-        Me.btnsave.HoverState.Parent = Me.btnsave
-        Me.btnsave.Image = Global.ProjectES.My.Resources.Resources._16
-        Me.btnsave.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.btnsave.Location = New System.Drawing.Point(20, 5)
+        Me.btnsave.Location = New System.Drawing.Point(16, 9)
         Me.btnsave.Name = "btnsave"
-        Me.btnsave.ShadowDecoration.Parent = Me.btnsave
-        Me.btnsave.Size = New System.Drawing.Size(90, 31)
-        Me.btnsave.TabIndex = 70
+        Me.btnsave.Size = New System.Drawing.Size(75, 23)
+        Me.btnsave.TabIndex = 64
         Me.btnsave.Text = "SAVE"
-        Me.btnsave.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.btnsave.UseSelectable = True
+        '
+        'lnkclose
+        '
+        Me.lnkclose.Location = New System.Drawing.Point(858, 7)
+        Me.lnkclose.Name = "lnkclose"
+        Me.lnkclose.Size = New System.Drawing.Size(75, 23)
+        Me.lnkclose.TabIndex = 62
+        Me.lnkclose.Text = "CLOSE"
+        Me.lnkclose.UseSelectable = True
         '
         'frmAddStudent
         '
@@ -1209,7 +1167,6 @@ Partial Class frmAddStudent
     End Sub
 
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents lnkclose As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents lbladmission As Label
     Friend WithEvents Panel2 As Panel
     Friend WithEvents cbotype As ComboBox
@@ -1297,7 +1254,8 @@ Partial Class frmAddStudent
     Friend WithEvents Label37 As Label
     Friend WithEvents txtpsattended As TextBox
     Friend WithEvents Panel3 As Panel
-    Friend WithEvents btnclose As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents btnclear As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents btnsave As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents btnclose As MetroFramework.Controls.MetroButton
+    Friend WithEvents btnclear As MetroFramework.Controls.MetroButton
+    Friend WithEvents btnsave As MetroFramework.Controls.MetroButton
+    Friend WithEvents lnkclose As MetroFramework.Controls.MetroButton
 End Class

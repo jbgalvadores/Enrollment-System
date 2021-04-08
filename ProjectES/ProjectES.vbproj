@@ -135,10 +135,16 @@
     <Compile Include="frmlogin.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmrecord.Designer.vb">
+    <Compile Include="Records\frmaddgrade.Designer.vb">
+      <DependentUpon>frmaddgrade.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Records\frmaddgrade.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Records\frmrecord.Designer.vb">
       <DependentUpon>frmrecord.vb</DependentUpon>
     </Compile>
-    <Compile Include="frmrecord.vb">
+    <Compile Include="Records\frmrecord.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Main\frmMain.vb">
@@ -217,7 +223,10 @@
     <EmbeddedResource Include="frmlogin.resx">
       <DependentUpon>frmlogin.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmrecord.resx">
+    <EmbeddedResource Include="Records\frmaddgrade.resx">
+      <DependentUpon>frmaddgrade.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Records\frmrecord.resx">
       <DependentUpon>frmrecord.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main\frmMain.resx">

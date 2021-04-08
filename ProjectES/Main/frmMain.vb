@@ -15,6 +15,20 @@ Public Class frmMain
         DoubleBufferedControl(Panel2)
     End Sub
 
+
+    Public Sub loadgraderecord()
+        opencon()
+        Try
+            cmd = New OleDbCommand("select count(*) from [Grade]", con)
+            result = cmd.ExecuteScalar
+            lbltotalsection.Text = result
+        Catch ex As Exception
+            MsgBox(ex.Message, vbCritical)
+            con.Close()
+        End Try
+    End Sub
+
+
     Public Sub countenrolled()
         opencon()
         Try
@@ -122,16 +136,14 @@ Public Class frmMain
     Public Sub closeallforms()
         For i As Integer = My.Application.OpenForms.Count - 1 To 0 Step -1
             If My.Application.OpenForms(i) IsNot Me Then
-                My.Application.OpenForms(i).Hide()
+                My.Application.OpenForms(i).Dispose()
             End If
         Next
     End Sub
 
     Private Sub btnManagement_Click(sender As Object, e As EventArgs) Handles btnManagement.Click
         For Each f As Form In My.Application.OpenForms
-            If f.Name = "frmManagement" Then
-                Exit Sub
-            End If
+            If f.Name = frmManagement.Name Then Return
         Next
         closeallforms()
         With frmManagement
@@ -162,8 +174,6 @@ Public Class frmMain
         End If
     End Sub
 
-
-
     Private Sub btnAdmission_Click(sender As Object, e As EventArgs) Handles btnAdmission.Click
         For Each f As Form In My.Application.OpenForms
             If f.Name = "frmAdmission" Then
@@ -181,6 +191,8 @@ Public Class frmMain
             .Show()
         End With
     End Sub
+
+
 
     Private Sub btnEnrollment_Click(sender As Object, e As EventArgs) Handles btnEnrollment.Click
         lblacademicyear.Select()
@@ -204,4 +216,24 @@ Public Class frmMain
             .Show()
         End With
     End Sub
+
+    Private Sub btnRecords_Click(sender As Object, e As EventArgs) Handles btnRecords.Click
+        For Each f As Form In My.Application.OpenForms
+            If f.Name = frmrecord.Name Then Return
+        Next
+        CloseForms()
+        With frmrecord
+            .Width = mainpanel.Width
+            .Height = mainpanel.Height
+            .TopLevel = False
+            mainpanel.Controls.Add(frmrecord)
+
+            .BringToFront()
+            .Show()
+        End With
+    End Sub
+
+
+
+
 End Class
