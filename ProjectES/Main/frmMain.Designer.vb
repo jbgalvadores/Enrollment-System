@@ -28,17 +28,17 @@ Partial Class frmMain
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.btnRecords = New MetroFramework.Controls.MetroButton()
+        Me.btnLogout = New System.Windows.Forms.Button()
+        Me.btnSettings = New System.Windows.Forms.Button()
+        Me.btnManagement = New System.Windows.Forms.Button()
+        Me.btnRecords = New System.Windows.Forms.Button()
+        Me.btnEnrollment = New System.Windows.Forms.Button()
+        Me.btnAdmission = New System.Windows.Forms.Button()
+        Me.btnDashboard = New System.Windows.Forms.Button()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.lbldesignation = New System.Windows.Forms.Label()
         Me.lblfullname = New System.Windows.Forms.Label()
         Me.picUser = New System.Windows.Forms.PictureBox()
-        Me.btnLogout = New MetroFramework.Controls.MetroButton()
-        Me.btnDashboard = New MetroFramework.Controls.MetroButton()
-        Me.btnEnrollment = New MetroFramework.Controls.MetroButton()
-        Me.btnManagement = New MetroFramework.Controls.MetroButton()
-        Me.btnDataEntry = New MetroFramework.Controls.MetroButton()
-        Me.btnAdmission = New MetroFramework.Controls.MetroButton()
         Me.mainpanel = New System.Windows.Forms.Panel()
         Me.sectionpanel = New System.Windows.Forms.Panel()
         Me.lbltotalsection = New System.Windows.Forms.Label()
@@ -82,7 +82,7 @@ Partial Class frmMain
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1379, 123)
+        Me.Panel1.Size = New System.Drawing.Size(1020, 123)
         Me.Panel1.TabIndex = 0
         '
         'Panel4
@@ -118,28 +118,110 @@ Partial Class frmMain
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(59, Byte), Integer), CType(CType(72, Byte), Integer))
-        Me.Panel2.Controls.Add(Me.btnRecords)
-        Me.Panel2.Controls.Add(Me.Panel3)
         Me.Panel2.Controls.Add(Me.btnLogout)
-        Me.Panel2.Controls.Add(Me.btnDashboard)
-        Me.Panel2.Controls.Add(Me.btnEnrollment)
+        Me.Panel2.Controls.Add(Me.btnSettings)
         Me.Panel2.Controls.Add(Me.btnManagement)
-        Me.Panel2.Controls.Add(Me.btnDataEntry)
+        Me.Panel2.Controls.Add(Me.btnRecords)
+        Me.Panel2.Controls.Add(Me.btnEnrollment)
         Me.Panel2.Controls.Add(Me.btnAdmission)
+        Me.Panel2.Controls.Add(Me.btnDashboard)
+        Me.Panel2.Controls.Add(Me.Panel3)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel2.Location = New System.Drawing.Point(0, 123)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(182, 669)
+        Me.Panel2.Size = New System.Drawing.Size(182, 583)
         Me.Panel2.TabIndex = 1
+        '
+        'btnLogout
+        '
+        Me.btnLogout.BackColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(59, Byte), Integer), CType(CType(72, Byte), Integer))
+        Me.btnLogout.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.btnLogout.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.btnLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnLogout.Location = New System.Drawing.Point(0, 539)
+        Me.btnLogout.Name = "btnLogout"
+        Me.btnLogout.Size = New System.Drawing.Size(182, 44)
+        Me.btnLogout.TabIndex = 16
+        Me.btnLogout.Text = "LOGOUT"
+        Me.btnLogout.UseVisualStyleBackColor = False
+        '
+        'btnSettings
+        '
+        Me.btnSettings.BackColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(59, Byte), Integer), CType(CType(72, Byte), Integer))
+        Me.btnSettings.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnSettings.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.btnSettings.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnSettings.Location = New System.Drawing.Point(0, 397)
+        Me.btnSettings.Name = "btnSettings"
+        Me.btnSettings.Size = New System.Drawing.Size(182, 44)
+        Me.btnSettings.TabIndex = 15
+        Me.btnSettings.Text = "SETTINGS"
+        Me.btnSettings.UseVisualStyleBackColor = False
+        '
+        'btnManagement
+        '
+        Me.btnManagement.BackColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(59, Byte), Integer), CType(CType(72, Byte), Integer))
+        Me.btnManagement.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnManagement.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.btnManagement.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnManagement.Location = New System.Drawing.Point(0, 353)
+        Me.btnManagement.Name = "btnManagement"
+        Me.btnManagement.Size = New System.Drawing.Size(182, 44)
+        Me.btnManagement.TabIndex = 14
+        Me.btnManagement.Text = "MANAGEMENT"
+        Me.btnManagement.UseVisualStyleBackColor = False
         '
         'btnRecords
         '
-        Me.btnRecords.Location = New System.Drawing.Point(27, 309)
+        Me.btnRecords.BackColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(59, Byte), Integer), CType(CType(72, Byte), Integer))
+        Me.btnRecords.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnRecords.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.btnRecords.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnRecords.Location = New System.Drawing.Point(0, 309)
         Me.btnRecords.Name = "btnRecords"
-        Me.btnRecords.Size = New System.Drawing.Size(119, 23)
-        Me.btnRecords.TabIndex = 9
+        Me.btnRecords.Size = New System.Drawing.Size(182, 44)
+        Me.btnRecords.TabIndex = 13
         Me.btnRecords.Text = "RECORDS"
-        Me.btnRecords.UseSelectable = True
+        Me.btnRecords.UseVisualStyleBackColor = False
+        '
+        'btnEnrollment
+        '
+        Me.btnEnrollment.BackColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(59, Byte), Integer), CType(CType(72, Byte), Integer))
+        Me.btnEnrollment.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnEnrollment.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.btnEnrollment.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnEnrollment.Location = New System.Drawing.Point(0, 265)
+        Me.btnEnrollment.Name = "btnEnrollment"
+        Me.btnEnrollment.Size = New System.Drawing.Size(182, 44)
+        Me.btnEnrollment.TabIndex = 12
+        Me.btnEnrollment.Text = "ENROLLMENT"
+        Me.btnEnrollment.UseVisualStyleBackColor = False
+        '
+        'btnAdmission
+        '
+        Me.btnAdmission.BackColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(59, Byte), Integer), CType(CType(72, Byte), Integer))
+        Me.btnAdmission.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnAdmission.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.btnAdmission.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnAdmission.Location = New System.Drawing.Point(0, 221)
+        Me.btnAdmission.Name = "btnAdmission"
+        Me.btnAdmission.Size = New System.Drawing.Size(182, 44)
+        Me.btnAdmission.TabIndex = 11
+        Me.btnAdmission.Text = "ADMISSION"
+        Me.btnAdmission.UseVisualStyleBackColor = False
+        '
+        'btnDashboard
+        '
+        Me.btnDashboard.BackColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(59, Byte), Integer), CType(CType(72, Byte), Integer))
+        Me.btnDashboard.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnDashboard.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.btnDashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnDashboard.Location = New System.Drawing.Point(0, 177)
+        Me.btnDashboard.Name = "btnDashboard"
+        Me.btnDashboard.Size = New System.Drawing.Size(182, 44)
+        Me.btnDashboard.TabIndex = 10
+        Me.btnDashboard.Text = "DASHBOARD"
+        Me.btnDashboard.UseVisualStyleBackColor = False
         '
         'Panel3
         '
@@ -182,60 +264,6 @@ Partial Class frmMain
         Me.picUser.TabIndex = 0
         Me.picUser.TabStop = False
         '
-        'btnLogout
-        '
-        Me.btnLogout.Location = New System.Drawing.Point(27, 436)
-        Me.btnLogout.Name = "btnLogout"
-        Me.btnLogout.Size = New System.Drawing.Size(119, 23)
-        Me.btnLogout.TabIndex = 9
-        Me.btnLogout.Text = "LOGOUT"
-        Me.btnLogout.UseSelectable = True
-        '
-        'btnDashboard
-        '
-        Me.btnDashboard.Location = New System.Drawing.Point(27, 192)
-        Me.btnDashboard.Name = "btnDashboard"
-        Me.btnDashboard.Size = New System.Drawing.Size(119, 23)
-        Me.btnDashboard.TabIndex = 9
-        Me.btnDashboard.Text = "DASHBOARD"
-        Me.btnDashboard.UseSelectable = True
-        '
-        'btnEnrollment
-        '
-        Me.btnEnrollment.Location = New System.Drawing.Point(27, 271)
-        Me.btnEnrollment.Name = "btnEnrollment"
-        Me.btnEnrollment.Size = New System.Drawing.Size(119, 23)
-        Me.btnEnrollment.TabIndex = 9
-        Me.btnEnrollment.Text = "ENROLLMENT"
-        Me.btnEnrollment.UseSelectable = True
-        '
-        'btnManagement
-        '
-        Me.btnManagement.Location = New System.Drawing.Point(27, 350)
-        Me.btnManagement.Name = "btnManagement"
-        Me.btnManagement.Size = New System.Drawing.Size(119, 23)
-        Me.btnManagement.TabIndex = 9
-        Me.btnManagement.Text = "MANAGEMENT"
-        Me.btnManagement.UseSelectable = True
-        '
-        'btnDataEntry
-        '
-        Me.btnDataEntry.Location = New System.Drawing.Point(27, 392)
-        Me.btnDataEntry.Name = "btnDataEntry"
-        Me.btnDataEntry.Size = New System.Drawing.Size(119, 23)
-        Me.btnDataEntry.TabIndex = 9
-        Me.btnDataEntry.Text = "SETTINGS"
-        Me.btnDataEntry.UseSelectable = True
-        '
-        'btnAdmission
-        '
-        Me.btnAdmission.Location = New System.Drawing.Point(27, 231)
-        Me.btnAdmission.Name = "btnAdmission"
-        Me.btnAdmission.Size = New System.Drawing.Size(119, 23)
-        Me.btnAdmission.TabIndex = 9
-        Me.btnAdmission.Text = "ADMISSION"
-        Me.btnAdmission.UseSelectable = True
-        '
         'mainpanel
         '
         Me.mainpanel.Controls.Add(Me.sectionpanel)
@@ -245,7 +273,7 @@ Partial Class frmMain
         Me.mainpanel.Dock = System.Windows.Forms.DockStyle.Fill
         Me.mainpanel.Location = New System.Drawing.Point(182, 123)
         Me.mainpanel.Name = "mainpanel"
-        Me.mainpanel.Size = New System.Drawing.Size(1197, 669)
+        Me.mainpanel.Size = New System.Drawing.Size(838, 583)
         Me.mainpanel.TabIndex = 2
         '
         'sectionpanel
@@ -255,7 +283,7 @@ Partial Class frmMain
         Me.sectionpanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.sectionpanel.Controls.Add(Me.lbltotalsection)
         Me.sectionpanel.Controls.Add(Me.Label5)
-        Me.sectionpanel.Location = New System.Drawing.Point(643, 341)
+        Me.sectionpanel.Location = New System.Drawing.Point(464, 298)
         Me.sectionpanel.Name = "sectionpanel"
         Me.sectionpanel.Size = New System.Drawing.Size(317, 188)
         Me.sectionpanel.TabIndex = 29
@@ -289,7 +317,7 @@ Partial Class frmMain
         Me.academicpanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.academicpanel.Controls.Add(Me.lblacademicyear)
         Me.academicpanel.Controls.Add(Me.Label4)
-        Me.academicpanel.Location = New System.Drawing.Point(265, 341)
+        Me.academicpanel.Location = New System.Drawing.Point(86, 298)
         Me.academicpanel.Name = "academicpanel"
         Me.academicpanel.Size = New System.Drawing.Size(317, 188)
         Me.academicpanel.TabIndex = 28
@@ -323,7 +351,7 @@ Partial Class frmMain
         Me.enrolledpanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.enrolledpanel.Controls.Add(Me.lbltotalenrolled)
         Me.enrolledpanel.Controls.Add(Me.Label3)
-        Me.enrolledpanel.Location = New System.Drawing.Point(643, 106)
+        Me.enrolledpanel.Location = New System.Drawing.Point(464, 63)
         Me.enrolledpanel.Name = "enrolledpanel"
         Me.enrolledpanel.Size = New System.Drawing.Size(317, 188)
         Me.enrolledpanel.TabIndex = 27
@@ -357,7 +385,7 @@ Partial Class frmMain
         Me.studentpanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.studentpanel.Controls.Add(Me.lbltotalstudents)
         Me.studentpanel.Controls.Add(Me.Label2)
-        Me.studentpanel.Location = New System.Drawing.Point(265, 106)
+        Me.studentpanel.Location = New System.Drawing.Point(86, 63)
         Me.studentpanel.Name = "studentpanel"
         Me.studentpanel.Size = New System.Drawing.Size(317, 188)
         Me.studentpanel.TabIndex = 26
@@ -393,9 +421,9 @@ Partial Class frmMain
         Me.Panel5.Controls.Add(Me.Label7)
         Me.Panel5.Controls.Add(Me.Label6)
         Me.Panel5.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel5.Location = New System.Drawing.Point(182, 764)
+        Me.Panel5.Location = New System.Drawing.Point(182, 678)
         Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(1197, 28)
+        Me.Panel5.Size = New System.Drawing.Size(838, 28)
         Me.Panel5.TabIndex = 3
         '
         'lblusername
@@ -425,7 +453,7 @@ Partial Class frmMain
         Me.lbldate.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.lbldate.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbldate.ForeColor = System.Drawing.Color.Silver
-        Me.lbldate.Location = New System.Drawing.Point(1052, 1)
+        Me.lbldate.Location = New System.Drawing.Point(693, 1)
         Me.lbldate.Name = "lbldate"
         Me.lbldate.Size = New System.Drawing.Size(0, 25)
         Me.lbldate.TabIndex = 25
@@ -437,7 +465,7 @@ Partial Class frmMain
         Me.lbltime.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.lbltime.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbltime.ForeColor = System.Drawing.Color.Silver
-        Me.lbltime.Location = New System.Drawing.Point(1148, 5)
+        Me.lbltime.Location = New System.Drawing.Point(789, 5)
         Me.lbltime.Name = "lbltime"
         Me.lbltime.Size = New System.Drawing.Size(0, 25)
         Me.lbltime.TabIndex = 24
@@ -464,7 +492,7 @@ Partial Class frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1379, 792)
+        Me.ClientSize = New System.Drawing.Size(1020, 706)
         Me.Controls.Add(Me.Panel5)
         Me.Controls.Add(Me.mainpanel)
         Me.Controls.Add(Me.Panel2)
@@ -526,11 +554,11 @@ Partial Class frmMain
     Friend WithEvents Label7 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents Timer1 As Timer
-    Friend WithEvents btnRecords As MetroFramework.Controls.MetroButton
-    Friend WithEvents btnLogout As MetroFramework.Controls.MetroButton
-    Friend WithEvents btnEnrollment As MetroFramework.Controls.MetroButton
-    Friend WithEvents btnDataEntry As MetroFramework.Controls.MetroButton
-    Friend WithEvents btnAdmission As MetroFramework.Controls.MetroButton
-    Friend WithEvents btnManagement As MetroFramework.Controls.MetroButton
-    Friend WithEvents btnDashboard As MetroFramework.Controls.MetroButton
+    Friend WithEvents btnAdmission As Button
+    Friend WithEvents btnDashboard As Button
+    Friend WithEvents btnLogout As Button
+    Friend WithEvents btnSettings As Button
+    Friend WithEvents btnManagement As Button
+    Friend WithEvents btnRecords As Button
+    Friend WithEvents btnEnrollment As Button
 End Class

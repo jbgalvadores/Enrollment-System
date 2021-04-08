@@ -54,7 +54,7 @@ Partial Class frmSubject
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(727, 34)
+        Me.Panel1.Size = New System.Drawing.Size(682, 34)
         Me.Panel1.TabIndex = 70
         '
         'lbladdsubject
@@ -80,27 +80,25 @@ Partial Class frmSubject
         Me.Panel6.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel6.Location = New System.Drawing.Point(0, 34)
         Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(727, 57)
+        Me.Panel6.Size = New System.Drawing.Size(682, 49)
         Me.Panel6.TabIndex = 74
         '
         'cbostrand
         '
-        Me.cbostrand.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.cbostrand.Cursor = System.Windows.Forms.Cursors.Hand
         Me.cbostrand.Font = New System.Drawing.Font("Segoe UI Semibold", 8.25!, System.Drawing.FontStyle.Bold)
         Me.cbostrand.FormattingEnabled = True
-        Me.cbostrand.Location = New System.Drawing.Point(576, 17)
+        Me.cbostrand.Location = New System.Drawing.Point(527, 13)
         Me.cbostrand.Name = "cbostrand"
         Me.cbostrand.Size = New System.Drawing.Size(131, 21)
         Me.cbostrand.TabIndex = 6
         '
         'Label3
         '
-        Me.Label3.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Segoe UI Semibold", 8.25!, System.Drawing.FontStyle.Bold)
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(516, 23)
+        Me.Label3.Location = New System.Drawing.Point(467, 19)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(43, 13)
         Me.Label3.TabIndex = 5
@@ -108,23 +106,21 @@ Partial Class frmSubject
         '
         'cbogradelevel
         '
-        Me.cbogradelevel.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.cbogradelevel.Cursor = System.Windows.Forms.Cursors.Hand
         Me.cbogradelevel.Font = New System.Drawing.Font("Segoe UI Semibold", 8.25!, System.Drawing.FontStyle.Bold)
         Me.cbogradelevel.FormattingEnabled = True
         Me.cbogradelevel.Items.AddRange(New Object() {"GRADE 7", "GRADE 8", "GRADE 9", "GRADE 10", "GRADE 11", "GRADE 12"})
-        Me.cbogradelevel.Location = New System.Drawing.Point(379, 17)
+        Me.cbogradelevel.Location = New System.Drawing.Point(330, 13)
         Me.cbogradelevel.Name = "cbogradelevel"
         Me.cbogradelevel.Size = New System.Drawing.Size(131, 21)
         Me.cbogradelevel.TabIndex = 4
         '
         'Label2
         '
-        Me.Label2.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Segoe UI Semibold", 8.25!, System.Drawing.FontStyle.Bold)
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(280, 23)
+        Me.Label2.Location = New System.Drawing.Point(231, 19)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(70, 13)
         Me.Label2.TabIndex = 3
@@ -132,23 +128,21 @@ Partial Class frmSubject
         '
         'cbosy
         '
-        Me.cbosy.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.cbosy.Cursor = System.Windows.Forms.Cursors.Hand
         Me.cbosy.Enabled = False
         Me.cbosy.Font = New System.Drawing.Font("Segoe UI Semibold", 8.25!, System.Drawing.FontStyle.Bold)
         Me.cbosy.FormattingEnabled = True
-        Me.cbosy.Location = New System.Drawing.Point(81, 17)
+        Me.cbosy.Location = New System.Drawing.Point(81, 13)
         Me.cbosy.Name = "cbosy"
-        Me.cbosy.Size = New System.Drawing.Size(188, 21)
+        Me.cbosy.Size = New System.Drawing.Size(132, 21)
         Me.cbosy.TabIndex = 2
         '
         'Label1
         '
-        Me.Label1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI Semibold", 8.25!, System.Drawing.FontStyle.Bold)
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(9, 23)
+        Me.Label1.Location = New System.Drawing.Point(9, 19)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(52, 13)
         Me.Label1.TabIndex = 1
@@ -156,22 +150,20 @@ Partial Class frmSubject
         '
         'cbotype
         '
-        Me.cbotype.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.cbotype.Cursor = System.Windows.Forms.Cursors.Hand
         Me.cbotype.Font = New System.Drawing.Font("Segoe UI Semibold", 8.25!, System.Drawing.FontStyle.Bold)
         Me.cbotype.FormattingEnabled = True
         Me.cbotype.Items.AddRange(New Object() {"CORE", "APPLIED", "SPECIALIZED"})
-        Me.cbotype.Location = New System.Drawing.Point(234, 241)
+        Me.cbotype.Location = New System.Drawing.Point(210, 208)
         Me.cbotype.Name = "cbotype"
         Me.cbotype.Size = New System.Drawing.Size(325, 21)
         Me.cbotype.TabIndex = 82
         '
         'Label5
         '
-        Me.Label5.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Segoe UI Semibold", 8.25!, System.Drawing.FontStyle.Bold)
-        Me.Label5.Location = New System.Drawing.Point(139, 241)
+        Me.Label5.Location = New System.Drawing.Point(115, 208)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(31, 13)
         Me.Label5.TabIndex = 81
@@ -179,10 +171,9 @@ Partial Class frmSubject
         '
         'Label9
         '
-        Me.Label9.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Segoe UI Semibold", 8.25!, System.Drawing.FontStyle.Bold)
-        Me.Label9.Location = New System.Drawing.Point(139, 196)
+        Me.Label9.Location = New System.Drawing.Point(115, 171)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(73, 13)
         Me.Label9.TabIndex = 80
@@ -190,20 +181,18 @@ Partial Class frmSubject
         '
         'txtunits
         '
-        Me.txtunits.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.txtunits.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtunits.Font = New System.Drawing.Font("Segoe UI Semibold", 8.25!, System.Drawing.FontStyle.Bold)
-        Me.txtunits.Location = New System.Drawing.Point(234, 196)
+        Me.txtunits.Location = New System.Drawing.Point(210, 171)
         Me.txtunits.Name = "txtunits"
         Me.txtunits.Size = New System.Drawing.Size(325, 22)
         Me.txtunits.TabIndex = 79
         '
         'Label6
         '
-        Me.Label6.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Segoe UI Semibold", 8.25!, System.Drawing.FontStyle.Bold)
-        Me.Label6.Location = New System.Drawing.Point(139, 152)
+        Me.Label6.Location = New System.Drawing.Point(115, 136)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(89, 13)
         Me.Label6.TabIndex = 78
@@ -211,20 +200,18 @@ Partial Class frmSubject
         '
         'txttitle
         '
-        Me.txttitle.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.txttitle.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txttitle.Font = New System.Drawing.Font("Segoe UI Semibold", 8.25!, System.Drawing.FontStyle.Bold)
-        Me.txttitle.Location = New System.Drawing.Point(234, 152)
+        Me.txttitle.Location = New System.Drawing.Point(210, 136)
         Me.txttitle.Name = "txttitle"
         Me.txttitle.Size = New System.Drawing.Size(325, 22)
         Me.txttitle.TabIndex = 77
         '
         'lbllname
         '
-        Me.lbllname.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.lbllname.AutoSize = True
         Me.lbllname.Font = New System.Drawing.Font("Segoe UI Semibold", 8.25!, System.Drawing.FontStyle.Bold)
-        Me.lbllname.Location = New System.Drawing.Point(139, 110)
+        Me.lbllname.Location = New System.Drawing.Point(115, 101)
         Me.lbllname.Name = "lbllname"
         Me.lbllname.Size = New System.Drawing.Size(74, 13)
         Me.lbllname.TabIndex = 76
@@ -232,17 +219,16 @@ Partial Class frmSubject
         '
         'txtcode
         '
-        Me.txtcode.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.txtcode.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtcode.Font = New System.Drawing.Font("Segoe UI Semibold", 8.25!, System.Drawing.FontStyle.Bold)
-        Me.txtcode.Location = New System.Drawing.Point(234, 110)
+        Me.txtcode.Location = New System.Drawing.Point(210, 101)
         Me.txtcode.Name = "txtcode"
         Me.txtcode.Size = New System.Drawing.Size(325, 22)
         Me.txtcode.TabIndex = 75
         '
         'btnclose
         '
-        Me.btnclose.Location = New System.Drawing.Point(640, 306)
+        Me.btnclose.Location = New System.Drawing.Point(368, 252)
         Me.btnclose.Name = "btnclose"
         Me.btnclose.Size = New System.Drawing.Size(75, 23)
         Me.btnclose.TabIndex = 83
@@ -251,7 +237,7 @@ Partial Class frmSubject
         '
         'btnupdate
         '
-        Me.btnupdate.Location = New System.Drawing.Point(109, 306)
+        Me.btnupdate.Location = New System.Drawing.Point(287, 252)
         Me.btnupdate.Name = "btnupdate"
         Me.btnupdate.Size = New System.Drawing.Size(75, 23)
         Me.btnupdate.TabIndex = 84
@@ -260,7 +246,7 @@ Partial Class frmSubject
         '
         'btnsave
         '
-        Me.btnsave.Location = New System.Drawing.Point(28, 306)
+        Me.btnsave.Location = New System.Drawing.Point(206, 252)
         Me.btnsave.Name = "btnsave"
         Me.btnsave.Size = New System.Drawing.Size(75, 23)
         Me.btnsave.TabIndex = 85
@@ -271,7 +257,7 @@ Partial Class frmSubject
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(727, 355)
+        Me.ClientSize = New System.Drawing.Size(682, 298)
         Me.Controls.Add(Me.btnclose)
         Me.Controls.Add(Me.btnupdate)
         Me.Controls.Add(Me.btnsave)

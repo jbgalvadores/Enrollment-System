@@ -116,8 +116,6 @@ Partial Class frmTeacher
         '
         'Label5
         '
-        Me.Label5.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Segoe UI Semibold", 8.25!, System.Drawing.FontStyle.Bold)
         Me.Label5.Location = New System.Drawing.Point(17, 220)
@@ -128,8 +126,6 @@ Partial Class frmTeacher
         '
         'Label1
         '
-        Me.Label1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI Semibold", 8.25!, System.Drawing.FontStyle.Bold)
         Me.Label1.Location = New System.Drawing.Point(17, 187)
@@ -140,10 +136,9 @@ Partial Class frmTeacher
         '
         'Label8
         '
-        Me.Label8.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Segoe UI Semibold", 8.25!, System.Drawing.FontStyle.Bold)
-        Me.Label8.Location = New System.Drawing.Point(555, 73)
+        Me.Label8.Location = New System.Drawing.Point(561, 55)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(39, 13)
         Me.Label8.TabIndex = 85
@@ -151,8 +146,6 @@ Partial Class frmTeacher
         '
         'Label4
         '
-        Me.Label4.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Segoe UI Semibold", 8.25!, System.Drawing.FontStyle.Bold)
         Me.Label4.Location = New System.Drawing.Point(17, 154)
@@ -163,8 +156,6 @@ Partial Class frmTeacher
         '
         'Label3
         '
-        Me.Label3.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Segoe UI Semibold", 8.25!, System.Drawing.FontStyle.Bold)
         Me.Label3.Location = New System.Drawing.Point(17, 121)
@@ -175,8 +166,6 @@ Partial Class frmTeacher
         '
         'Label2
         '
-        Me.Label2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Segoe UI Semibold", 8.25!, System.Drawing.FontStyle.Bold)
         Me.Label2.Location = New System.Drawing.Point(17, 88)
@@ -187,8 +176,6 @@ Partial Class frmTeacher
         '
         'lblid
         '
-        Me.lblid.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.lblid.AutoSize = True
         Me.lblid.Font = New System.Drawing.Font("Segoe UI Semibold", 8.25!, System.Drawing.FontStyle.Bold)
         Me.lblid.Location = New System.Drawing.Point(17, 55)
@@ -208,14 +195,13 @@ Partial Class frmTeacher
         '
         'btnbrowse
         '
-        Me.btnbrowse.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.btnbrowse.BackColor = System.Drawing.Color.SeaGreen
         Me.btnbrowse.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnbrowse.FlatAppearance.BorderSize = 0
         Me.btnbrowse.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnbrowse.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnbrowse.ForeColor = System.Drawing.Color.White
-        Me.btnbrowse.Location = New System.Drawing.Point(527, 191)
+        Me.btnbrowse.Location = New System.Drawing.Point(533, 173)
         Me.btnbrowse.Name = "btnbrowse"
         Me.btnbrowse.Size = New System.Drawing.Size(97, 28)
         Me.btnbrowse.TabIndex = 84
@@ -225,9 +211,8 @@ Partial Class frmTeacher
         '
         'picTeacher
         '
-        Me.picTeacher.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.picTeacher.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.picTeacher.Location = New System.Drawing.Point(527, 99)
+        Me.picTeacher.Location = New System.Drawing.Point(533, 81)
         Me.picTeacher.Name = "picTeacher"
         Me.picTeacher.Size = New System.Drawing.Size(97, 86)
         Me.picTeacher.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -240,7 +225,7 @@ Partial Class frmTeacher
         '
         'btnclose
         '
-        Me.btnclose.Location = New System.Drawing.Point(359, 260)
+        Me.btnclose.Location = New System.Drawing.Point(379, 258)
         Me.btnclose.Name = "btnclose"
         Me.btnclose.Size = New System.Drawing.Size(75, 23)
         Me.btnclose.TabIndex = 94
@@ -249,7 +234,7 @@ Partial Class frmTeacher
         '
         'btnupdate
         '
-        Me.btnupdate.Location = New System.Drawing.Point(278, 260)
+        Me.btnupdate.Location = New System.Drawing.Point(298, 258)
         Me.btnupdate.Name = "btnupdate"
         Me.btnupdate.Size = New System.Drawing.Size(75, 23)
         Me.btnupdate.TabIndex = 95
@@ -258,7 +243,7 @@ Partial Class frmTeacher
         '
         'btnsave
         '
-        Me.btnsave.Location = New System.Drawing.Point(197, 260)
+        Me.btnsave.Location = New System.Drawing.Point(217, 258)
         Me.btnsave.Name = "btnsave"
         Me.btnsave.Size = New System.Drawing.Size(75, 23)
         Me.btnsave.TabIndex = 96
@@ -269,7 +254,7 @@ Partial Class frmTeacher
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(658, 305)
+        Me.ClientSize = New System.Drawing.Size(658, 300)
         Me.Controls.Add(Me.btnclose)
         Me.Controls.Add(Me.btnupdate)
         Me.Controls.Add(Me.btnsave)

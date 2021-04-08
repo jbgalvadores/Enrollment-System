@@ -103,9 +103,10 @@ Public Class frmenrolling
 
         Try
             opencon()
-            cmd = New OleDbCommand("select * from Status_Enrollment where student_id=@student_id", con)
+            cmd = New OleDbCommand("select * from Status_Enrollment where student_id=@student_id or fullname=@fullname", con)
             With cmd
                 .Parameters.AddWithValue("student_id", txtsid.Text)
+                .Parameters.AddWithValue("fullname", txtsid.Text)
                 dr = .ExecuteReader
             End With
             dr.Read()
@@ -175,7 +176,7 @@ Public Class frmenrolling
     End Sub
 
     Private Sub btncancel_Click(sender As Object, e As EventArgs) Handles btncancel.Click
-        clear()
+        Me.Close()
     End Sub
 
     Private Sub btnsave_Click(sender As Object, e As EventArgs) Handles btnsave.Click

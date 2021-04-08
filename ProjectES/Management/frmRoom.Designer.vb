@@ -157,7 +157,7 @@ Partial Class frmRoom
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(463, 264)
+        Me.ClientSize = New System.Drawing.Size(463, 227)
         Me.Controls.Add(Me.btnclose)
         Me.Controls.Add(Me.btnupdate)
         Me.Controls.Add(Me.btnsave)

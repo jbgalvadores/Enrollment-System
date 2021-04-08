@@ -23,8 +23,7 @@ Public Class frmrecord
                 .FormBorderStyle = FormBorderStyle.None
                 .Show()
                 frmaddgrade.Owner = f
-                frmaddgrade.Owner = f
-                .ShowDialog()
+                frmaddgrade.ShowDialog()
             End With
         Catch ex As Exception
         Finally
@@ -80,5 +79,17 @@ Public Class frmrecord
         con.Close()
         dr.Close()
         clear()
+    End Sub
+
+    Private Sub btnprint_Click(sender As Object, e As EventArgs) Handles btnprint.Click
+
+    End Sub
+
+    Private Sub btnsave_Click(sender As Object, e As EventArgs) Handles btnsave.Click
+
+    End Sub
+
+    Private Sub btncancel_Click(sender As Object, e As EventArgs) Handles btncancel.Click
+
     End Sub
 End Class

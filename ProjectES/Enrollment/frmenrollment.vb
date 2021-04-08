@@ -116,4 +116,72 @@ Public Class frmenrollment
         End Try
     End Sub
 
+
+    Private Sub datagridview1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles datagridview1.CellContentClick
+        Dim colname As String = datagridview1.Columns(e.ColumnIndex).Name
+        Try
+            If colname = "coldelete" Then
+                If MsgBox("Do you want to delete this student?", vbQuestion + vbYesNo) = vbYes Then
+                    opencon()
+                    cmd = New OleDbCommand("delete from Status_Enrollment where aid=@aid ", con)
+                    With cmd
+                        .Parameters.AddWithValue("@aid", datagridview1.Rows(e.RowIndex).Cells(1).Value)
+                        .ExecuteNonQuery()
+                    End With
+                    con.Close()
+                    con.Open()
+                    cmd = New OleDbCommand("delete from StudentInfo where aid=@aid ", con)
+                    With cmd
+                        .Parameters.AddWithValue("@aid", datagridview1.Rows(e.RowIndex).Cells(1).Value)
+                        .ExecuteNonQuery()
+                    End With
+                    con.Close()
+                    con.Open()
+                    cmd = New OleDbCommand("delete from Requirements where aid=@aid ", con)
+                    With cmd
+                        .Parameters.AddWithValue("@aid", datagridview1.Rows(e.RowIndex).Cells(1).Value)
+                        .ExecuteNonQuery()
+                    End With
+                    con.Close()
+
+                    MsgBox("Student has been successfully deleted", vbInformation)
+                    con.Close()
+                    loadstatus()
+                    frmMain.countenrolled()
+                    frmMain.countstudent()
+                    con.Close()
+                End If
+            ElseIf colname = "colupdate" Then
+                opencon()
+                cmd = New OleDbCommand("select aycode from aycode where Status='Active'", con)
+                dr = cmd.ExecuteReader
+                dr.Read()
+                Dim aycode As String = String.Empty
+                If dr.HasRows Then
+                    aycode = dr.Item("aycode").ToString
+                End If
+                con.Close()
+                dr.Close()
+                If MsgBox("Do you want to update this student to " & aycode, vbQuestion + vbYesNo) = vbYes Then
+                    con.Open()
+                    cmd = New OleDbCommand("update Status_Enrollment set aycode=@aycode where student_id=@student_id", con)
+                    With cmd
+                        .Parameters.AddWithValue("@aycode", aycode)
+                        .Parameters.AddWithValue("@student_id", datagridview1.Rows(e.RowIndex).Cells(0).Value)
+                        .ExecuteNonQuery()
+                    End With
+                    MsgBox("Student " & datagridview1.Rows(e.RowIndex).Cells(0).Value & " has been updated to " & aycode, vbInformation)
+                    loadstatus()
+                    con.Close()
+                End If
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message, vbCritical)
+            con.Close()
+        End Try
+        dr.Close()
+        con.Close()
+    End Sub
+
+
 End Class

@@ -287,6 +287,7 @@ Partial Class frmenrollment
         '
         Me.colupdate.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.colupdate.HeaderText = ""
+        Me.colupdate.Image = Global.ProjectES.My.Resources.Resources.update_24
         Me.colupdate.Name = "colupdate"
         Me.colupdate.ReadOnly = True
         Me.colupdate.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
@@ -296,12 +297,10 @@ Partial Class frmenrollment
         '
         Me.coldelete.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.coldelete.HeaderText = ""
+        Me.coldelete.Image = Global.ProjectES.My.Resources.Resources.coldelete
         Me.coldelete.Name = "coldelete"
         Me.coldelete.ReadOnly = True
         Me.coldelete.Width = 5
-        '
-        'linkAdmClose
-        '
         '
         'frmenrollment
         '

@@ -227,7 +227,7 @@ Public Class frmManagement
         End Try
     End Sub
 
-    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs)
+    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
         Dim colname As String = DataGridView1.Columns(e.ColumnIndex).Name
 
         If colname = "coleditstrand" Then
@@ -303,7 +303,7 @@ Public Class frmManagement
         End If
     End Sub
 
-    Private Sub datagridview2_CellContentClick(sender As Object, e As DataGridViewCellEventArgs)
+    Private Sub datagridview2_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles datagridview2.CellContentClick
         'lblmanagement.Select()
         Dim colname As String = datagridview2.Columns(e.ColumnIndex).Name
         If colname = "coleditsection" Then
@@ -351,10 +351,26 @@ Public Class frmManagement
     End Sub
 
     Private Sub btnaddroom_Click(sender As Object, e As EventArgs) Handles btnaddroom.Click
-
+        Dim f As New Form
+        Try
+            With f
+                .WindowState = FormWindowState.Maximized
+                .StartPosition = FormStartPosition.Manual
+                .BackColor = Color.Black
+                .Opacity = 0.5
+                .ShowInTaskbar = False
+                .FormBorderStyle = FormBorderStyle.None
+                .Show()
+                frmRoom.Owner = f
+                frmRoom.ShowDialog()
+            End With
+        Catch ex As Exception
+        Finally
+            f.Dispose()
+        End Try
     End Sub
 
-    Private Sub DataGridView3_CellContentClick(sender As Object, e As DataGridViewCellEventArgs)
+    Private Sub DataGridView3_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView3.CellContentClick
         Dim colname As String = DataGridView3.Columns(e.ColumnIndex).Name
 
         Try
@@ -525,7 +541,7 @@ Public Class frmManagement
 
     End Sub
 
-    Private Sub DataGridView5_CellContentClick(sender As Object, e As DataGridViewCellEventArgs)
+    Private Sub DataGridView5_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView5.CellContentClick
         lblmanagement.Select()
         opencon()
         Dim colname As String = DataGridView5.Columns(e.ColumnIndex).Name
@@ -757,29 +773,52 @@ Public Class frmManagement
         con.Close()
     End Sub
 
-    Private Sub btncancel_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub btnupdate_Click(sender As Object, e As EventArgs)
-
-    End Sub
 
     Private Sub chkm_Click(sender As Object, e As EventArgs)
         lblmanagement.Select()
     End Sub
 
-    Private Sub cboaycode_SelectedIndexChanged(sender As Object, e As EventArgs)
 
-    End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         lblmanagement.Select()
-        frmSubject.ShowDialog()
+        Dim f As New Form
+        Try
+            With f
+                .WindowState = FormWindowState.Maximized
+                .StartPosition = FormStartPosition.Manual
+                .BackColor = Color.Black
+                .Opacity = 0.5
+                .ShowInTaskbar = False
+                .FormBorderStyle = FormBorderStyle.None
+                .Show()
+                frmSubject.Owner = f
+                frmSubject.ShowDialog()
+            End With
+        Catch ex As Exception
+        Finally
+            f.Dispose()
+        End Try
     End Sub
 
     Private Sub btnaddsection_Click(sender As Object, e As EventArgs) Handles btnaddsection.Click
-
+        Dim f As New Form
+        Try
+            With f
+                .WindowState = FormWindowState.Maximized
+                .StartPosition = FormStartPosition.Manual
+                .BackColor = Color.Black
+                .Opacity = 0.5
+                .ShowInTaskbar = False
+                .FormBorderStyle = FormBorderStyle.None
+                .Show()
+                frmAddSection.Owner = f
+                frmAddSection.ShowDialog()
+            End With
+        Catch ex As Exception
+        Finally
+            f.Dispose()
+        End Try
     End Sub
 
     Private Sub linkAdmClose_Click(sender As Object, e As EventArgs) Handles linkAdmClose.Click
