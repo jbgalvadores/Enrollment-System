@@ -64,7 +64,6 @@ Partial Class frmenrolling
         Me.btnprint = New System.Windows.Forms.Button()
         Me.btnsave = New System.Windows.Forms.Button()
         Me.btncancel = New System.Windows.Forms.Button()
-        Me.linkAdmClose = New Guna.UI2.WinForms.Guna2Button()
         Me.Panel1.SuspendLayout()
         Me.Panel3.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -76,7 +75,6 @@ Partial Class frmenrolling
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(178, Byte), Integer), CType(CType(190, Byte), Integer), CType(CType(195, Byte), Integer))
-        Me.Panel1.Controls.Add(Me.linkAdmClose)
         Me.Panel1.Controls.Add(Me.lblenrollment)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
@@ -568,23 +566,6 @@ Partial Class frmenrolling
         '
         'linkAdmClose
         '
-        Me.linkAdmClose.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.linkAdmClose.CheckedState.Parent = Me.linkAdmClose
-        Me.linkAdmClose.CustomImages.Parent = Me.linkAdmClose
-        Me.linkAdmClose.FillColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.linkAdmClose.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.linkAdmClose.ForeColor = System.Drawing.Color.White
-        Me.linkAdmClose.HoverState.Parent = Me.linkAdmClose
-        Me.linkAdmClose.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.linkAdmClose.ImageSize = New System.Drawing.Size(30, 30)
-        Me.linkAdmClose.Location = New System.Drawing.Point(907, 7)
-        Me.linkAdmClose.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.linkAdmClose.Name = "linkAdmClose"
-        Me.linkAdmClose.ShadowDecoration.Parent = Me.linkAdmClose
-        Me.linkAdmClose.Size = New System.Drawing.Size(74, 26)
-        Me.linkAdmClose.TabIndex = 8
-        Me.linkAdmClose.Text = "CLOSE"
-        Me.linkAdmClose.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         '
         'frmenrolling
         '
@@ -654,5 +635,5 @@ Partial Class frmenrolling
     Friend WithEvents btnprint As Button
     Friend WithEvents btnsave As Button
     Friend WithEvents btncancel As Button
-    Friend WithEvents linkAdmClose As Guna.UI2.WinForms.Guna2Button
+
 End Class
