@@ -33,12 +33,13 @@ Partial Class frmaddgrade
         Me.textsubgrade = New System.Windows.Forms.TextBox()
         Me.btncanel = New MetroFramework.Controls.MetroButton()
         Me.btnadd = New MetroFramework.Controls.MetroButton()
-        Me.btnsearch = New MetroFramework.Controls.MetroButton()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.textsubcodedesc = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.txtgradelevel = New System.Windows.Forms.TextBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.txtunits = New System.Windows.Forms.TextBox()
         Me.Panel1.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
@@ -126,7 +127,7 @@ Partial Class frmaddgrade
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Segoe UI", 9.75!)
         Me.Label3.ForeColor = System.Drawing.Color.Black
-        Me.Label3.Location = New System.Drawing.Point(25, 284)
+        Me.Label3.Location = New System.Drawing.Point(18, 304)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(49, 17)
         Me.Label3.TabIndex = 7
@@ -136,14 +137,14 @@ Partial Class frmaddgrade
         '
         Me.textsubgrade.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.textsubgrade.Font = New System.Drawing.Font("Segoe UI", 9.75!)
-        Me.textsubgrade.Location = New System.Drawing.Point(80, 281)
+        Me.textsubgrade.Location = New System.Drawing.Point(73, 301)
         Me.textsubgrade.Name = "textsubgrade"
         Me.textsubgrade.Size = New System.Drawing.Size(158, 25)
-        Me.textsubgrade.TabIndex = 9
+        Me.textsubgrade.TabIndex = 1
         '
         'btncanel
         '
-        Me.btncanel.Location = New System.Drawing.Point(526, 284)
+        Me.btncanel.Location = New System.Drawing.Point(519, 304)
         Me.btncanel.Name = "btncanel"
         Me.btncanel.Size = New System.Drawing.Size(75, 23)
         Me.btncanel.TabIndex = 62
@@ -152,21 +153,12 @@ Partial Class frmaddgrade
         '
         'btnadd
         '
-        Me.btnadd.Location = New System.Drawing.Point(445, 284)
+        Me.btnadd.Location = New System.Drawing.Point(438, 304)
         Me.btnadd.Name = "btnadd"
         Me.btnadd.Size = New System.Drawing.Size(75, 23)
         Me.btnadd.TabIndex = 63
         Me.btnadd.Text = "ADD"
         Me.btnadd.UseSelectable = True
-        '
-        'btnsearch
-        '
-        Me.btnsearch.Location = New System.Drawing.Point(192, 82)
-        Me.btnsearch.Name = "btnsearch"
-        Me.btnsearch.Size = New System.Drawing.Size(75, 23)
-        Me.btnsearch.TabIndex = 64
-        Me.btnsearch.Text = "SEARCH"
-        Me.btnsearch.UseSelectable = True
         '
         'Label4
         '
@@ -187,7 +179,7 @@ Partial Class frmaddgrade
         Me.textsubcodedesc.Location = New System.Drawing.Point(192, 51)
         Me.textsubcodedesc.Name = "textsubcodedesc"
         Me.textsubcodedesc.Size = New System.Drawing.Size(360, 25)
-        Me.textsubcodedesc.TabIndex = 9
+        Me.textsubcodedesc.TabIndex = 0
         '
         'Label5
         '
@@ -195,7 +187,7 @@ Partial Class frmaddgrade
         Me.Label5.BackColor = System.Drawing.Color.Transparent
         Me.Label5.Font = New System.Drawing.Font("Segoe UI", 9.75!)
         Me.Label5.ForeColor = System.Drawing.Color.Black
-        Me.Label5.Location = New System.Drawing.Point(15, 111)
+        Me.Label5.Location = New System.Drawing.Point(15, 141)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(87, 17)
         Me.Label5.TabIndex = 8
@@ -206,13 +198,15 @@ Partial Class frmaddgrade
         Me.txtgradelevel.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtgradelevel.Enabled = False
         Me.txtgradelevel.Font = New System.Drawing.Font("Segoe UI", 9.75!)
-        Me.txtgradelevel.Location = New System.Drawing.Point(117, 108)
+        Me.txtgradelevel.Location = New System.Drawing.Point(117, 138)
         Me.txtgradelevel.Name = "txtgradelevel"
         Me.txtgradelevel.Size = New System.Drawing.Size(431, 25)
         Me.txtgradelevel.TabIndex = 10
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.Label6)
+        Me.GroupBox1.Controls.Add(Me.txtunits)
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Label5)
@@ -220,22 +214,43 @@ Partial Class frmaddgrade
         Me.GroupBox1.Controls.Add(Me.txtsubdesc)
         Me.GroupBox1.Controls.Add(Me.txtgradelevel)
         Me.GroupBox1.Font = New System.Drawing.Font("Arial Narrow", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox1.Location = New System.Drawing.Point(22, 108)
+        Me.GroupBox1.Location = New System.Drawing.Point(18, 91)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(579, 158)
+        Me.GroupBox1.Size = New System.Drawing.Size(579, 195)
         Me.GroupBox1.TabIndex = 65
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "RESULT"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.BackColor = System.Drawing.Color.Transparent
+        Me.Label6.Font = New System.Drawing.Font("Segoe UI", 9.75!)
+        Me.Label6.ForeColor = System.Drawing.Color.Black
+        Me.Label6.Location = New System.Drawing.Point(15, 102)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(44, 17)
+        Me.Label6.TabIndex = 11
+        Me.Label6.Text = "UNITS"
+        '
+        'txtunits
+        '
+        Me.txtunits.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.txtunits.Enabled = False
+        Me.txtunits.Font = New System.Drawing.Font("Segoe UI", 9.75!)
+        Me.txtunits.Location = New System.Drawing.Point(117, 99)
+        Me.txtunits.Name = "txtunits"
+        Me.txtunits.Size = New System.Drawing.Size(431, 25)
+        Me.txtunits.TabIndex = 12
         '
         'frmaddgrade
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(626, 326)
+        Me.ClientSize = New System.Drawing.Size(626, 345)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.btncanel)
         Me.Controls.Add(Me.btnadd)
-        Me.Controls.Add(Me.btnsearch)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.textsubgrade)
         Me.Controls.Add(Me.textsubcodedesc)
@@ -265,10 +280,11 @@ Partial Class frmaddgrade
     Friend WithEvents linkAdmClose As MetroFramework.Controls.MetroButton
     Friend WithEvents btncanel As MetroFramework.Controls.MetroButton
     Friend WithEvents btnadd As MetroFramework.Controls.MetroButton
-    Friend WithEvents btnsearch As MetroFramework.Controls.MetroButton
     Friend WithEvents Label4 As Label
     Friend WithEvents textsubcodedesc As TextBox
     Friend WithEvents Label5 As Label
     Friend WithEvents txtgradelevel As TextBox
     Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents Label6 As Label
+    Friend WithEvents txtunits As TextBox
 End Class

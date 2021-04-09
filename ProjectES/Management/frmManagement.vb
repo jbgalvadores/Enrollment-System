@@ -304,7 +304,7 @@ Public Class frmManagement
     End Sub
 
     Private Sub datagridview2_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles datagridview2.CellContentClick
-        'lblmanagement.Select()
+        lblmanagement.Select()
         Dim colname As String = datagridview2.Columns(e.ColumnIndex).Name
         If colname = "coleditsection" Then
             With frmAddSection

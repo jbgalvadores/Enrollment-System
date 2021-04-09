@@ -16,17 +16,6 @@ Public Class frmMain
     End Sub
 
 
-    Public Sub loadgraderecord()
-        opencon()
-        Try
-            cmd = New OleDbCommand("select count(*) from [Grade]", con)
-            result = cmd.ExecuteScalar
-            lbltotalsection.Text = result
-        Catch ex As Exception
-            MsgBox(ex.Message, vbCritical)
-            con.Close()
-        End Try
-    End Sub
 
 
     Public Sub countenrolled()

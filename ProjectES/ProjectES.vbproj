@@ -342,6 +342,7 @@
     <None Include="Resources\management51.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\archive21.png" />
     <Content Include="SqlServerTypes\Loader.cs" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">

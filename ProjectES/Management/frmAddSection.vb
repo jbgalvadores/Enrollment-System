@@ -227,10 +227,10 @@ Public Class frmAddSection
 
 
                 MsgBox("Grade and section has been updated", vbInformation)
-                'frmManagement.loadsection()
-                'frmManagement.room_adviser_id_adviser_name()
-                'frmManagement.loadroom()
-                'frmManagement.loadschedule()
+                frmManagement.loadsection()
+                frmManagement.room_adviser_id_adviser_name()
+                frmManagement.loadroom()
+                frmManagement.loadschedule()
                 con.Close()
                 Me.Dispose()
             End If

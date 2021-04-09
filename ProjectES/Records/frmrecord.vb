@@ -2,13 +2,29 @@
 Public Class frmrecord
 
     Sub clear()
-        If txtlrn.Text = "" Then
+        If txtsearchlrnname.Text = "" Then
             txtfullname.Clear()
             txtaycode.Clear()
             txtgradelevel.Clear()
             cbostrand.Text = ""
             cbosection.Text = ""
         End If
+    End Sub
+
+    Public Sub loadgraderecord()
+        GradesDataGridView.Rows.Clear()
+        opencon()
+        cmd = New OleDbCommand("select * from Grade", con)
+        dr = cmd.ExecuteReader
+        While dr.Read
+            GradesDataGridView.Rows.Add(dr.Item("subject_code").ToString, dr.Item("subject_description").ToString, dr.Item("units").ToString, dr.Item("grade").ToString)
+        End While
+        For i = 0 To GradesDataGridView.Rows.Count - 1
+            GradesDataGridView.Rows(i).Height = 30
+        Next
+        GradesDataGridView.ClearSelection()
+        con.Close()
+        dr.Close()
     End Sub
 
     Private Sub btnaddgrade_Click(sender As Object, e As EventArgs) Handles btnaddgrade.Click
@@ -31,17 +47,20 @@ Public Class frmrecord
         End Try
     End Sub
 
-    Private Sub btnsearchs_Click(sender As Object, e As EventArgs) Handles btnsearchs.Click, linkAdmClose.Click
+
+
+    Private Sub txtlrn_TextChanged(sender As Object, e As EventArgs) Handles txtsearchlrnname.TextChanged, txtlrn.TextChanged
         opencon()
         Try
             cmd = New OleDbCommand("select * from Status_Enrollment where lrn=@lrn or fullname=@fullname", con)
             With cmd
-                .Parameters.AddWithValue("@lrn", txtlrn.Text)
-                .Parameters.AddWithValue("@fullname", txtlrn.Text)
+                .Parameters.AddWithValue("@lrn", txtsearchlrnname.Text)
+                .Parameters.AddWithValue("@fullname", txtsearchlrnname.Text)
                 dr = .ExecuteReader
             End With
             dr.Read()
             If dr.HasRows Then
+                txtlrn.Text = dr.Item("lrn").ToString
                 txtfullname.Text = dr.Item("fullname").ToString
                 txtaycode.Text = dr.Item("aycode").ToString
                 txtgradelevel.Text = dr.Item("grade_level").ToString
@@ -49,47 +68,11 @@ Public Class frmrecord
                 cbosection.Text = dr.Item("Section").ToString
             End If
         Catch ex As Exception
-            MsgBox(ex.Message, vbCritical)
+
         End Try
         con.Close()
         dr.Close()
         clear()
     End Sub
 
-    Private Sub txtlrn_TextChanged(sender As Object, e As EventArgs) Handles txtlrn.TextChanged
-        opencon()
-        Try
-            cmd = New OleDbCommand("select * from Status_Enrollment where lrn=@lrn or fullname=@fullname", con)
-            With cmd
-                .Parameters.AddWithValue("@lrn", txtlrn.Text)
-                .Parameters.AddWithValue("@fullname", txtlrn.Text)
-                dr = .ExecuteReader
-            End With
-            dr.Read()
-            If dr.HasRows Then
-                txtfullname.Text = dr.Item("fullname").ToString
-                txtaycode.Text = dr.Item("aycode").ToString
-                txtgradelevel.Text = dr.Item("grade_level").ToString
-                cbostrand.Text = dr.Item("strand").ToString
-                cbosection.Text = dr.Item("Section").ToString
-            End If
-        Catch ex As Exception
-            MsgBox(ex.Message, vbCritical)
-        End Try
-        con.Close()
-        dr.Close()
-        clear()
-    End Sub
-
-    Private Sub btnprint_Click(sender As Object, e As EventArgs) Handles btnprint.Click
-
-    End Sub
-
-    Private Sub btnsave_Click(sender As Object, e As EventArgs) Handles btnsave.Click
-
-    End Sub
-
-    Private Sub btncancel_Click(sender As Object, e As EventArgs) Handles btncancel.Click
-
-    End Sub
 End Class

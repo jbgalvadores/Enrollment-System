@@ -22,15 +22,16 @@ Partial Class frmrecord
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.linkAdmClose = New MetroFramework.Controls.MetroButton()
         Me.lblenrollment = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.btnaddgrade = New MetroFramework.Controls.MetroButton()
-        Me.btnsearchs = New MetroFramework.Controls.MetroButton()
         Me.txtlrn = New System.Windows.Forms.TextBox()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.txtsearchlrnname = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.cbosection = New System.Windows.Forms.ComboBox()
         Me.cbostrand = New System.Windows.Forms.ComboBox()
@@ -43,10 +44,10 @@ Partial Class frmrecord
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel5 = New System.Windows.Forms.Panel()
+        Me.lblfinalgrade = New System.Windows.Forms.Label()
         Me.btnprint = New System.Windows.Forms.Button()
         Me.btnsave = New System.Windows.Forms.Button()
         Me.btncancel = New System.Windows.Forms.Button()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.GradesDataGridView = New System.Windows.Forms.DataGridView()
         Me.Column28 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -96,8 +97,9 @@ Partial Class frmrecord
         '
         Me.Panel2.BackColor = System.Drawing.SystemColors.Control
         Me.Panel2.Controls.Add(Me.btnaddgrade)
-        Me.Panel2.Controls.Add(Me.btnsearchs)
         Me.Panel2.Controls.Add(Me.txtlrn)
+        Me.Panel2.Controls.Add(Me.Label8)
+        Me.Panel2.Controls.Add(Me.txtsearchlrnname)
         Me.Panel2.Controls.Add(Me.Label2)
         Me.Panel2.Controls.Add(Me.cbosection)
         Me.Panel2.Controls.Add(Me.cbostrand)
@@ -112,34 +114,47 @@ Partial Class frmrecord
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel2.Location = New System.Drawing.Point(0, 38)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(997, 115)
+        Me.Panel2.Size = New System.Drawing.Size(997, 149)
         Me.Panel2.TabIndex = 22
         '
         'btnaddgrade
         '
-        Me.btnaddgrade.Location = New System.Drawing.Point(763, 64)
+        Me.btnaddgrade.Location = New System.Drawing.Point(603, 113)
         Me.btnaddgrade.Name = "btnaddgrade"
         Me.btnaddgrade.Size = New System.Drawing.Size(75, 23)
         Me.btnaddgrade.TabIndex = 65
         Me.btnaddgrade.Text = "ADD"
         Me.btnaddgrade.UseSelectable = True
         '
-        'btnsearchs
-        '
-        Me.btnsearchs.Location = New System.Drawing.Point(763, 24)
-        Me.btnsearchs.Name = "btnsearchs"
-        Me.btnsearchs.Size = New System.Drawing.Size(75, 23)
-        Me.btnsearchs.TabIndex = 66
-        Me.btnsearchs.Text = "SEARCH"
-        Me.btnsearchs.UseSelectable = True
-        '
         'txtlrn
         '
+        Me.txtlrn.Enabled = False
         Me.txtlrn.Font = New System.Drawing.Font("Segoe UI", 9.75!)
-        Me.txtlrn.Location = New System.Drawing.Point(124, 6)
+        Me.txtlrn.Location = New System.Drawing.Point(124, 41)
         Me.txtlrn.Name = "txtlrn"
         Me.txtlrn.Size = New System.Drawing.Size(288, 25)
         Me.txtlrn.TabIndex = 6
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.BackColor = System.Drawing.Color.Transparent
+        Me.Label8.Font = New System.Drawing.Font("Segoe UI", 9.75!)
+        Me.Label8.ForeColor = System.Drawing.Color.Black
+        Me.Label8.Location = New System.Drawing.Point(30, 45)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(32, 17)
+        Me.Label8.TabIndex = 2
+        Me.Label8.Text = "LRN"
+        '
+        'txtsearchlrnname
+        '
+        Me.txtsearchlrnname.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.txtsearchlrnname.Font = New System.Drawing.Font("Segoe UI", 9.75!)
+        Me.txtsearchlrnname.Location = New System.Drawing.Point(124, 6)
+        Me.txtsearchlrnname.Name = "txtsearchlrnname"
+        Me.txtsearchlrnname.Size = New System.Drawing.Size(288, 25)
+        Me.txtsearchlrnname.TabIndex = 6
         '
         'Label2
         '
@@ -224,7 +239,7 @@ Partial Class frmrecord
         '
         Me.txtfullname.Enabled = False
         Me.txtfullname.Font = New System.Drawing.Font("Segoe UI", 9.75!)
-        Me.txtfullname.Location = New System.Drawing.Point(124, 79)
+        Me.txtfullname.Location = New System.Drawing.Point(124, 113)
         Me.txtfullname.Name = "txtfullname"
         Me.txtfullname.Size = New System.Drawing.Size(288, 25)
         Me.txtfullname.TabIndex = 7
@@ -233,7 +248,7 @@ Partial Class frmrecord
         '
         Me.txtaycode.Enabled = False
         Me.txtaycode.Font = New System.Drawing.Font("Segoe UI", 9.75!)
-        Me.txtaycode.Location = New System.Drawing.Point(124, 44)
+        Me.txtaycode.Location = New System.Drawing.Point(124, 78)
         Me.txtaycode.Name = "txtaycode"
         Me.txtaycode.Size = New System.Drawing.Size(288, 25)
         Me.txtaycode.TabIndex = 5
@@ -244,7 +259,7 @@ Partial Class frmrecord
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Segoe UI", 9.75!)
         Me.Label3.ForeColor = System.Drawing.Color.Black
-        Me.Label3.Location = New System.Drawing.Point(30, 79)
+        Me.Label3.Location = New System.Drawing.Point(30, 113)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(66, 17)
         Me.Label3.TabIndex = 4
@@ -256,7 +271,7 @@ Partial Class frmrecord
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 9.75!)
         Me.Label1.ForeColor = System.Drawing.Color.Black
-        Me.Label1.Location = New System.Drawing.Point(30, 48)
+        Me.Label1.Location = New System.Drawing.Point(30, 82)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(57, 17)
         Me.Label1.TabIndex = 0
@@ -265,16 +280,26 @@ Partial Class frmrecord
         'Panel5
         '
         Me.Panel5.BackColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(98, Byte), Integer))
+        Me.Panel5.Controls.Add(Me.lblfinalgrade)
         Me.Panel5.Controls.Add(Me.btnprint)
         Me.Panel5.Controls.Add(Me.btnsave)
         Me.Panel5.Controls.Add(Me.btncancel)
-        Me.Panel5.Controls.Add(Me.TextBox1)
         Me.Panel5.Controls.Add(Me.Label7)
         Me.Panel5.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.Panel5.Location = New System.Drawing.Point(0, 532)
         Me.Panel5.Name = "Panel5"
         Me.Panel5.Size = New System.Drawing.Size(997, 41)
         Me.Panel5.TabIndex = 24
+        '
+        'lblfinalgrade
+        '
+        Me.lblfinalgrade.AutoSize = True
+        Me.lblfinalgrade.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblfinalgrade.ForeColor = System.Drawing.Color.White
+        Me.lblfinalgrade.Location = New System.Drawing.Point(106, 11)
+        Me.lblfinalgrade.Name = "lblfinalgrade"
+        Me.lblfinalgrade.Size = New System.Drawing.Size(0, 20)
+        Me.lblfinalgrade.TabIndex = 42
         '
         'btnprint
         '
@@ -324,16 +349,6 @@ Partial Class frmrecord
         Me.btncancel.Text = "Cancel"
         Me.btncancel.UseVisualStyleBackColor = False
         '
-        'TextBox1
-        '
-        Me.TextBox1.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.TextBox1.Enabled = False
-        Me.TextBox1.Font = New System.Drawing.Font("Segoe UI", 9.75!)
-        Me.TextBox1.Location = New System.Drawing.Point(107, 9)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(132, 25)
-        Me.TextBox1.TabIndex = 7
-        '
         'Label7
         '
         Me.Label7.Anchor = System.Windows.Forms.AnchorStyles.None
@@ -343,9 +358,9 @@ Partial Class frmrecord
         Me.Label7.ForeColor = System.Drawing.Color.Transparent
         Me.Label7.Location = New System.Drawing.Point(12, 12)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(89, 17)
+        Me.Label7.Size = New System.Drawing.Size(92, 17)
         Me.Label7.TabIndex = 4
-        Me.Label7.Text = "Overall Grade"
+        Me.Label7.Text = "Overall Grade:"
         '
         'GradesDataGridView
         '
@@ -355,35 +370,35 @@ Partial Class frmrecord
         Me.GradesDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.GradesDataGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
         Me.GradesDataGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(CType(CType(7, Byte), Integer), CType(CType(153, Byte), Integer), CType(CType(146, Byte), Integer))
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(7, Byte), Integer), CType(CType(153, Byte), Integer), CType(CType(146, Byte), Integer))
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.GradesDataGridView.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(7, Byte), Integer), CType(CType(153, Byte), Integer), CType(CType(146, Byte), Integer))
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(7, Byte), Integer), CType(CType(153, Byte), Integer), CType(CType(146, Byte), Integer))
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.GradesDataGridView.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.GradesDataGridView.ColumnHeadersHeight = 30
         Me.GradesDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
         Me.GradesDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column28, Me.Column29, Me.Column30, Me.Column31})
-        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(37, Byte), Integer), CType(CType(38, Byte), Integer))
-        DataGridViewCellStyle4.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle4.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(26, Byte), Integer))
-        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.GradesDataGridView.DefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(37, Byte), Integer), CType(CType(38, Byte), Integer))
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(26, Byte), Integer))
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.GradesDataGridView.DefaultCellStyle = DataGridViewCellStyle2
         Me.GradesDataGridView.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GradesDataGridView.EnableHeadersVisualStyles = False
         Me.GradesDataGridView.GridColor = System.Drawing.Color.Silver
-        Me.GradesDataGridView.Location = New System.Drawing.Point(0, 153)
+        Me.GradesDataGridView.Location = New System.Drawing.Point(0, 187)
         Me.GradesDataGridView.MultiSelect = False
         Me.GradesDataGridView.Name = "GradesDataGridView"
         Me.GradesDataGridView.ReadOnly = True
         Me.GradesDataGridView.RowHeadersVisible = False
         Me.GradesDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.GradesDataGridView.Size = New System.Drawing.Size(997, 379)
+        Me.GradesDataGridView.Size = New System.Drawing.Size(997, 345)
         Me.GradesDataGridView.TabIndex = 25
         '
         'Column28
@@ -393,7 +408,7 @@ Partial Class frmrecord
         Me.Column28.Name = "Column28"
         Me.Column28.ReadOnly = True
         Me.Column28.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.Column28.Width = 72
+        Me.Column28.Width = 96
         '
         'Column29
         '
@@ -410,7 +425,7 @@ Partial Class frmrecord
         Me.Column30.Name = "Column30"
         Me.Column30.ReadOnly = True
         Me.Column30.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.Column30.Width = 38
+        Me.Column30.Width = 49
         '
         'Column31
         '
@@ -419,7 +434,7 @@ Partial Class frmrecord
         Me.Column31.Name = "Column31"
         Me.Column31.ReadOnly = True
         Me.Column31.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.Column31.Width = 38
+        Me.Column31.Width = 50
         '
         'frmrecord
         '
@@ -455,7 +470,7 @@ Partial Class frmrecord
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents txtfullname As TextBox
-    Friend WithEvents txtlrn As TextBox
+    Friend WithEvents txtsearchlrnname As TextBox
     Friend WithEvents txtaycode As TextBox
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
@@ -464,7 +479,6 @@ Partial Class frmrecord
     Friend WithEvents btnprint As Button
     Friend WithEvents btnsave As Button
     Friend WithEvents btncancel As Button
-    Friend WithEvents TextBox1 As TextBox
     Friend WithEvents Label7 As Label
     Friend WithEvents GradesDataGridView As DataGridView
     Friend WithEvents Column28 As DataGridViewTextBoxColumn
@@ -472,6 +486,8 @@ Partial Class frmrecord
     Friend WithEvents Column30 As DataGridViewTextBoxColumn
     Friend WithEvents Column31 As DataGridViewTextBoxColumn
     Friend WithEvents btnaddgrade As MetroFramework.Controls.MetroButton
-    Friend WithEvents btnsearchs As MetroFramework.Controls.MetroButton
     Friend WithEvents linkAdmClose As MetroFramework.Controls.MetroButton
+    Friend WithEvents lblfinalgrade As Label
+    Friend WithEvents txtlrn As TextBox
+    Friend WithEvents Label8 As Label
 End Class
