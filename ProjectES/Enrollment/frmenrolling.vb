@@ -62,12 +62,12 @@ Public Class frmenrolling
     Public Sub loadrecord()
         opencon()
         Try
-            cmd = New OleDbCommand("select * from Status_Enrollment where student_id like '" & txtsearch.Text & "'", con)
+            cmd = New OleDbCommand("select * from Status_Enrollment where lrn like '" & txtsearch.Text & "'", con)
             dr = cmd.ExecuteReader
             dr.Read()
             If dr.HasRows Then
                 txtaycode.Text = dr.Item("aycode").ToString
-                txtsid.Text = dr.Item("student_id").ToString
+                txtsid.Text = dr.Item("lrn").ToString
                 txtfullname.Text = dr.Item("fullname").ToString
                 txtgradelevel.Text = dr.Item("grade_level").ToString
                 txtstatus.Text = dr.Item("Status").ToString
@@ -103,9 +103,9 @@ Public Class frmenrolling
 
         Try
             opencon()
-            cmd = New OleDbCommand("select * from Status_Enrollment where student_id=@student_id or fullname=@fullname", con)
+            cmd = New OleDbCommand("select * from Status_Enrollment where lrn=@lrn or fullname=@fullname", con)
             With cmd
-                .Parameters.AddWithValue("student_id", txtsid.Text)
+                .Parameters.AddWithValue("lrn", txtsid.Text)
                 .Parameters.AddWithValue("fullname", txtsid.Text)
                 dr = .ExecuteReader
             End With
@@ -190,7 +190,7 @@ Public Class frmenrolling
     End Sub
     Private Sub txtsearch_LostFocus(sender As Object, e As EventArgs) Handles txtsearch.LostFocus
         If txtsearch.Text = "" Then
-            txtsearch.Text = "ENTER STUDENT ID ONLY"
+            txtsearch.Text = "ENTER LRN ONLY"
             txtsearch.ForeColor = Color.Silver
         End If
     End Sub
@@ -297,5 +297,6 @@ Public Class frmenrolling
             con.Close()
         End If
     End Sub
+
 
 End Class

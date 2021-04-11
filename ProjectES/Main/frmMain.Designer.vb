@@ -502,7 +502,7 @@ Partial Class frmMain
         Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Name = "frmMain"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
-        Me.Text = "Form1"
+        Me.Text = "Pangantucan Enrollment System"
         Me.Panel1.ResumeLayout(False)
         Me.Panel4.ResumeLayout(False)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()

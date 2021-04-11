@@ -251,7 +251,7 @@ Partial Class frmManagement
         Me.MetroTabControl1.Location = New System.Drawing.Point(0, 37)
         Me.MetroTabControl1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.MetroTabControl1.Name = "MetroTabControl1"
-        Me.MetroTabControl1.SelectedIndex = 0
+        Me.MetroTabControl1.SelectedIndex = 1
         Me.MetroTabControl1.Size = New System.Drawing.Size(1105, 560)
         Me.MetroTabControl1.TabIndex = 6
         Me.MetroTabControl1.UseSelectable = True

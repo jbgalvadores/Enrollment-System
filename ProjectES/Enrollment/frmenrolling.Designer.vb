@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class frmenrolling
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class frmenrolling
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
@@ -378,9 +378,9 @@ Partial Class frmenrolling
         Me.Label2.ForeColor = System.Drawing.Color.Black
         Me.Label2.Location = New System.Drawing.Point(14, 36)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(68, 17)
+        Me.Label2.Size = New System.Drawing.Size(32, 17)
         Me.Label2.TabIndex = 2
-        Me.Label2.Text = "Student ID"
+        Me.Label2.Text = "LRN"
         '
         'Label1
         '
@@ -564,9 +564,6 @@ Partial Class frmenrolling
         Me.btncancel.Text = "Cancel"
         Me.btncancel.UseVisualStyleBackColor = False
         '
-        'linkAdmClose
-        '
-        '
         'frmenrolling
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 15.0!)
@@ -635,5 +632,4 @@ Partial Class frmenrolling
     Friend WithEvents btnprint As Button
     Friend WithEvents btnsave As Button
     Friend WithEvents btncancel As Button
-
 End Class

@@ -23,6 +23,7 @@ Partial Class frmAddStudent
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.lnkclose = New MetroFramework.Controls.MetroButton()
         Me.lbladmission = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.cbotype = New System.Windows.Forms.ComboBox()
@@ -43,7 +44,7 @@ Partial Class frmAddStudent
         Me.Label15 = New System.Windows.Forms.Label()
         Me.txtreligion = New System.Windows.Forms.TextBox()
         Me.Label14 = New System.Windows.Forms.Label()
-        Me.txtcitizenship = New System.Windows.Forms.TextBox()
+        Me.txtethnicgroup = New System.Windows.Forms.TextBox()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.cbogender = New System.Windows.Forms.ComboBox()
@@ -113,7 +114,8 @@ Partial Class frmAddStudent
         Me.btnclose = New MetroFramework.Controls.MetroButton()
         Me.btnclear = New MetroFramework.Controls.MetroButton()
         Me.btnsave = New MetroFramework.Controls.MetroButton()
-        Me.lnkclose = New MetroFramework.Controls.MetroButton()
+        Me.Label40 = New System.Windows.Forms.Label()
+        Me.cbobeneficiary = New System.Windows.Forms.ComboBox()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.TabControl1.SuspendLayout()
@@ -137,6 +139,15 @@ Partial Class frmAddStudent
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(955, 37)
         Me.Panel1.TabIndex = 7
+        '
+        'lnkclose
+        '
+        Me.lnkclose.Location = New System.Drawing.Point(858, 7)
+        Me.lnkclose.Name = "lnkclose"
+        Me.lnkclose.Size = New System.Drawing.Size(75, 23)
+        Me.lnkclose.TabIndex = 62
+        Me.lnkclose.Text = "CLOSE"
+        Me.lnkclose.UseSelectable = True
         '
         'lbladmission
         '
@@ -302,12 +313,15 @@ Partial Class frmAddStudent
         '
         'MetroTabPage1
         '
+        Me.MetroTabPage1.BackColor = System.Drawing.Color.White
+        Me.MetroTabPage1.Controls.Add(Me.cbobeneficiary)
         Me.MetroTabPage1.Controls.Add(Me.cbostatus)
         Me.MetroTabPage1.Controls.Add(Me.txtaddress)
         Me.MetroTabPage1.Controls.Add(Me.Label15)
         Me.MetroTabPage1.Controls.Add(Me.txtreligion)
         Me.MetroTabPage1.Controls.Add(Me.Label14)
-        Me.MetroTabPage1.Controls.Add(Me.txtcitizenship)
+        Me.MetroTabPage1.Controls.Add(Me.txtethnicgroup)
+        Me.MetroTabPage1.Controls.Add(Me.Label40)
         Me.MetroTabPage1.Controls.Add(Me.Label13)
         Me.MetroTabPage1.Controls.Add(Me.Label12)
         Me.MetroTabPage1.Controls.Add(Me.cbogender)
@@ -344,7 +358,7 @@ Partial Class frmAddStudent
         Me.cbostatus.Font = New System.Drawing.Font("Segoe UI", 9.75!)
         Me.cbostatus.FormattingEnabled = True
         Me.cbostatus.Items.AddRange(New Object() {"SINGLE", "MARRIED", "WIDOWED"})
-        Me.cbostatus.Location = New System.Drawing.Point(578, 87)
+        Me.cbostatus.Location = New System.Drawing.Point(577, 57)
         Me.cbostatus.Name = "cbostatus"
         Me.cbostatus.Size = New System.Drawing.Size(286, 25)
         Me.cbostatus.TabIndex = 42
@@ -362,6 +376,7 @@ Partial Class frmAddStudent
         'Label15
         '
         Me.Label15.AutoSize = True
+        Me.Label15.BackColor = System.Drawing.Color.White
         Me.Label15.Font = New System.Drawing.Font("Segoe UI", 9.75!)
         Me.Label15.Location = New System.Drawing.Point(472, 192)
         Me.Label15.Name = "Label15"
@@ -381,6 +396,7 @@ Partial Class frmAddStudent
         'Label14
         '
         Me.Label14.AutoSize = True
+        Me.Label14.BackColor = System.Drawing.Color.White
         Me.Label14.Font = New System.Drawing.Font("Segoe UI", 9.75!)
         Me.Label14.Location = New System.Drawing.Point(472, 156)
         Me.Label14.Name = "Label14"
@@ -388,30 +404,32 @@ Partial Class frmAddStudent
         Me.Label14.TabIndex = 45
         Me.Label14.Text = "Religion"
         '
-        'txtcitizenship
+        'txtethnicgroup
         '
-        Me.txtcitizenship.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.txtcitizenship.Font = New System.Drawing.Font("Segoe UI", 9.75!)
-        Me.txtcitizenship.Location = New System.Drawing.Point(577, 120)
-        Me.txtcitizenship.Name = "txtcitizenship"
-        Me.txtcitizenship.Size = New System.Drawing.Size(286, 25)
-        Me.txtcitizenship.TabIndex = 44
+        Me.txtethnicgroup.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.txtethnicgroup.Font = New System.Drawing.Font("Segoe UI", 9.75!)
+        Me.txtethnicgroup.Location = New System.Drawing.Point(577, 120)
+        Me.txtethnicgroup.Name = "txtethnicgroup"
+        Me.txtethnicgroup.Size = New System.Drawing.Size(286, 25)
+        Me.txtethnicgroup.TabIndex = 44
         '
         'Label13
         '
         Me.Label13.AutoSize = True
+        Me.Label13.BackColor = System.Drawing.Color.White
         Me.Label13.Font = New System.Drawing.Font("Segoe UI", 9.75!)
         Me.Label13.Location = New System.Drawing.Point(472, 123)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(70, 17)
+        Me.Label13.Size = New System.Drawing.Size(83, 17)
         Me.Label13.TabIndex = 43
-        Me.Label13.Text = "Citizenship"
+        Me.Label13.Text = "Ethnic Group"
         '
         'Label12
         '
         Me.Label12.AutoSize = True
+        Me.Label12.BackColor = System.Drawing.Color.White
         Me.Label12.Font = New System.Drawing.Font("Segoe UI", 9.75!)
-        Me.Label12.Location = New System.Drawing.Point(472, 90)
+        Me.Label12.Location = New System.Drawing.Point(471, 60)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(88, 17)
         Me.Label12.TabIndex = 41
@@ -423,7 +441,7 @@ Partial Class frmAddStudent
         Me.cbogender.Font = New System.Drawing.Font("Segoe UI", 9.75!)
         Me.cbogender.FormattingEnabled = True
         Me.cbogender.Items.AddRange(New Object() {"MALE", "FEMALE"})
-        Me.cbogender.Location = New System.Drawing.Point(577, 54)
+        Me.cbogender.Location = New System.Drawing.Point(169, 120)
         Me.cbogender.Name = "cbogender"
         Me.cbogender.Size = New System.Drawing.Size(286, 25)
         Me.cbogender.TabIndex = 40
@@ -431,8 +449,9 @@ Partial Class frmAddStudent
         'Label11
         '
         Me.Label11.AutoSize = True
+        Me.Label11.BackColor = System.Drawing.Color.White
         Me.Label11.Font = New System.Drawing.Font("Segoe UI", 9.75!)
-        Me.Label11.Location = New System.Drawing.Point(472, 57)
+        Me.Label11.Location = New System.Drawing.Point(64, 123)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(51, 17)
         Me.Label11.TabIndex = 39
@@ -450,6 +469,7 @@ Partial Class frmAddStudent
         'Label10
         '
         Me.Label10.AutoSize = True
+        Me.Label10.BackColor = System.Drawing.Color.White
         Me.Label10.Font = New System.Drawing.Font("Segoe UI", 9.75!)
         Me.Label10.Location = New System.Drawing.Point(472, 24)
         Me.Label10.Name = "Label10"
@@ -461,17 +481,18 @@ Partial Class frmAddStudent
         '
         Me.txtpob.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtpob.Font = New System.Drawing.Font("Segoe UI", 9.75!)
-        Me.txtpob.Location = New System.Drawing.Point(169, 189)
+        Me.txtpob.Location = New System.Drawing.Point(169, 223)
         Me.txtpob.Multiline = True
         Me.txtpob.Name = "txtpob"
-        Me.txtpob.Size = New System.Drawing.Size(286, 95)
+        Me.txtpob.Size = New System.Drawing.Size(286, 67)
         Me.txtpob.TabIndex = 36
         '
         'Label9
         '
         Me.Label9.AutoSize = True
+        Me.Label9.BackColor = System.Drawing.Color.White
         Me.Label9.Font = New System.Drawing.Font("Segoe UI", 9.75!)
-        Me.Label9.Location = New System.Drawing.Point(64, 192)
+        Me.Label9.Location = New System.Drawing.Point(64, 223)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(84, 17)
         Me.Label9.TabIndex = 35
@@ -480,8 +501,9 @@ Partial Class frmAddStudent
         'Label8
         '
         Me.Label8.AutoSize = True
+        Me.Label8.BackColor = System.Drawing.Color.White
         Me.Label8.Font = New System.Drawing.Font("Segoe UI", 9.75!)
-        Me.Label8.Location = New System.Drawing.Point(64, 159)
+        Me.Label8.Location = New System.Drawing.Point(64, 191)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(81, 17)
         Me.Label8.TabIndex = 34
@@ -492,7 +514,7 @@ Partial Class frmAddStudent
         Me.dtpdob.Cursor = System.Windows.Forms.Cursors.Hand
         Me.dtpdob.Font = New System.Drawing.Font("Segoe UI", 9.75!)
         Me.dtpdob.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.dtpdob.Location = New System.Drawing.Point(169, 153)
+        Me.dtpdob.Location = New System.Drawing.Point(169, 185)
         Me.dtpdob.Name = "dtpdob"
         Me.dtpdob.Size = New System.Drawing.Size(286, 25)
         Me.dtpdob.TabIndex = 33
@@ -500,8 +522,9 @@ Partial Class frmAddStudent
         'Label7
         '
         Me.Label7.AutoSize = True
+        Me.Label7.BackColor = System.Drawing.Color.White
         Me.Label7.Font = New System.Drawing.Font("Segoe UI", 9.75!)
-        Me.Label7.Location = New System.Drawing.Point(64, 123)
+        Me.Label7.Location = New System.Drawing.Point(64, 154)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(31, 17)
         Me.Label7.TabIndex = 32
@@ -512,7 +535,7 @@ Partial Class frmAddStudent
         Me.txtage.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtage.Enabled = False
         Me.txtage.Font = New System.Drawing.Font("Segoe UI", 9.75!)
-        Me.txtage.Location = New System.Drawing.Point(169, 120)
+        Me.txtage.Location = New System.Drawing.Point(169, 151)
         Me.txtage.Name = "txtage"
         Me.txtage.Size = New System.Drawing.Size(286, 25)
         Me.txtage.TabIndex = 31
@@ -520,6 +543,7 @@ Partial Class frmAddStudent
         'Label6
         '
         Me.Label6.AutoSize = True
+        Me.Label6.BackColor = System.Drawing.Color.White
         Me.Label6.Font = New System.Drawing.Font("Segoe UI", 9.75!)
         Me.Label6.Location = New System.Drawing.Point(64, 90)
         Me.Label6.Name = "Label6"
@@ -539,6 +563,7 @@ Partial Class frmAddStudent
         'Label5
         '
         Me.Label5.AutoSize = True
+        Me.Label5.BackColor = System.Drawing.Color.White
         Me.Label5.Font = New System.Drawing.Font("Segoe UI", 9.75!)
         Me.Label5.Location = New System.Drawing.Point(64, 57)
         Me.Label5.Name = "Label5"
@@ -558,6 +583,7 @@ Partial Class frmAddStudent
         'Label4
         '
         Me.Label4.AutoSize = True
+        Me.Label4.BackColor = System.Drawing.Color.White
         Me.Label4.Font = New System.Drawing.Font("Segoe UI", 9.75!)
         Me.Label4.Location = New System.Drawing.Point(64, 24)
         Me.Label4.Name = "Label4"
@@ -592,6 +618,7 @@ Partial Class frmAddStudent
         '
         'GroupBox2
         '
+        Me.GroupBox2.BackColor = System.Drawing.Color.White
         Me.GroupBox2.Controls.Add(Me.Label27)
         Me.GroupBox2.Controls.Add(Me.txtfaddress)
         Me.GroupBox2.Controls.Add(Me.Label25)
@@ -730,6 +757,7 @@ Partial Class frmAddStudent
         '
         'GroupBox1
         '
+        Me.GroupBox1.BackColor = System.Drawing.Color.White
         Me.GroupBox1.Controls.Add(Me.Label26)
         Me.GroupBox1.Controls.Add(Me.txtmaddress)
         Me.GroupBox1.Controls.Add(Me.Label24)
@@ -894,6 +922,7 @@ Partial Class frmAddStudent
         'Label31
         '
         Me.Label31.AutoSize = True
+        Me.Label31.BackColor = System.Drawing.Color.White
         Me.Label31.Font = New System.Drawing.Font("Segoe UI", 9.75!)
         Me.Label31.Location = New System.Drawing.Point(164, 167)
         Me.Label31.Name = "Label31"
@@ -914,6 +943,7 @@ Partial Class frmAddStudent
         'Label32
         '
         Me.Label32.AutoSize = True
+        Me.Label32.BackColor = System.Drawing.Color.White
         Me.Label32.Font = New System.Drawing.Font("Segoe UI", 9.75!)
         Me.Label32.Location = New System.Drawing.Point(164, 134)
         Me.Label32.Name = "Label32"
@@ -933,6 +963,7 @@ Partial Class frmAddStudent
         'Label28
         '
         Me.Label28.AutoSize = True
+        Me.Label28.BackColor = System.Drawing.Color.White
         Me.Label28.Font = New System.Drawing.Font("Segoe UI", 9.75!)
         Me.Label28.Location = New System.Drawing.Point(164, 101)
         Me.Label28.Name = "Label28"
@@ -952,6 +983,7 @@ Partial Class frmAddStudent
         'Label29
         '
         Me.Label29.AutoSize = True
+        Me.Label29.BackColor = System.Drawing.Color.White
         Me.Label29.Font = New System.Drawing.Font("Segoe UI", 9.75!)
         Me.Label29.Location = New System.Drawing.Point(164, 68)
         Me.Label29.Name = "Label29"
@@ -971,6 +1003,7 @@ Partial Class frmAddStudent
         'Label30
         '
         Me.Label30.AutoSize = True
+        Me.Label30.BackColor = System.Drawing.Color.White
         Me.Label30.Font = New System.Drawing.Font("Segoe UI", 9.75!)
         Me.Label30.Location = New System.Drawing.Point(164, 35)
         Me.Label30.Name = "Label30"
@@ -1012,6 +1045,7 @@ Partial Class frmAddStudent
         'Label39
         '
         Me.Label39.AutoSize = True
+        Me.Label39.BackColor = System.Drawing.Color.White
         Me.Label39.Font = New System.Drawing.Font("Segoe UI", 9.75!)
         Me.Label39.Location = New System.Drawing.Point(145, 192)
         Me.Label39.Name = "Label39"
@@ -1031,6 +1065,7 @@ Partial Class frmAddStudent
         'Label38
         '
         Me.Label38.AutoSize = True
+        Me.Label38.BackColor = System.Drawing.Color.White
         Me.Label38.Font = New System.Drawing.Font("Segoe UI", 9.75!)
         Me.Label38.Location = New System.Drawing.Point(145, 159)
         Me.Label38.Name = "Label38"
@@ -1050,6 +1085,7 @@ Partial Class frmAddStudent
         'Label36
         '
         Me.Label36.AutoSize = True
+        Me.Label36.BackColor = System.Drawing.Color.White
         Me.Label36.Font = New System.Drawing.Font("Segoe UI", 9.75!)
         Me.Label36.Location = New System.Drawing.Point(145, 126)
         Me.Label36.Name = "Label36"
@@ -1069,6 +1105,7 @@ Partial Class frmAddStudent
         'Label37
         '
         Me.Label37.AutoSize = True
+        Me.Label37.BackColor = System.Drawing.Color.White
         Me.Label37.Font = New System.Drawing.Font("Segoe UI", 9.75!)
         Me.Label37.Location = New System.Drawing.Point(145, 93)
         Me.Label37.Name = "Label37"
@@ -1123,14 +1160,27 @@ Partial Class frmAddStudent
         Me.btnsave.Text = "SAVE"
         Me.btnsave.UseSelectable = True
         '
-        'lnkclose
+        'Label40
         '
-        Me.lnkclose.Location = New System.Drawing.Point(858, 7)
-        Me.lnkclose.Name = "lnkclose"
-        Me.lnkclose.Size = New System.Drawing.Size(75, 23)
-        Me.lnkclose.TabIndex = 62
-        Me.lnkclose.Text = "CLOSE"
-        Me.lnkclose.UseSelectable = True
+        Me.Label40.AutoSize = True
+        Me.Label40.BackColor = System.Drawing.Color.White
+        Me.Label40.Font = New System.Drawing.Font("Segoe UI", 9.75!)
+        Me.Label40.Location = New System.Drawing.Point(471, 91)
+        Me.Label40.Name = "Label40"
+        Me.Label40.Size = New System.Drawing.Size(70, 17)
+        Me.Label40.TabIndex = 41
+        Me.Label40.Text = "Beneficiary"
+        '
+        'cbobeneficiary
+        '
+        Me.cbobeneficiary.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.cbobeneficiary.Font = New System.Drawing.Font("Segoe UI", 9.75!)
+        Me.cbobeneficiary.FormattingEnabled = True
+        Me.cbobeneficiary.Items.AddRange(New Object() {"4P'S", "VOUCHER"})
+        Me.cbobeneficiary.Location = New System.Drawing.Point(577, 88)
+        Me.cbobeneficiary.Name = "cbobeneficiary"
+        Me.cbobeneficiary.Size = New System.Drawing.Size(286, 25)
+        Me.cbobeneficiary.TabIndex = 42
         '
         'frmAddStudent
         '
@@ -1190,7 +1240,7 @@ Partial Class frmAddStudent
     Friend WithEvents Label15 As Label
     Friend WithEvents txtreligion As TextBox
     Friend WithEvents Label14 As Label
-    Friend WithEvents txtcitizenship As TextBox
+    Friend WithEvents txtethnicgroup As TextBox
     Friend WithEvents Label13 As Label
     Friend WithEvents Label12 As Label
     Friend WithEvents cbogender As ComboBox
@@ -1258,4 +1308,6 @@ Partial Class frmAddStudent
     Friend WithEvents btnclear As MetroFramework.Controls.MetroButton
     Friend WithEvents btnsave As MetroFramework.Controls.MetroButton
     Friend WithEvents lnkclose As MetroFramework.Controls.MetroButton
+    Friend WithEvents cbobeneficiary As ComboBox
+    Friend WithEvents Label40 As Label
 End Class

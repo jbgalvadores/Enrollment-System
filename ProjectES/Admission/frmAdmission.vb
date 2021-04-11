@@ -222,7 +222,8 @@ Public Class frmAdmission
                 txtcontact.Text = dr.Item("contact_no").ToString
                 cbogender.Text = dr.Item("gender").ToString
                 cbostatus.Text = dr.Item("marital_status").ToString
-                txtcitizenship.Text = dr.Item("citizenship").ToString
+                cbobeneficiary.Text = dr.Item("beneficiary").ToString
+                txtethnicgroup.Text = dr.Item("ethnic_group").ToString
                 txtreligion.Text = dr.Item("religion").ToString
                 txtaddress.Text = dr.Item("address").ToString
                 txtmlname.Text = dr.Item("mlname").ToString

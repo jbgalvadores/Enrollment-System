@@ -26,8 +26,11 @@ Partial Class frmAdmission
         Me.lbladmission = New System.Windows.Forms.Label()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.lbladded = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.txtsearch = New System.Windows.Forms.TextBox()
         Me.lblsearchstudent = New System.Windows.Forms.Label()
+        Me.btnsave = New System.Windows.Forms.Button()
+        Me.btnaddnew = New System.Windows.Forms.Button()
         Me.TabControl1 = New MetroFramework.Controls.MetroTabControl()
         Me.MetroTabPage1 = New MetroFramework.Controls.MetroTabPage()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
@@ -51,7 +54,7 @@ Partial Class frmAdmission
         Me.Label15 = New System.Windows.Forms.Label()
         Me.txtreligion = New System.Windows.Forms.TextBox()
         Me.Label14 = New System.Windows.Forms.Label()
-        Me.txtcitizenship = New System.Windows.Forms.TextBox()
+        Me.txtethnicgroup = New System.Windows.Forms.TextBox()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.cbogender = New System.Windows.Forms.ComboBox()
@@ -117,11 +120,11 @@ Partial Class frmAdmission
         Me.txtpsyeargraduated = New System.Windows.Forms.TextBox()
         Me.Label37 = New System.Windows.Forms.Label()
         Me.txtpsattended = New System.Windows.Forms.TextBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.btnsave = New System.Windows.Forms.Button()
-        Me.btnaddnew = New System.Windows.Forms.Button()
+        Me.Label34 = New System.Windows.Forms.Label()
+        Me.cbobeneficiary = New System.Windows.Forms.ComboBox()
         Me.Panel1.SuspendLayout()
         Me.Panel3.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabControl1.SuspendLayout()
         Me.MetroTabPage1.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
@@ -131,7 +134,6 @@ Partial Class frmAdmission
         Me.GroupBox3.SuspendLayout()
         Me.MetroTabPage4.SuspendLayout()
         Me.MetroTabPage5.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
@@ -185,6 +187,17 @@ Partial Class frmAdmission
         Me.lbladded.Text = "STUDENT ALREADY ADDED"
         Me.lbladded.Visible = False
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.ProjectES.My.Resources.Resources.search
+        Me.PictureBox1.Location = New System.Drawing.Point(558, 6)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(32, 32)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.PictureBox1.TabIndex = 5
+        Me.PictureBox1.TabStop = False
+        '
         'txtsearch
         '
         Me.txtsearch.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
@@ -204,6 +217,42 @@ Partial Class frmAdmission
         Me.lblsearchstudent.TabIndex = 3
         Me.lblsearchstudent.Text = "Search Student:"
         '
+        'btnsave
+        '
+        Me.btnsave.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnsave.Dock = System.Windows.Forms.DockStyle.Right
+        Me.btnsave.FlatAppearance.BorderSize = 0
+        Me.btnsave.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnsave.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnsave.ForeColor = System.Drawing.Color.White
+        Me.btnsave.Image = Global.ProjectES.My.Resources.Resources.archive2
+        Me.btnsave.Location = New System.Drawing.Point(860, 0)
+        Me.btnsave.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.btnsave.Name = "btnsave"
+        Me.btnsave.Size = New System.Drawing.Size(108, 44)
+        Me.btnsave.TabIndex = 1
+        Me.btnsave.Text = "SAVE"
+        Me.btnsave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btnsave.UseVisualStyleBackColor = True
+        '
+        'btnaddnew
+        '
+        Me.btnaddnew.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnaddnew.Dock = System.Windows.Forms.DockStyle.Right
+        Me.btnaddnew.FlatAppearance.BorderSize = 0
+        Me.btnaddnew.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnaddnew.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnaddnew.ForeColor = System.Drawing.Color.White
+        Me.btnaddnew.Image = Global.ProjectES.My.Resources.Resources.addnew
+        Me.btnaddnew.Location = New System.Drawing.Point(968, 0)
+        Me.btnaddnew.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.btnaddnew.Name = "btnaddnew"
+        Me.btnaddnew.Size = New System.Drawing.Size(133, 44)
+        Me.btnaddnew.TabIndex = 0
+        Me.btnaddnew.Text = "ADD NEW"
+        Me.btnaddnew.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btnaddnew.UseVisualStyleBackColor = True
+        '
         'TabControl1
         '
         Me.TabControl1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
@@ -217,7 +266,7 @@ Partial Class frmAdmission
         Me.TabControl1.Location = New System.Drawing.Point(19, 98)
         Me.TabControl1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.TabControl1.Name = "TabControl1"
-        Me.TabControl1.SelectedIndex = 4
+        Me.TabControl1.SelectedIndex = 1
         Me.TabControl1.Size = New System.Drawing.Size(1069, 450)
         Me.TabControl1.TabIndex = 19
         Me.TabControl1.UseSelectable = True
@@ -227,7 +276,7 @@ Partial Class frmAdmission
         Me.MetroTabPage1.Controls.Add(Me.GroupBox1)
         Me.MetroTabPage1.HorizontalScrollbarBarColor = True
         Me.MetroTabPage1.HorizontalScrollbarHighlightOnWheel = False
-        Me.MetroTabPage1.HorizontalScrollbarSize = 6
+        Me.MetroTabPage1.HorizontalScrollbarSize = 5
         Me.MetroTabPage1.Location = New System.Drawing.Point(4, 38)
         Me.MetroTabPage1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.MetroTabPage1.Name = "MetroTabPage1"
@@ -236,7 +285,7 @@ Partial Class frmAdmission
         Me.MetroTabPage1.Text = "REQUIREMENTS"
         Me.MetroTabPage1.VerticalScrollbarBarColor = True
         Me.MetroTabPage1.VerticalScrollbarHighlightOnWheel = False
-        Me.MetroTabPage1.VerticalScrollbarSize = 8
+        Me.MetroTabPage1.VerticalScrollbarSize = 7
         '
         'GroupBox1
         '
@@ -328,12 +377,14 @@ Partial Class frmAdmission
         Me.MetroTabPage2.Controls.Add(Me.Label2)
         Me.MetroTabPage2.Controls.Add(Me.cboaid)
         Me.MetroTabPage2.Controls.Add(Me.Label40)
+        Me.MetroTabPage2.Controls.Add(Me.cbobeneficiary)
         Me.MetroTabPage2.Controls.Add(Me.cbostatus)
         Me.MetroTabPage2.Controls.Add(Me.txtaddress)
         Me.MetroTabPage2.Controls.Add(Me.Label15)
         Me.MetroTabPage2.Controls.Add(Me.txtreligion)
         Me.MetroTabPage2.Controls.Add(Me.Label14)
-        Me.MetroTabPage2.Controls.Add(Me.txtcitizenship)
+        Me.MetroTabPage2.Controls.Add(Me.txtethnicgroup)
+        Me.MetroTabPage2.Controls.Add(Me.Label34)
         Me.MetroTabPage2.Controls.Add(Me.Label13)
         Me.MetroTabPage2.Controls.Add(Me.Label12)
         Me.MetroTabPage2.Controls.Add(Me.cbogender)
@@ -354,7 +405,7 @@ Partial Class frmAdmission
         Me.MetroTabPage2.Controls.Add(Me.txtlname)
         Me.MetroTabPage2.HorizontalScrollbarBarColor = True
         Me.MetroTabPage2.HorizontalScrollbarHighlightOnWheel = False
-        Me.MetroTabPage2.HorizontalScrollbarSize = 6
+        Me.MetroTabPage2.HorizontalScrollbarSize = 5
         Me.MetroTabPage2.Location = New System.Drawing.Point(4, 38)
         Me.MetroTabPage2.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.MetroTabPage2.Name = "MetroTabPage2"
@@ -363,7 +414,7 @@ Partial Class frmAdmission
         Me.MetroTabPage2.Text = "STUDENT"
         Me.MetroTabPage2.VerticalScrollbarBarColor = True
         Me.MetroTabPage2.VerticalScrollbarHighlightOnWheel = False
-        Me.MetroTabPage2.VerticalScrollbarSize = 8
+        Me.MetroTabPage2.VerticalScrollbarSize = 7
         '
         'cbolrn
         '
@@ -486,7 +537,7 @@ Partial Class frmAdmission
         Me.cbostatus.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cbostatus.FormattingEnabled = True
         Me.cbostatus.Items.AddRange(New Object() {"SINGLE", "MARRIED", "WIDOWED"})
-        Me.cbostatus.Location = New System.Drawing.Point(709, 171)
+        Me.cbostatus.Location = New System.Drawing.Point(709, 140)
         Me.cbostatus.Name = "cbostatus"
         Me.cbostatus.Size = New System.Drawing.Size(292, 25)
         Me.cbostatus.TabIndex = 78
@@ -540,16 +591,16 @@ Partial Class frmAdmission
         Me.Label14.TabIndex = 81
         Me.Label14.Text = "Religion"
         '
-        'txtcitizenship
+        'txtethnicgroup
         '
-        Me.txtcitizenship.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.txtcitizenship.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.txtcitizenship.Enabled = False
-        Me.txtcitizenship.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtcitizenship.Location = New System.Drawing.Point(709, 208)
-        Me.txtcitizenship.Name = "txtcitizenship"
-        Me.txtcitizenship.Size = New System.Drawing.Size(292, 25)
-        Me.txtcitizenship.TabIndex = 80
+        Me.txtethnicgroup.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.txtethnicgroup.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.txtethnicgroup.Enabled = False
+        Me.txtethnicgroup.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtethnicgroup.Location = New System.Drawing.Point(709, 208)
+        Me.txtethnicgroup.Name = "txtethnicgroup"
+        Me.txtethnicgroup.Size = New System.Drawing.Size(292, 25)
+        Me.txtethnicgroup.TabIndex = 80
         '
         'Label13
         '
@@ -560,9 +611,9 @@ Partial Class frmAdmission
         Me.Label13.ForeColor = System.Drawing.Color.Black
         Me.Label13.Location = New System.Drawing.Point(531, 217)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(70, 17)
+        Me.Label13.Size = New System.Drawing.Size(83, 17)
         Me.Label13.TabIndex = 79
-        Me.Label13.Text = "Citizenship"
+        Me.Label13.Text = "Ethnic Group"
         '
         'Label12
         '
@@ -571,7 +622,7 @@ Partial Class frmAdmission
         Me.Label12.BackColor = System.Drawing.Color.White
         Me.Label12.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label12.ForeColor = System.Drawing.Color.Black
-        Me.Label12.Location = New System.Drawing.Point(531, 177)
+        Me.Label12.Location = New System.Drawing.Point(531, 146)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(88, 17)
         Me.Label12.TabIndex = 77
@@ -585,9 +636,9 @@ Partial Class frmAdmission
         Me.cbogender.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cbogender.FormattingEnabled = True
         Me.cbogender.Items.AddRange(New Object() {"MALE", "FEMALE"})
-        Me.cbogender.Location = New System.Drawing.Point(709, 134)
+        Me.cbogender.Location = New System.Drawing.Point(146, 208)
         Me.cbogender.Name = "cbogender"
-        Me.cbogender.Size = New System.Drawing.Size(292, 25)
+        Me.cbogender.Size = New System.Drawing.Size(305, 25)
         Me.cbogender.TabIndex = 76
         '
         'Label11
@@ -597,7 +648,7 @@ Partial Class frmAdmission
         Me.Label11.BackColor = System.Drawing.Color.White
         Me.Label11.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label11.ForeColor = System.Drawing.Color.Black
-        Me.Label11.Location = New System.Drawing.Point(531, 140)
+        Me.Label11.Location = New System.Drawing.Point(17, 214)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(51, 17)
         Me.Label11.TabIndex = 75
@@ -633,10 +684,10 @@ Partial Class frmAdmission
         Me.txtpob.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtpob.Enabled = False
         Me.txtpob.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtpob.Location = New System.Drawing.Point(146, 285)
+        Me.txtpob.Location = New System.Drawing.Point(146, 317)
         Me.txtpob.Multiline = True
         Me.txtpob.Name = "txtpob"
-        Me.txtpob.Size = New System.Drawing.Size(305, 95)
+        Me.txtpob.Size = New System.Drawing.Size(305, 67)
         Me.txtpob.TabIndex = 72
         '
         'Label9
@@ -646,7 +697,7 @@ Partial Class frmAdmission
         Me.Label9.BackColor = System.Drawing.Color.White
         Me.Label9.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.ForeColor = System.Drawing.Color.Black
-        Me.Label9.Location = New System.Drawing.Point(17, 288)
+        Me.Label9.Location = New System.Drawing.Point(17, 317)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(84, 17)
         Me.Label9.TabIndex = 71
@@ -659,7 +710,7 @@ Partial Class frmAdmission
         Me.Label8.BackColor = System.Drawing.Color.White
         Me.Label8.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.Black
-        Me.Label8.Location = New System.Drawing.Point(17, 254)
+        Me.Label8.Location = New System.Drawing.Point(17, 285)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(81, 17)
         Me.Label8.TabIndex = 70
@@ -672,7 +723,7 @@ Partial Class frmAdmission
         Me.dtpdob.Enabled = False
         Me.dtpdob.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.dtpdob.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.dtpdob.Location = New System.Drawing.Point(146, 248)
+        Me.dtpdob.Location = New System.Drawing.Point(146, 279)
         Me.dtpdob.Name = "dtpdob"
         Me.dtpdob.Size = New System.Drawing.Size(305, 25)
         Me.dtpdob.TabIndex = 69
@@ -684,7 +735,7 @@ Partial Class frmAdmission
         Me.Label7.BackColor = System.Drawing.Color.White
         Me.Label7.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.Black
-        Me.Label7.Location = New System.Drawing.Point(17, 214)
+        Me.Label7.Location = New System.Drawing.Point(17, 245)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(31, 17)
         Me.Label7.TabIndex = 68
@@ -696,7 +747,7 @@ Partial Class frmAdmission
         Me.txtage.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtage.Enabled = False
         Me.txtage.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtage.Location = New System.Drawing.Point(146, 211)
+        Me.txtage.Location = New System.Drawing.Point(146, 242)
         Me.txtage.Name = "txtage"
         Me.txtage.Size = New System.Drawing.Size(305, 25)
         Me.txtage.TabIndex = 67
@@ -779,7 +830,7 @@ Partial Class frmAdmission
         Me.MetroTabPage3.Controls.Add(Me.GroupBox3)
         Me.MetroTabPage3.HorizontalScrollbarBarColor = True
         Me.MetroTabPage3.HorizontalScrollbarHighlightOnWheel = False
-        Me.MetroTabPage3.HorizontalScrollbarSize = 6
+        Me.MetroTabPage3.HorizontalScrollbarSize = 5
         Me.MetroTabPage3.Location = New System.Drawing.Point(4, 38)
         Me.MetroTabPage3.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.MetroTabPage3.Name = "MetroTabPage3"
@@ -788,7 +839,7 @@ Partial Class frmAdmission
         Me.MetroTabPage3.Text = "PARENT"
         Me.MetroTabPage3.VerticalScrollbarBarColor = True
         Me.MetroTabPage3.VerticalScrollbarHighlightOnWheel = False
-        Me.MetroTabPage3.VerticalScrollbarSize = 8
+        Me.MetroTabPage3.VerticalScrollbarSize = 7
         '
         'GroupBox2
         '
@@ -1136,7 +1187,7 @@ Partial Class frmAdmission
         Me.MetroTabPage4.Controls.Add(Me.txtglname)
         Me.MetroTabPage4.HorizontalScrollbarBarColor = True
         Me.MetroTabPage4.HorizontalScrollbarHighlightOnWheel = False
-        Me.MetroTabPage4.HorizontalScrollbarSize = 6
+        Me.MetroTabPage4.HorizontalScrollbarSize = 5
         Me.MetroTabPage4.Location = New System.Drawing.Point(4, 38)
         Me.MetroTabPage4.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.MetroTabPage4.Name = "MetroTabPage4"
@@ -1145,7 +1196,7 @@ Partial Class frmAdmission
         Me.MetroTabPage4.Text = "GUARDIAN"
         Me.MetroTabPage4.VerticalScrollbarBarColor = True
         Me.MetroTabPage4.VerticalScrollbarHighlightOnWheel = False
-        Me.MetroTabPage4.VerticalScrollbarSize = 8
+        Me.MetroTabPage4.VerticalScrollbarSize = 7
         '
         'Label31
         '
@@ -1270,7 +1321,7 @@ Partial Class frmAdmission
         Me.MetroTabPage5.Controls.Add(Me.txtpsattended)
         Me.MetroTabPage5.HorizontalScrollbarBarColor = True
         Me.MetroTabPage5.HorizontalScrollbarHighlightOnWheel = False
-        Me.MetroTabPage5.HorizontalScrollbarSize = 6
+        Me.MetroTabPage5.HorizontalScrollbarSize = 5
         Me.MetroTabPage5.Location = New System.Drawing.Point(4, 38)
         Me.MetroTabPage5.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.MetroTabPage5.Name = "MetroTabPage5"
@@ -1279,7 +1330,7 @@ Partial Class frmAdmission
         Me.MetroTabPage5.Text = "OTHERS"
         Me.MetroTabPage5.VerticalScrollbarBarColor = True
         Me.MetroTabPage5.VerticalScrollbarHighlightOnWheel = False
-        Me.MetroTabPage5.VerticalScrollbarSize = 8
+        Me.MetroTabPage5.VerticalScrollbarSize = 7
         '
         'Label39
         '
@@ -1369,52 +1420,31 @@ Partial Class frmAdmission
         Me.txtpsattended.Size = New System.Drawing.Size(351, 25)
         Me.txtpsattended.TabIndex = 32
         '
-        'PictureBox1
+        'Label34
         '
-        Me.PictureBox1.Image = Global.ProjectES.My.Resources.Resources.search
-        Me.PictureBox1.Location = New System.Drawing.Point(558, 6)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(32, 32)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
-        Me.PictureBox1.TabIndex = 5
-        Me.PictureBox1.TabStop = False
+        Me.Label34.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Label34.AutoSize = True
+        Me.Label34.BackColor = System.Drawing.Color.White
+        Me.Label34.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label34.ForeColor = System.Drawing.Color.Black
+        Me.Label34.Location = New System.Drawing.Point(531, 177)
+        Me.Label34.Name = "Label34"
+        Me.Label34.Size = New System.Drawing.Size(70, 17)
+        Me.Label34.TabIndex = 77
+        Me.Label34.Text = "Beneficiary"
         '
-        'btnsave
+        'cbobeneficiary
         '
-        Me.btnsave.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnsave.Dock = System.Windows.Forms.DockStyle.Right
-        Me.btnsave.FlatAppearance.BorderSize = 0
-        Me.btnsave.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnsave.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnsave.ForeColor = System.Drawing.Color.White
-        Me.btnsave.Image = Global.ProjectES.My.Resources.Resources.archive2
-        Me.btnsave.Location = New System.Drawing.Point(860, 0)
-        Me.btnsave.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.btnsave.Name = "btnsave"
-        Me.btnsave.Size = New System.Drawing.Size(108, 44)
-        Me.btnsave.TabIndex = 1
-        Me.btnsave.Text = "SAVE"
-        Me.btnsave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btnsave.UseVisualStyleBackColor = True
-        '
-        'btnaddnew
-        '
-        Me.btnaddnew.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnaddnew.Dock = System.Windows.Forms.DockStyle.Right
-        Me.btnaddnew.FlatAppearance.BorderSize = 0
-        Me.btnaddnew.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnaddnew.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnaddnew.ForeColor = System.Drawing.Color.White
-        Me.btnaddnew.Image = Global.ProjectES.My.Resources.Resources.addnew
-        Me.btnaddnew.Location = New System.Drawing.Point(968, 0)
-        Me.btnaddnew.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.btnaddnew.Name = "btnaddnew"
-        Me.btnaddnew.Size = New System.Drawing.Size(133, 44)
-        Me.btnaddnew.TabIndex = 0
-        Me.btnaddnew.Text = "ADD NEW"
-        Me.btnaddnew.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btnaddnew.UseVisualStyleBackColor = True
+        Me.cbobeneficiary.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.cbobeneficiary.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.cbobeneficiary.Enabled = False
+        Me.cbobeneficiary.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cbobeneficiary.FormattingEnabled = True
+        Me.cbobeneficiary.Items.AddRange(New Object() {"4P'S", "BENEFICIARY"})
+        Me.cbobeneficiary.Location = New System.Drawing.Point(709, 174)
+        Me.cbobeneficiary.Name = "cbobeneficiary"
+        Me.cbobeneficiary.Size = New System.Drawing.Size(293, 25)
+        Me.cbobeneficiary.TabIndex = 78
         '
         'frmAdmission
         '
@@ -1433,6 +1463,7 @@ Partial Class frmAdmission
         Me.Panel1.PerformLayout()
         Me.Panel3.ResumeLayout(False)
         Me.Panel3.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabControl1.ResumeLayout(False)
         Me.MetroTabPage1.ResumeLayout(False)
         Me.GroupBox1.ResumeLayout(False)
@@ -1448,7 +1479,6 @@ Partial Class frmAdmission
         Me.MetroTabPage4.PerformLayout()
         Me.MetroTabPage5.ResumeLayout(False)
         Me.MetroTabPage5.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -1488,7 +1518,7 @@ Partial Class frmAdmission
     Friend WithEvents Label15 As Label
     Friend WithEvents txtreligion As TextBox
     Friend WithEvents Label14 As Label
-    Friend WithEvents txtcitizenship As TextBox
+    Friend WithEvents txtethnicgroup As TextBox
     Friend WithEvents Label13 As Label
     Friend WithEvents Label12 As Label
     Friend WithEvents cbogender As ComboBox
@@ -1551,4 +1581,6 @@ Partial Class frmAdmission
     Friend WithEvents txtpsyeargraduated As TextBox
     Friend WithEvents Label37 As Label
     Friend WithEvents txtpsattended As TextBox
+    Friend WithEvents cbobeneficiary As ComboBox
+    Friend WithEvents Label34 As Label
 End Class

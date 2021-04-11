@@ -41,7 +41,7 @@ Public Class frmAddStudent
         Me.Dispose()
     End Sub
 
-    Private Sub ComboBox2_KeyPress(sender As Object, e As KeyPressEventArgs) Handles cboincomingyear.KeyPress, cbogender.KeyPress, cbostatus.KeyPress, cbotype.KeyPress
+    Private Sub ComboBox2_KeyPress(sender As Object, e As KeyPressEventArgs) Handles cboincomingyear.KeyPress, cbogender.KeyPress, cbostatus.KeyPress, cbotype.KeyPress, cbobeneficiary.KeyPress
         e.Handled = True
     End Sub
     Public Sub autoid()
@@ -51,7 +51,7 @@ Public Class frmAddStudent
             str = cmd.ExecuteScalar.ToString
 
             If String.IsNullOrEmpty(str) Then
-                str = "AID202010001"
+                str = "AID202110001"
                 cboaid.Text = str
             Else
                 str = str.Substring(3)
@@ -156,7 +156,7 @@ Public Class frmAddStudent
             dr.Close()
             If MsgBox("Do you want to save this student?", vbQuestion + vbYesNo) = vbYes Then
                 con.Open()
-                cmd = New OleDbCommand("insert into StudentInfo (aid,sy,incoming_year,student_type,lrn,lname,fname,mname,fullname,age,dob,pob,contact_no,gender,marital_status,citizenship,religion,address,mlname,mfname,mmname,mocc,mcontact,maddress,flname,ffname,fmname,focc,fcontact,faddress,glname,gfname,gmname,gcontact,gaddress,psattended,psygraduated,psaddress,genave) values (@aid,@sy,@incoming_year,@student_type,@lrn,@lname,@fname,@mname,@fullname,@age,@dob,pob,@contact_no,@gender,@marital_status,@citizenship,@religion,@address,@mlname,@mfname,@mmname,mocc,@mcontact,@maddress,@flname,@ffname,fmname,@focc,@fcontact,@faddress,@glname,@gfname,@gmname,@gcontact,@gaddress,@psattended,@psygraduated,@psaddress,@genave)", con)
+                cmd = New OleDbCommand("insert into StudentInfo (aid,sy,incoming_year,student_type,lrn,lname,fname,mname,fullname,age,dob,pob,contact_no,gender,marital_status,beneficiary,ethnic_group,religion,address,mlname,mfname,mmname,mocc,mcontact,maddress,flname,ffname,fmname,focc,fcontact,faddress,glname,gfname,gmname,gcontact,gaddress,psattended,psygraduated,psaddress,genave) values (@aid,@sy,@incoming_year,@student_type,@lrn,@lname,@fname,@mname,@fullname,@age,@dob,pob,@contact_no,@gender,@marital_status,@beneficiary,@ethnic_group,@religion,@address,@mlname,@mfname,@mmname,mocc,@mcontact,@maddress,@flname,@ffname,fmname,@focc,@fcontact,@faddress,@glname,@gfname,@gmname,@gcontact,@gaddress,@psattended,@psygraduated,@psaddress,@genave)", con)
                 With cmd
                     .Parameters.AddWithValue("@aid", cboaid.Text)
                     .Parameters.AddWithValue("@sy", cbosy.Text)
@@ -173,7 +173,8 @@ Public Class frmAddStudent
                     .Parameters.AddWithValue("@contact_no", txtcontact.Text)
                     .Parameters.AddWithValue("@gender", cbogender.Text)
                     .Parameters.AddWithValue("@marital_status", cbostatus.Text)
-                    .Parameters.AddWithValue("@citizenship", txtcitizenship.Text)
+                    .Parameters.AddWithValue("@beneficiary", cbobeneficiary.Text)
+                    .Parameters.AddWithValue("@ethnic_group", txtethnicgroup.Text)
                     .Parameters.AddWithValue("@religion", txtreligion.Text)
                     .Parameters.AddWithValue("@address", txtaddress.Text)
                     .Parameters.AddWithValue("@mlname", txtmlname.Text)

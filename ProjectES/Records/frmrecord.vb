@@ -28,23 +28,28 @@ Public Class frmrecord
     End Sub
 
     Private Sub btnaddgrade_Click(sender As Object, e As EventArgs) Handles btnaddgrade.Click
-        Dim f As New Form
-        Try
-            With f
-                .WindowState = FormWindowState.Maximized
-                .StartPosition = FormStartPosition.Manual
-                .BackColor = Color.Black
-                .Opacity = 0.5
-                .ShowInTaskbar = False
-                .FormBorderStyle = FormBorderStyle.None
-                .Show()
-                frmaddgrade.Owner = f
-                frmaddgrade.ShowDialog()
-            End With
-        Catch ex As Exception
-        Finally
-            f.Dispose()
-        End Try
+        If cbosection.Text = "N/A" Then
+            MessageBox.Show("Student must be enrolled.", "Enrollment System", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        Else
+
+            Dim f As New Form
+            Try
+                With f
+                    .WindowState = FormWindowState.Maximized
+                    .StartPosition = FormStartPosition.Manual
+                    .BackColor = Color.Black
+                    .Opacity = 0.5
+                    .ShowInTaskbar = False
+                    .FormBorderStyle = FormBorderStyle.None
+                    .Show()
+                    frmaddgrade.Owner = f
+                    frmaddgrade.ShowDialog()
+                End With
+            Catch ex As Exception
+            Finally
+                f.Dispose()
+            End Try
+        End If
     End Sub
 
 
