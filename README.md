@@ -1,4 +1,4 @@
-# EnrollmentSystem2
+# Enrollment System
 FEATURES:
 
 Login
