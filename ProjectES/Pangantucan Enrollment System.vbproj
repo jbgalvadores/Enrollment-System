@@ -206,6 +206,30 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Settings\frmadmin.Designer.vb">
+      <DependentUpon>frmadmin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\frmadmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings\frmAY.Designer.vb">
+      <DependentUpon>frmAY.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\frmAY.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings\frmpassword.Designer.vb">
+      <DependentUpon>frmpassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\frmpassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings\frmUserAccount.Designer.vb">
+      <DependentUpon>frmUserAccount.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\frmUserAccount.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Admission\frmAddStudent.resx">
@@ -255,6 +279,18 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\frmadmin.resx">
+      <DependentUpon>frmadmin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\frmAY.resx">
+      <DependentUpon>frmAY.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\frmpassword.resx">
+      <DependentUpon>frmpassword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\frmUserAccount.resx">
+      <DependentUpon>frmUserAccount.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -346,6 +382,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\archive21.png" />
+    <None Include="Resources\password1.png" />
+    <None Include="Resources\hide.png" />
+    <None Include="Resources\hideblack.png" />
     <Content Include="School.ico" />
     <Content Include="SqlServerTypes\Loader.cs" />
     <Content Include="SqlServerTypes\readme.htm" />
@@ -362,5 +401,6 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

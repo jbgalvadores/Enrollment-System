@@ -229,5 +229,19 @@ Public Class frmMain
         End With
     End Sub
 
+    Private Sub btnSettings_Click(sender As Object, e As EventArgs) Handles btnSettings.Click
+        For Each f As Form In My.Application.OpenForms
+            If f.Name = frmadmin.Name Then Return
+        Next
+        CloseForms()
+        With frmadmin
+            .Width = mainpanel.Width
+            .Height = mainpanel.Height
+            .TopLevel = False
+            mainpanel.Controls.Add(frmadmin)
 
+            .BringToFront()
+            .Show()
+        End With
+    End Sub
 End Class
