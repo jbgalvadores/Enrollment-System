@@ -37,7 +37,7 @@ Partial Class frmManagement
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.linkAdmClose = New MetroFramework.Controls.MetroButton()
         Me.lblmanagement = New System.Windows.Forms.Label()
-        Me.MetroTabControl1 = New MetroFramework.Controls.MetroTabControl()
+        Me.TabControl1 = New MetroFramework.Controls.MetroTabControl()
         Me.MetroTabPage4 = New MetroFramework.Controls.MetroTabPage()
         Me.DataGridView5 = New System.Windows.Forms.DataGridView()
         Me.Column18 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -73,32 +73,7 @@ Partial Class frmManagement
         Me.Button1 = New System.Windows.Forms.Button()
         Me.MetroTabPage1 = New MetroFramework.Controls.MetroTabPage()
         Me.DataGridView6 = New System.Windows.Forms.DataGridView()
-        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column24 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column25 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column26 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column27 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column28 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column29 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column30 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column31 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column33 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column34 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column35 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column36 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column37 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column38 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column43 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column39 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column40 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column44 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column41 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column42 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column45 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.coleditschedule = New System.Windows.Forms.DataGridViewImageColumn()
-        Me.coldeletesched = New System.Windows.Forms.DataGridViewImageColumn()
         Me.Panel9 = New System.Windows.Forms.Panel()
-        Me.btnprint = New System.Windows.Forms.Button()
         Me.cboaycode = New System.Windows.Forms.ComboBox()
         Me.txtadviser = New System.Windows.Forms.TextBox()
         Me.btnsave = New System.Windows.Forms.Button()
@@ -184,8 +159,32 @@ Partial Class frmManagement
         Me.DataGridViewImageColumn8 = New System.Windows.Forms.DataGridViewImageColumn()
         Me.DataGridViewImageColumn9 = New System.Windows.Forms.DataGridViewImageColumn()
         Me.DataGridViewImageColumn10 = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column24 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column25 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column26 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column27 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column28 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column29 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column30 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column31 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column33 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column34 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column35 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column36 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column37 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column38 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column43 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column39 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column40 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column44 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column41 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column42 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column45 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.coleditschedule = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.coldeletesched = New System.Windows.Forms.DataGridViewImageColumn()
         Me.Panel1.SuspendLayout()
-        Me.MetroTabControl1.SuspendLayout()
+        Me.TabControl1.SuspendLayout()
         Me.MetroTabPage4.SuspendLayout()
         CType(Me.DataGridView5, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel8.SuspendLayout()
@@ -239,22 +238,22 @@ Partial Class frmManagement
         Me.lblmanagement.TabIndex = 0
         Me.lblmanagement.Text = "MANAGEMENT"
         '
-        'MetroTabControl1
+        'TabControl1
         '
-        Me.MetroTabControl1.Controls.Add(Me.MetroTabPage4)
-        Me.MetroTabControl1.Controls.Add(Me.MetroTabPage3)
-        Me.MetroTabControl1.Controls.Add(Me.MetroTabPage1)
-        Me.MetroTabControl1.Controls.Add(Me.MetroTabPage5)
-        Me.MetroTabControl1.Controls.Add(Me.TabPage1)
-        Me.MetroTabControl1.Controls.Add(Me.TabPage2)
-        Me.MetroTabControl1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.MetroTabControl1.Location = New System.Drawing.Point(0, 37)
-        Me.MetroTabControl1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.MetroTabControl1.Name = "MetroTabControl1"
-        Me.MetroTabControl1.SelectedIndex = 1
-        Me.MetroTabControl1.Size = New System.Drawing.Size(1105, 560)
-        Me.MetroTabControl1.TabIndex = 6
-        Me.MetroTabControl1.UseSelectable = True
+        Me.TabControl1.Controls.Add(Me.MetroTabPage4)
+        Me.TabControl1.Controls.Add(Me.MetroTabPage3)
+        Me.TabControl1.Controls.Add(Me.MetroTabPage1)
+        Me.TabControl1.Controls.Add(Me.MetroTabPage5)
+        Me.TabControl1.Controls.Add(Me.TabPage1)
+        Me.TabControl1.Controls.Add(Me.TabPage2)
+        Me.TabControl1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TabControl1.Location = New System.Drawing.Point(0, 37)
+        Me.TabControl1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.TabControl1.Name = "TabControl1"
+        Me.TabControl1.SelectedIndex = 0
+        Me.TabControl1.Size = New System.Drawing.Size(1105, 560)
+        Me.TabControl1.TabIndex = 6
+        Me.TabControl1.UseSelectable = True
         '
         'MetroTabPage4
         '
@@ -734,210 +733,9 @@ Partial Class frmManagement
         Me.DataGridView6.Size = New System.Drawing.Size(1097, 367)
         Me.DataGridView6.TabIndex = 9
         '
-        'DataGridViewTextBoxColumn3
-        '
-        Me.DataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.DataGridViewTextBoxColumn3.HeaderText = "#"
-        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
-        Me.DataGridViewTextBoxColumn3.ReadOnly = True
-        Me.DataGridViewTextBoxColumn3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.DataGridViewTextBoxColumn3.Visible = False
-        Me.DataGridViewTextBoxColumn3.Width = 22
-        '
-        'Column24
-        '
-        Me.Column24.HeaderText = "aycode"
-        Me.Column24.Name = "Column24"
-        Me.Column24.ReadOnly = True
-        Me.Column24.Visible = False
-        '
-        'Column25
-        '
-        Me.Column25.HeaderText = "grade_level"
-        Me.Column25.Name = "Column25"
-        Me.Column25.ReadOnly = True
-        Me.Column25.Visible = False
-        '
-        'Column26
-        '
-        Me.Column26.HeaderText = "strand"
-        Me.Column26.Name = "Column26"
-        Me.Column26.ReadOnly = True
-        Me.Column26.Visible = False
-        '
-        'Column27
-        '
-        Me.Column27.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.Column27.HeaderText = "section"
-        Me.Column27.Name = "Column27"
-        Me.Column27.ReadOnly = True
-        Me.Column27.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.Column27.Visible = False
-        Me.Column27.Width = 60
-        '
-        'Column28
-        '
-        Me.Column28.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.Column28.HeaderText = "Subject Code"
-        Me.Column28.Name = "Column28"
-        Me.Column28.ReadOnly = True
-        Me.Column28.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.Column28.Width = 94
-        '
-        'Column29
-        '
-        Me.Column29.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.Column29.HeaderText = "Descriptive Title"
-        Me.Column29.Name = "Column29"
-        Me.Column29.ReadOnly = True
-        Me.Column29.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'Column30
-        '
-        Me.Column30.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.Column30.HeaderText = "Unit/s"
-        Me.Column30.Name = "Column30"
-        Me.Column30.ReadOnly = True
-        Me.Column30.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.Column30.Width = 48
-        '
-        'Column31
-        '
-        Me.Column31.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.Column31.HeaderText = "Type"
-        Me.Column31.Name = "Column31"
-        Me.Column31.ReadOnly = True
-        Me.Column31.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.Column31.Width = 43
-        '
-        'Column33
-        '
-        Me.Column33.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.Column33.HeaderText = "mon"
-        Me.Column33.Name = "Column33"
-        Me.Column33.ReadOnly = True
-        Me.Column33.Visible = False
-        Me.Column33.Width = 61
-        '
-        'Column34
-        '
-        Me.Column34.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.Column34.HeaderText = "tue"
-        Me.Column34.Name = "Column34"
-        Me.Column34.ReadOnly = True
-        Me.Column34.Visible = False
-        Me.Column34.Width = 53
-        '
-        'Column35
-        '
-        Me.Column35.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.Column35.HeaderText = "wed"
-        Me.Column35.Name = "Column35"
-        Me.Column35.ReadOnly = True
-        Me.Column35.Visible = False
-        Me.Column35.Width = 58
-        '
-        'Column36
-        '
-        Me.Column36.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.Column36.HeaderText = "thu"
-        Me.Column36.Name = "Column36"
-        Me.Column36.ReadOnly = True
-        Me.Column36.Visible = False
-        Me.Column36.Width = 54
-        '
-        'Column37
-        '
-        Me.Column37.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.Column37.HeaderText = "fri"
-        Me.Column37.Name = "Column37"
-        Me.Column37.ReadOnly = True
-        Me.Column37.Visible = False
-        Me.Column37.Width = 47
-        '
-        'Column38
-        '
-        Me.Column38.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.Column38.HeaderText = "sat"
-        Me.Column38.Name = "Column38"
-        Me.Column38.ReadOnly = True
-        Me.Column38.Visible = False
-        Me.Column38.Width = 52
-        '
-        'Column43
-        '
-        Me.Column43.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.Column43.HeaderText = "Day"
-        Me.Column43.Name = "Column43"
-        Me.Column43.ReadOnly = True
-        Me.Column43.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.Column43.Width = 36
-        '
-        'Column39
-        '
-        Me.Column39.HeaderText = "timefrom"
-        Me.Column39.Name = "Column39"
-        Me.Column39.ReadOnly = True
-        Me.Column39.Visible = False
-        '
-        'Column40
-        '
-        Me.Column40.HeaderText = "timeto"
-        Me.Column40.Name = "Column40"
-        Me.Column40.ReadOnly = True
-        Me.Column40.Visible = False
-        '
-        'Column44
-        '
-        Me.Column44.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.Column44.HeaderText = "Time"
-        Me.Column44.Name = "Column44"
-        Me.Column44.ReadOnly = True
-        Me.Column44.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.Column44.Width = 43
-        '
-        'Column41
-        '
-        Me.Column41.HeaderText = "teacher_id"
-        Me.Column41.Name = "Column41"
-        Me.Column41.ReadOnly = True
-        Me.Column41.Visible = False
-        '
-        'Column42
-        '
-        Me.Column42.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.Column42.HeaderText = "Teacher"
-        Me.Column42.Name = "Column42"
-        Me.Column42.ReadOnly = True
-        Me.Column42.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.Column42.Width = 62
-        '
-        'Column45
-        '
-        Me.Column45.HeaderText = "Room"
-        Me.Column45.Name = "Column45"
-        Me.Column45.ReadOnly = True
-        '
-        'coleditschedule
-        '
-        Me.coleditschedule.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.coleditschedule.HeaderText = ""
-        Me.coleditschedule.Name = "coleditschedule"
-        Me.coleditschedule.ReadOnly = True
-        Me.coleditschedule.Width = 5
-        '
-        'coldeletesched
-        '
-        Me.coldeletesched.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.coldeletesched.HeaderText = ""
-        Me.coldeletesched.Name = "coldeletesched"
-        Me.coldeletesched.ReadOnly = True
-        Me.coldeletesched.Width = 5
-        '
         'Panel9
         '
         Me.Panel9.BackColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(98, Byte), Integer))
-        Me.Panel9.Controls.Add(Me.btnprint)
         Me.Panel9.Controls.Add(Me.cboaycode)
         Me.Panel9.Controls.Add(Me.txtadviser)
         Me.Panel9.Controls.Add(Me.btnsave)
@@ -981,21 +779,6 @@ Partial Class frmManagement
         Me.Panel9.Name = "Panel9"
         Me.Panel9.Size = New System.Drawing.Size(1097, 151)
         Me.Panel9.TabIndex = 8
-        '
-        'btnprint
-        '
-        Me.btnprint.BackColor = System.Drawing.Color.SeaGreen
-        Me.btnprint.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnprint.FlatAppearance.BorderSize = 0
-        Me.btnprint.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnprint.Font = New System.Drawing.Font("Segoe UI Semibold", 8.25!, System.Drawing.FontStyle.Bold)
-        Me.btnprint.ForeColor = System.Drawing.Color.White
-        Me.btnprint.Location = New System.Drawing.Point(584, 119)
-        Me.btnprint.Name = "btnprint"
-        Me.btnprint.Size = New System.Drawing.Size(69, 26)
-        Me.btnprint.TabIndex = 60
-        Me.btnprint.Text = "Print"
-        Me.btnprint.UseVisualStyleBackColor = False
         '
         'cboaycode
         '
@@ -1957,12 +1740,214 @@ Partial Class frmManagement
         Me.DataGridViewImageColumn10.Name = "DataGridViewImageColumn10"
         Me.DataGridViewImageColumn10.ReadOnly = True
         '
+        'DataGridViewTextBoxColumn3
+        '
+        Me.DataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
+        Me.DataGridViewTextBoxColumn3.HeaderText = "#"
+        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
+        Me.DataGridViewTextBoxColumn3.ReadOnly = True
+        Me.DataGridViewTextBoxColumn3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        Me.DataGridViewTextBoxColumn3.Visible = False
+        Me.DataGridViewTextBoxColumn3.Width = 20
+        '
+        'Column24
+        '
+        Me.Column24.HeaderText = "aycode"
+        Me.Column24.Name = "Column24"
+        Me.Column24.ReadOnly = True
+        Me.Column24.Visible = False
+        '
+        'Column25
+        '
+        Me.Column25.HeaderText = "grade_level"
+        Me.Column25.Name = "Column25"
+        Me.Column25.ReadOnly = True
+        Me.Column25.Visible = False
+        '
+        'Column26
+        '
+        Me.Column26.HeaderText = "strand"
+        Me.Column26.Name = "Column26"
+        Me.Column26.ReadOnly = True
+        Me.Column26.Visible = False
+        '
+        'Column27
+        '
+        Me.Column27.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
+        Me.Column27.HeaderText = "section"
+        Me.Column27.Name = "Column27"
+        Me.Column27.ReadOnly = True
+        Me.Column27.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        Me.Column27.Visible = False
+        Me.Column27.Width = 58
+        '
+        'Column28
+        '
+        Me.Column28.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
+        Me.Column28.HeaderText = "Subject Code"
+        Me.Column28.Name = "Column28"
+        Me.Column28.ReadOnly = True
+        Me.Column28.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        Me.Column28.Width = 94
+        '
+        'Column29
+        '
+        Me.Column29.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Column29.HeaderText = "Descriptive Title"
+        Me.Column29.Name = "Column29"
+        Me.Column29.ReadOnly = True
+        Me.Column29.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'Column30
+        '
+        Me.Column30.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
+        Me.Column30.HeaderText = "Unit/s"
+        Me.Column30.Name = "Column30"
+        Me.Column30.ReadOnly = True
+        Me.Column30.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        Me.Column30.Width = 48
+        '
+        'Column31
+        '
+        Me.Column31.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
+        Me.Column31.HeaderText = "Type"
+        Me.Column31.Name = "Column31"
+        Me.Column31.ReadOnly = True
+        Me.Column31.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        Me.Column31.Width = 43
+        '
+        'Column33
+        '
+        Me.Column33.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
+        Me.Column33.HeaderText = "mon"
+        Me.Column33.Name = "Column33"
+        Me.Column33.ReadOnly = True
+        Me.Column33.Visible = False
+        Me.Column33.Width = 59
+        '
+        'Column34
+        '
+        Me.Column34.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
+        Me.Column34.HeaderText = "tue"
+        Me.Column34.Name = "Column34"
+        Me.Column34.ReadOnly = True
+        Me.Column34.Visible = False
+        Me.Column34.Width = 51
+        '
+        'Column35
+        '
+        Me.Column35.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
+        Me.Column35.HeaderText = "wed"
+        Me.Column35.Name = "Column35"
+        Me.Column35.ReadOnly = True
+        Me.Column35.Visible = False
+        Me.Column35.Width = 56
+        '
+        'Column36
+        '
+        Me.Column36.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
+        Me.Column36.HeaderText = "thu"
+        Me.Column36.Name = "Column36"
+        Me.Column36.ReadOnly = True
+        Me.Column36.Visible = False
+        Me.Column36.Width = 52
+        '
+        'Column37
+        '
+        Me.Column37.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
+        Me.Column37.HeaderText = "fri"
+        Me.Column37.Name = "Column37"
+        Me.Column37.ReadOnly = True
+        Me.Column37.Visible = False
+        Me.Column37.Width = 45
+        '
+        'Column38
+        '
+        Me.Column38.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
+        Me.Column38.HeaderText = "sat"
+        Me.Column38.Name = "Column38"
+        Me.Column38.ReadOnly = True
+        Me.Column38.Visible = False
+        Me.Column38.Width = 50
+        '
+        'Column43
+        '
+        Me.Column43.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
+        Me.Column43.HeaderText = "Day"
+        Me.Column43.Name = "Column43"
+        Me.Column43.ReadOnly = True
+        Me.Column43.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        Me.Column43.Width = 36
+        '
+        'Column39
+        '
+        Me.Column39.HeaderText = "timefrom"
+        Me.Column39.Name = "Column39"
+        Me.Column39.ReadOnly = True
+        Me.Column39.Visible = False
+        '
+        'Column40
+        '
+        Me.Column40.HeaderText = "timeto"
+        Me.Column40.Name = "Column40"
+        Me.Column40.ReadOnly = True
+        Me.Column40.Visible = False
+        '
+        'Column44
+        '
+        Me.Column44.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
+        Me.Column44.HeaderText = "Time"
+        Me.Column44.Name = "Column44"
+        Me.Column44.ReadOnly = True
+        Me.Column44.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        Me.Column44.Width = 43
+        '
+        'Column41
+        '
+        Me.Column41.HeaderText = "teacher_id"
+        Me.Column41.Name = "Column41"
+        Me.Column41.ReadOnly = True
+        Me.Column41.Visible = False
+        '
+        'Column42
+        '
+        Me.Column42.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
+        Me.Column42.HeaderText = "Teacher"
+        Me.Column42.Name = "Column42"
+        Me.Column42.ReadOnly = True
+        Me.Column42.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        Me.Column42.Width = 62
+        '
+        'Column45
+        '
+        Me.Column45.HeaderText = "Room"
+        Me.Column45.Name = "Column45"
+        Me.Column45.ReadOnly = True
+        '
+        'coleditschedule
+        '
+        Me.coleditschedule.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
+        Me.coleditschedule.HeaderText = ""
+        Me.coleditschedule.Image = Global.ProjectES.My.Resources.Resources.coledit
+        Me.coleditschedule.Name = "coleditschedule"
+        Me.coleditschedule.ReadOnly = True
+        Me.coleditschedule.Width = 5
+        '
+        'coldeletesched
+        '
+        Me.coldeletesched.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
+        Me.coldeletesched.HeaderText = ""
+        Me.coldeletesched.Image = Global.ProjectES.My.Resources.Resources.coldelete
+        Me.coldeletesched.Name = "coldeletesched"
+        Me.coldeletesched.ReadOnly = True
+        Me.coldeletesched.Width = 5
+        '
         'frmManagement
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1105, 597)
-        Me.Controls.Add(Me.MetroTabControl1)
+        Me.Controls.Add(Me.TabControl1)
         Me.Controls.Add(Me.Panel1)
         Me.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
@@ -1971,7 +1956,7 @@ Partial Class frmManagement
         Me.Text = "frmManagement"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
-        Me.MetroTabControl1.ResumeLayout(False)
+        Me.TabControl1.ResumeLayout(False)
         Me.MetroTabPage4.ResumeLayout(False)
         CType(Me.DataGridView5, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel8.ResumeLayout(False)
@@ -2002,7 +1987,7 @@ Partial Class frmManagement
 
     Friend WithEvents Panel1 As Panel
     Friend WithEvents lblmanagement As Label
-    Friend WithEvents MetroTabControl1 As MetroFramework.Controls.MetroTabControl
+    Friend WithEvents TabControl1 As MetroFramework.Controls.MetroTabControl
     Friend WithEvents MetroTabPage4 As MetroFramework.Controls.MetroTabPage
     Friend WithEvents DataGridView5 As DataGridView
     Friend WithEvents Panel8 As Panel
@@ -2078,10 +2063,8 @@ Partial Class frmManagement
     Friend WithEvents coleditsection As DataGridViewImageColumn
     Friend WithEvents coldeletesection As DataGridViewImageColumn
     Friend WithEvents Panel9 As Panel
-    Friend WithEvents btnprint As Button
     Friend WithEvents cboaycode As ComboBox
     Friend WithEvents txtadviser As TextBox
-    Friend WithEvents btnsave As Button
     Friend WithEvents btnupdate As Button
     Friend WithEvents btncancel As Button
     Friend WithEvents cbostrand As ComboBox
@@ -2117,6 +2100,16 @@ Partial Class frmManagement
     Friend WithEvents Label11 As Label
     Friend WithEvents Label8 As Label
     Friend WithEvents DataGridView6 As DataGridView
+    Friend WithEvents DataGridViewImageColumn3 As DataGridViewImageColumn
+    Friend WithEvents DataGridViewImageColumn4 As DataGridViewImageColumn
+    Friend WithEvents DataGridViewImageColumn5 As DataGridViewImageColumn
+    Friend WithEvents DataGridViewImageColumn6 As DataGridViewImageColumn
+    Friend WithEvents DataGridViewImageColumn7 As DataGridViewImageColumn
+    Friend WithEvents DataGridViewImageColumn8 As DataGridViewImageColumn
+    Friend WithEvents DataGridViewImageColumn9 As DataGridViewImageColumn
+    Friend WithEvents DataGridViewImageColumn10 As DataGridViewImageColumn
+    Friend WithEvents linkAdmClose As MetroFramework.Controls.MetroButton
+    Friend WithEvents btnsave As Button
     Friend WithEvents DataGridViewTextBoxColumn3 As DataGridViewTextBoxColumn
     Friend WithEvents Column24 As DataGridViewTextBoxColumn
     Friend WithEvents Column25 As DataGridViewTextBoxColumn
@@ -2141,13 +2134,4 @@ Partial Class frmManagement
     Friend WithEvents Column45 As DataGridViewTextBoxColumn
     Friend WithEvents coleditschedule As DataGridViewImageColumn
     Friend WithEvents coldeletesched As DataGridViewImageColumn
-    Friend WithEvents DataGridViewImageColumn3 As DataGridViewImageColumn
-    Friend WithEvents DataGridViewImageColumn4 As DataGridViewImageColumn
-    Friend WithEvents DataGridViewImageColumn5 As DataGridViewImageColumn
-    Friend WithEvents DataGridViewImageColumn6 As DataGridViewImageColumn
-    Friend WithEvents DataGridViewImageColumn7 As DataGridViewImageColumn
-    Friend WithEvents DataGridViewImageColumn8 As DataGridViewImageColumn
-    Friend WithEvents DataGridViewImageColumn9 As DataGridViewImageColumn
-    Friend WithEvents DataGridViewImageColumn10 As DataGridViewImageColumn
-    Friend WithEvents linkAdmClose As MetroFramework.Controls.MetroButton
 End Class

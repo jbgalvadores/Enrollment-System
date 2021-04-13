@@ -62,12 +62,12 @@ Public Class frmenrolling
     Public Sub loadrecord()
         opencon()
         Try
-            cmd = New OleDbCommand("select * from Status_Enrollment where lrn like '" & txtsearch.Text & "'", con)
+            cmd = New OleDbCommand("select * from Status_Enrollment where student_id like '" & txtsearch.Text & "'", con)
             dr = cmd.ExecuteReader
             dr.Read()
             If dr.HasRows Then
                 txtaycode.Text = dr.Item("aycode").ToString
-                txtsid.Text = dr.Item("lrn").ToString
+                txtsid.Text = dr.Item("student_id").ToString
                 txtfullname.Text = dr.Item("fullname").ToString
                 txtgradelevel.Text = dr.Item("grade_level").ToString
                 txtstatus.Text = dr.Item("Status").ToString
@@ -103,10 +103,9 @@ Public Class frmenrolling
 
         Try
             opencon()
-            cmd = New OleDbCommand("select * from Status_Enrollment where lrn=@lrn or fullname=@fullname", con)
+            cmd = New OleDbCommand("select * from Status_Enrollment where student_id=@student_id", con)
             With cmd
-                .Parameters.AddWithValue("lrn", txtsid.Text)
-                .Parameters.AddWithValue("fullname", txtsid.Text)
+                .Parameters.AddWithValue("student_id", txtsid.Text)
                 dr = .ExecuteReader
             End With
             dr.Read()
@@ -176,11 +175,119 @@ Public Class frmenrolling
     End Sub
 
     Private Sub btncancel_Click(sender As Object, e As EventArgs) Handles btncancel.Click
+        clear()
         Me.Close()
     End Sub
 
     Private Sub btnsave_Click(sender As Object, e As EventArgs) Handles btnsave.Click
+        lblenrollment.Select()
+        If cbostrand.Text = "" Or cbosection.Text = "" Then
+            MsgBox("Please select strand and section first", vbExclamation)
+            Return
+        End If
 
+        opencon()
+
+        Try
+
+            cmd = New OleDbCommand("select Status from Status_Enrollment where student_id=@id", con)
+            With cmd
+                .Parameters.AddWithValue("@id", txtsid.Text)
+                dr = .ExecuteReader
+            End With
+            dr.Read()
+            If dr.Item("Status") = "ENROLLED" Then
+                MsgBox("This student is already enrolled", vbExclamation)
+                Return
+            End If
+            dr.Close()
+            con.Close()
+
+            con.Open()
+            cmd = New OleDbCommand("select count(student_id) from qsection where grade_level=@grade and strand=@strand and [Section]=@section", con)
+            With cmd
+                .Parameters.AddWithValue("@grade", txtgradelevel.Text)
+                .Parameters.AddWithValue("@strand", cbostrand.Text)
+                .Parameters.AddWithValue("@section", cbosection.Text)
+            End With
+            result = cmd.ExecuteScalar
+            con.Close()
+            con.Open()
+
+            cmd = New OleDbCommand("select maxstudent from max_student", con)
+            dr = cmd.ExecuteReader
+            dr.Read()
+            If dr.HasRows Then
+                If Convert.ToInt32(dr.Item("maxstudent")) <= result Then
+                    MsgBox("This section is full", vbExclamation)
+                    Return
+                End If
+            End If
+            dr.Close()
+            con.Close()
+
+            con.Open()
+            cmd = New OleDbCommand("select ID from [Section] where [Section]=@section", con)
+            With cmd
+                .Parameters.AddWithValue("@section", cbosection.Text)
+                dr = .ExecuteReader
+            End With
+            dr.Read()
+            Dim sec_id As Integer = 0
+            If dr.HasRows Then
+                sec_id = dr.Item("ID")
+            End If
+            con.Close()
+            dr.Close()
+
+
+            If MsgBox("Do you want to enroll this student?", vbQuestion + vbYesNo) = vbYes Then
+                opencon()
+                cmd = New OleDbCommand("update Status_Enrollment set [Section]=@section,strand=@strand,Status=@status where student_id=@student_id", con)
+                With cmd
+                    .Parameters.AddWithValue("@section", cbosection.Text)
+                    .Parameters.AddWithValue("@strand", cbostrand.Text)
+                    .Parameters.AddWithValue("@status", "ENROLLED")
+                    .Parameters.AddWithValue("@student_id", txtsid.Text)
+                    .ExecuteNonQuery()
+                End With
+                con.Close()
+
+
+                con.Open()
+                cmd = New OleDbCommand("insert into section_students (student_id,sec_id) values (@student_id,@sec_id)", con)
+                With cmd
+                    .Parameters.AddWithValue("@student_id", txtsid.Text)
+                    .Parameters.AddWithValue("@sec_id", sec_id)
+                    .ExecuteNonQuery()
+                End With
+                con.Close()
+                con.Open()
+                cmd = New OleDbCommand("select aid from Status_Enrollment where student_id=@studentid", con)
+                With cmd
+                    .Parameters.AddWithValue("@student_id", txtsid.Text)
+                    dr = .ExecuteReader
+                End With
+                dr.Read()
+                Dim aid As String = String.Empty
+                If dr.HasRows Then
+                    aid = dr.Item("aid").ToString
+                End If
+                con.Close()
+                dr.Close()
+
+
+                MsgBox("Student" & " " & txtsid.Text & " " & "has been enrolled!", vbInformation)
+                txtsearch.Clear()
+                frmenrollment.loadstatus()
+                frmMain.countenrolled()
+                con.Close()
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message, vbCritical)
+        End Try
+        dr.Close()
+        con.Close()
     End Sub
     Private Sub txtsearch_GotFocus(sender As Object, e As EventArgs) Handles txtsearch.GotFocus
         If txtsearch.Text = "ENTER STUDENT ID ONLY" Then
@@ -190,7 +297,7 @@ Public Class frmenrolling
     End Sub
     Private Sub txtsearch_LostFocus(sender As Object, e As EventArgs) Handles txtsearch.LostFocus
         If txtsearch.Text = "" Then
-            txtsearch.Text = "ENTER LRN ONLY"
+            txtsearch.Text = "ENTER STUDENT ID ONLY"
             txtsearch.ForeColor = Color.Silver
         End If
     End Sub
@@ -298,5 +405,7 @@ Public Class frmenrolling
         End If
     End Sub
 
-
+    Private Sub frmenrolling_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        getstrand()
+    End Sub
 End Class

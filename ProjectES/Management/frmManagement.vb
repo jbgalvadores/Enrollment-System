@@ -1,11 +1,6 @@
 ﻿Imports System.ComponentModel
 Imports System.Data.OleDb
-
 Public Class frmManagement
-    Private Sub frmManagement_Load(sender As Object, e As EventArgs)
-
-    End Sub
-
     Public Sub recordfoundteacher()
         opencon()
         Try
@@ -17,8 +12,6 @@ Public Class frmManagement
         End Try
         con.Close()
     End Sub
-
-
     Public Sub recordfoundsubject()
         opencon()
         Try
@@ -30,7 +23,6 @@ Public Class frmManagement
         End Try
         con.Close()
     End Sub
-
     Public Sub recordfoundsection()
         opencon()
         Try
@@ -42,7 +34,6 @@ Public Class frmManagement
         End Try
         con.Close()
     End Sub
-
     Public Sub recordfoundstrand()
         opencon()
         Try
@@ -68,11 +59,10 @@ Public Class frmManagement
     End Sub
 
 
-    Private Sub btnaddnew_Click(sender As Object, e As EventArgs)
+    Private Sub btnaddnew_Click(sender As Object, e As EventArgs) Handles btnaddsection.Click
         lblmanagement.Select()
         frmAddSection.ShowDialog()
     End Sub
-
     Public Sub loadsection()
         datagridview2.Rows.Clear()
         opencon()
@@ -93,7 +83,6 @@ Public Class frmManagement
             dr.Close()
         End Try
     End Sub
-
     Public Sub loadstrand()
         DataGridView1.Rows.Clear()
         opencon()
@@ -109,7 +98,6 @@ Public Class frmManagement
         con.Close()
         dr.Close()
     End Sub
-
     Public Sub loadroom()
         DataGridView3.Rows.Clear()
         opencon()
@@ -129,7 +117,6 @@ Public Class frmManagement
         con.Close()
         dr.Close()
     End Sub
-
     Public Sub loadsubject()
         DataGridView4.Rows.Clear()
         opencon()
@@ -153,7 +140,6 @@ Public Class frmManagement
         con.Close()
         dr.Close()
     End Sub
-
     Public Sub filtersubject()
         cbofilterstrand.Items.Clear()
         opencon()
@@ -205,26 +191,9 @@ Public Class frmManagement
         dr.Close()
     End Sub
 
-
-
     Private Sub btnaddstrand_Click(sender As Object, e As EventArgs) Handles btnaddstrand.Click
-        Dim f As New Form
-        Try
-            With f
-                .WindowState = FormWindowState.Maximized
-                .StartPosition = FormStartPosition.Manual
-                .BackColor = Color.Black
-                .Opacity = 0.5
-                .ShowInTaskbar = False
-                .FormBorderStyle = FormBorderStyle.None
-                .Show()
-                frmStrand.Owner = f
-                frmStrand.ShowDialog()
-            End With
-        Catch ex As Exception
-        Finally
-            f.Dispose()
-        End Try
+        lblmanagement.Select()
+        frmStrand.ShowDialog()
     End Sub
 
     Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
@@ -303,6 +272,16 @@ Public Class frmManagement
         End If
     End Sub
 
+    Private Sub TabControl1_Click(sender As Object, e As EventArgs) Handles TabControl1.Click
+        lblmanagement.Select()
+        DataGridView1.ClearSelection()
+        datagridview2.ClearSelection()
+        DataGridView3.ClearSelection()
+        DataGridView4.ClearSelection()
+        DataGridView5.ClearSelection()
+        DataGridView6.ClearSelection()
+    End Sub
+
     Private Sub datagridview2_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles datagridview2.CellContentClick
         lblmanagement.Select()
         Dim colname As String = datagridview2.Columns(e.ColumnIndex).Name
@@ -351,23 +330,8 @@ Public Class frmManagement
     End Sub
 
     Private Sub btnaddroom_Click(sender As Object, e As EventArgs) Handles btnaddroom.Click
-        Dim f As New Form
-        Try
-            With f
-                .WindowState = FormWindowState.Maximized
-                .StartPosition = FormStartPosition.Manual
-                .BackColor = Color.Black
-                .Opacity = 0.5
-                .ShowInTaskbar = False
-                .FormBorderStyle = FormBorderStyle.None
-                .Show()
-                frmRoom.Owner = f
-                frmRoom.ShowDialog()
-            End With
-        Catch ex As Exception
-        Finally
-            f.Dispose()
-        End Try
+        lblmanagement.Select()
+        frmRoom.ShowDialog()
     End Sub
 
     Private Sub DataGridView3_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView3.CellContentClick
@@ -405,7 +369,12 @@ Public Class frmManagement
         con.Close()
     End Sub
 
-    Private Sub cbofiltergrade_SelectedIndexChanged(sender As Object, e As EventArgs)
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        lblmanagement.Select()
+        frmSubject.ShowDialog()
+    End Sub
+
+    Private Sub cbofiltergrade_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbofiltergrade.SelectedIndexChanged
         cbofilterstrand.Items.Clear()
         cbofilterstrand.Text = ""
         DataGridView4.Rows.Clear()
@@ -441,19 +410,19 @@ Public Class frmManagement
         dr.Close()
     End Sub
 
-    Private Sub cbofiltergrade_KeyPress(sender As Object, e As KeyPressEventArgs)
+    Private Sub cbofiltergrade_KeyPress(sender As Object, e As KeyPressEventArgs) Handles cbofilterstrand.KeyPress, cbofiltergrade.KeyPress
         e.Handled = True
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        'lblmanagement.Select()
+        lblmanagement.Select()
         cbofiltergrade.Text = ""
         cbofilterstrand.Items.Clear()
         cbofilterstrand.Text = ""
         loadsubject()
     End Sub
 
-    Private Sub cbofilterstrand_SelectedIndexChanged(sender As Object, e As EventArgs)
+    Private Sub cbofilterstrand_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbofilterstrand.SelectedIndexChanged
         DataGridView4.Rows.Clear()
         opencon()
         Try
@@ -477,7 +446,7 @@ Public Class frmManagement
         con.Close()
     End Sub
 
-    Private Sub DataGridView4_CellContentClick(sender As Object, e As DataGridViewCellEventArgs)
+    Private Sub DataGridView4_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView4.CellContentClick
         lblmanagement.Select()
         Dim colname As String = DataGridView4.Columns(e.ColumnIndex).Name
         opencon()
@@ -521,24 +490,7 @@ Public Class frmManagement
 
     Private Sub btnaddteacher_Click(sender As Object, e As EventArgs) Handles btnaddteacher.Click
         lblmanagement.Select()
-        Dim f As New Form
-        Try
-            With f
-                .WindowState = FormWindowState.Maximized
-                .StartPosition = FormStartPosition.Manual
-                .BackColor = Color.Black
-                .Opacity = 0.5
-                .ShowInTaskbar = False
-                .FormBorderStyle = FormBorderStyle.None
-                .Show()
-                frmTeacher.Owner = f
-                frmTeacher.ShowDialog()
-            End With
-        Catch ex As Exception
-        Finally
-            f.Dispose()
-        End Try
-
+        frmTeacher.ShowDialog()
     End Sub
 
     Private Sub DataGridView5_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView5.CellContentClick
@@ -594,11 +546,67 @@ Public Class frmManagement
         dr.Close()
     End Sub
 
-    Private Sub cbostrand_KeyPress(sender As Object, e As KeyPressEventArgs)
+    Private Sub cbostrand_KeyPress(sender As Object, e As KeyPressEventArgs) Handles cboteacher.KeyPress, cbostrand.KeyPress, cbosection.KeyPress, cbogradelevel.KeyPress, cbocode.KeyPress, cboaycode.KeyPress
         e.Handled = True
     End Sub
 
+    Private Sub cbostrand_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbostrand.SelectedIndexChanged
+        DataGridView6.Enabled = True
+        clear()
+        txtroom.Clear()
+        txtadviser.Clear()
+        txtadviserid.Clear()
+        cbosection.Items.Clear()
+        cbosection.Text = ""
+        opencon()
+        Try
+            cmd = New OleDbCommand("select [Section] from [Section] where Grade_Level=@grade and Strand=@strand", con)
+            With cmd
+                .Parameters.AddWithValue("@grade", cbogradelevel.Text)
+                .Parameters.AddWithValue("@strand", cbostrand.Text)
+                dr = .ExecuteReader
+            End With
+            While dr.Read
+                cbosection.Items.Add(dr.Item("Section").ToString)
+            End While
+        Catch ex As Exception
+            MsgBox(ex.Message, vbCritical)
+        End Try
+    End Sub
 
+    Private Sub cbogradelevel_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbogradelevel.SelectedIndexChanged
+
+        DataGridView6.Enabled = True
+        clear()
+        txtroom.Clear()
+        txtadviser.Clear()
+        txtadviserid.Clear()
+        cbostrand.Items.Clear()
+        cbostrand.Text = ""
+        cbosection.Items.Clear()
+        cbosection.Text = ""
+        opencon()
+        Try
+            cmd = New OleDbCommand("select Strand from Strand", con)
+            dr = cmd.ExecuteReader
+            While dr.Read
+                cbostrand.Items.Add(dr.Item("Strand").ToString)
+            End While
+            cbostrand.Items.Add("N/A").ToString()
+
+            If cbogradelevel.Text = "GRADE 11" Or cbogradelevel.Text = "GRADE 12" Then
+                cbostrand.SelectedIndex = -1
+                cbostrand.Enabled = True
+            Else
+                cbostrand.Text = "N/A"
+                cbostrand.Enabled = False
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message, vbCritical)
+        End Try
+        con.Close()
+        dr.Close()
+    End Sub
     Public Sub room_adviser_id_adviser_name()
         opencon()
         Try
@@ -623,7 +631,7 @@ Public Class frmManagement
         con.Close()
         dr.Close()
     End Sub
-    Private Sub cbosection_SelectedIndexChanged(sender As Object, e As EventArgs)
+    Private Sub cbosection_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbosection.SelectedIndexChanged
         DataGridView6.Enabled = True
         lblmanagement.Select()
         clear()
@@ -632,15 +640,206 @@ Public Class frmManagement
         room_adviser_id_adviser_name()
     End Sub
 
-    Private Sub cbocode_SelectedIndexChanged(sender As Object, e As EventArgs)
+    Private Sub cbocode_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbocode.SelectedIndexChanged
+        lblmanagement.Select()
+        txttitle.Clear()
+        txtunits.Clear()
+        cboteacher.Items.Clear()
+        opencon()
+        Try
+            cmd = New OleDbCommand("select descriptive_title,no_of_units from Subject where subj_code=@code", con)
+            With cmd
+                .Parameters.AddWithValue("@code", cbocode.Text)
+                dr = .ExecuteReader
+            End With
+            dr.Read()
+            If dr.HasRows Then
+                txttitle.Text = dr.Item("descriptive_title").ToString
+                txtunits.Text = dr.Item("no_of_units").ToString
+            End If
+            con.Close()
+            dr.Close()
 
+            con.Open()
+            cmd = New OleDbCommand("select fullname from Teacher", con)
+            dr = cmd.ExecuteReader
+            While dr.Read
+                cboteacher.Items.Add(dr.Item("fullname").ToString)
+            End While
+        Catch ex As Exception
+            MsgBox(ex.Message, vbCritical)
+        End Try
+        con.Close()
+        dr.Close()
     End Sub
 
-    Private Sub btnsave_Click(sender As Object, e As EventArgs)
+    Private Sub btnsave_Click(sender As Object, e As EventArgs) Handles btnsave.Click
+        lblmanagement.Select()
 
+        For Each c As Control In Panel9.Controls
+            If TypeOf c Is ComboBox Then
+                If c.Text = "" Then
+                    MsgBox("Please fill in all field", vbExclamation)
+                    Return
+                End If
+            End If
+        Next
+
+        opencon()
+        Try
+
+
+            cmd = New OleDbCommand("select teacher_id from Teacher where fullname=@fullname", con)
+            With cmd
+                .Parameters.AddWithValue("@fullname", cboteacher.Text)
+                dr = .ExecuteReader
+            End With
+            dr.Read()
+            Dim teacher_id As String = String.Empty
+
+            If dr.HasRows Then
+                teacher_id = dr.Item("teacher_id").ToString
+            End If
+            con.Close()
+            dr.Close()
+
+
+
+            con.Open()
+            cmd = New OleDbCommand("select ID from [Section] where [Section]=@section", con)
+            With cmd
+                .Parameters.AddWithValue("@section", cbosection.Text)
+                dr = .ExecuteReader
+            End With
+            dr.Read()
+            Dim sec_id As Integer
+            If dr.HasRows Then
+                sec_id = dr.Item("ID")
+            End If
+            con.Close()
+            dr.Close()
+
+            con.Open()
+            cmd = New OleDbCommand("select ID from Subject where subj_code=code", con)
+            With cmd
+                .Parameters.AddWithValue("@code", cbocode.Text)
+                dr = .ExecuteReader
+            End With
+            dr.Read()
+            Dim sub_code_id As Integer
+            If dr.HasRows Then
+                sub_code_id = dr.Item("ID")
+            End If
+            con.Close()
+            dr.Close()
+
+            con.Open()
+            cmd = New OleDbCommand("select ID from Room where Room=@room", con)
+            With cmd
+                .Parameters.AddWithValue("@room", txtroom.Text)
+                dr = .ExecuteReader
+            End With
+            dr.Read()
+            Dim room_id As Integer
+            If dr.HasRows Then
+                room_id = dr.Item("ID")
+            End If
+            con.Close()
+            dr.Close()
+
+            'For validation
+            Dim m As String
+            Dim t As String
+            Dim w As String
+            Dim th As String
+            Dim f As String
+            Dim s As String
+            Dim day As String = String.Empty
+            Dim time As String = txttimefrom.Text & "-" & txttimeto.Text
+            If chkm.Checked = True Then m = "M" Else m = ""
+            If chkt.Checked = True Then t = "T" Else t = ""
+            If chkw.Checked = True Then w = "W" Else w = ""
+            If chkth.Checked = True Then th = "TH" Else th = ""
+            If chkf.Checked = True Then f = "F" Else f = ""
+            If chks.Checked = True Then s = "S" Else s = ""
+
+            If chkm.Checked = True Then day = "M"
+            If chkt.Checked = True Then day += "T"
+            If chkw.Checked = True Then day += "W"
+            If chkth.Checked = True Then day += "TH"
+            If chkf.Checked = True Then day += "F"
+            If chks.Checked = True Then day += "S"
+
+            con.Open()
+            cmd = New OleDbCommand("select * from qsched where Grade_Level=@grade and Strand=@strand and [Section]=@section", con)
+            With cmd
+                .Parameters.AddWithValue("@grade", cbogradelevel.Text)
+                .Parameters.AddWithValue("@strand", cbostrand.Text)
+                .Parameters.AddWithValue("@section", cbosection.Text)
+                dr = .ExecuteReader
+            End With
+            While dr.Read
+                If dr.Item("Subj_code") = cbocode.Text Or dr.Item("descriptive_title") = txttitle.Text Then
+                    MsgBox("This subject has already been added", vbExclamation)
+                    Return
+                End If
+
+                If dr.Item("day") = day And dr.Item("time") = time Then
+                    MsgBox("The schedule has conflict", vbExclamation)
+                    Return
+                End If
+            End While
+            con.Close()
+            dr.Close()
+            con.Open()
+            cmd = New OleDbCommand("select * from qsched where [Section]<>@section", con)
+            With cmd
+                .Parameters.AddWithValue("@section", cbosection.Text)
+                .Parameters.AddWithValue("@fullname", cboteacher.Text)
+                dr = .ExecuteReader
+            End With
+            While dr.Read
+                If dr.Item("fullname") = cboteacher.Text And dr.Item("day") = day And dr.Item("time") = time Then
+                    MsgBox("The schedule has conflict", vbExclamation)
+                    Return
+                End If
+            End While
+            con.Close()
+            dr.Close()
+
+
+
+
+            If MsgBox("Do you want to insert this schedule?", vbQuestion + vbYesNo) = vbYes Then
+                con.Open()
+                cmd = New OleDbCommand("insert into Schedule (aycode,sec_id,sub_code_id,mon,tue,wed,thu,fri,sat,[day],timefrom,timeto,[time],teacher_id) values (@aycode,@sec_id,@sub_code_id,@mon,@tue,@wed,@thu,@fri,@sat,@day,@timefrom,@timeto,@time,@teacher_id)", con)
+                With cmd
+                    .Parameters.AddWithValue("@aycode", cboaycode.Text)
+                    .Parameters.AddWithValue("@sec_id", sec_id)
+                    .Parameters.AddWithValue("@sub_code_id", sub_code_id)
+                    .Parameters.AddWithValue("@mon", m)
+                    .Parameters.AddWithValue("@tue", t)
+                    .Parameters.AddWithValue("@wed", w)
+                    .Parameters.AddWithValue("@thu", th)
+                    .Parameters.AddWithValue("@fri", f)
+                    .Parameters.AddWithValue("@sat", s)
+                    .Parameters.AddWithValue("@day", day)
+                    .Parameters.AddWithValue("@timefrom", txttimefrom.Text)
+                    .Parameters.AddWithValue("@timeto", txttimeto.Text)
+                    .Parameters.AddWithValue("@time", time)
+                    .Parameters.AddWithValue("@teacher_id", teacher_id)
+                    .ExecuteNonQuery()
+                End With
+                MsgBox("New schedule has been added", vbInformation)
+                loadschedule()
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message, vbCritical)
+        End Try
+        con.Close()
     End Sub
 
-    Private Sub txttimefrom_KeyPress(sender As Object, e As KeyPressEventArgs)
+    Private Sub txttimefrom_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txttimefrom.KeyPress, txttimeto.KeyPress
         e.KeyChar = Char.ToUpper(e.KeyChar)
     End Sub
     Public Sub getsubjects()
@@ -724,11 +923,27 @@ Public Class frmManagement
         con.Close()
     End Sub
 
-    Private Sub cboteacher_SelectedIndexChanged(sender As Object, e As EventArgs)
-
+    Private Sub cboteacher_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cboteacher.SelectedIndexChanged
+        lblmanagement.Select()
+        opencon()
+        Try
+            cmd = New OleDbCommand("select teacher_id from Teacher where fullname=@fullname", con)
+            With cmd
+                .Parameters.AddWithValue("@fullname", cboteacher.Text)
+                dr = .ExecuteReader
+            End With
+            dr.Read()
+            If dr.HasRows Then
+                txtteacherid.Text = dr.Item("teacher_id").ToString
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message, vbCritical)
+        End Try
+        con.Close()
+        dr.Close()
     End Sub
 
-    Private Sub DataGridView6_CellContentClick(sender As Object, e As DataGridViewCellEventArgs)
+    Private Sub DataGridView6_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView6.CellContentClick
         lblmanagement.Select()
         Dim colname As String = DataGridView6.Columns(e.ColumnIndex).Name
         opencon()
@@ -773,55 +988,200 @@ Public Class frmManagement
         con.Close()
     End Sub
 
+    Private Sub btncancel_Click(sender As Object, e As EventArgs) Handles btncancel.Click
+        lblmanagement.Select()
+        cboaycode.Enabled = True
+        cbogradelevel.Enabled = True
+        cbostrand.Enabled = True
+        cbosection.Enabled = True
+        DataGridView6.Enabled = True
+        txttimeto.Clear()
+        txttitle.Clear()
+        txtunits.Clear()
+        cboteacher.Items.Clear()
+        txttimefrom.Clear()
+        cboteacher.Text = ""
+        txtteacherid.Clear()
+        chkf.Checked = False
+        chkm.Checked = False
+        chks.Checked = False
+        chkt.Checked = False
+        chkth.Checked = False
+        chkw.Checked = False
+        cbocode.Text = ""
+        btnupdate.Enabled = False
+        btnsave.Enabled = True
+        DataGridView6.ClearSelection()
+    End Sub
 
-    Private Sub chkm_Click(sender As Object, e As EventArgs)
+    Private Sub btnupdate_Click(sender As Object, e As EventArgs) Handles btnupdate.Click
+        lblmanagement.Select()
+
+        opencon()
+        Try
+
+            cmd = New OleDbCommand("select teacher_id from Teacher where fullname=@fullname", con)
+            With cmd
+                .Parameters.AddWithValue("@fullname", cboteacher.Text)
+                dr = .ExecuteReader
+            End With
+            dr.Read()
+            Dim teacher_id As String = String.Empty
+
+            If dr.HasRows Then
+                teacher_id = dr.Item("teacher_id").ToString
+            End If
+            con.Close()
+            dr.Close()
+
+
+
+            con.Open()
+            cmd = New OleDbCommand("select ID from [Section] where [Section]=@section", con)
+            With cmd
+                .Parameters.AddWithValue("@section", cbosection.Text)
+                dr = .ExecuteReader
+            End With
+            dr.Read()
+            Dim sec_id As Integer
+            If dr.HasRows Then
+                sec_id = dr.Item("ID")
+            End If
+            con.Close()
+            dr.Close()
+
+            con.Open()
+            cmd = New OleDbCommand("select ID from Subject where subj_code=code", con)
+            With cmd
+                .Parameters.AddWithValue("@code", cbocode.Text)
+                dr = .ExecuteReader
+            End With
+            dr.Read()
+            Dim sub_code_id As Integer
+            If dr.HasRows Then
+                sub_code_id = dr.Item("ID")
+            End If
+            con.Close()
+            dr.Close()
+
+
+            'For validation
+            Dim m As String
+            Dim t As String
+            Dim w As String
+            Dim th As String
+            Dim f As String
+            Dim s As String
+            Dim day As String = String.Empty
+            Dim time As String = txttimefrom.Text & "-" & txttimeto.Text
+            If chkm.Checked = True Then m = "M" Else m = ""
+            If chkt.Checked = True Then t = "T" Else t = ""
+            If chkw.Checked = True Then w = "W" Else w = ""
+            If chkth.Checked = True Then th = "TH" Else th = ""
+            If chkf.Checked = True Then f = "F" Else f = ""
+            If chks.Checked = True Then s = "S" Else s = ""
+
+            If chkm.Checked = True Then day = "M"
+            If chkt.Checked = True Then day += "T"
+            If chkw.Checked = True Then day += "W"
+            If chkth.Checked = True Then day += "TH"
+            If chkf.Checked = True Then day += "F"
+            If chks.Checked = True Then day += "S"
+
+
+            con.Open()
+            cmd = New OleDbCommand("select * from qsched where Grade_Level=@grade and Strand=@strand and [Section]=@section and ID<>@id", con)
+            With cmd
+                .Parameters.AddWithValue("@grade", cbogradelevel.Text)
+                .Parameters.AddWithValue("@strand", cbostrand.Text)
+                .Parameters.AddWithValue("@section", cbosection.Text)
+                .Parameters.AddWithValue("@id", DataGridView6.CurrentRow.Cells(0).Value)
+                dr = .ExecuteReader
+            End With
+            While dr.Read
+                If dr.Item("Subj_code") = cbocode.Text Or dr.Item("descriptive_title") = txttitle.Text Then
+                    MsgBox("This subject has already been added", vbExclamation)
+                    Return
+                End If
+
+                If dr.Item("day") = day And dr.Item("time") = time Then
+                    MsgBox("The schedule has conflict", vbExclamation)
+                    Return
+                End If
+            End While
+            con.Close()
+            dr.Close()
+            con.Open()
+            cmd = New OleDbCommand("select * from qsched where [Section]<>@section", con)
+            With cmd
+                .Parameters.AddWithValue("@section", cbosection.Text)
+                .Parameters.AddWithValue("@fullname", cboteacher.Text)
+                dr = .ExecuteReader
+            End With
+            While dr.Read
+                If dr.Item("fullname") = cboteacher.Text And dr.Item("day") = day And dr.Item("time") = time Then
+                    MsgBox("The schedule has conflict", vbExclamation)
+                    Return
+                End If
+            End While
+            con.Close()
+            dr.Close()
+
+
+            If MsgBox("Do you want to update this schedule?", vbQuestion + vbYesNo) = vbYes Then
+                con.Open()
+                cmd = New OleDbCommand("update Schedule set aycode=@aycode, sec_id=@sec_id, sub_code_id=@sub_id_code, mon=@mon, tue=@tue, wed=@wed, thu=@thu, fri=@fri, sat=@sat, [day]=@day, timefrom=@timefrom ,timeto=@timeto, [time]=@time, teacher_id=@teacher_id where ID=@id", con)
+
+                With cmd
+                    .Parameters.AddWithValue("@aycode", cboaycode.Text)
+                    .Parameters.AddWithValue("@sec_id", sec_id)
+                    .Parameters.AddWithValue("@sub_code_id", sub_code_id)
+                    .Parameters.AddWithValue("@mon", m)
+                    .Parameters.AddWithValue("@tue", t)
+                    .Parameters.AddWithValue("@wed", w)
+                    .Parameters.AddWithValue("@thu", th)
+                    .Parameters.AddWithValue("@fri", f)
+                    .Parameters.AddWithValue("@sat", s)
+                    .Parameters.AddWithValue("@day", day)
+                    .Parameters.AddWithValue("@timefrom", txttimefrom.Text)
+                    .Parameters.AddWithValue("@timeto", txttimeto.Text)
+                    .Parameters.AddWithValue("@time", time)
+                    .Parameters.AddWithValue("@teacher_id", teacher_id)
+                    .Parameters.AddWithValue("@id", DataGridView6.CurrentRow.Cells(0).Value)
+                    .ExecuteNonQuery()
+                End With
+                MsgBox("The schedule has been updated", vbInformation)
+                loadschedule()
+                btnupdate.Enabled = False
+                btnsave.Enabled = True
+                DataGridView6.Enabled = True
+                DataGridView6.Enabled = True
+                cboaycode.Enabled = True
+                cbogradelevel.Enabled = True
+                cbostrand.Enabled = True
+                cbosection.Enabled = True
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message, vbCritical)
+        End Try
+        con.Close()
+    End Sub
+
+    Private Sub chkm_Click(sender As Object, e As EventArgs) Handles chkw.Click, chkth.Click, chkt.Click, chks.Click, chkm.Click, chkf.Click
         lblmanagement.Select()
     End Sub
 
-
-
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        lblmanagement.Select()
-        Dim f As New Form
-        Try
-            With f
-                .WindowState = FormWindowState.Maximized
-                .StartPosition = FormStartPosition.Manual
-                .BackColor = Color.Black
-                .Opacity = 0.5
-                .ShowInTaskbar = False
-                .FormBorderStyle = FormBorderStyle.None
-                .Show()
-                frmSubject.Owner = f
-                frmSubject.ShowDialog()
-            End With
-        Catch ex As Exception
-        Finally
-            f.Dispose()
-        End Try
+    Private Sub cboaycode_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cboaycode.SelectedIndexChanged
+        DataGridView6.Rows.Clear()
+        cbogradelevel.Text = ""
+        cbostrand.Items.Clear()
+        cbostrand.Text = ""
+        cbosection.Items.Clear()
+        cbosection.Text = ""
+        txtroom.Clear()
+        txtadviser.Clear()
+        txtadviserid.Clear()
     End Sub
 
-    Private Sub btnaddsection_Click(sender As Object, e As EventArgs) Handles btnaddsection.Click
-        Dim f As New Form
-        Try
-            With f
-                .WindowState = FormWindowState.Maximized
-                .StartPosition = FormStartPosition.Manual
-                .BackColor = Color.Black
-                .Opacity = 0.5
-                .ShowInTaskbar = False
-                .FormBorderStyle = FormBorderStyle.None
-                .Show()
-                frmAddSection.Owner = f
-                frmAddSection.ShowDialog()
-            End With
-        Catch ex As Exception
-        Finally
-            f.Dispose()
-        End Try
-    End Sub
 
-    Private Sub linkAdmClose_Click(sender As Object, e As EventArgs) Handles linkAdmClose.Click
-        Me.Dispose()
-    End Sub
 End Class
