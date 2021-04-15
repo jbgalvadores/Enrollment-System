@@ -67,7 +67,7 @@ Public Class frmenrolling
             dr.Read()
             If dr.HasRows Then
                 txtaycode.Text = dr.Item("aycode").ToString
-                txtsid.Text = dr.Item("student_id").ToString
+                txtsid.Text = dr.Item("lrn").ToString
                 txtfullname.Text = dr.Item("fullname").ToString
                 txtgradelevel.Text = dr.Item("grade_level").ToString
                 txtstatus.Text = dr.Item("Status").ToString

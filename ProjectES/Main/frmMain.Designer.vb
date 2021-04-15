@@ -279,7 +279,7 @@ Partial Class frmMain
         'sectionpanel
         '
         Me.sectionpanel.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.sectionpanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(184, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.sectionpanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(102, Byte), Integer), CType(CType(132, Byte), Integer), CType(CType(34, Byte), Integer))
         Me.sectionpanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.sectionpanel.Controls.Add(Me.lbltotalsection)
         Me.sectionpanel.Controls.Add(Me.Label5)
@@ -313,7 +313,7 @@ Partial Class frmMain
         'academicpanel
         '
         Me.academicpanel.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.academicpanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(107, Byte), Integer), CType(CType(107, Byte), Integer))
+        Me.academicpanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(12, Byte), Integer))
         Me.academicpanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.academicpanel.Controls.Add(Me.lblacademicyear)
         Me.academicpanel.Controls.Add(Me.Label4)

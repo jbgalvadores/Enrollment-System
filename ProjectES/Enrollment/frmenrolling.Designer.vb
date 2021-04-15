@@ -61,7 +61,6 @@ Partial Class frmenrolling
         Me.Column42 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column45 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Panel5 = New System.Windows.Forms.Panel()
-        Me.btnprint = New System.Windows.Forms.Button()
         Me.btnsave = New System.Windows.Forms.Button()
         Me.btncancel = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
@@ -96,7 +95,7 @@ Partial Class frmenrolling
         '
         'Panel3
         '
-        Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(98, Byte), Integer))
+        Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(52, Byte), Integer))
         Me.Panel3.Controls.Add(Me.lblstudentenrolled)
         Me.Panel3.Controls.Add(Me.PictureBox1)
         Me.Panel3.Controls.Add(Me.txtsearch)
@@ -110,11 +109,11 @@ Partial Class frmenrolling
         'lblstudentenrolled
         '
         Me.lblstudentenrolled.AutoSize = True
-        Me.lblstudentenrolled.Font = New System.Drawing.Font("Calibri", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblstudentenrolled.Font = New System.Drawing.Font("Arial Narrow", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblstudentenrolled.ForeColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(77, Byte), Integer), CType(CType(75, Byte), Integer))
         Me.lblstudentenrolled.Location = New System.Drawing.Point(482, 13)
         Me.lblstudentenrolled.Name = "lblstudentenrolled"
-        Me.lblstudentenrolled.Size = New System.Drawing.Size(253, 23)
+        Me.lblstudentenrolled.Size = New System.Drawing.Size(255, 23)
         Me.lblstudentenrolled.TabIndex = 49
         Me.lblstudentenrolled.Text = "STUDENT ALREADY ENROLLED!"
         Me.lblstudentenrolled.Visible = False
@@ -187,11 +186,11 @@ Partial Class frmenrolling
         'lblsectionfull
         '
         Me.lblsectionfull.AutoSize = True
-        Me.lblsectionfull.Font = New System.Drawing.Font("Calibri", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblsectionfull.Font = New System.Drawing.Font("Arial Narrow", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblsectionfull.ForeColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(77, Byte), Integer), CType(CType(75, Byte), Integer))
         Me.lblsectionfull.Location = New System.Drawing.Point(460, 103)
         Me.lblsectionfull.Name = "lblsectionfull"
-        Me.lblsectionfull.Size = New System.Drawing.Size(182, 23)
+        Me.lblsectionfull.Size = New System.Drawing.Size(185, 23)
         Me.lblsectionfull.TabIndex = 48
         Me.lblsectionfull.Text = "THIS SECTION IS FULL!"
         Me.lblsectionfull.Visible = False
@@ -404,10 +403,10 @@ Partial Class frmenrolling
         Me.DataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
         Me.DataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
         DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(7, Byte), Integer), CType(CType(153, Byte), Integer), CType(CType(146, Byte), Integer))
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(59, Byte), Integer), CType(CType(115, Byte), Integer), CType(CType(186, Byte), Integer))
         DataGridViewCellStyle1.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         DataGridViewCellStyle1.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(7, Byte), Integer), CType(CType(153, Byte), Integer), CType(CType(146, Byte), Integer))
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(59, Byte), Integer), CType(CType(115, Byte), Integer), CType(CType(186, Byte), Integer))
         DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
@@ -422,7 +421,6 @@ Partial Class frmenrolling
         DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.DataGridView1.DefaultCellStyle = DataGridViewCellStyle2
-        Me.DataGridView1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.DataGridView1.EnableHeadersVisualStyles = False
         Me.DataGridView1.GridColor = System.Drawing.Color.Silver
         Me.DataGridView1.Location = New System.Drawing.Point(0, 222)
@@ -431,7 +429,7 @@ Partial Class frmenrolling
         Me.DataGridView1.ReadOnly = True
         Me.DataGridView1.RowHeadersVisible = False
         Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DataGridView1.Size = New System.Drawing.Size(995, 407)
+        Me.DataGridView1.Size = New System.Drawing.Size(995, 367)
         Me.DataGridView1.TabIndex = 22
         '
         'Column28
@@ -507,7 +505,6 @@ Partial Class frmenrolling
         'Panel5
         '
         Me.Panel5.BackColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(98, Byte), Integer))
-        Me.Panel5.Controls.Add(Me.btnprint)
         Me.Panel5.Controls.Add(Me.btnsave)
         Me.Panel5.Controls.Add(Me.btncancel)
         Me.Panel5.Dock = System.Windows.Forms.DockStyle.Bottom
@@ -515,22 +512,6 @@ Partial Class frmenrolling
         Me.Panel5.Name = "Panel5"
         Me.Panel5.Size = New System.Drawing.Size(995, 41)
         Me.Panel5.TabIndex = 23
-        '
-        'btnprint
-        '
-        Me.btnprint.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.btnprint.BackColor = System.Drawing.Color.SeaGreen
-        Me.btnprint.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnprint.FlatAppearance.BorderSize = 0
-        Me.btnprint.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnprint.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnprint.ForeColor = System.Drawing.Color.White
-        Me.btnprint.Location = New System.Drawing.Point(739, 7)
-        Me.btnprint.Name = "btnprint"
-        Me.btnprint.Size = New System.Drawing.Size(78, 28)
-        Me.btnprint.TabIndex = 41
-        Me.btnprint.Text = "Print"
-        Me.btnprint.UseVisualStyleBackColor = False
         '
         'btnsave
         '
@@ -629,7 +610,6 @@ Partial Class frmenrolling
     Friend WithEvents Column42 As DataGridViewTextBoxColumn
     Friend WithEvents Column45 As DataGridViewTextBoxColumn
     Friend WithEvents Panel5 As Panel
-    Friend WithEvents btnprint As Button
     Friend WithEvents btnsave As Button
     Friend WithEvents btncancel As Button
 End Class

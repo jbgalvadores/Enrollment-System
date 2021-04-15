@@ -39,12 +39,14 @@ Partial Class frmAddStudent
         Me.Label1 = New System.Windows.Forms.Label()
         Me.TabControl1 = New MetroFramework.Controls.MetroTabControl()
         Me.MetroTabPage1 = New MetroFramework.Controls.MetroTabPage()
+        Me.cbobeneficiary = New System.Windows.Forms.ComboBox()
         Me.cbostatus = New System.Windows.Forms.ComboBox()
         Me.txtaddress = New System.Windows.Forms.TextBox()
         Me.Label15 = New System.Windows.Forms.Label()
         Me.txtreligion = New System.Windows.Forms.TextBox()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.txtethnicgroup = New System.Windows.Forms.TextBox()
+        Me.Label40 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.cbogender = New System.Windows.Forms.ComboBox()
@@ -114,8 +116,6 @@ Partial Class frmAddStudent
         Me.btnclose = New MetroFramework.Controls.MetroButton()
         Me.btnclear = New MetroFramework.Controls.MetroButton()
         Me.btnsave = New MetroFramework.Controls.MetroButton()
-        Me.Label40 = New System.Windows.Forms.Label()
-        Me.cbobeneficiary = New System.Windows.Forms.ComboBox()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.TabControl1.SuspendLayout()
@@ -162,7 +162,7 @@ Partial Class frmAddStudent
         '
         'Panel2
         '
-        Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(98, Byte), Integer))
+        Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(52, Byte), Integer))
         Me.Panel2.Controls.Add(Me.cbotype)
         Me.Panel2.Controls.Add(Me.Label35)
         Me.Panel2.Controls.Add(Me.Label34)
@@ -197,10 +197,10 @@ Partial Class frmAddStudent
         'Label35
         '
         Me.Label35.AutoSize = True
-        Me.Label35.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label35.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label35.Location = New System.Drawing.Point(544, 40)
         Me.Label35.Name = "Label35"
-        Me.Label35.Size = New System.Drawing.Size(101, 19)
+        Me.Label35.Size = New System.Drawing.Size(91, 20)
         Me.Label35.TabIndex = 23
         Me.Label35.Text = "Student Type"
         '
@@ -216,16 +216,16 @@ Partial Class frmAddStudent
         'Label33
         '
         Me.Label33.AutoSize = True
-        Me.Label33.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label33.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label33.Location = New System.Drawing.Point(3, 42)
         Me.Label33.Name = "Label33"
-        Me.Label33.Size = New System.Drawing.Size(35, 19)
+        Me.Label33.Size = New System.Drawing.Size(35, 20)
         Me.Label33.TabIndex = 21
         Me.Label33.Text = "LRN"
         '
         'txtlrn
         '
-        Me.txtlrn.BackColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(98, Byte), Integer))
+        Me.txtlrn.BackColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(52, Byte), Integer))
         Me.txtlrn.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtlrn.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtlrn.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -250,10 +250,10 @@ Partial Class frmAddStudent
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.Location = New System.Drawing.Point(544, 9)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(144, 19)
+        Me.Label3.Size = New System.Drawing.Size(136, 20)
         Me.Label3.TabIndex = 4
         Me.Label3.Text = "Incoming Year Level"
         '
@@ -270,10 +270,10 @@ Partial Class frmAddStudent
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(224, 9)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(64, 19)
+        Me.Label2.Size = New System.Drawing.Size(62, 20)
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "AY Code"
         '
@@ -290,10 +290,10 @@ Partial Class frmAddStudent
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(5, 9)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(33, 19)
+        Me.Label1.Size = New System.Drawing.Size(31, 20)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "AID"
         '
@@ -351,6 +351,17 @@ Partial Class frmAddStudent
         Me.MetroTabPage1.VerticalScrollbarBarColor = True
         Me.MetroTabPage1.VerticalScrollbarHighlightOnWheel = False
         Me.MetroTabPage1.VerticalScrollbarSize = 10
+        '
+        'cbobeneficiary
+        '
+        Me.cbobeneficiary.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.cbobeneficiary.Font = New System.Drawing.Font("Segoe UI", 9.75!)
+        Me.cbobeneficiary.FormattingEnabled = True
+        Me.cbobeneficiary.Items.AddRange(New Object() {"4P'S", "VOUCHER"})
+        Me.cbobeneficiary.Location = New System.Drawing.Point(577, 88)
+        Me.cbobeneficiary.Name = "cbobeneficiary"
+        Me.cbobeneficiary.Size = New System.Drawing.Size(286, 25)
+        Me.cbobeneficiary.TabIndex = 42
         '
         'cbostatus
         '
@@ -412,6 +423,17 @@ Partial Class frmAddStudent
         Me.txtethnicgroup.Name = "txtethnicgroup"
         Me.txtethnicgroup.Size = New System.Drawing.Size(286, 25)
         Me.txtethnicgroup.TabIndex = 44
+        '
+        'Label40
+        '
+        Me.Label40.AutoSize = True
+        Me.Label40.BackColor = System.Drawing.Color.White
+        Me.Label40.Font = New System.Drawing.Font("Segoe UI", 9.75!)
+        Me.Label40.Location = New System.Drawing.Point(471, 91)
+        Me.Label40.Name = "Label40"
+        Me.Label40.Size = New System.Drawing.Size(70, 17)
+        Me.Label40.TabIndex = 41
+        Me.Label40.Text = "Beneficiary"
         '
         'Label13
         '
@@ -1159,28 +1181,6 @@ Partial Class frmAddStudent
         Me.btnsave.TabIndex = 64
         Me.btnsave.Text = "SAVE"
         Me.btnsave.UseSelectable = True
-        '
-        'Label40
-        '
-        Me.Label40.AutoSize = True
-        Me.Label40.BackColor = System.Drawing.Color.White
-        Me.Label40.Font = New System.Drawing.Font("Segoe UI", 9.75!)
-        Me.Label40.Location = New System.Drawing.Point(471, 91)
-        Me.Label40.Name = "Label40"
-        Me.Label40.Size = New System.Drawing.Size(70, 17)
-        Me.Label40.TabIndex = 41
-        Me.Label40.Text = "Beneficiary"
-        '
-        'cbobeneficiary
-        '
-        Me.cbobeneficiary.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.cbobeneficiary.Font = New System.Drawing.Font("Segoe UI", 9.75!)
-        Me.cbobeneficiary.FormattingEnabled = True
-        Me.cbobeneficiary.Items.AddRange(New Object() {"4P'S", "VOUCHER"})
-        Me.cbobeneficiary.Location = New System.Drawing.Point(577, 88)
-        Me.cbobeneficiary.Name = "cbobeneficiary"
-        Me.cbobeneficiary.Size = New System.Drawing.Size(286, 25)
-        Me.cbobeneficiary.TabIndex = 42
         '
         'frmAddStudent
         '

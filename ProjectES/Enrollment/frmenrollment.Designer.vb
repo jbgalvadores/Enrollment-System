@@ -22,8 +22,8 @@ Partial Class frmenrollment
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.lblenrollment = New System.Windows.Forms.Label()
         Me.Panel3 = New System.Windows.Forms.Panel()
@@ -77,7 +77,7 @@ Partial Class frmenrollment
         '
         'Panel3
         '
-        Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(98, Byte), Integer))
+        Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(52, Byte), Integer))
         Me.Panel3.Controls.Add(Me.cbogradelevel)
         Me.Panel3.Controls.Add(Me.Label2)
         Me.Panel3.Controls.Add(Me.cboaycode)
@@ -97,7 +97,7 @@ Partial Class frmenrollment
         Me.cbogradelevel.Cursor = System.Windows.Forms.Cursors.Hand
         Me.cbogradelevel.FormattingEnabled = True
         Me.cbogradelevel.Items.AddRange(New Object() {"GRADE 7", "GRADE 8", "GRADE 9", "GRADE 10", "GRADE 11", "GRADE 12"})
-        Me.cbogradelevel.Location = New System.Drawing.Point(753, 11)
+        Me.cbogradelevel.Location = New System.Drawing.Point(753, 8)
         Me.cbogradelevel.Name = "cbogradelevel"
         Me.cbogradelevel.Size = New System.Drawing.Size(131, 24)
         Me.cbogradelevel.TabIndex = 83
@@ -106,7 +106,7 @@ Partial Class frmenrollment
         '
         Me.Label2.AutoSize = True
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(685, 13)
+        Me.Label2.Location = New System.Drawing.Point(685, 12)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(63, 16)
         Me.Label2.TabIndex = 82
@@ -116,7 +116,7 @@ Partial Class frmenrollment
         '
         Me.cboaycode.Cursor = System.Windows.Forms.Cursors.Hand
         Me.cboaycode.FormattingEnabled = True
-        Me.cboaycode.Location = New System.Drawing.Point(486, 9)
+        Me.cboaycode.Location = New System.Drawing.Point(486, 8)
         Me.cboaycode.Name = "cboaycode"
         Me.cboaycode.Size = New System.Drawing.Size(181, 24)
         Me.cboaycode.TabIndex = 81
@@ -125,7 +125,7 @@ Partial Class frmenrollment
         '
         Me.Label1.AutoSize = True
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(431, 13)
+        Me.Label1.Location = New System.Drawing.Point(431, 12)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(49, 16)
         Me.Label1.TabIndex = 80
@@ -165,6 +165,7 @@ Partial Class frmenrollment
         Me.btnaddnew.FlatAppearance.BorderSize = 0
         Me.btnaddnew.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnaddnew.ForeColor = System.Drawing.Color.White
+        Me.btnaddnew.Image = Global.ProjectES.My.Resources.Resources.addnew
         Me.btnaddnew.Location = New System.Drawing.Point(896, 0)
         Me.btnaddnew.Name = "btnaddnew"
         Me.btnaddnew.Size = New System.Drawing.Size(82, 40)
@@ -181,25 +182,25 @@ Partial Class frmenrollment
         Me.datagridview1.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.datagridview1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
         Me.datagridview1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(7, Byte), Integer), CType(CType(153, Byte), Integer), CType(CType(146, Byte), Integer))
-        DataGridViewCellStyle1.Font = New System.Drawing.Font("Arial Narrow", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(7, Byte), Integer), CType(CType(153, Byte), Integer), CType(CType(146, Byte), Integer))
-        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.datagridview1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(CType(CType(59, Byte), Integer), CType(CType(115, Byte), Integer), CType(CType(186, Byte), Integer))
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Arial Narrow", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(59, Byte), Integer), CType(CType(115, Byte), Integer), CType(CType(186, Byte), Integer))
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.datagridview1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle3
         Me.datagridview1.ColumnHeadersHeight = 30
         Me.datagridview1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
         Me.datagridview1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column2, Me.Column5, Me.Column1, Me.Column3, Me.Column4, Me.Column32, Me.Column13, Me.Column23, Me.Column6, Me.colupdate, Me.coldelete})
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(37, Byte), Integer), CType(CType(38, Byte), Integer))
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Arial Narrow", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(26, Byte), Integer))
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.datagridview1.DefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(37, Byte), Integer), CType(CType(38, Byte), Integer))
+        DataGridViewCellStyle4.Font = New System.Drawing.Font("Arial Narrow", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle4.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(26, Byte), Integer))
+        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.datagridview1.DefaultCellStyle = DataGridViewCellStyle4
         Me.datagridview1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.datagridview1.EnableHeadersVisualStyles = False
         Me.datagridview1.Location = New System.Drawing.Point(0, 77)

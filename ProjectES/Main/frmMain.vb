@@ -34,10 +34,10 @@ Public Class frmMain
     Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'REMOVE THIS PORTION IF FINALIZED.
         '==================================
-        MessageBox.Show("This software is currently on development. Just to test the initial running of an application. Click OK to proceed.", "Pangantucan Enrollment System", MessageBoxButtons.OK, MessageBoxIcon.Information)
-        If MessageBoxButtons.OK Then
-            Me.Show()
-        End If
+        'MessageBox.Show("This software is currently on development. Just to test the initial running of an application. Click OK to proceed.", "Pangantucan Enrollment System", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        'If MessageBoxButtons.OK Then
+        'Me.Show()
+        'End If
         '==================================
         countstudent()
         countenrolled()

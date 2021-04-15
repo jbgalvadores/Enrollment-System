@@ -49,12 +49,14 @@ Partial Class frmAdmission
         Me.Label2 = New System.Windows.Forms.Label()
         Me.cboaid = New System.Windows.Forms.ComboBox()
         Me.Label40 = New System.Windows.Forms.Label()
+        Me.cbobeneficiary = New System.Windows.Forms.ComboBox()
         Me.cbostatus = New System.Windows.Forms.ComboBox()
         Me.txtaddress = New System.Windows.Forms.TextBox()
         Me.Label15 = New System.Windows.Forms.Label()
         Me.txtreligion = New System.Windows.Forms.TextBox()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.txtethnicgroup = New System.Windows.Forms.TextBox()
+        Me.Label34 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.cbogender = New System.Windows.Forms.ComboBox()
@@ -120,8 +122,6 @@ Partial Class frmAdmission
         Me.txtpsyeargraduated = New System.Windows.Forms.TextBox()
         Me.Label37 = New System.Windows.Forms.Label()
         Me.txtpsattended = New System.Windows.Forms.TextBox()
-        Me.Label34 = New System.Windows.Forms.Label()
-        Me.cbobeneficiary = New System.Windows.Forms.ComboBox()
         Me.Panel1.SuspendLayout()
         Me.Panel3.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -258,17 +258,17 @@ Partial Class frmAdmission
         Me.TabControl1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TabControl1.Controls.Add(Me.MetroTabPage1)
         Me.TabControl1.Controls.Add(Me.MetroTabPage2)
         Me.TabControl1.Controls.Add(Me.MetroTabPage3)
         Me.TabControl1.Controls.Add(Me.MetroTabPage4)
         Me.TabControl1.Controls.Add(Me.MetroTabPage5)
+        Me.TabControl1.Controls.Add(Me.MetroTabPage1)
         Me.TabControl1.Location = New System.Drawing.Point(19, 98)
         Me.TabControl1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.TabControl1.Name = "TabControl1"
-        Me.TabControl1.SelectedIndex = 1
+        Me.TabControl1.SelectedIndex = 0
         Me.TabControl1.Size = New System.Drawing.Size(1069, 450)
-        Me.TabControl1.TabIndex = 19
+        Me.TabControl1.TabIndex = 0
         Me.TabControl1.UseSelectable = True
         '
         'MetroTabPage1
@@ -276,7 +276,7 @@ Partial Class frmAdmission
         Me.MetroTabPage1.Controls.Add(Me.GroupBox1)
         Me.MetroTabPage1.HorizontalScrollbarBarColor = True
         Me.MetroTabPage1.HorizontalScrollbarHighlightOnWheel = False
-        Me.MetroTabPage1.HorizontalScrollbarSize = 5
+        Me.MetroTabPage1.HorizontalScrollbarSize = 3
         Me.MetroTabPage1.Location = New System.Drawing.Point(4, 38)
         Me.MetroTabPage1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.MetroTabPage1.Name = "MetroTabPage1"
@@ -285,7 +285,7 @@ Partial Class frmAdmission
         Me.MetroTabPage1.Text = "REQUIREMENTS"
         Me.MetroTabPage1.VerticalScrollbarBarColor = True
         Me.MetroTabPage1.VerticalScrollbarHighlightOnWheel = False
-        Me.MetroTabPage1.VerticalScrollbarSize = 7
+        Me.MetroTabPage1.VerticalScrollbarSize = 5
         '
         'GroupBox1
         '
@@ -405,7 +405,7 @@ Partial Class frmAdmission
         Me.MetroTabPage2.Controls.Add(Me.txtlname)
         Me.MetroTabPage2.HorizontalScrollbarBarColor = True
         Me.MetroTabPage2.HorizontalScrollbarHighlightOnWheel = False
-        Me.MetroTabPage2.HorizontalScrollbarSize = 5
+        Me.MetroTabPage2.HorizontalScrollbarSize = 3
         Me.MetroTabPage2.Location = New System.Drawing.Point(4, 38)
         Me.MetroTabPage2.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.MetroTabPage2.Name = "MetroTabPage2"
@@ -414,7 +414,7 @@ Partial Class frmAdmission
         Me.MetroTabPage2.Text = "STUDENT"
         Me.MetroTabPage2.VerticalScrollbarBarColor = True
         Me.MetroTabPage2.VerticalScrollbarHighlightOnWheel = False
-        Me.MetroTabPage2.VerticalScrollbarSize = 7
+        Me.MetroTabPage2.VerticalScrollbarSize = 5
         '
         'cbolrn
         '
@@ -529,6 +529,19 @@ Partial Class frmAdmission
         Me.Label40.TabIndex = 85
         Me.Label40.Text = "AID"
         '
+        'cbobeneficiary
+        '
+        Me.cbobeneficiary.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.cbobeneficiary.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.cbobeneficiary.Enabled = False
+        Me.cbobeneficiary.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cbobeneficiary.FormattingEnabled = True
+        Me.cbobeneficiary.Items.AddRange(New Object() {"4P'S", "BENEFICIARY"})
+        Me.cbobeneficiary.Location = New System.Drawing.Point(709, 174)
+        Me.cbobeneficiary.Name = "cbobeneficiary"
+        Me.cbobeneficiary.Size = New System.Drawing.Size(293, 25)
+        Me.cbobeneficiary.TabIndex = 78
+        '
         'cbostatus
         '
         Me.cbostatus.Anchor = System.Windows.Forms.AnchorStyles.None
@@ -601,6 +614,19 @@ Partial Class frmAdmission
         Me.txtethnicgroup.Name = "txtethnicgroup"
         Me.txtethnicgroup.Size = New System.Drawing.Size(292, 25)
         Me.txtethnicgroup.TabIndex = 80
+        '
+        'Label34
+        '
+        Me.Label34.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Label34.AutoSize = True
+        Me.Label34.BackColor = System.Drawing.Color.White
+        Me.Label34.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label34.ForeColor = System.Drawing.Color.Black
+        Me.Label34.Location = New System.Drawing.Point(531, 177)
+        Me.Label34.Name = "Label34"
+        Me.Label34.Size = New System.Drawing.Size(70, 17)
+        Me.Label34.TabIndex = 77
+        Me.Label34.Text = "Beneficiary"
         '
         'Label13
         '
@@ -830,7 +856,7 @@ Partial Class frmAdmission
         Me.MetroTabPage3.Controls.Add(Me.GroupBox3)
         Me.MetroTabPage3.HorizontalScrollbarBarColor = True
         Me.MetroTabPage3.HorizontalScrollbarHighlightOnWheel = False
-        Me.MetroTabPage3.HorizontalScrollbarSize = 5
+        Me.MetroTabPage3.HorizontalScrollbarSize = 3
         Me.MetroTabPage3.Location = New System.Drawing.Point(4, 38)
         Me.MetroTabPage3.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.MetroTabPage3.Name = "MetroTabPage3"
@@ -839,7 +865,7 @@ Partial Class frmAdmission
         Me.MetroTabPage3.Text = "PARENT"
         Me.MetroTabPage3.VerticalScrollbarBarColor = True
         Me.MetroTabPage3.VerticalScrollbarHighlightOnWheel = False
-        Me.MetroTabPage3.VerticalScrollbarSize = 7
+        Me.MetroTabPage3.VerticalScrollbarSize = 5
         '
         'GroupBox2
         '
@@ -1187,7 +1213,7 @@ Partial Class frmAdmission
         Me.MetroTabPage4.Controls.Add(Me.txtglname)
         Me.MetroTabPage4.HorizontalScrollbarBarColor = True
         Me.MetroTabPage4.HorizontalScrollbarHighlightOnWheel = False
-        Me.MetroTabPage4.HorizontalScrollbarSize = 5
+        Me.MetroTabPage4.HorizontalScrollbarSize = 3
         Me.MetroTabPage4.Location = New System.Drawing.Point(4, 38)
         Me.MetroTabPage4.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.MetroTabPage4.Name = "MetroTabPage4"
@@ -1196,7 +1222,7 @@ Partial Class frmAdmission
         Me.MetroTabPage4.Text = "GUARDIAN"
         Me.MetroTabPage4.VerticalScrollbarBarColor = True
         Me.MetroTabPage4.VerticalScrollbarHighlightOnWheel = False
-        Me.MetroTabPage4.VerticalScrollbarSize = 7
+        Me.MetroTabPage4.VerticalScrollbarSize = 5
         '
         'Label31
         '
@@ -1321,7 +1347,7 @@ Partial Class frmAdmission
         Me.MetroTabPage5.Controls.Add(Me.txtpsattended)
         Me.MetroTabPage5.HorizontalScrollbarBarColor = True
         Me.MetroTabPage5.HorizontalScrollbarHighlightOnWheel = False
-        Me.MetroTabPage5.HorizontalScrollbarSize = 5
+        Me.MetroTabPage5.HorizontalScrollbarSize = 3
         Me.MetroTabPage5.Location = New System.Drawing.Point(4, 38)
         Me.MetroTabPage5.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.MetroTabPage5.Name = "MetroTabPage5"
@@ -1330,7 +1356,7 @@ Partial Class frmAdmission
         Me.MetroTabPage5.Text = "OTHERS"
         Me.MetroTabPage5.VerticalScrollbarBarColor = True
         Me.MetroTabPage5.VerticalScrollbarHighlightOnWheel = False
-        Me.MetroTabPage5.VerticalScrollbarSize = 7
+        Me.MetroTabPage5.VerticalScrollbarSize = 5
         '
         'Label39
         '
@@ -1419,32 +1445,6 @@ Partial Class frmAdmission
         Me.txtpsattended.Name = "txtpsattended"
         Me.txtpsattended.Size = New System.Drawing.Size(351, 25)
         Me.txtpsattended.TabIndex = 32
-        '
-        'Label34
-        '
-        Me.Label34.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Label34.AutoSize = True
-        Me.Label34.BackColor = System.Drawing.Color.White
-        Me.Label34.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label34.ForeColor = System.Drawing.Color.Black
-        Me.Label34.Location = New System.Drawing.Point(531, 177)
-        Me.Label34.Name = "Label34"
-        Me.Label34.Size = New System.Drawing.Size(70, 17)
-        Me.Label34.TabIndex = 77
-        Me.Label34.Text = "Beneficiary"
-        '
-        'cbobeneficiary
-        '
-        Me.cbobeneficiary.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.cbobeneficiary.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.cbobeneficiary.Enabled = False
-        Me.cbobeneficiary.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cbobeneficiary.FormattingEnabled = True
-        Me.cbobeneficiary.Items.AddRange(New Object() {"4P'S", "BENEFICIARY"})
-        Me.cbobeneficiary.Location = New System.Drawing.Point(709, 174)
-        Me.cbobeneficiary.Name = "cbobeneficiary"
-        Me.cbobeneficiary.Size = New System.Drawing.Size(293, 25)
-        Me.cbobeneficiary.TabIndex = 78
         '
         'frmAdmission
         '

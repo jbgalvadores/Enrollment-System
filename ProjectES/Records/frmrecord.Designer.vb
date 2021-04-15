@@ -28,10 +28,15 @@ Partial Class frmrecord
         Me.linkAdmClose = New MetroFramework.Controls.MetroButton()
         Me.lblenrollment = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.btncancel = New System.Windows.Forms.Button()
+        Me.btnprint = New System.Windows.Forms.Button()
+        Me.lblfinalgrade = New System.Windows.Forms.Label()
+        Me.btnsave = New System.Windows.Forms.Button()
         Me.btnaddgrade = New MetroFramework.Controls.MetroButton()
         Me.txtlrn = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.txtsearchlrnname = New System.Windows.Forms.TextBox()
+        Me.Label7 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.cbosection = New System.Windows.Forms.ComboBox()
         Me.cbostrand = New System.Windows.Forms.ComboBox()
@@ -43,12 +48,6 @@ Partial Class frmrecord
         Me.txtaycode = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Panel5 = New System.Windows.Forms.Panel()
-        Me.lblfinalgrade = New System.Windows.Forms.Label()
-        Me.btnprint = New System.Windows.Forms.Button()
-        Me.btnsave = New System.Windows.Forms.Button()
-        Me.btncancel = New System.Windows.Forms.Button()
-        Me.Label7 = New System.Windows.Forms.Label()
         Me.GradesDataGridView = New System.Windows.Forms.DataGridView()
         Me.Column28 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column29 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -56,7 +55,6 @@ Partial Class frmrecord
         Me.Column31 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
-        Me.Panel5.SuspendLayout()
         CType(Me.GradesDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -96,10 +94,15 @@ Partial Class frmrecord
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.SystemColors.Control
+        Me.Panel2.Controls.Add(Me.btncancel)
+        Me.Panel2.Controls.Add(Me.btnprint)
+        Me.Panel2.Controls.Add(Me.lblfinalgrade)
+        Me.Panel2.Controls.Add(Me.btnsave)
         Me.Panel2.Controls.Add(Me.btnaddgrade)
         Me.Panel2.Controls.Add(Me.txtlrn)
         Me.Panel2.Controls.Add(Me.Label8)
         Me.Panel2.Controls.Add(Me.txtsearchlrnname)
+        Me.Panel2.Controls.Add(Me.Label7)
         Me.Panel2.Controls.Add(Me.Label2)
         Me.Panel2.Controls.Add(Me.cbosection)
         Me.Panel2.Controls.Add(Me.cbostrand)
@@ -116,6 +119,61 @@ Partial Class frmrecord
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(997, 149)
         Me.Panel2.TabIndex = 22
+        '
+        'btncancel
+        '
+        Me.btncancel.BackColor = System.Drawing.Color.OrangeRed
+        Me.btncancel.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btncancel.FlatAppearance.BorderSize = 0
+        Me.btncancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btncancel.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btncancel.ForeColor = System.Drawing.Color.White
+        Me.btncancel.Location = New System.Drawing.Point(826, 108)
+        Me.btncancel.Name = "btncancel"
+        Me.btncancel.Size = New System.Drawing.Size(78, 28)
+        Me.btncancel.TabIndex = 39
+        Me.btncancel.Text = "Cancel"
+        Me.btncancel.UseVisualStyleBackColor = False
+        '
+        'btnprint
+        '
+        Me.btnprint.BackColor = System.Drawing.Color.SeaGreen
+        Me.btnprint.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnprint.FlatAppearance.BorderSize = 0
+        Me.btnprint.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnprint.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnprint.ForeColor = System.Drawing.Color.White
+        Me.btnprint.Location = New System.Drawing.Point(778, 74)
+        Me.btnprint.Name = "btnprint"
+        Me.btnprint.Size = New System.Drawing.Size(78, 28)
+        Me.btnprint.TabIndex = 41
+        Me.btnprint.Text = "Print"
+        Me.btnprint.UseVisualStyleBackColor = False
+        '
+        'lblfinalgrade
+        '
+        Me.lblfinalgrade.AutoSize = True
+        Me.lblfinalgrade.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblfinalgrade.ForeColor = System.Drawing.Color.Black
+        Me.lblfinalgrade.Location = New System.Drawing.Point(884, 9)
+        Me.lblfinalgrade.Name = "lblfinalgrade"
+        Me.lblfinalgrade.Size = New System.Drawing.Size(0, 16)
+        Me.lblfinalgrade.TabIndex = 42
+        '
+        'btnsave
+        '
+        Me.btnsave.BackColor = System.Drawing.Color.SeaGreen
+        Me.btnsave.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnsave.FlatAppearance.BorderSize = 0
+        Me.btnsave.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnsave.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnsave.ForeColor = System.Drawing.Color.White
+        Me.btnsave.Location = New System.Drawing.Point(872, 74)
+        Me.btnsave.Name = "btnsave"
+        Me.btnsave.Size = New System.Drawing.Size(78, 28)
+        Me.btnsave.TabIndex = 41
+        Me.btnsave.Text = "Save"
+        Me.btnsave.UseVisualStyleBackColor = False
         '
         'btnaddgrade
         '
@@ -155,6 +213,18 @@ Partial Class frmrecord
         Me.txtsearchlrnname.Name = "txtsearchlrnname"
         Me.txtsearchlrnname.Size = New System.Drawing.Size(288, 25)
         Me.txtsearchlrnname.TabIndex = 6
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.BackColor = System.Drawing.Color.Transparent
+        Me.Label7.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.ForeColor = System.Drawing.Color.Black
+        Me.Label7.Location = New System.Drawing.Point(774, 10)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(100, 16)
+        Me.Label7.TabIndex = 4
+        Me.Label7.Text = "OVERALL GRADE"
         '
         'Label2
         '
@@ -277,91 +347,6 @@ Partial Class frmrecord
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "AY Code"
         '
-        'Panel5
-        '
-        Me.Panel5.BackColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(98, Byte), Integer))
-        Me.Panel5.Controls.Add(Me.lblfinalgrade)
-        Me.Panel5.Controls.Add(Me.btnprint)
-        Me.Panel5.Controls.Add(Me.btnsave)
-        Me.Panel5.Controls.Add(Me.btncancel)
-        Me.Panel5.Controls.Add(Me.Label7)
-        Me.Panel5.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel5.Location = New System.Drawing.Point(0, 532)
-        Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(997, 41)
-        Me.Panel5.TabIndex = 24
-        '
-        'lblfinalgrade
-        '
-        Me.lblfinalgrade.AutoSize = True
-        Me.lblfinalgrade.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblfinalgrade.ForeColor = System.Drawing.Color.White
-        Me.lblfinalgrade.Location = New System.Drawing.Point(106, 11)
-        Me.lblfinalgrade.Name = "lblfinalgrade"
-        Me.lblfinalgrade.Size = New System.Drawing.Size(0, 20)
-        Me.lblfinalgrade.TabIndex = 42
-        '
-        'btnprint
-        '
-        Me.btnprint.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.btnprint.BackColor = System.Drawing.Color.SeaGreen
-        Me.btnprint.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnprint.FlatAppearance.BorderSize = 0
-        Me.btnprint.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnprint.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnprint.ForeColor = System.Drawing.Color.White
-        Me.btnprint.Location = New System.Drawing.Point(719, 6)
-        Me.btnprint.Name = "btnprint"
-        Me.btnprint.Size = New System.Drawing.Size(78, 28)
-        Me.btnprint.TabIndex = 41
-        Me.btnprint.Text = "Print"
-        Me.btnprint.UseVisualStyleBackColor = False
-        '
-        'btnsave
-        '
-        Me.btnsave.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.btnsave.BackColor = System.Drawing.Color.SeaGreen
-        Me.btnsave.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnsave.FlatAppearance.BorderSize = 0
-        Me.btnsave.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnsave.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnsave.ForeColor = System.Drawing.Color.White
-        Me.btnsave.Location = New System.Drawing.Point(803, 6)
-        Me.btnsave.Name = "btnsave"
-        Me.btnsave.Size = New System.Drawing.Size(78, 28)
-        Me.btnsave.TabIndex = 41
-        Me.btnsave.Text = "Save"
-        Me.btnsave.UseVisualStyleBackColor = False
-        '
-        'btncancel
-        '
-        Me.btncancel.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.btncancel.BackColor = System.Drawing.Color.OrangeRed
-        Me.btncancel.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btncancel.FlatAppearance.BorderSize = 0
-        Me.btncancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btncancel.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btncancel.ForeColor = System.Drawing.Color.White
-        Me.btncancel.Location = New System.Drawing.Point(887, 6)
-        Me.btncancel.Name = "btncancel"
-        Me.btncancel.Size = New System.Drawing.Size(78, 28)
-        Me.btncancel.TabIndex = 39
-        Me.btncancel.Text = "Cancel"
-        Me.btncancel.UseVisualStyleBackColor = False
-        '
-        'Label7
-        '
-        Me.Label7.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Label7.AutoSize = True
-        Me.Label7.BackColor = System.Drawing.Color.Transparent
-        Me.Label7.Font = New System.Drawing.Font("Segoe UI", 9.75!)
-        Me.Label7.ForeColor = System.Drawing.Color.Transparent
-        Me.Label7.Location = New System.Drawing.Point(12, 12)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(92, 17)
-        Me.Label7.TabIndex = 4
-        Me.Label7.Text = "Overall Grade:"
-        '
         'GradesDataGridView
         '
         Me.GradesDataGridView.AllowUserToAddRows = False
@@ -371,10 +356,10 @@ Partial Class frmrecord
         Me.GradesDataGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
         Me.GradesDataGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
         DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(7, Byte), Integer), CType(CType(153, Byte), Integer), CType(CType(146, Byte), Integer))
-        DataGridViewCellStyle1.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(59, Byte), Integer), CType(CType(115, Byte), Integer), CType(CType(186, Byte), Integer))
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         DataGridViewCellStyle1.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(7, Byte), Integer), CType(CType(153, Byte), Integer), CType(CType(146, Byte), Integer))
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(59, Byte), Integer), CType(CType(115, Byte), Integer), CType(CType(186, Byte), Integer))
         DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.GradesDataGridView.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
@@ -398,7 +383,7 @@ Partial Class frmrecord
         Me.GradesDataGridView.ReadOnly = True
         Me.GradesDataGridView.RowHeadersVisible = False
         Me.GradesDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.GradesDataGridView.Size = New System.Drawing.Size(997, 345)
+        Me.GradesDataGridView.Size = New System.Drawing.Size(997, 386)
         Me.GradesDataGridView.TabIndex = 25
         '
         'Column28
@@ -408,7 +393,7 @@ Partial Class frmrecord
         Me.Column28.Name = "Column28"
         Me.Column28.ReadOnly = True
         Me.Column28.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.Column28.Width = 96
+        Me.Column28.Width = 72
         '
         'Column29
         '
@@ -425,7 +410,7 @@ Partial Class frmrecord
         Me.Column30.Name = "Column30"
         Me.Column30.ReadOnly = True
         Me.Column30.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.Column30.Width = 49
+        Me.Column30.Width = 38
         '
         'Column31
         '
@@ -434,7 +419,7 @@ Partial Class frmrecord
         Me.Column31.Name = "Column31"
         Me.Column31.ReadOnly = True
         Me.Column31.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.Column31.Width = 50
+        Me.Column31.Width = 38
         '
         'frmrecord
         '
@@ -442,7 +427,6 @@ Partial Class frmrecord
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(997, 573)
         Me.Controls.Add(Me.GradesDataGridView)
-        Me.Controls.Add(Me.Panel5)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
         Me.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -453,8 +437,6 @@ Partial Class frmrecord
         Me.Panel1.PerformLayout()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
-        Me.Panel5.ResumeLayout(False)
-        Me.Panel5.PerformLayout()
         CType(Me.GradesDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
@@ -475,7 +457,6 @@ Partial Class frmrecord
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
-    Friend WithEvents Panel5 As Panel
     Friend WithEvents btnprint As Button
     Friend WithEvents btnsave As Button
     Friend WithEvents btncancel As Button
