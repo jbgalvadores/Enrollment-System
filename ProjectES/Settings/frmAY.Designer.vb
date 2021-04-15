@@ -71,7 +71,7 @@ Partial Class frmAY
         '
         'btnsave
         '
-        Me.btnsave.BackColor = System.Drawing.Color.SeaGreen
+        Me.btnsave.BackColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(93, Byte), Integer))
         Me.btnsave.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnsave.FlatAppearance.BorderSize = 0
         Me.btnsave.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -86,7 +86,7 @@ Partial Class frmAY
         '
         'btnupdate
         '
-        Me.btnupdate.BackColor = System.Drawing.Color.SeaGreen
+        Me.btnupdate.BackColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(93, Byte), Integer))
         Me.btnupdate.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnupdate.Enabled = False
         Me.btnupdate.FlatAppearance.BorderSize = 0
@@ -102,7 +102,7 @@ Partial Class frmAY
         '
         'btncancel
         '
-        Me.btncancel.BackColor = System.Drawing.Color.OrangeRed
+        Me.btncancel.BackColor = System.Drawing.Color.FromArgb(CType(CType(190, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(19, Byte), Integer))
         Me.btncancel.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btncancel.FlatAppearance.BorderSize = 0
         Me.btncancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat

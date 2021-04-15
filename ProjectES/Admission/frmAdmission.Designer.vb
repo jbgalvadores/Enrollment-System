@@ -32,13 +32,6 @@ Partial Class frmAdmission
         Me.btnsave = New System.Windows.Forms.Button()
         Me.btnaddnew = New System.Windows.Forms.Button()
         Me.TabControl1 = New MetroFramework.Controls.MetroTabControl()
-        Me.MetroTabPage1 = New MetroFramework.Controls.MetroTabPage()
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.chkform = New System.Windows.Forms.CheckBox()
-        Me.chkpic = New System.Windows.Forms.CheckBox()
-        Me.chkbirth = New System.Windows.Forms.CheckBox()
-        Me.chkreportcard = New System.Windows.Forms.CheckBox()
         Me.MetroTabPage2 = New MetroFramework.Controls.MetroTabPage()
         Me.cbolrn = New System.Windows.Forms.ComboBox()
         Me.cbotype = New System.Windows.Forms.ComboBox()
@@ -122,18 +115,25 @@ Partial Class frmAdmission
         Me.txtpsyeargraduated = New System.Windows.Forms.TextBox()
         Me.Label37 = New System.Windows.Forms.Label()
         Me.txtpsattended = New System.Windows.Forms.TextBox()
+        Me.MetroTabPage1 = New MetroFramework.Controls.MetroTabPage()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.chkform = New System.Windows.Forms.CheckBox()
+        Me.chkpic = New System.Windows.Forms.CheckBox()
+        Me.chkbirth = New System.Windows.Forms.CheckBox()
+        Me.chkreportcard = New System.Windows.Forms.CheckBox()
         Me.Panel1.SuspendLayout()
         Me.Panel3.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabControl1.SuspendLayout()
-        Me.MetroTabPage1.SuspendLayout()
-        Me.GroupBox1.SuspendLayout()
         Me.MetroTabPage2.SuspendLayout()
         Me.MetroTabPage3.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
         Me.MetroTabPage4.SuspendLayout()
         Me.MetroTabPage5.SuspendLayout()
+        Me.MetroTabPage1.SuspendLayout()
+        Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
@@ -160,7 +160,7 @@ Partial Class frmAdmission
         '
         'Panel3
         '
-        Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(98, Byte), Integer))
+        Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(52, Byte), Integer))
         Me.Panel3.Controls.Add(Me.lbladded)
         Me.Panel3.Controls.Add(Me.PictureBox1)
         Me.Panel3.Controls.Add(Me.txtsearch)
@@ -180,7 +180,7 @@ Partial Class frmAdmission
         Me.lbladded.AutoSize = True
         Me.lbladded.Font = New System.Drawing.Font("Arial Narrow", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbladded.ForeColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(77, Byte), Integer), CType(CType(75, Byte), Integer))
-        Me.lbladded.Location = New System.Drawing.Point(602, 11)
+        Me.lbladded.Location = New System.Drawing.Point(569, 10)
         Me.lbladded.Name = "lbladded"
         Me.lbladded.Size = New System.Drawing.Size(219, 23)
         Me.lbladded.TabIndex = 6
@@ -190,7 +190,7 @@ Partial Class frmAdmission
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.ProjectES.My.Resources.Resources.search
-        Me.PictureBox1.Location = New System.Drawing.Point(558, 6)
+        Me.PictureBox1.Location = New System.Drawing.Point(530, 6)
         Me.PictureBox1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(32, 32)
@@ -201,7 +201,7 @@ Partial Class frmAdmission
         'txtsearch
         '
         Me.txtsearch.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.txtsearch.Location = New System.Drawing.Point(155, 10)
+        Me.txtsearch.Location = New System.Drawing.Point(127, 8)
         Me.txtsearch.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtsearch.Name = "txtsearch"
         Me.txtsearch.Size = New System.Drawing.Size(395, 27)
@@ -210,10 +210,11 @@ Partial Class frmAdmission
         'lblsearchstudent
         '
         Me.lblsearchstudent.AutoSize = True
+        Me.lblsearchstudent.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblsearchstudent.ForeColor = System.Drawing.Color.White
-        Me.lblsearchstudent.Location = New System.Drawing.Point(5, 16)
+        Me.lblsearchstudent.Location = New System.Drawing.Point(10, 12)
         Me.lblsearchstudent.Name = "lblsearchstudent"
-        Me.lblsearchstudent.Size = New System.Drawing.Size(109, 19)
+        Me.lblsearchstudent.Size = New System.Drawing.Size(108, 20)
         Me.lblsearchstudent.TabIndex = 3
         Me.lblsearchstudent.Text = "Search Student:"
         '
@@ -271,100 +272,6 @@ Partial Class frmAdmission
         Me.TabControl1.TabIndex = 0
         Me.TabControl1.UseSelectable = True
         '
-        'MetroTabPage1
-        '
-        Me.MetroTabPage1.Controls.Add(Me.GroupBox1)
-        Me.MetroTabPage1.HorizontalScrollbarBarColor = True
-        Me.MetroTabPage1.HorizontalScrollbarHighlightOnWheel = False
-        Me.MetroTabPage1.HorizontalScrollbarSize = 3
-        Me.MetroTabPage1.Location = New System.Drawing.Point(4, 38)
-        Me.MetroTabPage1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.MetroTabPage1.Name = "MetroTabPage1"
-        Me.MetroTabPage1.Size = New System.Drawing.Size(1061, 408)
-        Me.MetroTabPage1.TabIndex = 0
-        Me.MetroTabPage1.Text = "REQUIREMENTS"
-        Me.MetroTabPage1.VerticalScrollbarBarColor = True
-        Me.MetroTabPage1.VerticalScrollbarHighlightOnWheel = False
-        Me.MetroTabPage1.VerticalScrollbarSize = 5
-        '
-        'GroupBox1
-        '
-        Me.GroupBox1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.GroupBox1.BackColor = System.Drawing.Color.White
-        Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Controls.Add(Me.chkform)
-        Me.GroupBox1.Controls.Add(Me.chkpic)
-        Me.GroupBox1.Controls.Add(Me.chkbirth)
-        Me.GroupBox1.Controls.Add(Me.chkreportcard)
-        Me.GroupBox1.Location = New System.Drawing.Point(204, 92)
-        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.GroupBox1.Size = New System.Drawing.Size(698, 208)
-        Me.GroupBox1.TabIndex = 2
-        Me.GroupBox1.TabStop = False
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Arial Narrow", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.Black
-        Me.Label1.Location = New System.Drawing.Point(252, 33)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(193, 31)
-        Me.Label1.TabIndex = 5
-        Me.Label1.Text = "REQUIREMENTS"
-        '
-        'chkform
-        '
-        Me.chkform.AutoSize = True
-        Me.chkform.ForeColor = System.Drawing.Color.Black
-        Me.chkform.Location = New System.Drawing.Point(391, 89)
-        Me.chkform.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.chkform.Name = "chkform"
-        Me.chkform.Size = New System.Drawing.Size(114, 20)
-        Me.chkform.TabIndex = 4
-        Me.chkform.Text = "Enrollment Form"
-        Me.chkform.UseVisualStyleBackColor = True
-        '
-        'chkpic
-        '
-        Me.chkpic.AutoSize = True
-        Me.chkpic.ForeColor = System.Drawing.Color.Black
-        Me.chkpic.Location = New System.Drawing.Point(391, 151)
-        Me.chkpic.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.chkpic.Name = "chkpic"
-        Me.chkpic.Size = New System.Drawing.Size(64, 20)
-        Me.chkpic.TabIndex = 3
-        Me.chkpic.Text = "1x1 Pic"
-        Me.chkpic.UseVisualStyleBackColor = True
-        '
-        'chkbirth
-        '
-        Me.chkbirth.AutoSize = True
-        Me.chkbirth.ForeColor = System.Drawing.Color.Black
-        Me.chkbirth.Location = New System.Drawing.Point(166, 151)
-        Me.chkbirth.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.chkbirth.Name = "chkbirth"
-        Me.chkbirth.Size = New System.Drawing.Size(110, 20)
-        Me.chkbirth.TabIndex = 2
-        Me.chkbirth.Text = "Birth Certificate"
-        Me.chkbirth.UseVisualStyleBackColor = True
-        '
-        'chkreportcard
-        '
-        Me.chkreportcard.AutoSize = True
-        Me.chkreportcard.ForeColor = System.Drawing.Color.Black
-        Me.chkreportcard.Location = New System.Drawing.Point(166, 89)
-        Me.chkreportcard.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.chkreportcard.Name = "chkreportcard"
-        Me.chkreportcard.Size = New System.Drawing.Size(91, 20)
-        Me.chkreportcard.TabIndex = 1
-        Me.chkreportcard.Text = "Report Card"
-        Me.chkreportcard.UseVisualStyleBackColor = True
-        '
         'MetroTabPage2
         '
         Me.MetroTabPage2.BackColor = System.Drawing.Color.White
@@ -405,7 +312,7 @@ Partial Class frmAdmission
         Me.MetroTabPage2.Controls.Add(Me.txtlname)
         Me.MetroTabPage2.HorizontalScrollbarBarColor = True
         Me.MetroTabPage2.HorizontalScrollbarHighlightOnWheel = False
-        Me.MetroTabPage2.HorizontalScrollbarSize = 3
+        Me.MetroTabPage2.HorizontalScrollbarSize = 2
         Me.MetroTabPage2.Location = New System.Drawing.Point(4, 38)
         Me.MetroTabPage2.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.MetroTabPage2.Name = "MetroTabPage2"
@@ -414,7 +321,7 @@ Partial Class frmAdmission
         Me.MetroTabPage2.Text = "STUDENT"
         Me.MetroTabPage2.VerticalScrollbarBarColor = True
         Me.MetroTabPage2.VerticalScrollbarHighlightOnWheel = False
-        Me.MetroTabPage2.VerticalScrollbarSize = 5
+        Me.MetroTabPage2.VerticalScrollbarSize = 4
         '
         'cbolrn
         '
@@ -856,7 +763,7 @@ Partial Class frmAdmission
         Me.MetroTabPage3.Controls.Add(Me.GroupBox3)
         Me.MetroTabPage3.HorizontalScrollbarBarColor = True
         Me.MetroTabPage3.HorizontalScrollbarHighlightOnWheel = False
-        Me.MetroTabPage3.HorizontalScrollbarSize = 3
+        Me.MetroTabPage3.HorizontalScrollbarSize = 2
         Me.MetroTabPage3.Location = New System.Drawing.Point(4, 38)
         Me.MetroTabPage3.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.MetroTabPage3.Name = "MetroTabPage3"
@@ -865,7 +772,7 @@ Partial Class frmAdmission
         Me.MetroTabPage3.Text = "PARENT"
         Me.MetroTabPage3.VerticalScrollbarBarColor = True
         Me.MetroTabPage3.VerticalScrollbarHighlightOnWheel = False
-        Me.MetroTabPage3.VerticalScrollbarSize = 5
+        Me.MetroTabPage3.VerticalScrollbarSize = 4
         '
         'GroupBox2
         '
@@ -1213,7 +1120,7 @@ Partial Class frmAdmission
         Me.MetroTabPage4.Controls.Add(Me.txtglname)
         Me.MetroTabPage4.HorizontalScrollbarBarColor = True
         Me.MetroTabPage4.HorizontalScrollbarHighlightOnWheel = False
-        Me.MetroTabPage4.HorizontalScrollbarSize = 3
+        Me.MetroTabPage4.HorizontalScrollbarSize = 2
         Me.MetroTabPage4.Location = New System.Drawing.Point(4, 38)
         Me.MetroTabPage4.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.MetroTabPage4.Name = "MetroTabPage4"
@@ -1222,7 +1129,7 @@ Partial Class frmAdmission
         Me.MetroTabPage4.Text = "GUARDIAN"
         Me.MetroTabPage4.VerticalScrollbarBarColor = True
         Me.MetroTabPage4.VerticalScrollbarHighlightOnWheel = False
-        Me.MetroTabPage4.VerticalScrollbarSize = 5
+        Me.MetroTabPage4.VerticalScrollbarSize = 4
         '
         'Label31
         '
@@ -1347,7 +1254,7 @@ Partial Class frmAdmission
         Me.MetroTabPage5.Controls.Add(Me.txtpsattended)
         Me.MetroTabPage5.HorizontalScrollbarBarColor = True
         Me.MetroTabPage5.HorizontalScrollbarHighlightOnWheel = False
-        Me.MetroTabPage5.HorizontalScrollbarSize = 3
+        Me.MetroTabPage5.HorizontalScrollbarSize = 2
         Me.MetroTabPage5.Location = New System.Drawing.Point(4, 38)
         Me.MetroTabPage5.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.MetroTabPage5.Name = "MetroTabPage5"
@@ -1356,7 +1263,7 @@ Partial Class frmAdmission
         Me.MetroTabPage5.Text = "OTHERS"
         Me.MetroTabPage5.VerticalScrollbarBarColor = True
         Me.MetroTabPage5.VerticalScrollbarHighlightOnWheel = False
-        Me.MetroTabPage5.VerticalScrollbarSize = 5
+        Me.MetroTabPage5.VerticalScrollbarSize = 4
         '
         'Label39
         '
@@ -1446,6 +1353,100 @@ Partial Class frmAdmission
         Me.txtpsattended.Size = New System.Drawing.Size(351, 25)
         Me.txtpsattended.TabIndex = 32
         '
+        'MetroTabPage1
+        '
+        Me.MetroTabPage1.Controls.Add(Me.GroupBox1)
+        Me.MetroTabPage1.HorizontalScrollbarBarColor = True
+        Me.MetroTabPage1.HorizontalScrollbarHighlightOnWheel = False
+        Me.MetroTabPage1.HorizontalScrollbarSize = 2
+        Me.MetroTabPage1.Location = New System.Drawing.Point(4, 38)
+        Me.MetroTabPage1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.MetroTabPage1.Name = "MetroTabPage1"
+        Me.MetroTabPage1.Size = New System.Drawing.Size(1061, 408)
+        Me.MetroTabPage1.TabIndex = 0
+        Me.MetroTabPage1.Text = "REQUIREMENTS"
+        Me.MetroTabPage1.VerticalScrollbarBarColor = True
+        Me.MetroTabPage1.VerticalScrollbarHighlightOnWheel = False
+        Me.MetroTabPage1.VerticalScrollbarSize = 4
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.GroupBox1.BackColor = System.Drawing.Color.White
+        Me.GroupBox1.Controls.Add(Me.Label1)
+        Me.GroupBox1.Controls.Add(Me.chkform)
+        Me.GroupBox1.Controls.Add(Me.chkpic)
+        Me.GroupBox1.Controls.Add(Me.chkbirth)
+        Me.GroupBox1.Controls.Add(Me.chkreportcard)
+        Me.GroupBox1.Location = New System.Drawing.Point(204, 92)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.GroupBox1.Size = New System.Drawing.Size(698, 208)
+        Me.GroupBox1.TabIndex = 2
+        Me.GroupBox1.TabStop = False
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Arial Narrow", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.Black
+        Me.Label1.Location = New System.Drawing.Point(252, 33)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(193, 31)
+        Me.Label1.TabIndex = 5
+        Me.Label1.Text = "REQUIREMENTS"
+        '
+        'chkform
+        '
+        Me.chkform.AutoSize = True
+        Me.chkform.ForeColor = System.Drawing.Color.Black
+        Me.chkform.Location = New System.Drawing.Point(391, 89)
+        Me.chkform.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.chkform.Name = "chkform"
+        Me.chkform.Size = New System.Drawing.Size(114, 20)
+        Me.chkform.TabIndex = 4
+        Me.chkform.Text = "Enrollment Form"
+        Me.chkform.UseVisualStyleBackColor = True
+        '
+        'chkpic
+        '
+        Me.chkpic.AutoSize = True
+        Me.chkpic.ForeColor = System.Drawing.Color.Black
+        Me.chkpic.Location = New System.Drawing.Point(391, 151)
+        Me.chkpic.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.chkpic.Name = "chkpic"
+        Me.chkpic.Size = New System.Drawing.Size(64, 20)
+        Me.chkpic.TabIndex = 3
+        Me.chkpic.Text = "1x1 Pic"
+        Me.chkpic.UseVisualStyleBackColor = True
+        '
+        'chkbirth
+        '
+        Me.chkbirth.AutoSize = True
+        Me.chkbirth.ForeColor = System.Drawing.Color.Black
+        Me.chkbirth.Location = New System.Drawing.Point(166, 151)
+        Me.chkbirth.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.chkbirth.Name = "chkbirth"
+        Me.chkbirth.Size = New System.Drawing.Size(110, 20)
+        Me.chkbirth.TabIndex = 2
+        Me.chkbirth.Text = "Birth Certificate"
+        Me.chkbirth.UseVisualStyleBackColor = True
+        '
+        'chkreportcard
+        '
+        Me.chkreportcard.AutoSize = True
+        Me.chkreportcard.ForeColor = System.Drawing.Color.Black
+        Me.chkreportcard.Location = New System.Drawing.Point(166, 89)
+        Me.chkreportcard.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.chkreportcard.Name = "chkreportcard"
+        Me.chkreportcard.Size = New System.Drawing.Size(91, 20)
+        Me.chkreportcard.TabIndex = 1
+        Me.chkreportcard.Text = "Report Card"
+        Me.chkreportcard.UseVisualStyleBackColor = True
+        '
         'frmAdmission
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 16.0!)
@@ -1465,9 +1466,6 @@ Partial Class frmAdmission
         Me.Panel3.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabControl1.ResumeLayout(False)
-        Me.MetroTabPage1.ResumeLayout(False)
-        Me.GroupBox1.ResumeLayout(False)
-        Me.GroupBox1.PerformLayout()
         Me.MetroTabPage2.ResumeLayout(False)
         Me.MetroTabPage2.PerformLayout()
         Me.MetroTabPage3.ResumeLayout(False)
@@ -1479,6 +1477,9 @@ Partial Class frmAdmission
         Me.MetroTabPage4.PerformLayout()
         Me.MetroTabPage5.ResumeLayout(False)
         Me.MetroTabPage5.PerformLayout()
+        Me.MetroTabPage1.ResumeLayout(False)
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub

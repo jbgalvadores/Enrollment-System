@@ -195,7 +195,7 @@ Partial Class frmTeacher
         '
         'btnbrowse
         '
-        Me.btnbrowse.BackColor = System.Drawing.Color.SeaGreen
+        Me.btnbrowse.BackColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(93, Byte), Integer))
         Me.btnbrowse.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnbrowse.FlatAppearance.BorderSize = 0
         Me.btnbrowse.FlatStyle = System.Windows.Forms.FlatStyle.Flat

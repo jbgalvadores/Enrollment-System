@@ -116,4 +116,69 @@ Public Class frmlogin
     Private Sub imgCancelButton_Click(sender As Object, e As EventArgs) Handles imgCancelButton.Click
         Me.Dispose()
     End Sub
+
+
+    Private Sub txtpassword_KeyDown(sender As Object, e As KeyEventArgs) Handles txtpassword.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            If txtusername.Text = "Enter Username" Or txtpassword.Text = "Enter Password" Then
+                MsgBox("Enter username and password", vbExclamation)
+                Exit Sub
+            End If
+            opencon()
+            Try
+                cmd = New OleDbCommand("select * from UserAccount where username=@username and password=@password", con)
+                With cmd
+                    .Parameters.AddWithValue("@username", txtusername.Text)
+                    .Parameters.AddWithValue("@password", txtpassword.Text)
+                    dr = .ExecuteReader
+                End With
+                dr.Read()
+                If dr.HasRows Then
+                    Dim username As String
+                    Dim fullname As String
+                    Dim designation As String
+                    cmd = New OleDbCommand("select * from UserAccount where username=@username", con)
+                    With cmd
+                        .Parameters.AddWithValue("@username", txtusername.Text)
+                        dr = .ExecuteReader
+                    End With
+                    dr.Read()
+                    If dr.HasRows Then
+                        username = dr.Item("username").ToString
+                        fullname = dr.Item("fullname").ToString
+                        designation = dr.Item("designation").ToString
+                    Else
+                        username = ""
+                        fullname = ""
+                        designation = ""
+                    End If
+                    dr.Close()
+                    con.Close()
+
+                    con.Open()
+                    cmd = New OleDbCommand("insert into Log (username,fullname,designation,[datetimelog]) values (@username,@fullname,@designation,@datelog)", con)
+                    With cmd
+
+                        Dim dt As System.DateTime = System.DateTime.Now.ToString
+
+                        .Parameters.AddWithValue("@username", username)
+                        .Parameters.AddWithValue("@fullname", fullname)
+                        .Parameters.AddWithValue("@designation", designation)
+                        .Parameters.AddWithValue("@datelog", dt)
+                        .ExecuteNonQuery()
+                    End With
+                    frmMain.Show()
+                    Me.Hide()
+                Else
+                    MsgBox("Username or password is invalid", vbExclamation)
+                    Exit Sub
+                End If
+
+            Catch ex As Exception
+                MsgBox(ex.Message, vbCritical)
+            End Try
+            con.Close()
+            dr.Close()
+        End If
+    End Sub
 End Class

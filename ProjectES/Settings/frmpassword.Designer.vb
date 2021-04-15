@@ -65,7 +65,7 @@ Partial Class frmpassword
         '
         'btnsave
         '
-        Me.btnsave.BackColor = System.Drawing.Color.SeaGreen
+        Me.btnsave.BackColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(93, Byte), Integer))
         Me.btnsave.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnsave.FlatAppearance.BorderSize = 0
         Me.btnsave.FlatStyle = System.Windows.Forms.FlatStyle.Flat

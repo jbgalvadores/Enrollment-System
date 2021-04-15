@@ -89,7 +89,7 @@ Partial Class frmUserAccount
         'btnsave
         '
         Me.btnsave.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.btnsave.BackColor = System.Drawing.Color.SeaGreen
+        Me.btnsave.BackColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(93, Byte), Integer))
         Me.btnsave.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnsave.FlatAppearance.BorderSize = 0
         Me.btnsave.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -105,7 +105,7 @@ Partial Class frmUserAccount
         'btnupdate
         '
         Me.btnupdate.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.btnupdate.BackColor = System.Drawing.Color.SeaGreen
+        Me.btnupdate.BackColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(93, Byte), Integer))
         Me.btnupdate.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnupdate.Enabled = False
         Me.btnupdate.FlatAppearance.BorderSize = 0
@@ -122,7 +122,7 @@ Partial Class frmUserAccount
         'btncancel
         '
         Me.btncancel.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.btncancel.BackColor = System.Drawing.Color.OrangeRed
+        Me.btncancel.BackColor = System.Drawing.Color.FromArgb(CType(CType(190, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(19, Byte), Integer))
         Me.btncancel.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btncancel.FlatAppearance.BorderSize = 0
         Me.btncancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -286,7 +286,7 @@ Partial Class frmUserAccount
         'btnbrowse
         '
         Me.btnbrowse.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.btnbrowse.BackColor = System.Drawing.Color.SeaGreen
+        Me.btnbrowse.BackColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(93, Byte), Integer))
         Me.btnbrowse.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnbrowse.FlatAppearance.BorderSize = 0
         Me.btnbrowse.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -364,6 +364,7 @@ Partial Class frmUserAccount
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "frmUserAccount"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "frmUserAccount"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()

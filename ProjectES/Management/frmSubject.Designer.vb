@@ -70,7 +70,7 @@ Partial Class frmSubject
         '
         'Panel6
         '
-        Me.Panel6.BackColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(98, Byte), Integer))
+        Me.Panel6.BackColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(52, Byte), Integer))
         Me.Panel6.Controls.Add(Me.cbostrand)
         Me.Panel6.Controls.Add(Me.Label3)
         Me.Panel6.Controls.Add(Me.cbogradelevel)
@@ -228,7 +228,7 @@ Partial Class frmSubject
         '
         'btnclose
         '
-        Me.btnclose.Location = New System.Drawing.Point(368, 252)
+        Me.btnclose.Location = New System.Drawing.Point(392, 248)
         Me.btnclose.Name = "btnclose"
         Me.btnclose.Size = New System.Drawing.Size(75, 23)
         Me.btnclose.TabIndex = 83
@@ -237,7 +237,7 @@ Partial Class frmSubject
         '
         'btnupdate
         '
-        Me.btnupdate.Location = New System.Drawing.Point(287, 252)
+        Me.btnupdate.Location = New System.Drawing.Point(311, 248)
         Me.btnupdate.Name = "btnupdate"
         Me.btnupdate.Size = New System.Drawing.Size(75, 23)
         Me.btnupdate.TabIndex = 84
@@ -246,7 +246,7 @@ Partial Class frmSubject
         '
         'btnsave
         '
-        Me.btnsave.Location = New System.Drawing.Point(206, 252)
+        Me.btnsave.Location = New System.Drawing.Point(230, 248)
         Me.btnsave.Name = "btnsave"
         Me.btnsave.Size = New System.Drawing.Size(75, 23)
         Me.btnsave.TabIndex = 85

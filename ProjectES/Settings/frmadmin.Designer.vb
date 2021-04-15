@@ -295,7 +295,7 @@ Partial Class frmadmin
         Me.MetroTabPage2.Location = New System.Drawing.Point(4, 38)
         Me.MetroTabPage2.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.MetroTabPage2.Name = "MetroTabPage2"
-        Me.MetroTabPage2.Size = New System.Drawing.Size(921, 371)
+        Me.MetroTabPage2.Size = New System.Drawing.Size(921, 378)
         Me.MetroTabPage2.TabIndex = 1
         Me.MetroTabPage2.Text = "USER ACCOUNT"
         Me.MetroTabPage2.VerticalScrollbarBarColor = True
@@ -311,10 +311,10 @@ Partial Class frmadmin
         Me.datagridview2.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
         Me.datagridview2.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
         DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(CType(CType(7, Byte), Integer), CType(CType(153, Byte), Integer), CType(CType(146, Byte), Integer))
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(CType(CType(59, Byte), Integer), CType(CType(115, Byte), Integer), CType(CType(186, Byte), Integer))
         DataGridViewCellStyle3.Font = New System.Drawing.Font("Arial Narrow", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         DataGridViewCellStyle3.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(7, Byte), Integer), CType(CType(153, Byte), Integer), CType(CType(146, Byte), Integer))
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(59, Byte), Integer), CType(CType(115, Byte), Integer), CType(CType(186, Byte), Integer))
         DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.datagridview2.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle3
@@ -337,7 +337,7 @@ Partial Class frmadmin
         Me.datagridview2.ReadOnly = True
         Me.datagridview2.RowHeadersVisible = False
         Me.datagridview2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.datagridview2.Size = New System.Drawing.Size(921, 329)
+        Me.datagridview2.Size = New System.Drawing.Size(921, 336)
         Me.datagridview2.TabIndex = 5
         '
         'Column8
@@ -402,7 +402,7 @@ Partial Class frmadmin
         '
         'Panel7
         '
-        Me.Panel7.BackColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(98, Byte), Integer))
+        Me.Panel7.BackColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(52, Byte), Integer))
         Me.Panel7.Controls.Add(Me.btnupdatepassword)
         Me.Panel7.Controls.Add(Me.btnaddnewaccount)
         Me.Panel7.Dock = System.Windows.Forms.DockStyle.Top
@@ -451,7 +451,7 @@ Partial Class frmadmin
         Me.MetroTabPage3.HorizontalScrollbarSize = 2
         Me.MetroTabPage3.Location = New System.Drawing.Point(4, 38)
         Me.MetroTabPage3.Name = "MetroTabPage3"
-        Me.MetroTabPage3.Size = New System.Drawing.Size(921, 371)
+        Me.MetroTabPage3.Size = New System.Drawing.Size(921, 378)
         Me.MetroTabPage3.TabIndex = 2
         Me.MetroTabPage3.Text = "SECTION"
         Me.MetroTabPage3.VerticalScrollbarBarColor = True
@@ -460,6 +460,7 @@ Partial Class frmadmin
         '
         'Panel2
         '
+        Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(52, Byte), Integer))
         Me.Panel2.Controls.Add(Me.txtmaxstudent)
         Me.Panel2.Controls.Add(Me.btnsavemax)
         Me.Panel2.Controls.Add(Me.btneditmax)
@@ -479,7 +480,7 @@ Partial Class frmadmin
         '
         'btnsavemax
         '
-        Me.btnsavemax.BackColor = System.Drawing.Color.SeaGreen
+        Me.btnsavemax.BackColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(93, Byte), Integer))
         Me.btnsavemax.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnsavemax.Enabled = False
         Me.btnsavemax.FlatAppearance.BorderSize = 0
@@ -495,7 +496,7 @@ Partial Class frmadmin
         '
         'btneditmax
         '
-        Me.btneditmax.BackColor = System.Drawing.Color.SeaGreen
+        Me.btneditmax.BackColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(93, Byte), Integer))
         Me.btneditmax.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btneditmax.FlatAppearance.BorderSize = 0
         Me.btneditmax.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -511,10 +512,11 @@ Partial Class frmadmin
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(204, 35)
+        Me.Label2.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.White
+        Me.Label2.Location = New System.Drawing.Point(213, 34)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(139, 20)
+        Me.Label2.Size = New System.Drawing.Size(120, 20)
         Me.Label2.TabIndex = 46
         Me.Label2.Text = "Max Student / Sec"
         '

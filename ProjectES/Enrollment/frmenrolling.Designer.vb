@@ -504,7 +504,7 @@ Partial Class frmenrolling
         '
         'Panel5
         '
-        Me.Panel5.BackColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(98, Byte), Integer))
+        Me.Panel5.BackColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(52, Byte), Integer))
         Me.Panel5.Controls.Add(Me.btnsave)
         Me.Panel5.Controls.Add(Me.btncancel)
         Me.Panel5.Dock = System.Windows.Forms.DockStyle.Bottom
@@ -516,7 +516,7 @@ Partial Class frmenrolling
         'btnsave
         '
         Me.btnsave.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.btnsave.BackColor = System.Drawing.Color.SeaGreen
+        Me.btnsave.BackColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(93, Byte), Integer))
         Me.btnsave.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnsave.FlatAppearance.BorderSize = 0
         Me.btnsave.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -532,7 +532,7 @@ Partial Class frmenrolling
         'btncancel
         '
         Me.btncancel.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.btncancel.BackColor = System.Drawing.Color.OrangeRed
+        Me.btncancel.BackColor = System.Drawing.Color.FromArgb(CType(CType(190, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(19, Byte), Integer))
         Me.btncancel.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btncancel.FlatAppearance.BorderSize = 0
         Me.btncancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat

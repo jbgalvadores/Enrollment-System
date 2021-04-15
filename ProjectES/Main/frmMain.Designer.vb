@@ -76,7 +76,7 @@ Partial Class frmMain
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(134, Byte), Integer), CType(CType(222, Byte), Integer))
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(72, Byte), Integer), CType(CType(134, Byte), Integer))
         Me.Panel1.Controls.Add(Me.Panel4)
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
@@ -117,7 +117,7 @@ Partial Class frmMain
         '
         'Panel2
         '
-        Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(59, Byte), Integer), CType(CType(72, Byte), Integer))
+        Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(52, Byte), Integer))
         Me.Panel2.Controls.Add(Me.btnLogout)
         Me.Panel2.Controls.Add(Me.btnSettings)
         Me.Panel2.Controls.Add(Me.btnManagement)
@@ -134,7 +134,7 @@ Partial Class frmMain
         '
         'btnLogout
         '
-        Me.btnLogout.BackColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(59, Byte), Integer), CType(CType(72, Byte), Integer))
+        Me.btnLogout.BackColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(52, Byte), Integer))
         Me.btnLogout.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.btnLogout.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.btnLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -147,7 +147,7 @@ Partial Class frmMain
         '
         'btnSettings
         '
-        Me.btnSettings.BackColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(59, Byte), Integer), CType(CType(72, Byte), Integer))
+        Me.btnSettings.BackColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(52, Byte), Integer))
         Me.btnSettings.Dock = System.Windows.Forms.DockStyle.Top
         Me.btnSettings.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.btnSettings.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -160,7 +160,7 @@ Partial Class frmMain
         '
         'btnManagement
         '
-        Me.btnManagement.BackColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(59, Byte), Integer), CType(CType(72, Byte), Integer))
+        Me.btnManagement.BackColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(52, Byte), Integer))
         Me.btnManagement.Dock = System.Windows.Forms.DockStyle.Top
         Me.btnManagement.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.btnManagement.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -173,7 +173,7 @@ Partial Class frmMain
         '
         'btnRecords
         '
-        Me.btnRecords.BackColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(59, Byte), Integer), CType(CType(72, Byte), Integer))
+        Me.btnRecords.BackColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(52, Byte), Integer))
         Me.btnRecords.Dock = System.Windows.Forms.DockStyle.Top
         Me.btnRecords.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.btnRecords.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -186,7 +186,7 @@ Partial Class frmMain
         '
         'btnEnrollment
         '
-        Me.btnEnrollment.BackColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(59, Byte), Integer), CType(CType(72, Byte), Integer))
+        Me.btnEnrollment.BackColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(52, Byte), Integer))
         Me.btnEnrollment.Dock = System.Windows.Forms.DockStyle.Top
         Me.btnEnrollment.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.btnEnrollment.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -199,7 +199,7 @@ Partial Class frmMain
         '
         'btnAdmission
         '
-        Me.btnAdmission.BackColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(59, Byte), Integer), CType(CType(72, Byte), Integer))
+        Me.btnAdmission.BackColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(52, Byte), Integer))
         Me.btnAdmission.Dock = System.Windows.Forms.DockStyle.Top
         Me.btnAdmission.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.btnAdmission.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -212,7 +212,7 @@ Partial Class frmMain
         '
         'btnDashboard
         '
-        Me.btnDashboard.BackColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(59, Byte), Integer), CType(CType(72, Byte), Integer))
+        Me.btnDashboard.BackColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(52, Byte), Integer))
         Me.btnDashboard.Dock = System.Windows.Forms.DockStyle.Top
         Me.btnDashboard.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.btnDashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft

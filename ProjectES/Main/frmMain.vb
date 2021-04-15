@@ -132,7 +132,7 @@ Public Class frmMain
     Public Sub closeallforms()
         For i As Integer = My.Application.OpenForms.Count - 1 To 0 Step -1
             If My.Application.OpenForms(i) IsNot Me Then
-                My.Application.OpenForms(i).Dispose()
+                My.Application.OpenForms(i).Hide()
             End If
         Next
     End Sub
@@ -165,6 +165,8 @@ Public Class frmMain
 
     Private Sub btnLogout_Click(sender As Object, e As EventArgs) Handles btnLogout.Click
         If MsgBox("Do you want to sign out?", vbQuestion + vbYesNo) = vbYes Then
+            frmlogin.txtusername.Clear()
+            frmlogin.txtpassword.Clear()
             frmlogin.Show()
             Me.Close()
         End If

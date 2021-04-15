@@ -175,7 +175,7 @@ Partial Class frmlogin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(72, Byte), Integer), CType(CType(134, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(997, 575)
         Me.Controls.Add(Me.Panel4)
         Me.Controls.Add(Me.Panel3)
@@ -194,7 +194,7 @@ Partial Class frmlogin
         Me.MaximizeBox = False
         Me.Name = "frmlogin"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "frmlogin"
+        Me.Text = "Pangantucan Enrollment System"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         CType(Me.pichide, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.imgLoginButton, System.ComponentModel.ISupportInitialize).EndInit()

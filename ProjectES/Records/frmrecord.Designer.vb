@@ -22,8 +22,8 @@ Partial Class frmrecord
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.linkAdmClose = New MetroFramework.Controls.MetroButton()
         Me.lblenrollment = New System.Windows.Forms.Label()
@@ -53,9 +53,11 @@ Partial Class frmrecord
         Me.Column29 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column30 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column31 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         CType(Me.GradesDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
@@ -94,15 +96,11 @@ Partial Class frmrecord
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.SystemColors.Control
-        Me.Panel2.Controls.Add(Me.btncancel)
-        Me.Panel2.Controls.Add(Me.btnprint)
-        Me.Panel2.Controls.Add(Me.lblfinalgrade)
-        Me.Panel2.Controls.Add(Me.btnsave)
+        Me.Panel2.Controls.Add(Me.GroupBox1)
         Me.Panel2.Controls.Add(Me.btnaddgrade)
         Me.Panel2.Controls.Add(Me.txtlrn)
         Me.Panel2.Controls.Add(Me.Label8)
         Me.Panel2.Controls.Add(Me.txtsearchlrnname)
-        Me.Panel2.Controls.Add(Me.Label7)
         Me.Panel2.Controls.Add(Me.Label2)
         Me.Panel2.Controls.Add(Me.cbosection)
         Me.Panel2.Controls.Add(Me.cbostrand)
@@ -122,13 +120,13 @@ Partial Class frmrecord
         '
         'btncancel
         '
-        Me.btncancel.BackColor = System.Drawing.Color.OrangeRed
+        Me.btncancel.BackColor = System.Drawing.Color.FromArgb(CType(CType(190, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(19, Byte), Integer))
         Me.btncancel.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btncancel.FlatAppearance.BorderSize = 0
         Me.btncancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btncancel.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btncancel.ForeColor = System.Drawing.Color.White
-        Me.btncancel.Location = New System.Drawing.Point(826, 108)
+        Me.btncancel.Location = New System.Drawing.Point(83, 96)
         Me.btncancel.Name = "btncancel"
         Me.btncancel.Size = New System.Drawing.Size(78, 28)
         Me.btncancel.TabIndex = 39
@@ -137,13 +135,13 @@ Partial Class frmrecord
         '
         'btnprint
         '
-        Me.btnprint.BackColor = System.Drawing.Color.SeaGreen
+        Me.btnprint.BackColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(93, Byte), Integer))
         Me.btnprint.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnprint.FlatAppearance.BorderSize = 0
         Me.btnprint.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnprint.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnprint.ForeColor = System.Drawing.Color.White
-        Me.btnprint.Location = New System.Drawing.Point(778, 74)
+        Me.btnprint.Location = New System.Drawing.Point(35, 62)
         Me.btnprint.Name = "btnprint"
         Me.btnprint.Size = New System.Drawing.Size(78, 28)
         Me.btnprint.TabIndex = 41
@@ -155,20 +153,20 @@ Partial Class frmrecord
         Me.lblfinalgrade.AutoSize = True
         Me.lblfinalgrade.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblfinalgrade.ForeColor = System.Drawing.Color.Black
-        Me.lblfinalgrade.Location = New System.Drawing.Point(884, 9)
+        Me.lblfinalgrade.Location = New System.Drawing.Point(132, 21)
         Me.lblfinalgrade.Name = "lblfinalgrade"
         Me.lblfinalgrade.Size = New System.Drawing.Size(0, 16)
         Me.lblfinalgrade.TabIndex = 42
         '
         'btnsave
         '
-        Me.btnsave.BackColor = System.Drawing.Color.SeaGreen
+        Me.btnsave.BackColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(93, Byte), Integer))
         Me.btnsave.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnsave.FlatAppearance.BorderSize = 0
         Me.btnsave.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnsave.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnsave.ForeColor = System.Drawing.Color.White
-        Me.btnsave.Location = New System.Drawing.Point(872, 74)
+        Me.btnsave.Location = New System.Drawing.Point(129, 62)
         Me.btnsave.Name = "btnsave"
         Me.btnsave.Size = New System.Drawing.Size(78, 28)
         Me.btnsave.TabIndex = 41
@@ -177,7 +175,7 @@ Partial Class frmrecord
         '
         'btnaddgrade
         '
-        Me.btnaddgrade.Location = New System.Drawing.Point(603, 113)
+        Me.btnaddgrade.Location = New System.Drawing.Point(609, 112)
         Me.btnaddgrade.Name = "btnaddgrade"
         Me.btnaddgrade.Size = New System.Drawing.Size(75, 23)
         Me.btnaddgrade.TabIndex = 65
@@ -220,7 +218,7 @@ Partial Class frmrecord
         Me.Label7.BackColor = System.Drawing.Color.Transparent
         Me.Label7.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.Black
-        Me.Label7.Location = New System.Drawing.Point(774, 10)
+        Me.Label7.Location = New System.Drawing.Point(22, 22)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(100, 16)
         Me.Label7.TabIndex = 4
@@ -355,25 +353,25 @@ Partial Class frmrecord
         Me.GradesDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.GradesDataGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
         Me.GradesDataGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(59, Byte), Integer), CType(CType(115, Byte), Integer), CType(CType(186, Byte), Integer))
-        DataGridViewCellStyle1.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(59, Byte), Integer), CType(CType(115, Byte), Integer), CType(CType(186, Byte), Integer))
-        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.GradesDataGridView.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(CType(CType(59, Byte), Integer), CType(CType(115, Byte), Integer), CType(CType(186, Byte), Integer))
+        DataGridViewCellStyle5.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle5.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(59, Byte), Integer), CType(CType(115, Byte), Integer), CType(CType(186, Byte), Integer))
+        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.GradesDataGridView.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
         Me.GradesDataGridView.ColumnHeadersHeight = 30
         Me.GradesDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
         Me.GradesDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column28, Me.Column29, Me.Column30, Me.Column31})
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(37, Byte), Integer), CType(CType(38, Byte), Integer))
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(26, Byte), Integer))
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.GradesDataGridView.DefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(37, Byte), Integer), CType(CType(38, Byte), Integer))
+        DataGridViewCellStyle6.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(26, Byte), Integer))
+        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.GradesDataGridView.DefaultCellStyle = DataGridViewCellStyle6
         Me.GradesDataGridView.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GradesDataGridView.EnableHeadersVisualStyles = False
         Me.GradesDataGridView.GridColor = System.Drawing.Color.Silver
@@ -421,6 +419,21 @@ Partial Class frmrecord
         Me.Column31.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
         Me.Column31.Width = 38
         '
+        'GroupBox1
+        '
+        Me.GroupBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(205, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.GroupBox1.Controls.Add(Me.Label7)
+        Me.GroupBox1.Controls.Add(Me.btncancel)
+        Me.GroupBox1.Controls.Add(Me.lblfinalgrade)
+        Me.GroupBox1.Controls.Add(Me.btnprint)
+        Me.GroupBox1.Controls.Add(Me.btnsave)
+        Me.GroupBox1.Location = New System.Drawing.Point(756, 8)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(226, 134)
+        Me.GroupBox1.TabIndex = 66
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "RESULT"
+        '
         'frmrecord
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 15.0!)
@@ -438,6 +451,8 @@ Partial Class frmrecord
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
         CType(Me.GradesDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -471,4 +486,5 @@ Partial Class frmrecord
     Friend WithEvents lblfinalgrade As Label
     Friend WithEvents txtlrn As TextBox
     Friend WithEvents Label8 As Label
+    Friend WithEvents GroupBox1 As GroupBox
 End Class
