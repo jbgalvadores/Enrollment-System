@@ -22,8 +22,8 @@ Partial Class frmenrollment
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.lblenrollment = New System.Windows.Forms.Label()
         Me.Panel3 = New System.Windows.Forms.Panel()
@@ -34,17 +34,18 @@ Partial Class frmenrollment
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.txtsearch = New System.Windows.Forms.TextBox()
         Me.lblsearchstudent = New System.Windows.Forms.Label()
+        Me.btnexport = New System.Windows.Forms.Button()
         Me.btnaddnew = New System.Windows.Forms.Button()
         Me.datagridview1 = New System.Windows.Forms.DataGridView()
-        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column32 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column13 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column23 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.SID = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.AID = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.LRN = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.STUDENT_NAME = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.GRADE_LEVEL = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.STRAND = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.SECTION = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.STATUS = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.AY_CODE = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colupdate = New System.Windows.Forms.DataGridViewImageColumn()
         Me.coldelete = New System.Windows.Forms.DataGridViewImageColumn()
         Me.Panel1.SuspendLayout()
@@ -61,7 +62,7 @@ Partial Class frmenrollment
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Margin = New System.Windows.Forms.Padding(3, 6, 3, 6)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(978, 37)
+        Me.Panel1.Size = New System.Drawing.Size(1116, 37)
         Me.Panel1.TabIndex = 7
         '
         'lblenrollment
@@ -85,11 +86,12 @@ Partial Class frmenrollment
         Me.Panel3.Controls.Add(Me.PictureBox1)
         Me.Panel3.Controls.Add(Me.txtsearch)
         Me.Panel3.Controls.Add(Me.lblsearchstudent)
+        Me.Panel3.Controls.Add(Me.btnexport)
         Me.Panel3.Controls.Add(Me.btnaddnew)
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel3.Location = New System.Drawing.Point(0, 37)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(978, 40)
+        Me.Panel3.Size = New System.Drawing.Size(1116, 45)
         Me.Panel3.TabIndex = 19
         '
         'cbogradelevel
@@ -97,7 +99,7 @@ Partial Class frmenrollment
         Me.cbogradelevel.Cursor = System.Windows.Forms.Cursors.Hand
         Me.cbogradelevel.FormattingEnabled = True
         Me.cbogradelevel.Items.AddRange(New Object() {"GRADE 7", "GRADE 8", "GRADE 9", "GRADE 10", "GRADE 11", "GRADE 12"})
-        Me.cbogradelevel.Location = New System.Drawing.Point(753, 8)
+        Me.cbogradelevel.Location = New System.Drawing.Point(815, 8)
         Me.cbogradelevel.Name = "cbogradelevel"
         Me.cbogradelevel.Size = New System.Drawing.Size(131, 24)
         Me.cbogradelevel.TabIndex = 83
@@ -106,7 +108,7 @@ Partial Class frmenrollment
         '
         Me.Label2.AutoSize = True
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(685, 12)
+        Me.Label2.Location = New System.Drawing.Point(747, 12)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(63, 16)
         Me.Label2.TabIndex = 82
@@ -116,7 +118,7 @@ Partial Class frmenrollment
         '
         Me.cboaycode.Cursor = System.Windows.Forms.Cursors.Hand
         Me.cboaycode.FormattingEnabled = True
-        Me.cboaycode.Location = New System.Drawing.Point(486, 8)
+        Me.cboaycode.Location = New System.Drawing.Point(542, 8)
         Me.cboaycode.Name = "cboaycode"
         Me.cboaycode.Size = New System.Drawing.Size(181, 24)
         Me.cboaycode.TabIndex = 81
@@ -125,7 +127,7 @@ Partial Class frmenrollment
         '
         Me.Label1.AutoSize = True
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(431, 12)
+        Me.Label1.Location = New System.Drawing.Point(487, 12)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(49, 16)
         Me.Label1.TabIndex = 80
@@ -133,7 +135,7 @@ Partial Class frmenrollment
         '
         'PictureBox1
         '
-        Me.PictureBox1.Location = New System.Drawing.Point(386, 5)
+        Me.PictureBox1.Location = New System.Drawing.Point(415, 4)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(32, 32)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -145,7 +147,7 @@ Partial Class frmenrollment
         Me.txtsearch.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtsearch.Location = New System.Drawing.Point(93, 8)
         Me.txtsearch.Name = "txtsearch"
-        Me.txtsearch.Size = New System.Drawing.Size(287, 21)
+        Me.txtsearch.Size = New System.Drawing.Size(309, 21)
         Me.txtsearch.TabIndex = 4
         '
         'lblsearchstudent
@@ -158,6 +160,22 @@ Partial Class frmenrollment
         Me.lblsearchstudent.TabIndex = 3
         Me.lblsearchstudent.Text = "Search Student:"
         '
+        'btnexport
+        '
+        Me.btnexport.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnexport.Dock = System.Windows.Forms.DockStyle.Right
+        Me.btnexport.FlatAppearance.BorderSize = 0
+        Me.btnexport.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnexport.ForeColor = System.Drawing.Color.White
+        Me.btnexport.Image = Global.ProjectES.My.Resources.Resources.coledit
+        Me.btnexport.Location = New System.Drawing.Point(952, 0)
+        Me.btnexport.Name = "btnexport"
+        Me.btnexport.Size = New System.Drawing.Size(82, 45)
+        Me.btnexport.TabIndex = 0
+        Me.btnexport.Text = "Export"
+        Me.btnexport.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btnexport.UseVisualStyleBackColor = True
+        '
         'btnaddnew
         '
         Me.btnaddnew.Cursor = System.Windows.Forms.Cursors.Hand
@@ -166,9 +184,9 @@ Partial Class frmenrollment
         Me.btnaddnew.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnaddnew.ForeColor = System.Drawing.Color.White
         Me.btnaddnew.Image = Global.ProjectES.My.Resources.Resources.addnew
-        Me.btnaddnew.Location = New System.Drawing.Point(896, 0)
+        Me.btnaddnew.Location = New System.Drawing.Point(1034, 0)
         Me.btnaddnew.Name = "btnaddnew"
-        Me.btnaddnew.Size = New System.Drawing.Size(82, 40)
+        Me.btnaddnew.Size = New System.Drawing.Size(82, 45)
         Me.btnaddnew.TabIndex = 0
         Me.btnaddnew.Text = "Add New"
         Me.btnaddnew.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
@@ -182,107 +200,107 @@ Partial Class frmenrollment
         Me.datagridview1.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.datagridview1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
         Me.datagridview1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(CType(CType(59, Byte), Integer), CType(CType(115, Byte), Integer), CType(CType(186, Byte), Integer))
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Arial Narrow", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(59, Byte), Integer), CType(CType(115, Byte), Integer), CType(CType(186, Byte), Integer))
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.datagridview1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(59, Byte), Integer), CType(CType(115, Byte), Integer), CType(CType(186, Byte), Integer))
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Arial Narrow", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(59, Byte), Integer), CType(CType(115, Byte), Integer), CType(CType(186, Byte), Integer))
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.datagridview1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.datagridview1.ColumnHeadersHeight = 30
         Me.datagridview1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
-        Me.datagridview1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column2, Me.Column5, Me.Column1, Me.Column3, Me.Column4, Me.Column32, Me.Column13, Me.Column23, Me.Column6, Me.colupdate, Me.coldelete})
-        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(37, Byte), Integer), CType(CType(38, Byte), Integer))
-        DataGridViewCellStyle4.Font = New System.Drawing.Font("Arial Narrow", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle4.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(26, Byte), Integer))
-        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.datagridview1.DefaultCellStyle = DataGridViewCellStyle4
+        Me.datagridview1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.SID, Me.AID, Me.LRN, Me.STUDENT_NAME, Me.GRADE_LEVEL, Me.STRAND, Me.SECTION, Me.STATUS, Me.AY_CODE, Me.colupdate, Me.coldelete})
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(37, Byte), Integer), CType(CType(38, Byte), Integer))
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Arial Narrow", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(26, Byte), Integer))
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.datagridview1.DefaultCellStyle = DataGridViewCellStyle2
         Me.datagridview1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.datagridview1.EnableHeadersVisualStyles = False
-        Me.datagridview1.Location = New System.Drawing.Point(0, 77)
+        Me.datagridview1.Location = New System.Drawing.Point(0, 82)
         Me.datagridview1.MultiSelect = False
         Me.datagridview1.Name = "datagridview1"
         Me.datagridview1.ReadOnly = True
         Me.datagridview1.RowHeadersVisible = False
         Me.datagridview1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.datagridview1.Size = New System.Drawing.Size(978, 455)
+        Me.datagridview1.Size = New System.Drawing.Size(1116, 450)
         Me.datagridview1.TabIndex = 20
         '
-        'Column2
+        'SID
         '
-        Me.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
-        Me.Column2.HeaderText = "Student ID"
-        Me.Column2.Name = "Column2"
-        Me.Column2.ReadOnly = True
-        Me.Column2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        Me.SID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
+        Me.SID.HeaderText = "Student ID"
+        Me.SID.Name = "SID"
+        Me.SID.ReadOnly = True
+        Me.SID.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
         '
-        'Column5
+        'AID
         '
-        Me.Column5.HeaderText = "AID"
-        Me.Column5.Name = "Column5"
-        Me.Column5.ReadOnly = True
-        Me.Column5.Width = 130
+        Me.AID.HeaderText = "AID"
+        Me.AID.Name = "AID"
+        Me.AID.ReadOnly = True
+        Me.AID.Width = 130
         '
-        'Column1
+        'LRN
         '
-        Me.Column1.HeaderText = "LRN"
-        Me.Column1.Name = "Column1"
-        Me.Column1.ReadOnly = True
-        Me.Column1.Width = 130
+        Me.LRN.HeaderText = "LRN"
+        Me.LRN.Name = "LRN"
+        Me.LRN.ReadOnly = True
+        Me.LRN.Width = 130
         '
-        'Column3
+        'STUDENT_NAME
         '
-        Me.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.Column3.HeaderText = "Full Name"
-        Me.Column3.Name = "Column3"
-        Me.Column3.ReadOnly = True
-        Me.Column3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        Me.STUDENT_NAME.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.STUDENT_NAME.HeaderText = "Full Name"
+        Me.STUDENT_NAME.Name = "STUDENT_NAME"
+        Me.STUDENT_NAME.ReadOnly = True
+        Me.STUDENT_NAME.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
         '
-        'Column4
+        'GRADE_LEVEL
         '
-        Me.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.Column4.HeaderText = "Grade Level"
-        Me.Column4.Name = "Column4"
-        Me.Column4.ReadOnly = True
-        Me.Column4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.Column4.Width = 67
+        Me.GRADE_LEVEL.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
+        Me.GRADE_LEVEL.HeaderText = "Grade Level"
+        Me.GRADE_LEVEL.Name = "GRADE_LEVEL"
+        Me.GRADE_LEVEL.ReadOnly = True
+        Me.GRADE_LEVEL.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        Me.GRADE_LEVEL.Width = 67
         '
-        'Column32
+        'STRAND
         '
-        Me.Column32.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.Column32.HeaderText = "Strand"
-        Me.Column32.Name = "Column32"
-        Me.Column32.ReadOnly = True
-        Me.Column32.Width = 62
+        Me.STRAND.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
+        Me.STRAND.HeaderText = "Strand"
+        Me.STRAND.Name = "STRAND"
+        Me.STRAND.ReadOnly = True
+        Me.STRAND.Width = 62
         '
-        'Column13
+        'SECTION
         '
-        Me.Column13.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.Column13.HeaderText = "Section"
-        Me.Column13.Name = "Column13"
-        Me.Column13.ReadOnly = True
-        Me.Column13.Width = 66
+        Me.SECTION.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
+        Me.SECTION.HeaderText = "Section"
+        Me.SECTION.Name = "SECTION"
+        Me.SECTION.ReadOnly = True
+        Me.SECTION.Width = 66
         '
-        'Column23
+        'STATUS
         '
-        Me.Column23.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.Column23.HeaderText = "Status"
-        Me.Column23.Name = "Column23"
-        Me.Column23.ReadOnly = True
-        Me.Column23.Width = 60
+        Me.STATUS.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
+        Me.STATUS.HeaderText = "Status"
+        Me.STATUS.Name = "STATUS"
+        Me.STATUS.ReadOnly = True
+        Me.STATUS.Width = 60
         '
-        'Column6
+        'AY_CODE
         '
-        Me.Column6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.Column6.HeaderText = "AY Code"
-        Me.Column6.Name = "Column6"
-        Me.Column6.ReadOnly = True
-        Me.Column6.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.Column6.Width = 53
+        Me.AY_CODE.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
+        Me.AY_CODE.HeaderText = "AY Code"
+        Me.AY_CODE.Name = "AY_CODE"
+        Me.AY_CODE.ReadOnly = True
+        Me.AY_CODE.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        Me.AY_CODE.Width = 53
         '
         'colupdate
         '
@@ -307,7 +325,7 @@ Partial Class frmenrollment
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(978, 532)
+        Me.ClientSize = New System.Drawing.Size(1116, 532)
         Me.Controls.Add(Me.datagridview1)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel1)
@@ -339,15 +357,16 @@ Partial Class frmenrollment
     Friend WithEvents lblsearchstudent As Label
     Friend WithEvents btnaddnew As Button
     Friend WithEvents datagridview1 As DataGridView
-    Friend WithEvents Column2 As DataGridViewTextBoxColumn
-    Friend WithEvents Column5 As DataGridViewTextBoxColumn
-    Friend WithEvents Column1 As DataGridViewTextBoxColumn
-    Friend WithEvents Column3 As DataGridViewTextBoxColumn
-    Friend WithEvents Column4 As DataGridViewTextBoxColumn
-    Friend WithEvents Column32 As DataGridViewTextBoxColumn
-    Friend WithEvents Column13 As DataGridViewTextBoxColumn
-    Friend WithEvents Column23 As DataGridViewTextBoxColumn
-    Friend WithEvents Column6 As DataGridViewTextBoxColumn
+    Friend WithEvents btnexport As Button
+    Friend WithEvents SID As DataGridViewTextBoxColumn
+    Friend WithEvents AID As DataGridViewTextBoxColumn
+    Friend WithEvents LRN As DataGridViewTextBoxColumn
+    Friend WithEvents STUDENT_NAME As DataGridViewTextBoxColumn
+    Friend WithEvents GRADE_LEVEL As DataGridViewTextBoxColumn
+    Friend WithEvents STRAND As DataGridViewTextBoxColumn
+    Friend WithEvents SECTION As DataGridViewTextBoxColumn
+    Friend WithEvents STATUS As DataGridViewTextBoxColumn
+    Friend WithEvents AY_CODE As DataGridViewTextBoxColumn
     Friend WithEvents colupdate As DataGridViewImageColumn
     Friend WithEvents coldelete As DataGridViewImageColumn
 End Class

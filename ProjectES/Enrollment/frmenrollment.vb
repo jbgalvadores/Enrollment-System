@@ -1,4 +1,5 @@
 ﻿Imports System.Data.OleDb
+Imports System.IO
 Public Class frmenrollment
 
     Public Sub loadrecord()
@@ -183,5 +184,34 @@ Public Class frmenrollment
         con.Close()
     End Sub
 
+    Private Sub btnexport_Click(sender As Object, e As EventArgs) Handles btnexport.Click
+        Dim savefile As New SaveFileDialog()
+        savefile.FileName = "Student-Data"
+        savefile.Filter = "CSV File | *.csv"
 
+        If savefile.ShowDialog() = DialogResult.OK Then
+
+            Using sw As StreamWriter = File.CreateText(savefile.FileName)
+                Dim DataGridColumnNames As List(Of String) = datagridview1.Columns.
+                    Cast(Of DataGridViewColumn).ToList().
+                    Select(Function(c) c.Name).ToList()
+
+                sw.WriteLine(String.Join(",", DataGridColumnNames))
+
+                For Each row As DataGridViewRow In datagridview1.Rows
+
+                    Dim rowData As New List(Of String)
+                    For Each col As DataGridViewColumn In datagridview1.Columns
+                        rowData.Add(Convert.ToString(row.Cells(col.Name).Value))
+                    Next
+                    sw.WriteLine(String.Join(",", rowData))
+                Next
+
+            End Using
+        End If
+    End Sub
+
+    Private Sub txtsearch_TextChanged(sender As Object, e As EventArgs) Handles txtsearch.TextChanged
+
+    End Sub
 End Class
