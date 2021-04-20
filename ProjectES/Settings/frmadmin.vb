@@ -175,10 +175,10 @@ Public Class frmadmin
                 .Show()
                 frmTeacher.Owner = f
                 frmUserAccount.ShowDialog()
-        End With
+            End With
         Catch ex As Exception
         Finally
-        f.Dispose()
+            f.Dispose()
         End Try
     End Sub
 
@@ -317,7 +317,5 @@ Public Class frmadmin
         End Try
     End Sub
 
-    Private Sub linkAdmClose_Click(sender As Object, e As EventArgs) Handles linkAdmClose.Click
-        Me.Dispose()
-    End Sub
+
 End Class

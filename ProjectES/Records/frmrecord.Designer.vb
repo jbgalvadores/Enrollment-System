@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class frmrecord
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,15 +20,15 @@ Partial Class frmrecord
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.linkAdmClose = New MetroFramework.Controls.MetroButton()
         Me.lblenrollment = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.lblgraderemarks = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.btncancel = New System.Windows.Forms.Button()
         Me.lblfinalgrade = New System.Windows.Forms.Label()
@@ -54,7 +54,6 @@ Partial Class frmrecord
         Me.Column29 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column30 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column31 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.lblgraderemarks = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
@@ -64,7 +63,6 @@ Partial Class frmrecord
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(178, Byte), Integer), CType(CType(190, Byte), Integer), CType(CType(195, Byte), Integer))
-        Me.Panel1.Controls.Add(Me.linkAdmClose)
         Me.Panel1.Controls.Add(Me.lblenrollment)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
@@ -72,16 +70,6 @@ Partial Class frmrecord
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(997, 38)
         Me.Panel1.TabIndex = 9
-        '
-        'linkAdmClose
-        '
-        Me.linkAdmClose.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.linkAdmClose.Location = New System.Drawing.Point(910, 8)
-        Me.linkAdmClose.Name = "linkAdmClose"
-        Me.linkAdmClose.Size = New System.Drawing.Size(75, 23)
-        Me.linkAdmClose.TabIndex = 66
-        Me.linkAdmClose.Text = "CLOSE"
-        Me.linkAdmClose.UseSelectable = True
         '
         'lblenrollment
         '
@@ -134,6 +122,15 @@ Partial Class frmrecord
         Me.GroupBox1.TabIndex = 66
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "RESULT"
+        '
+        'lblgraderemarks
+        '
+        Me.lblgraderemarks.AutoSize = True
+        Me.lblgraderemarks.Font = New System.Drawing.Font("Arial Black", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblgraderemarks.Location = New System.Drawing.Point(83, 52)
+        Me.lblgraderemarks.Name = "lblgraderemarks"
+        Me.lblgraderemarks.Size = New System.Drawing.Size(0, 18)
+        Me.lblgraderemarks.TabIndex = 43
         '
         'Label7
         '
@@ -436,15 +433,6 @@ Partial Class frmrecord
         Me.Column31.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
         Me.Column31.Width = 38
         '
-        'lblgraderemarks
-        '
-        Me.lblgraderemarks.AutoSize = True
-        Me.lblgraderemarks.Font = New System.Drawing.Font("Arial Black", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblgraderemarks.Location = New System.Drawing.Point(83, 52)
-        Me.lblgraderemarks.Name = "lblgraderemarks"
-        Me.lblgraderemarks.Size = New System.Drawing.Size(0, 18)
-        Me.lblgraderemarks.TabIndex = 43
-        '
         'frmrecord
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 15.0!)
@@ -493,7 +481,6 @@ Partial Class frmrecord
     Friend WithEvents Column30 As DataGridViewTextBoxColumn
     Friend WithEvents Column31 As DataGridViewTextBoxColumn
     Friend WithEvents btnaddgrade As MetroFramework.Controls.MetroButton
-    Friend WithEvents linkAdmClose As MetroFramework.Controls.MetroButton
     Friend WithEvents lblfinalgrade As Label
     Friend WithEvents txtlrn As TextBox
     Friend WithEvents Label8 As Label

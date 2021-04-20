@@ -80,4 +80,7 @@ Public Class frmrecord
         clear()
     End Sub
 
+    Private Sub linkAdmClose_Click(sender As Object, e As EventArgs) 
+
+    End Sub
 End Class

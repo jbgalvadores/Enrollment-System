@@ -113,9 +113,9 @@ Partial Class frmAddStudent
         Me.Label37 = New System.Windows.Forms.Label()
         Me.txtpsattended = New System.Windows.Forms.TextBox()
         Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.btnclose = New MetroFramework.Controls.MetroButton()
         Me.btnclear = New MetroFramework.Controls.MetroButton()
         Me.btnsave = New MetroFramework.Controls.MetroButton()
+        Me.btnclose = New MetroFramework.Controls.MetroButton()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.TabControl1.SuspendLayout()
@@ -1155,15 +1155,6 @@ Partial Class frmAddStudent
         Me.Panel3.Size = New System.Drawing.Size(955, 39)
         Me.Panel3.TabIndex = 10
         '
-        'btnclose
-        '
-        Me.btnclose.Location = New System.Drawing.Point(868, 9)
-        Me.btnclose.Name = "btnclose"
-        Me.btnclose.Size = New System.Drawing.Size(75, 23)
-        Me.btnclose.TabIndex = 62
-        Me.btnclose.Text = "CLOSE"
-        Me.btnclose.UseSelectable = True
-        '
         'btnclear
         '
         Me.btnclear.Location = New System.Drawing.Point(97, 9)
@@ -1181,6 +1172,15 @@ Partial Class frmAddStudent
         Me.btnsave.TabIndex = 64
         Me.btnsave.Text = "SAVE"
         Me.btnsave.UseSelectable = True
+        '
+        'btnclose
+        '
+        Me.btnclose.Location = New System.Drawing.Point(868, 9)
+        Me.btnclose.Name = "btnclose"
+        Me.btnclose.Size = New System.Drawing.Size(75, 23)
+        Me.btnclose.TabIndex = 62
+        Me.btnclose.Text = "CANCEL"
+        Me.btnclose.UseSelectable = True
         '
         'frmAddStudent
         '
@@ -1304,10 +1304,10 @@ Partial Class frmAddStudent
     Friend WithEvents Label37 As Label
     Friend WithEvents txtpsattended As TextBox
     Friend WithEvents Panel3 As Panel
-    Friend WithEvents btnclose As MetroFramework.Controls.MetroButton
     Friend WithEvents btnclear As MetroFramework.Controls.MetroButton
     Friend WithEvents btnsave As MetroFramework.Controls.MetroButton
     Friend WithEvents lnkclose As MetroFramework.Controls.MetroButton
     Friend WithEvents cbobeneficiary As ComboBox
     Friend WithEvents Label40 As Label
+    Friend WithEvents btnclose As MetroFramework.Controls.MetroButton
 End Class

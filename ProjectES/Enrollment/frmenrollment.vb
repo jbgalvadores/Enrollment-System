@@ -212,6 +212,69 @@ Public Class frmenrollment
     End Sub
 
     Private Sub txtsearch_TextChanged(sender As Object, e As EventArgs) Handles txtsearch.TextChanged
+        If txtsearch.Text = "" Then
+            cboaycode.Text = ""
+            loadstatus()
+        End If
+        loadrecord()
+        cboaycode.Text = ""
+        cbogradelevel.Text = ""
+    End Sub
 
+    Private Sub cboaycode_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cboaycode.SelectedIndexChanged
+        datagridview1.Rows.Clear()
+        cbogradelevel.Text = ""
+        txtsearch.Text = ""
+        Try
+            If cboaycode.Text = "ALL YEAR" Then
+                loadstatus()
+                Exit Sub
+            End If
+
+            opencon()
+            cmd = New OleDbCommand("select * from Status_Enrollment where Status<>'DROPPED' and aycode=@aycode order by student_id asc", con)
+            With cmd
+                .Parameters.AddWithValue("@aycode", cboaycode.Text)
+                dr = .ExecuteReader
+            End With
+            While dr.Read
+                datagridview1.Rows.Add(dr.Item("student_id").ToString, dr.Item("aid").ToString, dr.Item("lrn").ToString, dr.Item("fullname").ToString, dr.Item("grade_level").ToString, dr.Item("strand").ToString, dr.Item("Section").ToString, dr.Item("Status").ToString, dr.Item("aycode").ToString)
+            End While
+            For i = 0 To datagridview1.Rows.Count - 1
+                datagridview1.Rows(i).Height = 30
+            Next
+            datagridview1.ClearSelection()
+        Catch ex As Exception
+            MsgBox(ex.Message, vbCritical)
+            con.Close()
+        End Try
+        con.Close()
+        dr.Close()
+    End Sub
+
+    Private Sub cbogradelevel_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbogradelevel.SelectedIndexChanged
+        datagridview1.Rows.Clear()
+        cboaycode.Text = ""
+        txtsearch.Text = ""
+        Try
+            opencon()
+            cmd = New OleDbCommand("select * from Status_Enrollment where Status<>'DROPPED' and grade_level=@grade order by student_id asc", con)
+            With cmd
+                .Parameters.AddWithValue("@grade", cbogradelevel.Text)
+                dr = .ExecuteReader
+            End With
+            While dr.Read
+                datagridview1.Rows.Add(dr.Item("student_id").ToString, dr.Item("aid").ToString, dr.Item("lrn").ToString, dr.Item("fullname").ToString, dr.Item("grade_level").ToString, dr.Item("strand").ToString, dr.Item("Section").ToString, dr.Item("Status").ToString, dr.Item("aycode").ToString)
+            End While
+            For i = 0 To datagridview1.Rows.Count - 1
+                datagridview1.Rows(i).Height = 30
+            Next
+            datagridview1.ClearSelection()
+        Catch ex As Exception
+            MsgBox(ex.Message, vbCritical)
+            con.Close()
+        End Try
+        con.Close()
+        dr.Close()
     End Sub
 End Class

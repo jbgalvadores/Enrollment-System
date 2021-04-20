@@ -51,7 +51,7 @@ Public Class frmAddStudent
             str = cmd.ExecuteScalar.ToString
 
             If String.IsNullOrEmpty(str) Then
-                str = "AID202110001"
+                str = "AID2021001"
                 cboaid.Text = str
             Else
                 str = str.Substring(3)

@@ -132,7 +132,7 @@ Public Class frmMain
     Public Sub closeallforms()
         For i As Integer = My.Application.OpenForms.Count - 1 To 0 Step -1
             If My.Application.OpenForms(i) IsNot Me Then
-                My.Application.OpenForms(i).Hide()
+                My.Application.OpenForms(i).Dispose()
             End If
         Next
     End Sub
@@ -179,7 +179,7 @@ Public Class frmMain
             End If
         Next
         closeallforms()
-        Me.Show()
+        'Me.Show()
         With frmAdmission
             .Width = mainpanel.Width
             .Height = mainpanel.Height
@@ -201,7 +201,7 @@ Public Class frmMain
             End If
         Next
         closeallforms()
-        Me.Show()
+        'Me.Show()
         With frmenrollment
             .Width = mainpanel.Width
             .Height = mainpanel.Height
@@ -235,7 +235,7 @@ Public Class frmMain
         For Each f As Form In My.Application.OpenForms
             If f.Name = frmadmin.Name Then Return
         Next
-        CloseForms()
+        closeallforms()
         With frmadmin
             .Width = mainpanel.Width
             .Height = mainpanel.Height
@@ -245,5 +245,9 @@ Public Class frmMain
             .BringToFront()
             .Show()
         End With
+    End Sub
+
+    Private Sub btnDashboard_Click(sender As Object, e As EventArgs) Handles btnDashboard.Click
+        closeallforms()
     End Sub
 End Class
