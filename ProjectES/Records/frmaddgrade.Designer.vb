@@ -29,8 +29,6 @@ Partial Class frmaddgrade
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.linkAdmClose = New MetroFramework.Controls.MetroButton()
         Me.lblenrollment = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.textsubgrade = New System.Windows.Forms.TextBox()
         Me.btncanel = New MetroFramework.Controls.MetroButton()
         Me.btnadd = New MetroFramework.Controls.MetroButton()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -135,27 +133,6 @@ Partial Class frmaddgrade
         Me.lblenrollment.Size = New System.Drawing.Size(102, 23)
         Me.lblenrollment.TabIndex = 0
         Me.lblenrollment.Text = "ADD GRADE"
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.BackColor = System.Drawing.Color.Transparent
-        Me.Label3.Font = New System.Drawing.Font("Segoe UI", 9.75!)
-        Me.Label3.ForeColor = System.Drawing.Color.Black
-        Me.Label3.Location = New System.Drawing.Point(206, 577)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(49, 17)
-        Me.Label3.TabIndex = 7
-        Me.Label3.Text = "GRADE"
-        '
-        'textsubgrade
-        '
-        Me.textsubgrade.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.textsubgrade.Font = New System.Drawing.Font("Segoe UI", 9.75!)
-        Me.textsubgrade.Location = New System.Drawing.Point(261, 574)
-        Me.textsubgrade.Name = "textsubgrade"
-        Me.textsubgrade.Size = New System.Drawing.Size(158, 25)
-        Me.textsubgrade.TabIndex = 1
         '
         'btncanel
         '
@@ -405,16 +382,14 @@ Partial Class frmaddgrade
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(630, 630)
+        Me.ClientSize = New System.Drawing.Size(630, 564)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.btncanel)
         Me.Controls.Add(Me.btnadd)
         Me.Controls.Add(Me.Panel1)
-        Me.Controls.Add(Me.textsubgrade)
         Me.Controls.Add(Me.textsubcodedesc)
-        Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label4)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "frmaddgrade"
@@ -439,8 +414,6 @@ Partial Class frmaddgrade
     Friend WithEvents Label1 As Label
     Friend WithEvents Panel1 As Panel
     Friend WithEvents lblenrollment As Label
-    Friend WithEvents Label3 As Label
-    Friend WithEvents textsubgrade As TextBox
     Friend WithEvents linkAdmClose As MetroFramework.Controls.MetroButton
     Friend WithEvents btncanel As MetroFramework.Controls.MetroButton
     Friend WithEvents btnadd As MetroFramework.Controls.MetroButton

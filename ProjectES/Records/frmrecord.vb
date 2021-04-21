@@ -83,4 +83,43 @@ Public Class frmrecord
     Private Sub linkAdmClose_Click(sender As Object, e As EventArgs) 
 
     End Sub
+
+
+
+    Private Sub btnprint_Click(sender As Object, e As EventArgs) Handles btnprint.Click
+        PrintPreviewDialog1.Document = PrintDocument1
+        PrintPreviewDialog1.PrintPreviewControl.Zoom = 1
+        PrintPreviewDialog1.ShowDialog()
+    End Sub
+
+    Private Sub PrintDocument1_PrintPage(sender As Object, e As Printing.PrintPageEventArgs) Handles PrintDocument1.PrintPage
+        Dim font As New Font("Times New Roman", 12, FontStyle.Regular)
+        Dim fontbold As New Font("Times New Roman", 14, FontStyle.Bold)
+
+        Dim fontbold1 As New Font("Arial Narrow", 12, FontStyle.Bold)
+        Dim font1 As New Font("Arial Narrow", 12, FontStyle.Regular)
+
+        Dim brush As New SolidBrush(Color.Black)
+
+
+        'HEADER
+        e.Graphics.DrawString("PANGATUCAN COMMUNITY HIGH SCHOOL", fontbold, brush, 190, 50)
+        e.Graphics.DrawString("Pangantucan, Takalag Bukidnon", font, brush, 300, 70)
+        e.Graphics.DrawString("Department of Education - Region X", font, brush, 285, 90)
+
+        'LRN
+        e.Graphics.DrawString("LRN:", fontbold1, brush, 130, 270)
+        e.Graphics.DrawString(txtlrn.Text, font1, brush, 170, 270)
+
+        'AY CODE TERM
+        e.Graphics.DrawString(txtaycode.Text, fontbold1, brush, 550, 270)
+
+        'NAME OF A STUDENT
+        e.Graphics.DrawString(txtfullname.Text, fontbold1, brush, 130, 300)
+
+
+        'GRADE LEVEL
+        e.Graphics.DrawString(txtgradelevel.Text, fontbold1, brush, 550, 300)
+
+    End Sub
 End Class

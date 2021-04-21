@@ -6,7 +6,6 @@ Public Class frmaddgrade
         If textsubcodedesc.Text = "" Then
             txtsubjectcode.Clear()
             txtsubdesc.Clear()
-            textsubgrade.Clear()
         End If
     End Sub
 
@@ -57,10 +56,10 @@ Public Class frmaddgrade
 
         Select Case score
             Case 0 To 74
-                frmrecord.lblgraderemarks.Text = "FAILED!"
+                frmrecord.lblgraderemarks.Text = "FAILED"
                 frmrecord.lblgraderemarks.ForeColor = Color.Red
             Case 75 To 100
-                frmrecord.lblgraderemarks.Text = "PASSED!"
+                frmrecord.lblgraderemarks.Text = "PASSED"
                 frmrecord.lblgraderemarks.ForeColor = Color.Green
         End Select
 
@@ -88,10 +87,10 @@ Public Class frmaddgrade
 
             Select Case remarks
                 Case 0 To 74
-                    lblgraderemarks.Text = "FAILED!"
+                    lblgraderemarks.Text = "FAILED"
                     lblgraderemarks.ForeColor = Color.Red
                 Case 75 To 100
-                    lblgraderemarks.Text = "PASSED!"
+                    lblgraderemarks.Text = "PASSED"
                     lblgraderemarks.ForeColor = Color.Green
             End Select
         End If
