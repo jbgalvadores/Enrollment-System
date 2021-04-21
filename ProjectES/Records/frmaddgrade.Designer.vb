@@ -40,8 +40,23 @@ Partial Class frmaddgrade
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.txtunits = New System.Windows.Forms.TextBox()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.textsubexams = New System.Windows.Forms.TextBox()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.textsubprojects = New System.Windows.Forms.TextBox()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.textsubquizzes = New System.Windows.Forms.TextBox()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.textsubattendance = New System.Windows.Forms.TextBox()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.lblgraderemarks = New System.Windows.Forms.Label()
+        Me.lblgradestanding = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
+        Me.GroupBox2.SuspendLayout()
+        Me.GroupBox3.SuspendLayout()
         Me.SuspendLayout()
         '
         'txtsubdesc
@@ -97,13 +112,13 @@ Partial Class frmaddgrade
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Margin = New System.Windows.Forms.Padding(3, 7, 3, 7)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(626, 38)
+        Me.Panel1.Size = New System.Drawing.Size(630, 38)
         Me.Panel1.TabIndex = 11
         '
         'linkAdmClose
         '
         Me.linkAdmClose.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.linkAdmClose.Location = New System.Drawing.Point(539, 8)
+        Me.linkAdmClose.Location = New System.Drawing.Point(543, 8)
         Me.linkAdmClose.Name = "linkAdmClose"
         Me.linkAdmClose.Size = New System.Drawing.Size(75, 23)
         Me.linkAdmClose.TabIndex = 63
@@ -127,7 +142,7 @@ Partial Class frmaddgrade
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Segoe UI", 9.75!)
         Me.Label3.ForeColor = System.Drawing.Color.Black
-        Me.Label3.Location = New System.Drawing.Point(18, 304)
+        Me.Label3.Location = New System.Drawing.Point(206, 577)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(49, 17)
         Me.Label3.TabIndex = 7
@@ -137,14 +152,14 @@ Partial Class frmaddgrade
         '
         Me.textsubgrade.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.textsubgrade.Font = New System.Drawing.Font("Segoe UI", 9.75!)
-        Me.textsubgrade.Location = New System.Drawing.Point(73, 301)
+        Me.textsubgrade.Location = New System.Drawing.Point(261, 574)
         Me.textsubgrade.Name = "textsubgrade"
         Me.textsubgrade.Size = New System.Drawing.Size(158, 25)
         Me.textsubgrade.TabIndex = 1
         '
         'btncanel
         '
-        Me.btncanel.Location = New System.Drawing.Point(519, 304)
+        Me.btncanel.Location = New System.Drawing.Point(502, 498)
         Me.btncanel.Name = "btncanel"
         Me.btncanel.Size = New System.Drawing.Size(75, 23)
         Me.btncanel.TabIndex = 62
@@ -153,7 +168,7 @@ Partial Class frmaddgrade
         '
         'btnadd
         '
-        Me.btnadd.Location = New System.Drawing.Point(438, 304)
+        Me.btnadd.Location = New System.Drawing.Point(392, 498)
         Me.btnadd.Name = "btnadd"
         Me.btnadd.Size = New System.Drawing.Size(75, 23)
         Me.btnadd.TabIndex = 63
@@ -243,11 +258,156 @@ Partial Class frmaddgrade
         Me.txtunits.Size = New System.Drawing.Size(431, 25)
         Me.txtunits.TabIndex = 12
         '
+        'GroupBox2
+        '
+        Me.GroupBox2.Controls.Add(Me.textsubexams)
+        Me.GroupBox2.Controls.Add(Me.Label10)
+        Me.GroupBox2.Controls.Add(Me.textsubprojects)
+        Me.GroupBox2.Controls.Add(Me.Label9)
+        Me.GroupBox2.Controls.Add(Me.textsubquizzes)
+        Me.GroupBox2.Controls.Add(Me.Label8)
+        Me.GroupBox2.Controls.Add(Me.textsubattendance)
+        Me.GroupBox2.Controls.Add(Me.Label7)
+        Me.GroupBox2.Font = New System.Drawing.Font("Arial Narrow", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox2.Location = New System.Drawing.Point(22, 310)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Size = New System.Drawing.Size(318, 243)
+        Me.GroupBox2.TabIndex = 66
+        Me.GroupBox2.TabStop = False
+        Me.GroupBox2.Text = "STANDINGS"
+        '
+        'textsubexams
+        '
+        Me.textsubexams.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.textsubexams.Font = New System.Drawing.Font("Segoe UI", 9.75!)
+        Me.textsubexams.Location = New System.Drawing.Point(113, 185)
+        Me.textsubexams.Name = "textsubexams"
+        Me.textsubexams.Size = New System.Drawing.Size(158, 25)
+        Me.textsubexams.TabIndex = 1
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.BackColor = System.Drawing.Color.Transparent
+        Me.Label10.Font = New System.Drawing.Font("Segoe UI", 9.75!)
+        Me.Label10.ForeColor = System.Drawing.Color.Black
+        Me.Label10.Location = New System.Drawing.Point(16, 188)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(50, 17)
+        Me.Label10.TabIndex = 7
+        Me.Label10.Text = "EXAMS"
+        '
+        'textsubprojects
+        '
+        Me.textsubprojects.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.textsubprojects.Font = New System.Drawing.Font("Segoe UI", 9.75!)
+        Me.textsubprojects.Location = New System.Drawing.Point(113, 137)
+        Me.textsubprojects.Name = "textsubprojects"
+        Me.textsubprojects.Size = New System.Drawing.Size(158, 25)
+        Me.textsubprojects.TabIndex = 1
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.BackColor = System.Drawing.Color.Transparent
+        Me.Label9.Font = New System.Drawing.Font("Segoe UI", 9.75!)
+        Me.Label9.ForeColor = System.Drawing.Color.Black
+        Me.Label9.Location = New System.Drawing.Point(16, 140)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(67, 17)
+        Me.Label9.TabIndex = 7
+        Me.Label9.Text = "PROJECTS"
+        '
+        'textsubquizzes
+        '
+        Me.textsubquizzes.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.textsubquizzes.Font = New System.Drawing.Font("Segoe UI", 9.75!)
+        Me.textsubquizzes.Location = New System.Drawing.Point(113, 84)
+        Me.textsubquizzes.Name = "textsubquizzes"
+        Me.textsubquizzes.Size = New System.Drawing.Size(158, 25)
+        Me.textsubquizzes.TabIndex = 1
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.BackColor = System.Drawing.Color.Transparent
+        Me.Label8.Font = New System.Drawing.Font("Segoe UI", 9.75!)
+        Me.Label8.ForeColor = System.Drawing.Color.Black
+        Me.Label8.Location = New System.Drawing.Point(16, 87)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(58, 17)
+        Me.Label8.TabIndex = 7
+        Me.Label8.Text = "QUIZZES"
+        '
+        'textsubattendance
+        '
+        Me.textsubattendance.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.textsubattendance.Font = New System.Drawing.Font("Segoe UI", 9.75!)
+        Me.textsubattendance.Location = New System.Drawing.Point(113, 32)
+        Me.textsubattendance.Name = "textsubattendance"
+        Me.textsubattendance.Size = New System.Drawing.Size(158, 25)
+        Me.textsubattendance.TabIndex = 1
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.BackColor = System.Drawing.Color.Transparent
+        Me.Label7.Font = New System.Drawing.Font("Segoe UI", 9.75!)
+        Me.Label7.ForeColor = System.Drawing.Color.Black
+        Me.Label7.Location = New System.Drawing.Point(16, 35)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(88, 17)
+        Me.Label7.TabIndex = 7
+        Me.Label7.Text = "ATTENDANCE"
+        '
+        'GroupBox3
+        '
+        Me.GroupBox3.Controls.Add(Me.lblgraderemarks)
+        Me.GroupBox3.Controls.Add(Me.lblgradestanding)
+        Me.GroupBox3.Controls.Add(Me.Label11)
+        Me.GroupBox3.Font = New System.Drawing.Font("Arial Narrow", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox3.Location = New System.Drawing.Point(370, 310)
+        Me.GroupBox3.Name = "GroupBox3"
+        Me.GroupBox3.Size = New System.Drawing.Size(227, 148)
+        Me.GroupBox3.TabIndex = 66
+        Me.GroupBox3.TabStop = False
+        Me.GroupBox3.Text = "RESULT"
+        '
+        'lblgraderemarks
+        '
+        Me.lblgraderemarks.AutoSize = True
+        Me.lblgraderemarks.Font = New System.Drawing.Font("Arial Black", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblgraderemarks.Location = New System.Drawing.Point(72, 102)
+        Me.lblgraderemarks.Name = "lblgraderemarks"
+        Me.lblgraderemarks.Size = New System.Drawing.Size(0, 27)
+        Me.lblgraderemarks.TabIndex = 2
+        '
+        'lblgradestanding
+        '
+        Me.lblgradestanding.AutoSize = True
+        Me.lblgradestanding.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblgradestanding.Location = New System.Drawing.Point(89, 72)
+        Me.lblgradestanding.Name = "lblgradestanding"
+        Me.lblgradestanding.Size = New System.Drawing.Size(0, 20)
+        Me.lblgradestanding.TabIndex = 1
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.Location = New System.Drawing.Point(69, 37)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(99, 20)
+        Me.Label11.TabIndex = 0
+        Me.Label11.Text = "YOUR GRADE:"
+        '
         'frmaddgrade
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(626, 345)
+        Me.ClientSize = New System.Drawing.Size(630, 630)
+        Me.Controls.Add(Me.GroupBox3)
+        Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.btncanel)
         Me.Controls.Add(Me.btnadd)
@@ -264,6 +424,10 @@ Partial Class frmaddgrade
         Me.Panel1.PerformLayout()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        Me.GroupBox2.ResumeLayout(False)
+        Me.GroupBox2.PerformLayout()
+        Me.GroupBox3.ResumeLayout(False)
+        Me.GroupBox3.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -287,4 +451,17 @@ Partial Class frmaddgrade
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents Label6 As Label
     Friend WithEvents txtunits As TextBox
+    Friend WithEvents GroupBox2 As GroupBox
+    Friend WithEvents textsubexams As TextBox
+    Friend WithEvents Label10 As Label
+    Friend WithEvents textsubprojects As TextBox
+    Friend WithEvents Label9 As Label
+    Friend WithEvents textsubquizzes As TextBox
+    Friend WithEvents Label8 As Label
+    Friend WithEvents textsubattendance As TextBox
+    Friend WithEvents Label7 As Label
+    Friend WithEvents GroupBox3 As GroupBox
+    Friend WithEvents lblgraderemarks As Label
+    Friend WithEvents lblgradestanding As Label
+    Friend WithEvents Label11 As Label
 End Class

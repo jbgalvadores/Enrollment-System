@@ -4,6 +4,7 @@ Imports System.Drawing.Imaging
 Imports System.Runtime.Hosting
 
 Public Class frmMain
+
     Sub New()
 
         ' This call is required by the designer.
@@ -32,13 +33,6 @@ Public Class frmMain
     End Sub
 
     Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'REMOVE THIS PORTION IF FINALIZED.
-        '==================================
-        'MessageBox.Show("This software is currently on development. Just to test the initial running of an application. Click OK to proceed.", "Pangantucan Enrollment System", MessageBoxButtons.OK, MessageBoxIcon.Information)
-        'If MessageBoxButtons.OK Then
-        'Me.Show()
-        'End If
-        '==================================
         countstudent()
         countenrolled()
         Call loadtotalsection()
@@ -46,6 +40,7 @@ Public Class frmMain
         Call loadaycode()
         Me.Height = Screen.PrimaryScreen.WorkingArea.Height
         Me.Width = Screen.PrimaryScreen.WorkingArea.Width
+        lbldate.Text = Format(Now, "D")
 
     End Sub
 
@@ -123,11 +118,6 @@ Public Class frmMain
         End Try
     End Sub
 
-    Sub CloseForms()
-        For i As Integer = My.Application.OpenForms.Count - 1 To 0 Step -1
-            If My.Application.OpenForms(i) IsNot Me Then My.Application.OpenForms(i).Hide()
-        Next
-    End Sub
 
     Public Sub closeallforms()
         For i As Integer = My.Application.OpenForms.Count - 1 To 0 Step -1
@@ -137,11 +127,10 @@ Public Class frmMain
         Next
     End Sub
 
+
+
+
     Private Sub btnManagement_Click(sender As Object, e As EventArgs) Handles btnManagement.Click
-        For Each f As Form In My.Application.OpenForms
-            If f.Name = frmManagement.Name Then Return
-        Next
-        closeallforms()
         With frmManagement
             .Width = mainpanel.Width
             .Height = mainpanel.Height
@@ -173,13 +162,7 @@ Public Class frmMain
     End Sub
 
     Private Sub btnAdmission_Click(sender As Object, e As EventArgs) Handles btnAdmission.Click
-        For Each f As Form In My.Application.OpenForms
-            If f.Name = "frmAdmission" Then
-                Exit Sub
-            End If
-        Next
-        closeallforms()
-        'Me.Show()
+
         With frmAdmission
             .Width = mainpanel.Width
             .Height = mainpanel.Height
@@ -188,20 +171,19 @@ Public Class frmMain
             .BringToFront()
             .Show()
         End With
+
     End Sub
 
 
 
     Private Sub btnEnrollment_Click(sender As Object, e As EventArgs) Handles btnEnrollment.Click
-        lblacademicyear.Select()
 
-        For Each f As Form In My.Application.OpenForms
-            If f.Name = "frmenrollment" Then
-                Exit Sub
-            End If
-        Next
-        closeallforms()
-        'Me.Show()
+        If IsNothing(frmenrollment) Then
+            frmenrollment = New Form
+            frmenrollment.Show()
+        End If
+
+
         With frmenrollment
             .Width = mainpanel.Width
             .Height = mainpanel.Height
@@ -216,10 +198,7 @@ Public Class frmMain
     End Sub
 
     Private Sub btnRecords_Click(sender As Object, e As EventArgs) Handles btnRecords.Click
-        For Each f As Form In My.Application.OpenForms
-            If f.Name = frmrecord.Name Then Return
-        Next
-        CloseForms()
+
         With frmrecord
             .Width = mainpanel.Width
             .Height = mainpanel.Height
@@ -232,10 +211,7 @@ Public Class frmMain
     End Sub
 
     Private Sub btnSettings_Click(sender As Object, e As EventArgs) Handles btnSettings.Click
-        For Each f As Form In My.Application.OpenForms
-            If f.Name = frmadmin.Name Then Return
-        Next
-        closeallforms()
+
         With frmadmin
             .Width = mainpanel.Width
             .Height = mainpanel.Height
@@ -248,6 +224,10 @@ Public Class frmMain
     End Sub
 
     Private Sub btnDashboard_Click(sender As Object, e As EventArgs) Handles btnDashboard.Click
-        closeallforms()
+        frmrecord.Close()
+        frmAdmission.Close()
+        frmManagement.Close()
+        frmenrollment.Close()
+        frmadmin.Close()
     End Sub
 End Class

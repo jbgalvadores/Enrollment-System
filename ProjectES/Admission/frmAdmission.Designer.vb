@@ -144,7 +144,7 @@ Partial Class frmAdmission
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1101, 37)
+        Me.Panel1.Size = New System.Drawing.Size(1158, 37)
         Me.Panel1.TabIndex = 6
         '
         'lbladmission
@@ -172,7 +172,7 @@ Partial Class frmAdmission
         Me.Panel3.Location = New System.Drawing.Point(0, 37)
         Me.Panel3.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(1101, 44)
+        Me.Panel3.Size = New System.Drawing.Size(1158, 44)
         Me.Panel3.TabIndex = 18
         '
         'lbladded
@@ -227,7 +227,7 @@ Partial Class frmAdmission
         Me.btnsave.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnsave.ForeColor = System.Drawing.Color.White
         Me.btnsave.Image = Global.ProjectES.My.Resources.Resources.archive2
-        Me.btnsave.Location = New System.Drawing.Point(860, 0)
+        Me.btnsave.Location = New System.Drawing.Point(917, 0)
         Me.btnsave.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnsave.Name = "btnsave"
         Me.btnsave.Size = New System.Drawing.Size(108, 44)
@@ -245,7 +245,7 @@ Partial Class frmAdmission
         Me.btnaddnew.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnaddnew.ForeColor = System.Drawing.Color.White
         Me.btnaddnew.Image = Global.ProjectES.My.Resources.Resources.addnew
-        Me.btnaddnew.Location = New System.Drawing.Point(968, 0)
+        Me.btnaddnew.Location = New System.Drawing.Point(1025, 0)
         Me.btnaddnew.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnaddnew.Name = "btnaddnew"
         Me.btnaddnew.Size = New System.Drawing.Size(133, 44)
@@ -268,7 +268,7 @@ Partial Class frmAdmission
         Me.TabControl1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(1069, 450)
+        Me.TabControl1.Size = New System.Drawing.Size(1126, 581)
         Me.TabControl1.TabIndex = 0
         Me.TabControl1.UseSelectable = True
         '
@@ -316,12 +316,12 @@ Partial Class frmAdmission
         Me.MetroTabPage2.Location = New System.Drawing.Point(4, 38)
         Me.MetroTabPage2.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.MetroTabPage2.Name = "MetroTabPage2"
-        Me.MetroTabPage2.Size = New System.Drawing.Size(1061, 408)
+        Me.MetroTabPage2.Size = New System.Drawing.Size(1118, 539)
         Me.MetroTabPage2.TabIndex = 1
         Me.MetroTabPage2.Text = "STUDENT"
         Me.MetroTabPage2.VerticalScrollbarBarColor = True
         Me.MetroTabPage2.VerticalScrollbarHighlightOnWheel = False
-        Me.MetroTabPage2.VerticalScrollbarSize = 4
+        Me.MetroTabPage2.VerticalScrollbarSize = 3
         '
         'cbolrn
         '
@@ -329,7 +329,7 @@ Partial Class frmAdmission
         Me.cbolrn.Enabled = False
         Me.cbolrn.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cbolrn.FormattingEnabled = True
-        Me.cbolrn.Location = New System.Drawing.Point(146, 63)
+        Me.cbolrn.Location = New System.Drawing.Point(175, 128)
         Me.cbolrn.Name = "cbolrn"
         Me.cbolrn.Size = New System.Drawing.Size(305, 25)
         Me.cbolrn.TabIndex = 93
@@ -343,7 +343,7 @@ Partial Class frmAdmission
         Me.cbotype.FormattingEnabled = True
         Me.cbotype.ItemHeight = 17
         Me.cbotype.Items.AddRange(New Object() {"FRESHMEN", "REGULAR", "TRANSFEREE"})
-        Me.cbotype.Location = New System.Drawing.Point(1140, 28)
+        Me.cbotype.Location = New System.Drawing.Point(1169, 93)
         Me.cbotype.Name = "cbotype"
         Me.cbotype.Size = New System.Drawing.Size(10, 25)
         Me.cbotype.TabIndex = 92
@@ -355,7 +355,7 @@ Partial Class frmAdmission
         Me.Label33.BackColor = System.Drawing.Color.White
         Me.Label33.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label33.ForeColor = System.Drawing.Color.Black
-        Me.Label33.Location = New System.Drawing.Point(16, 63)
+        Me.Label33.Location = New System.Drawing.Point(45, 128)
         Me.Label33.Name = "Label33"
         Me.Label33.Size = New System.Drawing.Size(32, 17)
         Me.Label33.TabIndex = 91
@@ -370,7 +370,7 @@ Partial Class frmAdmission
         Me.cboincomingyear.FormattingEnabled = True
         Me.cboincomingyear.ItemHeight = 17
         Me.cboincomingyear.Items.AddRange(New Object() {"GRADE 7", "GRADE 8", "GRADE 9", "GRADE 10", "GRADE 11", "GRADE 12"})
-        Me.cboincomingyear.Location = New System.Drawing.Point(709, 60)
+        Me.cboincomingyear.Location = New System.Drawing.Point(738, 125)
         Me.cboincomingyear.Name = "cboincomingyear"
         Me.cboincomingyear.Size = New System.Drawing.Size(292, 25)
         Me.cboincomingyear.TabIndex = 90
@@ -382,7 +382,7 @@ Partial Class frmAdmission
         Me.Label3.BackColor = System.Drawing.Color.White
         Me.Label3.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.Black
-        Me.Label3.Location = New System.Drawing.Point(531, 66)
+        Me.Label3.Location = New System.Drawing.Point(560, 131)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(123, 17)
         Me.Label3.TabIndex = 89
@@ -394,7 +394,7 @@ Partial Class frmAdmission
         Me.cbosy.Enabled = False
         Me.cbosy.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cbosy.FormattingEnabled = True
-        Me.cbosy.Location = New System.Drawing.Point(709, 22)
+        Me.cbosy.Location = New System.Drawing.Point(738, 87)
         Me.cbosy.Name = "cbosy"
         Me.cbosy.Size = New System.Drawing.Size(110, 25)
         Me.cbosy.TabIndex = 88
@@ -406,7 +406,7 @@ Partial Class frmAdmission
         Me.Label2.BackColor = System.Drawing.Color.White
         Me.Label2.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.Black
-        Me.Label2.Location = New System.Drawing.Point(532, 25)
+        Me.Label2.Location = New System.Drawing.Point(561, 90)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(57, 17)
         Me.Label2.TabIndex = 87
@@ -418,7 +418,7 @@ Partial Class frmAdmission
         Me.cboaid.Enabled = False
         Me.cboaid.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cboaid.FormattingEnabled = True
-        Me.cboaid.Location = New System.Drawing.Point(146, 25)
+        Me.cboaid.Location = New System.Drawing.Point(175, 90)
         Me.cboaid.Name = "cboaid"
         Me.cboaid.Size = New System.Drawing.Size(305, 25)
         Me.cboaid.TabIndex = 86
@@ -430,7 +430,7 @@ Partial Class frmAdmission
         Me.Label40.BackColor = System.Drawing.Color.White
         Me.Label40.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label40.ForeColor = System.Drawing.Color.Black
-        Me.Label40.Location = New System.Drawing.Point(17, 26)
+        Me.Label40.Location = New System.Drawing.Point(46, 91)
         Me.Label40.Name = "Label40"
         Me.Label40.Size = New System.Drawing.Size(28, 17)
         Me.Label40.TabIndex = 85
@@ -444,7 +444,7 @@ Partial Class frmAdmission
         Me.cbobeneficiary.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cbobeneficiary.FormattingEnabled = True
         Me.cbobeneficiary.Items.AddRange(New Object() {"4P'S", "BENEFICIARY"})
-        Me.cbobeneficiary.Location = New System.Drawing.Point(709, 174)
+        Me.cbobeneficiary.Location = New System.Drawing.Point(738, 239)
         Me.cbobeneficiary.Name = "cbobeneficiary"
         Me.cbobeneficiary.Size = New System.Drawing.Size(293, 25)
         Me.cbobeneficiary.TabIndex = 78
@@ -457,7 +457,7 @@ Partial Class frmAdmission
         Me.cbostatus.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cbostatus.FormattingEnabled = True
         Me.cbostatus.Items.AddRange(New Object() {"SINGLE", "MARRIED", "WIDOWED"})
-        Me.cbostatus.Location = New System.Drawing.Point(709, 140)
+        Me.cbostatus.Location = New System.Drawing.Point(738, 205)
         Me.cbostatus.Name = "cbostatus"
         Me.cbostatus.Size = New System.Drawing.Size(292, 25)
         Me.cbostatus.TabIndex = 78
@@ -468,7 +468,7 @@ Partial Class frmAdmission
         Me.txtaddress.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtaddress.Enabled = False
         Me.txtaddress.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtaddress.Location = New System.Drawing.Point(709, 282)
+        Me.txtaddress.Location = New System.Drawing.Point(738, 347)
         Me.txtaddress.Multiline = True
         Me.txtaddress.Name = "txtaddress"
         Me.txtaddress.Size = New System.Drawing.Size(292, 95)
@@ -481,7 +481,7 @@ Partial Class frmAdmission
         Me.Label15.BackColor = System.Drawing.Color.White
         Me.Label15.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label15.ForeColor = System.Drawing.Color.Black
-        Me.Label15.Location = New System.Drawing.Point(532, 288)
+        Me.Label15.Location = New System.Drawing.Point(561, 353)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(56, 17)
         Me.Label15.TabIndex = 83
@@ -493,7 +493,7 @@ Partial Class frmAdmission
         Me.txtreligion.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtreligion.Enabled = False
         Me.txtreligion.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtreligion.Location = New System.Drawing.Point(710, 245)
+        Me.txtreligion.Location = New System.Drawing.Point(739, 310)
         Me.txtreligion.Name = "txtreligion"
         Me.txtreligion.Size = New System.Drawing.Size(292, 25)
         Me.txtreligion.TabIndex = 82
@@ -505,7 +505,7 @@ Partial Class frmAdmission
         Me.Label14.BackColor = System.Drawing.Color.White
         Me.Label14.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label14.ForeColor = System.Drawing.Color.Black
-        Me.Label14.Location = New System.Drawing.Point(532, 251)
+        Me.Label14.Location = New System.Drawing.Point(561, 316)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(55, 17)
         Me.Label14.TabIndex = 81
@@ -517,7 +517,7 @@ Partial Class frmAdmission
         Me.txtethnicgroup.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtethnicgroup.Enabled = False
         Me.txtethnicgroup.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtethnicgroup.Location = New System.Drawing.Point(709, 208)
+        Me.txtethnicgroup.Location = New System.Drawing.Point(738, 273)
         Me.txtethnicgroup.Name = "txtethnicgroup"
         Me.txtethnicgroup.Size = New System.Drawing.Size(292, 25)
         Me.txtethnicgroup.TabIndex = 80
@@ -529,7 +529,7 @@ Partial Class frmAdmission
         Me.Label34.BackColor = System.Drawing.Color.White
         Me.Label34.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label34.ForeColor = System.Drawing.Color.Black
-        Me.Label34.Location = New System.Drawing.Point(531, 177)
+        Me.Label34.Location = New System.Drawing.Point(560, 242)
         Me.Label34.Name = "Label34"
         Me.Label34.Size = New System.Drawing.Size(70, 17)
         Me.Label34.TabIndex = 77
@@ -542,7 +542,7 @@ Partial Class frmAdmission
         Me.Label13.BackColor = System.Drawing.Color.White
         Me.Label13.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label13.ForeColor = System.Drawing.Color.Black
-        Me.Label13.Location = New System.Drawing.Point(531, 217)
+        Me.Label13.Location = New System.Drawing.Point(560, 282)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(83, 17)
         Me.Label13.TabIndex = 79
@@ -555,7 +555,7 @@ Partial Class frmAdmission
         Me.Label12.BackColor = System.Drawing.Color.White
         Me.Label12.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label12.ForeColor = System.Drawing.Color.Black
-        Me.Label12.Location = New System.Drawing.Point(531, 146)
+        Me.Label12.Location = New System.Drawing.Point(560, 211)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(88, 17)
         Me.Label12.TabIndex = 77
@@ -569,7 +569,7 @@ Partial Class frmAdmission
         Me.cbogender.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cbogender.FormattingEnabled = True
         Me.cbogender.Items.AddRange(New Object() {"MALE", "FEMALE"})
-        Me.cbogender.Location = New System.Drawing.Point(146, 208)
+        Me.cbogender.Location = New System.Drawing.Point(175, 273)
         Me.cbogender.Name = "cbogender"
         Me.cbogender.Size = New System.Drawing.Size(305, 25)
         Me.cbogender.TabIndex = 76
@@ -581,7 +581,7 @@ Partial Class frmAdmission
         Me.Label11.BackColor = System.Drawing.Color.White
         Me.Label11.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label11.ForeColor = System.Drawing.Color.Black
-        Me.Label11.Location = New System.Drawing.Point(17, 214)
+        Me.Label11.Location = New System.Drawing.Point(46, 279)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(51, 17)
         Me.Label11.TabIndex = 75
@@ -593,7 +593,7 @@ Partial Class frmAdmission
         Me.txtcontact.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtcontact.Enabled = False
         Me.txtcontact.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtcontact.Location = New System.Drawing.Point(710, 97)
+        Me.txtcontact.Location = New System.Drawing.Point(739, 162)
         Me.txtcontact.Name = "txtcontact"
         Me.txtcontact.Size = New System.Drawing.Size(292, 25)
         Me.txtcontact.TabIndex = 74
@@ -605,7 +605,7 @@ Partial Class frmAdmission
         Me.Label10.BackColor = System.Drawing.Color.White
         Me.Label10.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.ForeColor = System.Drawing.Color.Black
-        Me.Label10.Location = New System.Drawing.Point(532, 103)
+        Me.Label10.Location = New System.Drawing.Point(561, 168)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(74, 17)
         Me.Label10.TabIndex = 73
@@ -617,7 +617,7 @@ Partial Class frmAdmission
         Me.txtpob.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtpob.Enabled = False
         Me.txtpob.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtpob.Location = New System.Drawing.Point(146, 317)
+        Me.txtpob.Location = New System.Drawing.Point(175, 382)
         Me.txtpob.Multiline = True
         Me.txtpob.Name = "txtpob"
         Me.txtpob.Size = New System.Drawing.Size(305, 67)
@@ -630,7 +630,7 @@ Partial Class frmAdmission
         Me.Label9.BackColor = System.Drawing.Color.White
         Me.Label9.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.ForeColor = System.Drawing.Color.Black
-        Me.Label9.Location = New System.Drawing.Point(17, 317)
+        Me.Label9.Location = New System.Drawing.Point(46, 382)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(84, 17)
         Me.Label9.TabIndex = 71
@@ -643,7 +643,7 @@ Partial Class frmAdmission
         Me.Label8.BackColor = System.Drawing.Color.White
         Me.Label8.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.Black
-        Me.Label8.Location = New System.Drawing.Point(17, 285)
+        Me.Label8.Location = New System.Drawing.Point(46, 350)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(81, 17)
         Me.Label8.TabIndex = 70
@@ -656,7 +656,7 @@ Partial Class frmAdmission
         Me.dtpdob.Enabled = False
         Me.dtpdob.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.dtpdob.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.dtpdob.Location = New System.Drawing.Point(146, 279)
+        Me.dtpdob.Location = New System.Drawing.Point(175, 344)
         Me.dtpdob.Name = "dtpdob"
         Me.dtpdob.Size = New System.Drawing.Size(305, 25)
         Me.dtpdob.TabIndex = 69
@@ -668,7 +668,7 @@ Partial Class frmAdmission
         Me.Label7.BackColor = System.Drawing.Color.White
         Me.Label7.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.Black
-        Me.Label7.Location = New System.Drawing.Point(17, 245)
+        Me.Label7.Location = New System.Drawing.Point(46, 310)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(31, 17)
         Me.Label7.TabIndex = 68
@@ -680,7 +680,7 @@ Partial Class frmAdmission
         Me.txtage.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtage.Enabled = False
         Me.txtage.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtage.Location = New System.Drawing.Point(146, 242)
+        Me.txtage.Location = New System.Drawing.Point(175, 307)
         Me.txtage.Name = "txtage"
         Me.txtage.Size = New System.Drawing.Size(305, 25)
         Me.txtage.TabIndex = 67
@@ -692,7 +692,7 @@ Partial Class frmAdmission
         Me.Label6.BackColor = System.Drawing.Color.White
         Me.Label6.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.Black
-        Me.Label6.Location = New System.Drawing.Point(17, 182)
+        Me.Label6.Location = New System.Drawing.Point(46, 247)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(88, 17)
         Me.Label6.TabIndex = 66
@@ -704,7 +704,7 @@ Partial Class frmAdmission
         Me.txtmname.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtmname.Enabled = False
         Me.txtmname.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtmname.Location = New System.Drawing.Point(146, 174)
+        Me.txtmname.Location = New System.Drawing.Point(175, 239)
         Me.txtmname.Name = "txtmname"
         Me.txtmname.Size = New System.Drawing.Size(305, 25)
         Me.txtmname.TabIndex = 65
@@ -716,7 +716,7 @@ Partial Class frmAdmission
         Me.Label5.BackColor = System.Drawing.Color.White
         Me.Label5.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.Black
-        Me.Label5.Location = New System.Drawing.Point(17, 140)
+        Me.Label5.Location = New System.Drawing.Point(46, 205)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(71, 17)
         Me.Label5.TabIndex = 64
@@ -728,7 +728,7 @@ Partial Class frmAdmission
         Me.txtfname.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtfname.Enabled = False
         Me.txtfname.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtfname.Location = New System.Drawing.Point(146, 137)
+        Me.txtfname.Location = New System.Drawing.Point(175, 202)
         Me.txtfname.Name = "txtfname"
         Me.txtfname.Size = New System.Drawing.Size(305, 25)
         Me.txtfname.TabIndex = 63
@@ -740,7 +740,7 @@ Partial Class frmAdmission
         Me.Label4.BackColor = System.Drawing.Color.White
         Me.Label4.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.Black
-        Me.Label4.Location = New System.Drawing.Point(17, 103)
+        Me.Label4.Location = New System.Drawing.Point(46, 168)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(70, 17)
         Me.Label4.TabIndex = 62
@@ -752,7 +752,7 @@ Partial Class frmAdmission
         Me.txtlname.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtlname.Enabled = False
         Me.txtlname.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtlname.Location = New System.Drawing.Point(146, 100)
+        Me.txtlname.Location = New System.Drawing.Point(175, 165)
         Me.txtlname.Name = "txtlname"
         Me.txtlname.Size = New System.Drawing.Size(305, 25)
         Me.txtlname.TabIndex = 61
@@ -767,18 +767,16 @@ Partial Class frmAdmission
         Me.MetroTabPage3.Location = New System.Drawing.Point(4, 38)
         Me.MetroTabPage3.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.MetroTabPage3.Name = "MetroTabPage3"
-        Me.MetroTabPage3.Size = New System.Drawing.Size(1061, 408)
+        Me.MetroTabPage3.Size = New System.Drawing.Size(1118, 539)
         Me.MetroTabPage3.TabIndex = 2
         Me.MetroTabPage3.Text = "PARENT"
         Me.MetroTabPage3.VerticalScrollbarBarColor = True
         Me.MetroTabPage3.VerticalScrollbarHighlightOnWheel = False
-        Me.MetroTabPage3.VerticalScrollbarSize = 4
+        Me.MetroTabPage3.VerticalScrollbarSize = 3
         '
         'GroupBox2
         '
-        Me.GroupBox2.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.GroupBox2.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.GroupBox2.BackColor = System.Drawing.Color.White
         Me.GroupBox2.Controls.Add(Me.Label27)
         Me.GroupBox2.Controls.Add(Me.txtfaddress)
@@ -793,9 +791,9 @@ Partial Class frmAdmission
         Me.GroupBox2.Controls.Add(Me.Label21)
         Me.GroupBox2.Controls.Add(Me.txtflname)
         Me.GroupBox2.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox2.Location = New System.Drawing.Point(564, 8)
+        Me.GroupBox2.Location = New System.Drawing.Point(565, 12)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(455, 387)
+        Me.GroupBox2.Size = New System.Drawing.Size(502, 510)
         Me.GroupBox2.TabIndex = 6
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Father"
@@ -806,7 +804,7 @@ Partial Class frmAdmission
         Me.Label27.AutoSize = True
         Me.Label27.Font = New System.Drawing.Font("Segoe UI", 9.75!)
         Me.Label27.ForeColor = System.Drawing.Color.Black
-        Me.Label27.Location = New System.Drawing.Point(24, 288)
+        Me.Label27.Location = New System.Drawing.Point(43, 348)
         Me.Label27.Name = "Label27"
         Me.Label27.Size = New System.Drawing.Size(56, 17)
         Me.Label27.TabIndex = 19
@@ -818,10 +816,10 @@ Partial Class frmAdmission
         Me.txtfaddress.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtfaddress.Enabled = False
         Me.txtfaddress.Font = New System.Drawing.Font("Segoe UI", 9.75!)
-        Me.txtfaddress.Location = New System.Drawing.Point(143, 285)
+        Me.txtfaddress.Location = New System.Drawing.Point(162, 345)
         Me.txtfaddress.Multiline = True
         Me.txtfaddress.Name = "txtfaddress"
-        Me.txtfaddress.Size = New System.Drawing.Size(288, 76)
+        Me.txtfaddress.Size = New System.Drawing.Size(279, 76)
         Me.txtfaddress.TabIndex = 18
         '
         'Label25
@@ -830,7 +828,7 @@ Partial Class frmAdmission
         Me.Label25.AutoSize = True
         Me.Label25.Font = New System.Drawing.Font("Segoe UI", 9.75!)
         Me.Label25.ForeColor = System.Drawing.Color.Black
-        Me.Label25.Location = New System.Drawing.Point(24, 237)
+        Me.Label25.Location = New System.Drawing.Point(43, 297)
         Me.Label25.Name = "Label25"
         Me.Label25.Size = New System.Drawing.Size(52, 17)
         Me.Label25.TabIndex = 17
@@ -842,9 +840,9 @@ Partial Class frmAdmission
         Me.txtfcontact.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtfcontact.Enabled = False
         Me.txtfcontact.Font = New System.Drawing.Font("Segoe UI", 9.75!)
-        Me.txtfcontact.Location = New System.Drawing.Point(143, 236)
+        Me.txtfcontact.Location = New System.Drawing.Point(162, 296)
         Me.txtfcontact.Name = "txtfcontact"
-        Me.txtfcontact.Size = New System.Drawing.Size(288, 25)
+        Me.txtfcontact.Size = New System.Drawing.Size(279, 25)
         Me.txtfcontact.TabIndex = 16
         '
         'Label23
@@ -853,7 +851,7 @@ Partial Class frmAdmission
         Me.Label23.AutoSize = True
         Me.Label23.Font = New System.Drawing.Font("Segoe UI", 9.75!)
         Me.Label23.ForeColor = System.Drawing.Color.Black
-        Me.Label23.Location = New System.Drawing.Point(24, 183)
+        Me.Label23.Location = New System.Drawing.Point(43, 243)
         Me.Label23.Name = "Label23"
         Me.Label23.Size = New System.Drawing.Size(74, 17)
         Me.Label23.TabIndex = 13
@@ -865,9 +863,9 @@ Partial Class frmAdmission
         Me.txtfocc.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtfocc.Enabled = False
         Me.txtfocc.Font = New System.Drawing.Font("Segoe UI", 9.75!)
-        Me.txtfocc.Location = New System.Drawing.Point(143, 180)
+        Me.txtfocc.Location = New System.Drawing.Point(162, 240)
         Me.txtfocc.Name = "txtfocc"
-        Me.txtfocc.Size = New System.Drawing.Size(288, 25)
+        Me.txtfocc.Size = New System.Drawing.Size(279, 25)
         Me.txtfocc.TabIndex = 12
         '
         'Label19
@@ -876,7 +874,7 @@ Partial Class frmAdmission
         Me.Label19.AutoSize = True
         Me.Label19.Font = New System.Drawing.Font("Segoe UI", 9.75!)
         Me.Label19.ForeColor = System.Drawing.Color.Black
-        Me.Label19.Location = New System.Drawing.Point(24, 130)
+        Me.Label19.Location = New System.Drawing.Point(43, 190)
         Me.Label19.Name = "Label19"
         Me.Label19.Size = New System.Drawing.Size(88, 17)
         Me.Label19.TabIndex = 11
@@ -888,9 +886,9 @@ Partial Class frmAdmission
         Me.txtfmname.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtfmname.Enabled = False
         Me.txtfmname.Font = New System.Drawing.Font("Segoe UI", 9.75!)
-        Me.txtfmname.Location = New System.Drawing.Point(143, 127)
+        Me.txtfmname.Location = New System.Drawing.Point(162, 187)
         Me.txtfmname.Name = "txtfmname"
-        Me.txtfmname.Size = New System.Drawing.Size(288, 25)
+        Me.txtfmname.Size = New System.Drawing.Size(279, 25)
         Me.txtfmname.TabIndex = 10
         '
         'Label20
@@ -899,7 +897,7 @@ Partial Class frmAdmission
         Me.Label20.AutoSize = True
         Me.Label20.Font = New System.Drawing.Font("Segoe UI", 9.75!)
         Me.Label20.ForeColor = System.Drawing.Color.Black
-        Me.Label20.Location = New System.Drawing.Point(24, 79)
+        Me.Label20.Location = New System.Drawing.Point(43, 139)
         Me.Label20.Name = "Label20"
         Me.Label20.Size = New System.Drawing.Size(71, 17)
         Me.Label20.TabIndex = 9
@@ -911,9 +909,9 @@ Partial Class frmAdmission
         Me.txtffname.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtffname.Enabled = False
         Me.txtffname.Font = New System.Drawing.Font("Segoe UI", 9.75!)
-        Me.txtffname.Location = New System.Drawing.Point(143, 78)
+        Me.txtffname.Location = New System.Drawing.Point(162, 138)
         Me.txtffname.Name = "txtffname"
-        Me.txtffname.Size = New System.Drawing.Size(288, 25)
+        Me.txtffname.Size = New System.Drawing.Size(279, 25)
         Me.txtffname.TabIndex = 8
         '
         'Label21
@@ -922,7 +920,7 @@ Partial Class frmAdmission
         Me.Label21.AutoSize = True
         Me.Label21.Font = New System.Drawing.Font("Segoe UI", 9.75!)
         Me.Label21.ForeColor = System.Drawing.Color.Black
-        Me.Label21.Location = New System.Drawing.Point(24, 32)
+        Me.Label21.Location = New System.Drawing.Point(43, 92)
         Me.Label21.Name = "Label21"
         Me.Label21.Size = New System.Drawing.Size(70, 17)
         Me.Label21.TabIndex = 7
@@ -934,16 +932,14 @@ Partial Class frmAdmission
         Me.txtflname.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtflname.Enabled = False
         Me.txtflname.Font = New System.Drawing.Font("Segoe UI", 9.75!)
-        Me.txtflname.Location = New System.Drawing.Point(143, 31)
+        Me.txtflname.Location = New System.Drawing.Point(162, 91)
         Me.txtflname.Name = "txtflname"
-        Me.txtflname.Size = New System.Drawing.Size(288, 25)
+        Me.txtflname.Size = New System.Drawing.Size(279, 25)
         Me.txtflname.TabIndex = 6
         '
         'GroupBox3
         '
-        Me.GroupBox3.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.GroupBox3.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.GroupBox3.BackColor = System.Drawing.Color.White
         Me.GroupBox3.Controls.Add(Me.Label26)
         Me.GroupBox3.Controls.Add(Me.txtmaddress)
@@ -960,9 +956,9 @@ Partial Class frmAdmission
         Me.GroupBox3.FlatStyle = System.Windows.Forms.FlatStyle.System
         Me.GroupBox3.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox3.ForeColor = System.Drawing.Color.White
-        Me.GroupBox3.Location = New System.Drawing.Point(35, 8)
+        Me.GroupBox3.Location = New System.Drawing.Point(44, 12)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(448, 387)
+        Me.GroupBox3.Size = New System.Drawing.Size(491, 510)
         Me.GroupBox3.TabIndex = 5
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Mother"
@@ -973,7 +969,7 @@ Partial Class frmAdmission
         Me.Label26.AutoSize = True
         Me.Label26.Font = New System.Drawing.Font("Segoe UI", 9.75!)
         Me.Label26.ForeColor = System.Drawing.Color.Black
-        Me.Label26.Location = New System.Drawing.Point(17, 292)
+        Me.Label26.Location = New System.Drawing.Point(35, 352)
         Me.Label26.Name = "Label26"
         Me.Label26.Size = New System.Drawing.Size(56, 17)
         Me.Label26.TabIndex = 17
@@ -985,7 +981,7 @@ Partial Class frmAdmission
         Me.txtmaddress.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtmaddress.Enabled = False
         Me.txtmaddress.Font = New System.Drawing.Font("Segoe UI", 9.75!)
-        Me.txtmaddress.Location = New System.Drawing.Point(132, 289)
+        Me.txtmaddress.Location = New System.Drawing.Point(150, 349)
         Me.txtmaddress.Multiline = True
         Me.txtmaddress.Name = "txtmaddress"
         Me.txtmaddress.Size = New System.Drawing.Size(292, 76)
@@ -997,7 +993,7 @@ Partial Class frmAdmission
         Me.Label24.AutoSize = True
         Me.Label24.Font = New System.Drawing.Font("Segoe UI", 9.75!)
         Me.Label24.ForeColor = System.Drawing.Color.Black
-        Me.Label24.Location = New System.Drawing.Point(17, 243)
+        Me.Label24.Location = New System.Drawing.Point(35, 303)
         Me.Label24.Name = "Label24"
         Me.Label24.Size = New System.Drawing.Size(52, 17)
         Me.Label24.TabIndex = 15
@@ -1009,7 +1005,7 @@ Partial Class frmAdmission
         Me.txtmcontact.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtmcontact.Enabled = False
         Me.txtmcontact.Font = New System.Drawing.Font("Segoe UI", 9.75!)
-        Me.txtmcontact.Location = New System.Drawing.Point(132, 240)
+        Me.txtmcontact.Location = New System.Drawing.Point(150, 300)
         Me.txtmcontact.Name = "txtmcontact"
         Me.txtmcontact.Size = New System.Drawing.Size(292, 25)
         Me.txtmcontact.TabIndex = 14
@@ -1020,7 +1016,7 @@ Partial Class frmAdmission
         Me.Label22.AutoSize = True
         Me.Label22.Font = New System.Drawing.Font("Segoe UI", 9.75!)
         Me.Label22.ForeColor = System.Drawing.Color.Black
-        Me.Label22.Location = New System.Drawing.Point(17, 189)
+        Me.Label22.Location = New System.Drawing.Point(35, 249)
         Me.Label22.Name = "Label22"
         Me.Label22.Size = New System.Drawing.Size(74, 17)
         Me.Label22.TabIndex = 13
@@ -1032,7 +1028,7 @@ Partial Class frmAdmission
         Me.txtmocc.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtmocc.Enabled = False
         Me.txtmocc.Font = New System.Drawing.Font("Segoe UI", 9.75!)
-        Me.txtmocc.Location = New System.Drawing.Point(132, 186)
+        Me.txtmocc.Location = New System.Drawing.Point(150, 246)
         Me.txtmocc.Name = "txtmocc"
         Me.txtmocc.Size = New System.Drawing.Size(292, 25)
         Me.txtmocc.TabIndex = 12
@@ -1043,7 +1039,7 @@ Partial Class frmAdmission
         Me.Label16.AutoSize = True
         Me.Label16.Font = New System.Drawing.Font("Segoe UI", 9.75!)
         Me.Label16.ForeColor = System.Drawing.Color.Black
-        Me.Label16.Location = New System.Drawing.Point(17, 136)
+        Me.Label16.Location = New System.Drawing.Point(35, 196)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(88, 17)
         Me.Label16.TabIndex = 11
@@ -1055,7 +1051,7 @@ Partial Class frmAdmission
         Me.txtmmname.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtmmname.Enabled = False
         Me.txtmmname.Font = New System.Drawing.Font("Segoe UI", 9.75!)
-        Me.txtmmname.Location = New System.Drawing.Point(132, 133)
+        Me.txtmmname.Location = New System.Drawing.Point(150, 193)
         Me.txtmmname.Name = "txtmmname"
         Me.txtmmname.Size = New System.Drawing.Size(292, 25)
         Me.txtmmname.TabIndex = 10
@@ -1066,7 +1062,7 @@ Partial Class frmAdmission
         Me.Label17.AutoSize = True
         Me.Label17.Font = New System.Drawing.Font("Segoe UI", 9.75!)
         Me.Label17.ForeColor = System.Drawing.Color.Black
-        Me.Label17.Location = New System.Drawing.Point(17, 85)
+        Me.Label17.Location = New System.Drawing.Point(35, 145)
         Me.Label17.Name = "Label17"
         Me.Label17.Size = New System.Drawing.Size(71, 17)
         Me.Label17.TabIndex = 9
@@ -1078,7 +1074,7 @@ Partial Class frmAdmission
         Me.txtmfname.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtmfname.Enabled = False
         Me.txtmfname.Font = New System.Drawing.Font("Segoe UI", 9.75!)
-        Me.txtmfname.Location = New System.Drawing.Point(132, 82)
+        Me.txtmfname.Location = New System.Drawing.Point(150, 142)
         Me.txtmfname.Name = "txtmfname"
         Me.txtmfname.Size = New System.Drawing.Size(292, 25)
         Me.txtmfname.TabIndex = 8
@@ -1089,7 +1085,7 @@ Partial Class frmAdmission
         Me.Label18.AutoSize = True
         Me.Label18.Font = New System.Drawing.Font("Segoe UI", 9.75!)
         Me.Label18.ForeColor = System.Drawing.Color.Black
-        Me.Label18.Location = New System.Drawing.Point(17, 38)
+        Me.Label18.Location = New System.Drawing.Point(35, 98)
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(70, 17)
         Me.Label18.TabIndex = 7
@@ -1101,7 +1097,7 @@ Partial Class frmAdmission
         Me.txtmlname.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtmlname.Enabled = False
         Me.txtmlname.Font = New System.Drawing.Font("Segoe UI", 9.75!)
-        Me.txtmlname.Location = New System.Drawing.Point(132, 35)
+        Me.txtmlname.Location = New System.Drawing.Point(150, 95)
         Me.txtmlname.Name = "txtmlname"
         Me.txtmlname.Size = New System.Drawing.Size(292, 25)
         Me.txtmlname.TabIndex = 6
@@ -1124,12 +1120,12 @@ Partial Class frmAdmission
         Me.MetroTabPage4.Location = New System.Drawing.Point(4, 38)
         Me.MetroTabPage4.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.MetroTabPage4.Name = "MetroTabPage4"
-        Me.MetroTabPage4.Size = New System.Drawing.Size(1061, 408)
+        Me.MetroTabPage4.Size = New System.Drawing.Size(1100, 531)
         Me.MetroTabPage4.TabIndex = 3
         Me.MetroTabPage4.Text = "GUARDIAN"
         Me.MetroTabPage4.VerticalScrollbarBarColor = True
         Me.MetroTabPage4.VerticalScrollbarHighlightOnWheel = False
-        Me.MetroTabPage4.VerticalScrollbarSize = 4
+        Me.MetroTabPage4.VerticalScrollbarSize = 3
         '
         'Label31
         '
@@ -1258,12 +1254,12 @@ Partial Class frmAdmission
         Me.MetroTabPage5.Location = New System.Drawing.Point(4, 38)
         Me.MetroTabPage5.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.MetroTabPage5.Name = "MetroTabPage5"
-        Me.MetroTabPage5.Size = New System.Drawing.Size(1061, 408)
+        Me.MetroTabPage5.Size = New System.Drawing.Size(1100, 531)
         Me.MetroTabPage5.TabIndex = 4
         Me.MetroTabPage5.Text = "OTHERS"
         Me.MetroTabPage5.VerticalScrollbarBarColor = True
         Me.MetroTabPage5.VerticalScrollbarHighlightOnWheel = False
-        Me.MetroTabPage5.VerticalScrollbarSize = 4
+        Me.MetroTabPage5.VerticalScrollbarSize = 3
         '
         'Label39
         '
@@ -1362,12 +1358,12 @@ Partial Class frmAdmission
         Me.MetroTabPage1.Location = New System.Drawing.Point(4, 38)
         Me.MetroTabPage1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.MetroTabPage1.Name = "MetroTabPage1"
-        Me.MetroTabPage1.Size = New System.Drawing.Size(1061, 408)
+        Me.MetroTabPage1.Size = New System.Drawing.Size(1100, 531)
         Me.MetroTabPage1.TabIndex = 0
         Me.MetroTabPage1.Text = "REQUIREMENTS"
         Me.MetroTabPage1.VerticalScrollbarBarColor = True
         Me.MetroTabPage1.VerticalScrollbarHighlightOnWheel = False
-        Me.MetroTabPage1.VerticalScrollbarSize = 4
+        Me.MetroTabPage1.VerticalScrollbarSize = 3
         '
         'GroupBox1
         '
@@ -1451,7 +1447,7 @@ Partial Class frmAdmission
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1101, 564)
+        Me.ClientSize = New System.Drawing.Size(1158, 695)
         Me.Controls.Add(Me.TabControl1)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel1)

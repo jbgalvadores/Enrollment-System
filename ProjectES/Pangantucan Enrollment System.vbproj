@@ -141,6 +141,12 @@
     <Compile Include="Records\frmaddgrade.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Records\frmgrading.Designer.vb">
+      <DependentUpon>frmgrading.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Records\frmgrading.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Records\frmrecord.Designer.vb">
       <DependentUpon>frmrecord.vb</DependentUpon>
     </Compile>
@@ -249,6 +255,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Records\frmaddgrade.resx">
       <DependentUpon>frmaddgrade.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Records\frmgrading.resx">
+      <DependentUpon>frmgrading.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Records\frmrecord.resx">
       <DependentUpon>frmrecord.vb</DependentUpon>

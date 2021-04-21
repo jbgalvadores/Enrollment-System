@@ -27,18 +27,6 @@ Partial Class frmMain
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.btnLogout = New System.Windows.Forms.Button()
-        Me.btnSettings = New System.Windows.Forms.Button()
-        Me.btnManagement = New System.Windows.Forms.Button()
-        Me.btnRecords = New System.Windows.Forms.Button()
-        Me.btnEnrollment = New System.Windows.Forms.Button()
-        Me.btnAdmission = New System.Windows.Forms.Button()
-        Me.btnDashboard = New System.Windows.Forms.Button()
-        Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.lbldesignation = New System.Windows.Forms.Label()
-        Me.lblfullname = New System.Windows.Forms.Label()
-        Me.picUser = New System.Windows.Forms.PictureBox()
         Me.mainpanel = New System.Windows.Forms.Panel()
         Me.sectionpanel = New System.Windows.Forms.Panel()
         Me.lbltotalsection = New System.Windows.Forms.Label()
@@ -60,18 +48,30 @@ Partial Class frmMain
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.lbldesignation = New System.Windows.Forms.Label()
+        Me.lblfullname = New System.Windows.Forms.Label()
+        Me.picUser = New System.Windows.Forms.PictureBox()
+        Me.btnDashboard = New System.Windows.Forms.Button()
+        Me.btnAdmission = New System.Windows.Forms.Button()
+        Me.btnEnrollment = New System.Windows.Forms.Button()
+        Me.btnRecords = New System.Windows.Forms.Button()
+        Me.btnManagement = New System.Windows.Forms.Button()
+        Me.btnSettings = New System.Windows.Forms.Button()
+        Me.btnLogout = New System.Windows.Forms.Button()
+        Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel1.SuspendLayout()
         Me.Panel4.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel2.SuspendLayout()
-        Me.Panel3.SuspendLayout()
-        CType(Me.picUser, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.mainpanel.SuspendLayout()
         Me.sectionpanel.SuspendLayout()
         Me.academicpanel.SuspendLayout()
         Me.enrolledpanel.SuspendLayout()
         Me.studentpanel.SuspendLayout()
         Me.Panel5.SuspendLayout()
+        Me.Panel3.SuspendLayout()
+        CType(Me.picUser, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
@@ -114,155 +114,6 @@ Partial Class frmMain
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "PANGANTUCAN COMMUNITY HIGH SCHOOL ENROLLMENT SYSTEM"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Panel2
-        '
-        Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(52, Byte), Integer))
-        Me.Panel2.Controls.Add(Me.btnLogout)
-        Me.Panel2.Controls.Add(Me.btnSettings)
-        Me.Panel2.Controls.Add(Me.btnManagement)
-        Me.Panel2.Controls.Add(Me.btnRecords)
-        Me.Panel2.Controls.Add(Me.btnEnrollment)
-        Me.Panel2.Controls.Add(Me.btnAdmission)
-        Me.Panel2.Controls.Add(Me.btnDashboard)
-        Me.Panel2.Controls.Add(Me.Panel3)
-        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel2.Location = New System.Drawing.Point(0, 123)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(182, 583)
-        Me.Panel2.TabIndex = 1
-        '
-        'btnLogout
-        '
-        Me.btnLogout.BackColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(52, Byte), Integer))
-        Me.btnLogout.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.btnLogout.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.btnLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnLogout.Location = New System.Drawing.Point(0, 539)
-        Me.btnLogout.Name = "btnLogout"
-        Me.btnLogout.Size = New System.Drawing.Size(182, 44)
-        Me.btnLogout.TabIndex = 16
-        Me.btnLogout.Text = "LOGOUT"
-        Me.btnLogout.UseVisualStyleBackColor = False
-        '
-        'btnSettings
-        '
-        Me.btnSettings.BackColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(52, Byte), Integer))
-        Me.btnSettings.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btnSettings.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.btnSettings.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnSettings.Location = New System.Drawing.Point(0, 397)
-        Me.btnSettings.Name = "btnSettings"
-        Me.btnSettings.Size = New System.Drawing.Size(182, 44)
-        Me.btnSettings.TabIndex = 15
-        Me.btnSettings.Text = "SETTINGS"
-        Me.btnSettings.UseVisualStyleBackColor = False
-        '
-        'btnManagement
-        '
-        Me.btnManagement.BackColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(52, Byte), Integer))
-        Me.btnManagement.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btnManagement.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.btnManagement.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnManagement.Location = New System.Drawing.Point(0, 353)
-        Me.btnManagement.Name = "btnManagement"
-        Me.btnManagement.Size = New System.Drawing.Size(182, 44)
-        Me.btnManagement.TabIndex = 14
-        Me.btnManagement.Text = "MANAGEMENT"
-        Me.btnManagement.UseVisualStyleBackColor = False
-        '
-        'btnRecords
-        '
-        Me.btnRecords.BackColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(52, Byte), Integer))
-        Me.btnRecords.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btnRecords.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.btnRecords.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnRecords.Location = New System.Drawing.Point(0, 309)
-        Me.btnRecords.Name = "btnRecords"
-        Me.btnRecords.Size = New System.Drawing.Size(182, 44)
-        Me.btnRecords.TabIndex = 13
-        Me.btnRecords.Text = "RECORDS"
-        Me.btnRecords.UseVisualStyleBackColor = False
-        '
-        'btnEnrollment
-        '
-        Me.btnEnrollment.BackColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(52, Byte), Integer))
-        Me.btnEnrollment.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btnEnrollment.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.btnEnrollment.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnEnrollment.Location = New System.Drawing.Point(0, 265)
-        Me.btnEnrollment.Name = "btnEnrollment"
-        Me.btnEnrollment.Size = New System.Drawing.Size(182, 44)
-        Me.btnEnrollment.TabIndex = 12
-        Me.btnEnrollment.Text = "ENROLLMENT"
-        Me.btnEnrollment.UseVisualStyleBackColor = False
-        '
-        'btnAdmission
-        '
-        Me.btnAdmission.BackColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(52, Byte), Integer))
-        Me.btnAdmission.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btnAdmission.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.btnAdmission.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnAdmission.Location = New System.Drawing.Point(0, 221)
-        Me.btnAdmission.Name = "btnAdmission"
-        Me.btnAdmission.Size = New System.Drawing.Size(182, 44)
-        Me.btnAdmission.TabIndex = 11
-        Me.btnAdmission.Text = "ADMISSION"
-        Me.btnAdmission.UseVisualStyleBackColor = False
-        '
-        'btnDashboard
-        '
-        Me.btnDashboard.BackColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(52, Byte), Integer))
-        Me.btnDashboard.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btnDashboard.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.btnDashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnDashboard.Location = New System.Drawing.Point(0, 177)
-        Me.btnDashboard.Name = "btnDashboard"
-        Me.btnDashboard.Size = New System.Drawing.Size(182, 44)
-        Me.btnDashboard.TabIndex = 10
-        Me.btnDashboard.Text = "DASHBOARD"
-        Me.btnDashboard.UseVisualStyleBackColor = False
-        '
-        'Panel3
-        '
-        Me.Panel3.Controls.Add(Me.lbldesignation)
-        Me.Panel3.Controls.Add(Me.lblfullname)
-        Me.Panel3.Controls.Add(Me.picUser)
-        Me.Panel3.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel3.Location = New System.Drawing.Point(0, 0)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(182, 177)
-        Me.Panel3.TabIndex = 0
-        '
-        'lbldesignation
-        '
-        Me.lbldesignation.Font = New System.Drawing.Font("Arial Narrow", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbldesignation.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.lbldesignation.Location = New System.Drawing.Point(0, 127)
-        Me.lbldesignation.Name = "lbldesignation"
-        Me.lbldesignation.Size = New System.Drawing.Size(169, 24)
-        Me.lbldesignation.TabIndex = 1
-        Me.lbldesignation.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblfullname
-        '
-        Me.lblfullname.Font = New System.Drawing.Font("Arial Narrow", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblfullname.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.lblfullname.Location = New System.Drawing.Point(0, 110)
-        Me.lblfullname.Name = "lblfullname"
-        Me.lblfullname.Size = New System.Drawing.Size(169, 24)
-        Me.lblfullname.TabIndex = 1
-        Me.lblfullname.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'picUser
-        '
-        Me.picUser.Image = Global.ProjectES.My.Resources.Resources.teacher
-        Me.picUser.Location = New System.Drawing.Point(44, 22)
-        Me.picUser.Name = "picUser"
-        Me.picUser.Size = New System.Drawing.Size(90, 85)
-        Me.picUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.picUser.TabIndex = 0
-        Me.picUser.TabStop = False
         '
         'mainpanel
         '
@@ -488,6 +339,155 @@ Partial Class frmMain
         Me.Label6.TabIndex = 0
         Me.Label6.Text = "DATE LOGGED IN:"
         '
+        'Panel3
+        '
+        Me.Panel3.Controls.Add(Me.lbldesignation)
+        Me.Panel3.Controls.Add(Me.lblfullname)
+        Me.Panel3.Controls.Add(Me.picUser)
+        Me.Panel3.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel3.Location = New System.Drawing.Point(0, 0)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(182, 177)
+        Me.Panel3.TabIndex = 0
+        '
+        'lbldesignation
+        '
+        Me.lbldesignation.Font = New System.Drawing.Font("Arial Narrow", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbldesignation.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.lbldesignation.Location = New System.Drawing.Point(0, 127)
+        Me.lbldesignation.Name = "lbldesignation"
+        Me.lbldesignation.Size = New System.Drawing.Size(182, 24)
+        Me.lbldesignation.TabIndex = 1
+        Me.lbldesignation.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblfullname
+        '
+        Me.lblfullname.Font = New System.Drawing.Font("Arial Narrow", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblfullname.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.lblfullname.Location = New System.Drawing.Point(0, 110)
+        Me.lblfullname.Name = "lblfullname"
+        Me.lblfullname.Size = New System.Drawing.Size(182, 24)
+        Me.lblfullname.TabIndex = 1
+        Me.lblfullname.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'picUser
+        '
+        Me.picUser.Image = Global.ProjectES.My.Resources.Resources.teacher
+        Me.picUser.Location = New System.Drawing.Point(44, 22)
+        Me.picUser.Name = "picUser"
+        Me.picUser.Size = New System.Drawing.Size(90, 85)
+        Me.picUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.picUser.TabIndex = 0
+        Me.picUser.TabStop = False
+        '
+        'btnDashboard
+        '
+        Me.btnDashboard.BackColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(52, Byte), Integer))
+        Me.btnDashboard.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnDashboard.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.btnDashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnDashboard.Location = New System.Drawing.Point(0, 177)
+        Me.btnDashboard.Name = "btnDashboard"
+        Me.btnDashboard.Size = New System.Drawing.Size(182, 44)
+        Me.btnDashboard.TabIndex = 10
+        Me.btnDashboard.Text = "DASHBOARD"
+        Me.btnDashboard.UseVisualStyleBackColor = False
+        '
+        'btnAdmission
+        '
+        Me.btnAdmission.BackColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(52, Byte), Integer))
+        Me.btnAdmission.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnAdmission.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.btnAdmission.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnAdmission.Location = New System.Drawing.Point(0, 221)
+        Me.btnAdmission.Name = "btnAdmission"
+        Me.btnAdmission.Size = New System.Drawing.Size(182, 44)
+        Me.btnAdmission.TabIndex = 11
+        Me.btnAdmission.Text = "ADMISSION"
+        Me.btnAdmission.UseVisualStyleBackColor = False
+        '
+        'btnEnrollment
+        '
+        Me.btnEnrollment.BackColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(52, Byte), Integer))
+        Me.btnEnrollment.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnEnrollment.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.btnEnrollment.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnEnrollment.Location = New System.Drawing.Point(0, 265)
+        Me.btnEnrollment.Name = "btnEnrollment"
+        Me.btnEnrollment.Size = New System.Drawing.Size(182, 44)
+        Me.btnEnrollment.TabIndex = 12
+        Me.btnEnrollment.Text = "ENROLLMENT"
+        Me.btnEnrollment.UseVisualStyleBackColor = False
+        '
+        'btnRecords
+        '
+        Me.btnRecords.BackColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(52, Byte), Integer))
+        Me.btnRecords.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnRecords.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.btnRecords.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnRecords.Location = New System.Drawing.Point(0, 309)
+        Me.btnRecords.Name = "btnRecords"
+        Me.btnRecords.Size = New System.Drawing.Size(182, 44)
+        Me.btnRecords.TabIndex = 13
+        Me.btnRecords.Text = "RECORDS"
+        Me.btnRecords.UseVisualStyleBackColor = False
+        '
+        'btnManagement
+        '
+        Me.btnManagement.BackColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(52, Byte), Integer))
+        Me.btnManagement.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnManagement.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.btnManagement.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnManagement.Location = New System.Drawing.Point(0, 353)
+        Me.btnManagement.Name = "btnManagement"
+        Me.btnManagement.Size = New System.Drawing.Size(182, 44)
+        Me.btnManagement.TabIndex = 14
+        Me.btnManagement.Text = "MANAGEMENT"
+        Me.btnManagement.UseVisualStyleBackColor = False
+        '
+        'btnSettings
+        '
+        Me.btnSettings.BackColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(52, Byte), Integer))
+        Me.btnSettings.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnSettings.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.btnSettings.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnSettings.Location = New System.Drawing.Point(0, 397)
+        Me.btnSettings.Name = "btnSettings"
+        Me.btnSettings.Size = New System.Drawing.Size(182, 44)
+        Me.btnSettings.TabIndex = 15
+        Me.btnSettings.Text = "SETTINGS"
+        Me.btnSettings.UseVisualStyleBackColor = False
+        '
+        'btnLogout
+        '
+        Me.btnLogout.BackColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(52, Byte), Integer))
+        Me.btnLogout.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.btnLogout.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.btnLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnLogout.Location = New System.Drawing.Point(0, 539)
+        Me.btnLogout.Name = "btnLogout"
+        Me.btnLogout.Size = New System.Drawing.Size(182, 44)
+        Me.btnLogout.TabIndex = 16
+        Me.btnLogout.Text = "LOGOUT"
+        Me.btnLogout.UseVisualStyleBackColor = False
+        '
+        'Panel2
+        '
+        Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(52, Byte), Integer))
+        Me.Panel2.Controls.Add(Me.btnLogout)
+        Me.Panel2.Controls.Add(Me.btnSettings)
+        Me.Panel2.Controls.Add(Me.btnManagement)
+        Me.Panel2.Controls.Add(Me.btnRecords)
+        Me.Panel2.Controls.Add(Me.btnEnrollment)
+        Me.Panel2.Controls.Add(Me.btnAdmission)
+        Me.Panel2.Controls.Add(Me.btnDashboard)
+        Me.Panel2.Controls.Add(Me.Panel3)
+        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Panel2.Location = New System.Drawing.Point(0, 123)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(182, 583)
+        Me.Panel2.TabIndex = 1
+        '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
@@ -506,9 +506,6 @@ Partial Class frmMain
         Me.Panel1.ResumeLayout(False)
         Me.Panel4.ResumeLayout(False)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel2.ResumeLayout(False)
-        Me.Panel3.ResumeLayout(False)
-        CType(Me.picUser, System.ComponentModel.ISupportInitialize).EndInit()
         Me.mainpanel.ResumeLayout(False)
         Me.sectionpanel.ResumeLayout(False)
         Me.sectionpanel.PerformLayout()
@@ -520,19 +517,17 @@ Partial Class frmMain
         Me.studentpanel.PerformLayout()
         Me.Panel5.ResumeLayout(False)
         Me.Panel5.PerformLayout()
+        Me.Panel3.ResumeLayout(False)
+        CType(Me.picUser, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel2.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
 
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents Panel2 As Panel
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Panel4 As Panel
-    Friend WithEvents Panel3 As Panel
-    Friend WithEvents picUser As PictureBox
-    Friend WithEvents lbldesignation As Label
-    Friend WithEvents lblfullname As Label
     Friend WithEvents mainpanel As Panel
     Friend WithEvents studentpanel As Panel
     Friend WithEvents lbltotalstudents As Label
@@ -554,11 +549,16 @@ Partial Class frmMain
     Friend WithEvents Label7 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents Timer1 As Timer
-    Friend WithEvents btnAdmission As Button
+    Friend WithEvents Panel3 As Panel
+    Friend WithEvents lbldesignation As Label
+    Friend WithEvents lblfullname As Label
+    Friend WithEvents picUser As PictureBox
     Friend WithEvents btnDashboard As Button
-    Friend WithEvents btnLogout As Button
-    Friend WithEvents btnSettings As Button
-    Friend WithEvents btnManagement As Button
-    Friend WithEvents btnRecords As Button
+    Friend WithEvents btnAdmission As Button
     Friend WithEvents btnEnrollment As Button
+    Friend WithEvents btnRecords As Button
+    Friend WithEvents btnManagement As Button
+    Friend WithEvents btnSettings As Button
+    Friend WithEvents btnLogout As Button
+    Friend WithEvents Panel2 As Panel
 End Class

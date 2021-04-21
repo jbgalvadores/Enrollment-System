@@ -114,7 +114,9 @@ Public Class frmlogin
     End Sub
 
     Private Sub imgCancelButton_Click(sender As Object, e As EventArgs) Handles imgCancelButton.Click
-        Me.Dispose()
+        If MsgBox("Do you want to close this window?", vbQuestion + vbYesNo) = vbYes Then
+            Me.Dispose()
+        End If
     End Sub
 
 
